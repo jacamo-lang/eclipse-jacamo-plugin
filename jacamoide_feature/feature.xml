@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="jacamoide_feature"
+      label="Jacamoide_feature"
+      version="1.0.22.qualifier">
+
+   <description url="http://jacamo.sf.net">
+      JaCaMo is a framework for Multi-Agent Programming that combines three separate technologies (Jason, CArtAgO, and Moise), each of them being well-known on its own and developed for a number of years so they are fairly robust and fully-fledged.
+
+JaCaMo is distributed under LGPL (see file LICENSE in the JaCaMo directory).
+
+Thank you for your interest in JaCaMo!
+   </description>
+
+   <copyright>
+      Copyright (C) 2014  Olivier Boissier, Rafael H. Bordini, Jomi F. Hübner, Alessandro Ricci, Andrea Santi, Maicon R. Zatelli, et al. JaCaMo is distributed under LGPL. See file LGPL.txt in the JaCaMo directory.
+   </copyright>
+
+   <license url="">
+      Copyright (C) 2014  Olivier Boissier, Rafael H. Bordini, Jomi F. Hübner, Alessandro Ricci, Andrea Santi, Maicon R. Zatelli, et al. JaCaMo is distributed under LGPL. See file LGPL.txt in the JaCaMo directory.
+
+This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.
+
+This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+
+To contact the authors:
+Olivier Boissier - http://www.emse.fr/~boissier
+Rafael H. Bordini - http://www.inf.pucrs.br/r.bordini
+Jomi F. Hübner - http://www.das.ufsc.br/~jomi
+Alessandro Ricci - http://alice.unibo.it/xwiki/bin/view/AlessandroRicci
+Andrea Santi - http://www.alice.unibo.it/xwiki/bin/view/AndreaSanti
+Maicon R. Zatelli
+   </license>
+
+   <requires>
+      <import plugin="org.eclipse.xtext" version="2.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.xtext.util"/>
+      <import plugin="org.eclipse.xtext.common.types"/>
+      <import plugin="org.eclipse.xtext.xbase.lib"/>
+      <import plugin="org.eclipse.xtext.ui"/>
+      <import plugin="org.eclipse.xtext.ui.shared"/>
+      <import plugin="org.eclipse.xtext.builder"/>
+      <import plugin="org.eclipse.xtext.common.types.ui"/>
+      <import plugin="org.eclipse.xtext.ui.codetemplates.ui"/>
+      <import plugin="org.eclipse.xtext.ui.shared" version="2.0.1" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.xtext.common.types" version="2.0.1" match="greaterOrEqual"/>
+      <import plugin="org.apache.log4j" version="1.2.15" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.emf.ecore"/>
+      <import plugin="org.eclipse.emf.common"/>
+      <import plugin="org.antlr.runtime"/>
+      <import plugin="org.apache.commons.logging"/>
+      <import plugin="org.eclipse.ui.editors" version="3.5.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.ide" version="3.5.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.compare"/>
+      <import plugin="org.eclipse.core.resources" version="3.7.100" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.core.runtime" version="3.7.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.navigator" version="3.5.100" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.jdt.core" version="3.7.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.jface.text" version="3.7.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.ide" version="3.7.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.editors" version="3.7.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.workbench.texteditor" version="3.7.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.jdt.ui" version="3.7.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.search" version="3.7.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.console" version="3.5.100" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.core.expressions" version="3.4.300" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.emf.ecore" version="2.6.1" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.core.filesystem" version="1.3.100" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.debug.core" version="3.7.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.debug.ui" version="3.7.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.wst.xml.core"/>
+      <import plugin="org.eclipse.wst.xml.ui"/>
+      <import plugin="org.eclipse.wst.xml.ui.infopop"/>
+      <import plugin="org.eclipse.wst.xmleditor.doc.user"/>
+      <import plugin="org.eclipse.wst.xsd.core"/>
+      <import plugin="org.eclipse.wst.xsd.ui"/>
+      <import plugin="org.eclipse.wst.xsdeditor.doc.user"/>
+   </requires>
+
+   <plugin
+         id="jasonide.xtext.asl"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="jasonide.xtext.asl.ui"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="jacamoide"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="ptlide.xtext.ptl"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="ptlide.xtext.ptl.ui"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="jacamoide.xtext.jcm"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="jacamoide.xtext.jcm.ui"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.logging"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         fragment="true"
+         unpack="false"/>
+
+</feature>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/jacamoide.xtext.jcm/src-gen" editDirectory="/jacamoide.xtext.jcm.edit/src"
+    editorDirectory="/jacamoide.xtext.jcm.editor/src" modelPluginID="jacamoide.xtext.jcm"
+    forceOverwrite="true" modelName="Jcm" updateClasspath="false" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    complianceLevel="5.0" copyrightFields="false" editPluginID="jacamoide.xtext.jcm.edit"
+    editorPluginID="jacamoide.xtext.jcm.editor" runtimeVersion="2.9">
+  <genPackages prefix="Jcm" basePackage="jacamoide.xtext.jcm" disposableProviderFactory="true"
+      ecorePackage="Jcm.ecore#/">
+    <genClasses ecoreClass="Jcm.ecore#//JcmModel">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//JcmModel/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Jcm.ecore#//JcmModel/uses"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Jcm.ecore#//JcmModel/agent"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Jcm.ecore#//JcmModel/workspace"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Jcm.ecore#//JcmModel/organisation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Jcm.ecore#//JcmModel/dclassPath"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Jcm.ecore#//JcmModel/dAslPath"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Jcm.ecore#//JcmModel/dPlatform"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Jcm.ecore#//JcmModel/dNode"/>
+    </genClasses>
+    <genClasses ecoreClass="Jcm.ecore#//DUses">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Jcm.ecore#//DUses/fileName"/>
+    </genClasses>
+    <genClasses ecoreClass="Jcm.ecore#//DClassPath">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Jcm.ecore#//DClassPath/classPath"/>
+    </genClasses>
+    <genClasses ecoreClass="Jcm.ecore#//DAslPath">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Jcm.ecore#//DAslPath/aslPath"/>
+    </genClasses>
+    <genClasses ecoreClass="Jcm.ecore#//DPlatform">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Jcm.ecore#//DPlatform/platform"/>
+    </genClasses>
+    <genClasses ecoreClass="Jcm.ecore#//DNode">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//DNode/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Jcm.ecore#//DNode/host"/>
+    </genClasses>
+    <genClasses ecoreClass="Jcm.ecore#//Agent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//Agent/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Jcm.ecore#//Agent/source"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//Agent/instances"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//Agent/instancesAtom"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//Agent/node"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Jcm.ecore#//Agent/agArch"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Jcm.ecore#//Agent/agClass"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Jcm.ecore#//Agent/agbbClass"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Jcm.ecore#//Agent/beliefs"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Jcm.ecore#//Agent/goals"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//Agent/focus"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//Agent/focusNode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//Agent/join"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//Agent/joinNode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//Agent/role"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//Agent/group"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//Agent/groupNode"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Jcm.ecore#//Agent/debug"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//Agent/verbose"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//Agent/nrcbp"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//Agent/other"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//Agent/string"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//Agent/val"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Jcm.ecore#//Agent/literal"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//Agent/val_real"/>
+    </genClasses>
+    <genClasses ecoreClass="Jcm.ecore#//Workspace">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//Workspace/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Jcm.ecore#//Workspace/artifact"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//Workspace/agent"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Jcm.ecore#//Workspace/node"/>
+    </genClasses>
+    <genClasses ecoreClass="Jcm.ecore#//Artifact">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//Artifact/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Jcm.ecore#//Artifact/classDef"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//Artifact/agent"/>
+    </genClasses>
+    <genClasses ecoreClass="Jcm.ecore#//Organisation">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//Organisation/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Jcm.ecore#//Organisation/fileName"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Jcm.ecore#//Organisation/group"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Jcm.ecore#//Organisation/scheme"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Jcm.ecore#//Organisation/agents"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Jcm.ecore#//Organisation/node"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Jcm.ecore#//Organisation/other"/>
+    </genClasses>
+    <genClasses ecoreClass="Jcm.ecore#//OFileName">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Jcm.ecore#//OFileName/name"/>
+    </genClasses>
+    <genClasses ecoreClass="Jcm.ecore#//ONode">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//ONode/name"/>
+    </genClasses>
+    <genClasses ecoreClass="Jcm.ecore#//OAgents">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//OAgents/agent"/>
+    </genClasses>
+    <genClasses ecoreClass="Jcm.ecore#//OOthers">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//OOthers/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//OOthers/string"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//OOthers/val"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Jcm.ecore#//OOthers/literal"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//OOthers/val_real"/>
+    </genClasses>
+    <genClasses ecoreClass="Jcm.ecore#//Group">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//Group/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//Group/kind"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Jcm.ecore#//Group/group"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//Group/responsibleFor"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//Group/owner"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//Group/other"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//Group/string"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//Group/val"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Jcm.ecore#//Group/literal"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//Group/val_real"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//Group/agent"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//Group/role"/>
+    </genClasses>
+    <genClasses ecoreClass="Jcm.ecore#//Scheme">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//Scheme/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//Scheme/kind"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//Scheme/owner"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//Scheme/other"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//Scheme/string"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//Scheme/val"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Jcm.ecore#//Scheme/literal"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//Scheme/val_real"/>
+    </genClasses>
+    <genClasses ecoreClass="Jcm.ecore#//Host">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//Host/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//Host/string"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//Host/ip"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//Host/val"/>
+    </genClasses>
+    <genClasses ecoreClass="Jcm.ecore#//FileName">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//FileName/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//FileName/string"/>
+    </genClasses>
+    <genClasses ecoreClass="Jcm.ecore#//ClassDef">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//ClassDef/infrastructure"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Jcm.ecore#//ClassDef/parameter"/>
+    </genClasses>
+    <genClasses ecoreClass="Jcm.ecore#//Parameter">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Jcm.ecore#//Parameter/classDef"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//Parameter/val"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//Parameter/val_real"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//Parameter/string"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Jcm.ecore#//Parameter/listParameters"/>
+    </genClasses>
+    <genClasses ecoreClass="Jcm.ecore#//ListParameters">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Jcm.ecore#//ListParameters/parameter"/>
+    </genClasses>
+    <genClasses ecoreClass="Jcm.ecore#//Literal">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Jcm.ecore#//Literal/pred"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Jcm.ecore#//Literal/var"/>
+    </genClasses>
+    <genClasses ecoreClass="Jcm.ecore#//Pred">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//Pred/atom"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Jcm.ecore#//Pred/terms"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Jcm.ecore#//Pred/list"/>
+    </genClasses>
+    <genClasses ecoreClass="Jcm.ecore#//Terms">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Jcm.ecore#//Terms/term"/>
+    </genClasses>
+    <genClasses ecoreClass="Jcm.ecore#//Term">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Jcm.ecore#//Term/list"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Jcm.ecore#//Term/literal"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//Term/string"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//Term/val"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//Term/val_real"/>
+    </genClasses>
+    <genClasses ecoreClass="Jcm.ecore#//List">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Jcm.ecore#//List/term"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//List/var"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//List/unnamedvar"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Jcm.ecore#//List/list"/>
+    </genClasses>
+    <genClasses ecoreClass="Jcm.ecore#//Var">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//Var/var"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//Var/unnamedvar"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Jcm.ecore#//Var/list"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
