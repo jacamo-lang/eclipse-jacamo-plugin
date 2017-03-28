@@ -46,7 +46,7 @@ Workspace: 'workspace' name=ATOM '{' ( EOL )*
 		( 
 			artifact+=Artifact | 
 			'agents' ':' ( ( agent+=ATOM | '*' ) ( EOL | ',' )+ )* |
-			'debug' ( EOL )+ |  
+			'debug' (':' debug+=Literal)? ( EOL )+ |
 			node+=ONode
 		)* '}' ( EOL )*
 ;
@@ -73,14 +73,14 @@ Group:	'group' name=ATOM ':' kind=ATOM ( '{' ( EOL )* (
 				( group+=Group | 
 				  'responsible-for' ":" responsibleFor+=ATOM ( EOL )+ | 
 				  'owner' ':' owner+=ATOM (EOL)+ |
-				  'debug' ( EOL )+ | 
+				  'debug' (':' debug+=Literal)? ( EOL )+ | 
 				  other+=ATOM  ':' ( string+=STRING | val+=INT_LITERAL | literal+=Literal | val_real+=REAL_LITERAL ) (EOL)+ |  
 				  'players' ':' ( agent+=ATOM role+=ATOM ( EOL | ',' )+ )*
 				)
 )* "}" )? ( EOL )* ;
 
 Scheme:	'scheme' name=ATOM ':' kind=ATOM ( '{' ( EOL )* ( 
-	'debug' ( EOL )+ | 
+	'debug' (':' debug+=Literal)? ( EOL )+ |
 	'owner' ':' owner+=ATOM (EOL)+ |
 	other+=ATOM  ":" ( string+=STRING | val+=INT_LITERAL | literal+=Literal | val_real+=REAL_LITERAL ) (EOL)+ 
 )* "}" )? ( EOL )* ;

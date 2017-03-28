@@ -4,6 +4,7 @@ package jacamoide.xtext.jcm.jcm.impl;
 
 import jacamoide.xtext.jcm.jcm.Artifact;
 import jacamoide.xtext.jcm.jcm.JcmPackage;
+import jacamoide.xtext.jcm.jcm.Literal;
 import jacamoide.xtext.jcm.jcm.ONode;
 import jacamoide.xtext.jcm.jcm.Workspace;
 
@@ -34,6 +35,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link jacamoide.xtext.jcm.jcm.impl.WorkspaceImpl#getName <em>Name</em>}</li>
  *   <li>{@link jacamoide.xtext.jcm.jcm.impl.WorkspaceImpl#getArtifact <em>Artifact</em>}</li>
  *   <li>{@link jacamoide.xtext.jcm.jcm.impl.WorkspaceImpl#getAgent <em>Agent</em>}</li>
+ *   <li>{@link jacamoide.xtext.jcm.jcm.impl.WorkspaceImpl#getDebug <em>Debug</em>}</li>
  *   <li>{@link jacamoide.xtext.jcm.jcm.impl.WorkspaceImpl#getNode <em>Node</em>}</li>
  * </ul>
  * </p>
@@ -81,6 +83,16 @@ public class WorkspaceImpl extends MinimalEObjectImpl.Container implements Works
    * @ordered
    */
   protected EList<String> agent;
+
+  /**
+   * The cached value of the '{@link #getDebug() <em>Debug</em>}' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getDebug()
+   * @generated
+   * @ordered
+   */
+  protected EList<Literal> debug;
 
   /**
    * The cached value of the '{@link #getNode() <em>Node</em>}' containment reference list.
@@ -169,6 +181,20 @@ public class WorkspaceImpl extends MinimalEObjectImpl.Container implements Works
    * <!-- end-user-doc -->
    * @generated
    */
+  public EList<Literal> getDebug()
+  {
+    if (debug == null)
+    {
+      debug = new EObjectContainmentEList<Literal>(Literal.class, this, JcmPackage.WORKSPACE__DEBUG);
+    }
+    return debug;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public EList<ONode> getNode()
   {
     if (node == null)
@@ -190,6 +216,8 @@ public class WorkspaceImpl extends MinimalEObjectImpl.Container implements Works
     {
       case JcmPackage.WORKSPACE__ARTIFACT:
         return ((InternalEList<?>)getArtifact()).basicRemove(otherEnd, msgs);
+      case JcmPackage.WORKSPACE__DEBUG:
+        return ((InternalEList<?>)getDebug()).basicRemove(otherEnd, msgs);
       case JcmPackage.WORKSPACE__NODE:
         return ((InternalEList<?>)getNode()).basicRemove(otherEnd, msgs);
     }
@@ -212,6 +240,8 @@ public class WorkspaceImpl extends MinimalEObjectImpl.Container implements Works
         return getArtifact();
       case JcmPackage.WORKSPACE__AGENT:
         return getAgent();
+      case JcmPackage.WORKSPACE__DEBUG:
+        return getDebug();
       case JcmPackage.WORKSPACE__NODE:
         return getNode();
     }
@@ -240,6 +270,10 @@ public class WorkspaceImpl extends MinimalEObjectImpl.Container implements Works
         getAgent().clear();
         getAgent().addAll((Collection<? extends String>)newValue);
         return;
+      case JcmPackage.WORKSPACE__DEBUG:
+        getDebug().clear();
+        getDebug().addAll((Collection<? extends Literal>)newValue);
+        return;
       case JcmPackage.WORKSPACE__NODE:
         getNode().clear();
         getNode().addAll((Collection<? extends ONode>)newValue);
@@ -267,6 +301,9 @@ public class WorkspaceImpl extends MinimalEObjectImpl.Container implements Works
       case JcmPackage.WORKSPACE__AGENT:
         getAgent().clear();
         return;
+      case JcmPackage.WORKSPACE__DEBUG:
+        getDebug().clear();
+        return;
       case JcmPackage.WORKSPACE__NODE:
         getNode().clear();
         return;
@@ -290,6 +327,8 @@ public class WorkspaceImpl extends MinimalEObjectImpl.Container implements Works
         return artifact != null && !artifact.isEmpty();
       case JcmPackage.WORKSPACE__AGENT:
         return agent != null && !agent.isEmpty();
+      case JcmPackage.WORKSPACE__DEBUG:
+        return debug != null && !debug.isEmpty();
       case JcmPackage.WORKSPACE__NODE:
         return node != null && !node.isEmpty();
     }

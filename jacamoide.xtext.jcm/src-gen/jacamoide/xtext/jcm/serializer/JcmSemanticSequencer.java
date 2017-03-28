@@ -327,6 +327,7 @@ public class JcmSemanticSequencer extends AbstractDelegatingSemanticSequencer {
 	 *             group+=Group | 
 	 *             responsibleFor+=ATOM | 
 	 *             owner+=ATOM | 
+	 *             debug+=Literal? | 
 	 *             (other+=ATOM (string+=STRING | val+=INT_LITERAL | literal+=Literal | val_real+=REAL_LITERAL)) | 
 	 *             (agent+=ATOM role+=ATOM)*
 	 *         )*
@@ -468,7 +469,11 @@ public class JcmSemanticSequencer extends AbstractDelegatingSemanticSequencer {
 	
 	/**
 	 * Constraint:
-	 *     (name=ATOM kind=ATOM (owner+=ATOM | (other+=ATOM (string+=STRING | val+=INT_LITERAL | literal+=Literal | val_real+=REAL_LITERAL)))*)
+	 *     (
+	 *         name=ATOM 
+	 *         kind=ATOM 
+	 *         (debug+=Literal? | owner+=ATOM | (other+=ATOM (string+=STRING | val+=INT_LITERAL | literal+=Literal | val_real+=REAL_LITERAL)))*
+	 *     )
 	 */
 	protected void sequence_Scheme(EObject context, Scheme semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -504,7 +509,7 @@ public class JcmSemanticSequencer extends AbstractDelegatingSemanticSequencer {
 	
 	/**
 	 * Constraint:
-	 *     (name=ATOM (artifact+=Artifact | agent+=ATOM* | node+=ONode)*)
+	 *     (name=ATOM (artifact+=Artifact | agent+=ATOM* | debug+=Literal? | node+=ONode)*)
 	 */
 	protected void sequence_Workspace(EObject context, Workspace semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);

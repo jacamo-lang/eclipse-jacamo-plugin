@@ -1312,10 +1312,10 @@ public class InternalJcmLexer extends Lexer {
         try {
             int _type = RULE_IP;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3983:9: ( ( RULE_INT_LITERAL )+ '.' ( RULE_INT_LITERAL )+ '.' ( RULE_INT_LITERAL )+ '.' ( RULE_INT_LITERAL )+ )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3983:11: ( RULE_INT_LITERAL )+ '.' ( RULE_INT_LITERAL )+ '.' ( RULE_INT_LITERAL )+ '.' ( RULE_INT_LITERAL )+
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4049:9: ( ( RULE_INT_LITERAL )+ '.' ( RULE_INT_LITERAL )+ '.' ( RULE_INT_LITERAL )+ '.' ( RULE_INT_LITERAL )+ )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4049:11: ( RULE_INT_LITERAL )+ '.' ( RULE_INT_LITERAL )+ '.' ( RULE_INT_LITERAL )+ '.' ( RULE_INT_LITERAL )+
             {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3983:11: ( RULE_INT_LITERAL )+
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4049:11: ( RULE_INT_LITERAL )+
             int cnt1=0;
             loop1:
             do {
@@ -1329,7 +1329,7 @@ public class InternalJcmLexer extends Lexer {
 
                 switch (alt1) {
             	case 1 :
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3983:11: RULE_INT_LITERAL
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4049:11: RULE_INT_LITERAL
             	    {
             	    mRULE_INT_LITERAL(); 
 
@@ -1346,7 +1346,7 @@ public class InternalJcmLexer extends Lexer {
             } while (true);
 
             match('.'); 
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3983:33: ( RULE_INT_LITERAL )+
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4049:33: ( RULE_INT_LITERAL )+
             int cnt2=0;
             loop2:
             do {
@@ -1360,7 +1360,7 @@ public class InternalJcmLexer extends Lexer {
 
                 switch (alt2) {
             	case 1 :
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3983:33: RULE_INT_LITERAL
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4049:33: RULE_INT_LITERAL
             	    {
             	    mRULE_INT_LITERAL(); 
 
@@ -1377,7 +1377,7 @@ public class InternalJcmLexer extends Lexer {
             } while (true);
 
             match('.'); 
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3983:55: ( RULE_INT_LITERAL )+
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4049:55: ( RULE_INT_LITERAL )+
             int cnt3=0;
             loop3:
             do {
@@ -1391,7 +1391,7 @@ public class InternalJcmLexer extends Lexer {
 
                 switch (alt3) {
             	case 1 :
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3983:55: RULE_INT_LITERAL
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4049:55: RULE_INT_LITERAL
             	    {
             	    mRULE_INT_LITERAL(); 
 
@@ -1408,7 +1408,7 @@ public class InternalJcmLexer extends Lexer {
             } while (true);
 
             match('.'); 
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3983:77: ( RULE_INT_LITERAL )+
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4049:77: ( RULE_INT_LITERAL )+
             int cnt4=0;
             loop4:
             do {
@@ -1422,7 +1422,7 @@ public class InternalJcmLexer extends Lexer {
 
                 switch (alt4) {
             	case 1 :
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3983:77: RULE_INT_LITERAL
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4049:77: RULE_INT_LITERAL
             	    {
             	    mRULE_INT_LITERAL(); 
 
@@ -1454,10 +1454,10 @@ public class InternalJcmLexer extends Lexer {
         try {
             int _type = RULE_ATOM;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3985:11: ( ( RULE_LCLETTER | '.' RULE_CHAR ) ( RULE_CHAR | '.' RULE_CHAR )* )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3985:13: ( RULE_LCLETTER | '.' RULE_CHAR ) ( RULE_CHAR | '.' RULE_CHAR )*
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4051:11: ( ( RULE_LCLETTER | '.' RULE_CHAR ) ( RULE_CHAR | '.' RULE_CHAR )* )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4051:13: ( RULE_LCLETTER | '.' RULE_CHAR ) ( RULE_CHAR | '.' RULE_CHAR )*
             {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3985:13: ( RULE_LCLETTER | '.' RULE_CHAR )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4051:13: ( RULE_LCLETTER | '.' RULE_CHAR )
             int alt5=2;
             int LA5_0 = input.LA(1);
 
@@ -1475,14 +1475,14 @@ public class InternalJcmLexer extends Lexer {
             }
             switch (alt5) {
                 case 1 :
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3985:14: RULE_LCLETTER
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4051:14: RULE_LCLETTER
                     {
                     mRULE_LCLETTER(); 
 
                     }
                     break;
                 case 2 :
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3985:28: '.' RULE_CHAR
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4051:28: '.' RULE_CHAR
                     {
                     match('.'); 
                     mRULE_CHAR(); 
@@ -1492,7 +1492,7 @@ public class InternalJcmLexer extends Lexer {
 
             }
 
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3985:43: ( RULE_CHAR | '.' RULE_CHAR )*
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4051:43: ( RULE_CHAR | '.' RULE_CHAR )*
             loop6:
             do {
                 int alt6=3;
@@ -1508,14 +1508,14 @@ public class InternalJcmLexer extends Lexer {
 
                 switch (alt6) {
             	case 1 :
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3985:44: RULE_CHAR
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4051:44: RULE_CHAR
             	    {
             	    mRULE_CHAR(); 
 
             	    }
             	    break;
             	case 2 :
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3985:54: '.' RULE_CHAR
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4051:54: '.' RULE_CHAR
             	    {
             	    match('.'); 
             	    mRULE_CHAR(); 
@@ -1544,11 +1544,11 @@ public class InternalJcmLexer extends Lexer {
         try {
             int _type = RULE_VART;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3987:11: ( RULE_UCLETTER ( RULE_CHAR )* )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3987:13: RULE_UCLETTER ( RULE_CHAR )*
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4053:11: ( RULE_UCLETTER ( RULE_CHAR )* )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4053:13: RULE_UCLETTER ( RULE_CHAR )*
             {
             mRULE_UCLETTER(); 
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3987:27: ( RULE_CHAR )*
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4053:27: ( RULE_CHAR )*
             loop7:
             do {
                 int alt7=2;
@@ -1561,7 +1561,7 @@ public class InternalJcmLexer extends Lexer {
 
                 switch (alt7) {
             	case 1 :
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3987:27: RULE_CHAR
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4053:27: RULE_CHAR
             	    {
             	    mRULE_CHAR(); 
 
@@ -1589,11 +1589,11 @@ public class InternalJcmLexer extends Lexer {
         try {
             int _type = RULE_UNNAMEDVART;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3989:18: ( '_' ( RULE_CHAR )* )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3989:20: '_' ( RULE_CHAR )*
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4055:18: ( '_' ( RULE_CHAR )* )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4055:20: '_' ( RULE_CHAR )*
             {
             match('_'); 
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3989:24: ( RULE_CHAR )*
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4055:24: ( RULE_CHAR )*
             loop8:
             do {
                 int alt8=2;
@@ -1606,7 +1606,7 @@ public class InternalJcmLexer extends Lexer {
 
                 switch (alt8) {
             	case 1 :
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3989:24: RULE_CHAR
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4055:24: RULE_CHAR
             	    {
             	    mRULE_CHAR(); 
 
@@ -1632,8 +1632,8 @@ public class InternalJcmLexer extends Lexer {
     // $ANTLR start "RULE_CHAR"
     public final void mRULE_CHAR() throws RecognitionException {
         try {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3991:20: ( ( RULE_LETTER | RULE_DIGIT | '_' ) )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3991:22: ( RULE_LETTER | RULE_DIGIT | '_' )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4057:20: ( ( RULE_LETTER | RULE_DIGIT | '_' ) )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4057:22: ( RULE_LETTER | RULE_DIGIT | '_' )
             {
             if ( (input.LA(1)>='0' && input.LA(1)<='9')||(input.LA(1)>='A' && input.LA(1)<='Z')||input.LA(1)=='_'||(input.LA(1)>='a' && input.LA(1)<='z') ) {
                 input.consume();
@@ -1656,8 +1656,8 @@ public class InternalJcmLexer extends Lexer {
     // $ANTLR start "RULE_LETTER"
     public final void mRULE_LETTER() throws RecognitionException {
         try {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3993:22: ( ( RULE_LCLETTER | RULE_UCLETTER ) )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3993:24: ( RULE_LCLETTER | RULE_UCLETTER )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4059:22: ( ( RULE_LCLETTER | RULE_UCLETTER ) )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4059:24: ( RULE_LCLETTER | RULE_UCLETTER )
             {
             if ( (input.LA(1)>='A' && input.LA(1)<='Z')||(input.LA(1)>='a' && input.LA(1)<='z') ) {
                 input.consume();
@@ -1680,8 +1680,8 @@ public class InternalJcmLexer extends Lexer {
     // $ANTLR start "RULE_LCLETTER"
     public final void mRULE_LCLETTER() throws RecognitionException {
         try {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3995:24: ( 'a' .. 'z' )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3995:26: 'a' .. 'z'
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4061:24: ( 'a' .. 'z' )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4061:26: 'a' .. 'z'
             {
             matchRange('a','z'); 
 
@@ -1696,8 +1696,8 @@ public class InternalJcmLexer extends Lexer {
     // $ANTLR start "RULE_UCLETTER"
     public final void mRULE_UCLETTER() throws RecognitionException {
         try {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3997:24: ( 'A' .. 'Z' )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3997:26: 'A' .. 'Z'
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4063:24: ( 'A' .. 'Z' )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4063:26: 'A' .. 'Z'
             {
             matchRange('A','Z'); 
 
@@ -1712,8 +1712,8 @@ public class InternalJcmLexer extends Lexer {
     // $ANTLR start "RULE_DIGIT"
     public final void mRULE_DIGIT() throws RecognitionException {
         try {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3999:21: ( '0' .. '9' )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3999:23: '0' .. '9'
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4065:21: ( '0' .. '9' )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4065:23: '0' .. '9'
             {
             matchRange('0','9'); 
 
@@ -1730,11 +1730,11 @@ public class InternalJcmLexer extends Lexer {
         try {
             int _type = RULE_STRING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4001:13: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4001:15: '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4067:13: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4067:15: '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
             {
             match('\"'); 
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4001:19: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )*
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4067:19: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )*
             loop9:
             do {
                 int alt9=3;
@@ -1750,7 +1750,7 @@ public class InternalJcmLexer extends Lexer {
 
                 switch (alt9) {
             	case 1 :
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4001:20: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' )
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4067:20: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' )
             	    {
             	    match('\\'); 
             	    if ( input.LA(1)=='\"'||input.LA(1)=='\''||input.LA(1)=='\\'||input.LA(1)=='b'||input.LA(1)=='f'||input.LA(1)=='n'||input.LA(1)=='r'||input.LA(1)=='t' ) {
@@ -1766,7 +1766,7 @@ public class InternalJcmLexer extends Lexer {
             	    }
             	    break;
             	case 2 :
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4001:61: ~ ( ( '\\\\' | '\"' ) )
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4067:61: ~ ( ( '\\\\' | '\"' ) )
             	    {
             	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='!')||(input.LA(1)>='#' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
             	        input.consume();
@@ -1803,8 +1803,8 @@ public class InternalJcmLexer extends Lexer {
         try {
             int _type = RULE_INT_LITERAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4003:18: ( RULE_INTEGERNUMBER )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4003:20: RULE_INTEGERNUMBER
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4069:18: ( RULE_INTEGERNUMBER )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4069:20: RULE_INTEGERNUMBER
             {
             mRULE_INTEGERNUMBER(); 
 
@@ -1823,10 +1823,10 @@ public class InternalJcmLexer extends Lexer {
         try {
             int _type = RULE_REAL_LITERAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4005:19: ( ( RULE_INTEGERNUMBER )? '.' RULE_INTEGERNUMBER )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4005:21: ( RULE_INTEGERNUMBER )? '.' RULE_INTEGERNUMBER
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4071:19: ( ( RULE_INTEGERNUMBER )? '.' RULE_INTEGERNUMBER )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4071:21: ( RULE_INTEGERNUMBER )? '.' RULE_INTEGERNUMBER
             {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4005:21: ( RULE_INTEGERNUMBER )?
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4071:21: ( RULE_INTEGERNUMBER )?
             int alt10=2;
             int LA10_0 = input.LA(1);
 
@@ -1835,7 +1835,7 @@ public class InternalJcmLexer extends Lexer {
             }
             switch (alt10) {
                 case 1 :
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4005:21: RULE_INTEGERNUMBER
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4071:21: RULE_INTEGERNUMBER
                     {
                     mRULE_INTEGERNUMBER(); 
 
@@ -1860,10 +1860,10 @@ public class InternalJcmLexer extends Lexer {
     // $ANTLR start "RULE_INTEGERNUMBER"
     public final void mRULE_INTEGERNUMBER() throws RecognitionException {
         try {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4007:29: ( ( '0' | '1' .. '9' ( '0' .. '9' )* | '0' ( '0' .. '7' )+ | RULE_HEXPREFIX ( RULE_HEXDIGIT )+ ) )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4007:31: ( '0' | '1' .. '9' ( '0' .. '9' )* | '0' ( '0' .. '7' )+ | RULE_HEXPREFIX ( RULE_HEXDIGIT )+ )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4073:29: ( ( '0' | '1' .. '9' ( '0' .. '9' )* | '0' ( '0' .. '7' )+ | RULE_HEXPREFIX ( RULE_HEXDIGIT )+ ) )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4073:31: ( '0' | '1' .. '9' ( '0' .. '9' )* | '0' ( '0' .. '7' )+ | RULE_HEXPREFIX ( RULE_HEXDIGIT )+ )
             {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4007:31: ( '0' | '1' .. '9' ( '0' .. '9' )* | '0' ( '0' .. '7' )+ | RULE_HEXPREFIX ( RULE_HEXDIGIT )+ )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4073:31: ( '0' | '1' .. '9' ( '0' .. '9' )* | '0' ( '0' .. '7' )+ | RULE_HEXPREFIX ( RULE_HEXDIGIT )+ )
             int alt14=4;
             int LA14_0 = input.LA(1);
 
@@ -1902,17 +1902,17 @@ public class InternalJcmLexer extends Lexer {
             }
             switch (alt14) {
                 case 1 :
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4007:32: '0'
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4073:32: '0'
                     {
                     match('0'); 
 
                     }
                     break;
                 case 2 :
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4007:36: '1' .. '9' ( '0' .. '9' )*
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4073:36: '1' .. '9' ( '0' .. '9' )*
                     {
                     matchRange('1','9'); 
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4007:45: ( '0' .. '9' )*
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4073:45: ( '0' .. '9' )*
                     loop11:
                     do {
                         int alt11=2;
@@ -1925,7 +1925,7 @@ public class InternalJcmLexer extends Lexer {
 
                         switch (alt11) {
                     	case 1 :
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4007:46: '0' .. '9'
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4073:46: '0' .. '9'
                     	    {
                     	    matchRange('0','9'); 
 
@@ -1941,10 +1941,10 @@ public class InternalJcmLexer extends Lexer {
                     }
                     break;
                 case 3 :
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4007:57: '0' ( '0' .. '7' )+
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4073:57: '0' ( '0' .. '7' )+
                     {
                     match('0'); 
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4007:61: ( '0' .. '7' )+
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4073:61: ( '0' .. '7' )+
                     int cnt12=0;
                     loop12:
                     do {
@@ -1958,7 +1958,7 @@ public class InternalJcmLexer extends Lexer {
 
                         switch (alt12) {
                     	case 1 :
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4007:62: '0' .. '7'
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4073:62: '0' .. '7'
                     	    {
                     	    matchRange('0','7'); 
 
@@ -1978,10 +1978,10 @@ public class InternalJcmLexer extends Lexer {
                     }
                     break;
                 case 4 :
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4007:73: RULE_HEXPREFIX ( RULE_HEXDIGIT )+
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4073:73: RULE_HEXPREFIX ( RULE_HEXDIGIT )+
                     {
                     mRULE_HEXPREFIX(); 
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4007:88: ( RULE_HEXDIGIT )+
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4073:88: ( RULE_HEXDIGIT )+
                     int cnt13=0;
                     loop13:
                     do {
@@ -1995,7 +1995,7 @@ public class InternalJcmLexer extends Lexer {
 
                         switch (alt13) {
                     	case 1 :
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4007:88: RULE_HEXDIGIT
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4073:88: RULE_HEXDIGIT
                     	    {
                     	    mRULE_HEXDIGIT(); 
 
@@ -2029,10 +2029,10 @@ public class InternalJcmLexer extends Lexer {
     // $ANTLR start "RULE_HEXPREFIX"
     public final void mRULE_HEXPREFIX() throws RecognitionException {
         try {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4009:25: ( ( '0x' | '0X' ) )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4009:27: ( '0x' | '0X' )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4075:25: ( ( '0x' | '0X' ) )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4075:27: ( '0x' | '0X' )
             {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4009:27: ( '0x' | '0X' )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4075:27: ( '0x' | '0X' )
             int alt15=2;
             int LA15_0 = input.LA(1);
 
@@ -2060,7 +2060,7 @@ public class InternalJcmLexer extends Lexer {
             }
             switch (alt15) {
                 case 1 :
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4009:28: '0x'
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4075:28: '0x'
                     {
                     match("0x"); 
 
@@ -2068,7 +2068,7 @@ public class InternalJcmLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4009:33: '0X'
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4075:33: '0X'
                     {
                     match("0X"); 
 
@@ -2090,8 +2090,8 @@ public class InternalJcmLexer extends Lexer {
     // $ANTLR start "RULE_HEXDIGIT"
     public final void mRULE_HEXDIGIT() throws RecognitionException {
         try {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4011:24: ( ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' ) )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4011:26: ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4077:24: ( ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' ) )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4077:26: ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' )
             {
             if ( (input.LA(1)>='0' && input.LA(1)<='9')||(input.LA(1)>='A' && input.LA(1)<='F')||(input.LA(1)>='a' && input.LA(1)<='f') ) {
                 input.consume();
@@ -2116,10 +2116,10 @@ public class InternalJcmLexer extends Lexer {
         try {
             int _type = RULE_WS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4013:9: ( ( ' ' | '\\t' | '\\r' )+ )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4013:11: ( ' ' | '\\t' | '\\r' )+
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4079:9: ( ( ' ' | '\\t' | '\\r' )+ )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4079:11: ( ' ' | '\\t' | '\\r' )+
             {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4013:11: ( ' ' | '\\t' | '\\r' )+
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4079:11: ( ' ' | '\\t' | '\\r' )+
             int cnt16=0;
             loop16:
             do {
@@ -2173,12 +2173,12 @@ public class InternalJcmLexer extends Lexer {
         try {
             int _type = RULE_ML_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4015:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4015:19: '/*' ( options {greedy=false; } : . )* '*/'
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4081:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4081:19: '/*' ( options {greedy=false; } : . )* '*/'
             {
             match("/*"); 
 
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4015:24: ( options {greedy=false; } : . )*
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4081:24: ( options {greedy=false; } : . )*
             loop17:
             do {
                 int alt17=2;
@@ -2203,7 +2203,7 @@ public class InternalJcmLexer extends Lexer {
 
                 switch (alt17) {
             	case 1 :
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4015:52: .
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4081:52: .
             	    {
             	    matchAny(); 
 
@@ -2233,12 +2233,12 @@ public class InternalJcmLexer extends Lexer {
         try {
             int _type = RULE_SL_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4017:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4017:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4083:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4083:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
             {
             match("//"); 
 
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4017:24: (~ ( ( '\\n' | '\\r' ) ) )*
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4083:24: (~ ( ( '\\n' | '\\r' ) ) )*
             loop18:
             do {
                 int alt18=2;
@@ -2251,7 +2251,7 @@ public class InternalJcmLexer extends Lexer {
 
                 switch (alt18) {
             	case 1 :
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4017:24: ~ ( ( '\\n' | '\\r' ) )
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4083:24: ~ ( ( '\\n' | '\\r' ) )
             	    {
             	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='\uFFFF') ) {
             	        input.consume();
@@ -2271,7 +2271,7 @@ public class InternalJcmLexer extends Lexer {
                 }
             } while (true);
 
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4017:40: ( ( '\\r' )? '\\n' )?
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4083:40: ( ( '\\r' )? '\\n' )?
             int alt20=2;
             int LA20_0 = input.LA(1);
 
@@ -2280,9 +2280,9 @@ public class InternalJcmLexer extends Lexer {
             }
             switch (alt20) {
                 case 1 :
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4017:41: ( '\\r' )? '\\n'
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4083:41: ( '\\r' )? '\\n'
                     {
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4017:41: ( '\\r' )?
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4083:41: ( '\\r' )?
                     int alt19=2;
                     int LA19_0 = input.LA(1);
 
@@ -2291,7 +2291,7 @@ public class InternalJcmLexer extends Lexer {
                     }
                     switch (alt19) {
                         case 1 :
-                            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4017:41: '\\r'
+                            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4083:41: '\\r'
                             {
                             match('\r'); 
 
@@ -2323,10 +2323,10 @@ public class InternalJcmLexer extends Lexer {
         try {
             int _type = RULE_NEWLINE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4019:14: ( ( '\\r' )? '\\n' )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4019:16: ( '\\r' )? '\\n'
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4085:14: ( ( '\\r' )? '\\n' )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4085:16: ( '\\r' )? '\\n'
             {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4019:16: ( '\\r' )?
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4085:16: ( '\\r' )?
             int alt21=2;
             int LA21_0 = input.LA(1);
 
@@ -2335,7 +2335,7 @@ public class InternalJcmLexer extends Lexer {
             }
             switch (alt21) {
                 case 1 :
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4019:16: '\\r'
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4085:16: '\\r'
                     {
                     match('\r'); 
 

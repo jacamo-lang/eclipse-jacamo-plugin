@@ -16,6 +16,7 @@ import org.eclipse.emf.ecore.EObject;
  * <ul>
  *   <li>{@link jacamoide.xtext.jcm.jcm.Scheme#getName <em>Name</em>}</li>
  *   <li>{@link jacamoide.xtext.jcm.jcm.Scheme#getKind <em>Kind</em>}</li>
+ *   <li>{@link jacamoide.xtext.jcm.jcm.Scheme#getDebug <em>Debug</em>}</li>
  *   <li>{@link jacamoide.xtext.jcm.jcm.Scheme#getOwner <em>Owner</em>}</li>
  *   <li>{@link jacamoide.xtext.jcm.jcm.Scheme#getOther <em>Other</em>}</li>
  *   <li>{@link jacamoide.xtext.jcm.jcm.Scheme#getString <em>String</em>}</li>
@@ -82,6 +83,22 @@ public interface Scheme extends EObject
    * @generated
    */
   void setKind(String value);
+
+  /**
+   * Returns the value of the '<em><b>Debug</b></em>' containment reference list.
+   * The list contents are of type {@link jacamoide.xtext.jcm.jcm.Literal}.
+   * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of the '<em>Debug</em>' containment reference list isn't clear,
+   * there really should be more of a description here...
+   * </p>
+   * <!-- end-user-doc -->
+   * @return the value of the '<em>Debug</em>' containment reference list.
+   * @see jacamoide.xtext.jcm.jcm.JcmPackage#getScheme_Debug()
+   * @model containment="true"
+   * @generated
+   */
+  EList<Literal> getDebug();
 
   /**
    * Returns the value of the '<em><b>Owner</b></em>' attribute list.

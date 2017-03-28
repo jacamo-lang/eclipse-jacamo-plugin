@@ -76,13 +76,21 @@ public class JcmSyntacticSequencer extends AbstractSyntacticSequencer {
 	protected AbstractElementAlias match_Group_EOLParserRuleCall_4_1_a;
 	protected AbstractElementAlias match_Group_EOLParserRuleCall_4_2_1_3_p;
 	protected AbstractElementAlias match_Group_EOLParserRuleCall_4_2_2_3_p;
+	protected AbstractElementAlias match_Group_EOLParserRuleCall_4_2_3_2_p;
 	protected AbstractElementAlias match_Group_EOLParserRuleCall_4_2_4_3_p;
 	protected AbstractElementAlias match_Group_EOLParserRuleCall_5_a;
 	protected AbstractElementAlias match_Group___CommaKeyword_4_2_5_2_2_1_or_EOLParserRuleCall_4_2_5_2_2_0__p;
-	protected AbstractElementAlias match_Group___LeftCurlyBracketKeyword_4_0_EOLParserRuleCall_4_1_a_____DebugKeyword_4_2_3_0_EOLParserRuleCall_4_2_3_1_p___or___PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1____a_RightCurlyBracketKeyword_4_3__q;
-	protected AbstractElementAlias match_Group_____DebugKeyword_4_2_3_0_EOLParserRuleCall_4_2_3_1_p___or___PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1____a;
-	protected AbstractElementAlias match_Group_____DebugKeyword_4_2_3_0_EOLParserRuleCall_4_2_3_1_p__a_PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1__a;
-	protected AbstractElementAlias match_Group_____DebugKeyword_4_2_3_0_EOLParserRuleCall_4_2_3_1_p__a_PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1__p;
+	protected AbstractElementAlias match_Group___DebugKeyword_4_2_3_0_EOLParserRuleCall_4_2_3_2_p___DebugKeyword_4_2_3_0_EOLParserRuleCall_4_2_3_2_p__a___PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1__p__a;
+	protected AbstractElementAlias match_Group___DebugKeyword_4_2_3_0_EOLParserRuleCall_4_2_3_2_p___PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1__a__a;
+	protected AbstractElementAlias match_Group___DebugKeyword_4_2_3_0_EOLParserRuleCall_4_2_3_2_p__a;
+	protected AbstractElementAlias match_Group___EOLParserRuleCall_4_2_3_2_p___PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1__a_DebugKeyword_4_2_3_0__a;
+	protected AbstractElementAlias match_Group___EOLParserRuleCall_4_2_3_2_p___PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1__a_DebugKeyword_4_2_3_0__p;
+	protected AbstractElementAlias match_Group___LeftCurlyBracketKeyword_4_0_EOLParserRuleCall_4_1_a_____DebugKeyword_4_2_3_0_EOLParserRuleCall_4_2_3_2_p___or___PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1____a_RightCurlyBracketKeyword_4_3__q;
+	protected AbstractElementAlias match_Group___PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1__a;
+	protected AbstractElementAlias match_Group___PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1__p;
+	protected AbstractElementAlias match_Group_____DebugKeyword_4_2_3_0_EOLParserRuleCall_4_2_3_2_p___or___PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1____a;
+	protected AbstractElementAlias match_Group_____DebugKeyword_4_2_3_0_EOLParserRuleCall_4_2_3_2_p__a_PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1__a;
+	protected AbstractElementAlias match_Group_____DebugKeyword_4_2_3_0_EOLParserRuleCall_4_2_3_2_p__a_PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1__p;
 	protected AbstractElementAlias match_JcmModel_EOLParserRuleCall_0_a;
 	protected AbstractElementAlias match_JcmModel_EOLParserRuleCall_12_a;
 	protected AbstractElementAlias match_JcmModel_EOLParserRuleCall_4_a;
@@ -100,18 +108,32 @@ public class JcmSyntacticSequencer extends AbstractSyntacticSequencer {
 	protected AbstractElementAlias match_Scheme_EOLParserRuleCall_4_2_1_3_p;
 	protected AbstractElementAlias match_Scheme_EOLParserRuleCall_4_2_2_3_p;
 	protected AbstractElementAlias match_Scheme_EOLParserRuleCall_5_a;
-	protected AbstractElementAlias match_Scheme___DebugKeyword_4_2_0_0_EOLParserRuleCall_4_2_0_1_p__a;
-	protected AbstractElementAlias match_Scheme___LeftCurlyBracketKeyword_4_0_EOLParserRuleCall_4_1_a___DebugKeyword_4_2_0_0_EOLParserRuleCall_4_2_0_1_p__a_RightCurlyBracketKeyword_4_3__q;
+	protected AbstractElementAlias match_Scheme___DebugKeyword_4_2_0_0_EOLParserRuleCall_4_2_0_2_p__a;
+	protected AbstractElementAlias match_Scheme___DebugKeyword_4_2_0_0_q_EOLParserRuleCall_4_2_0_2__a;
+	protected AbstractElementAlias match_Scheme___EOLParserRuleCall_4_2_0_2_p_DebugKeyword_4_2_0_0__a;
+	protected AbstractElementAlias match_Scheme___EOLParserRuleCall_4_2_0_2_p_DebugKeyword_4_2_0_0__p;
+	protected AbstractElementAlias match_Scheme___LeftCurlyBracketKeyword_4_0_EOLParserRuleCall_4_1_a___DebugKeyword_4_2_0_0_EOLParserRuleCall_4_2_0_2_p__a_RightCurlyBracketKeyword_4_3__q;
 	protected AbstractElementAlias match_Workspace_EOLParserRuleCall_3_a;
+	protected AbstractElementAlias match_Workspace_EOLParserRuleCall_4_2_2_p;
 	protected AbstractElementAlias match_Workspace_EOLParserRuleCall_6_a;
-	protected AbstractElementAlias match_Workspace___AgentsKeyword_4_1_0_ColonKeyword_4_1_1___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a___DebugKeyword_4_2_0_EOLParserRuleCall_4_2_1_p__a__a;
-	protected AbstractElementAlias match_Workspace___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p_____DebugKeyword_4_2_0_EOLParserRuleCall_4_2_1_p__a_AgentsKeyword_4_1_0_ColonKeyword_4_1_1__a__a;
+	protected AbstractElementAlias match_Workspace___AgentsKeyword_4_1_0_ColonKeyword_4_1_1___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a___DebugKeyword_4_2_0_EOLParserRuleCall_4_2_2_p__a__a;
+	protected AbstractElementAlias match_Workspace___AgentsKeyword_4_1_0_ColonKeyword_4_1_1___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a__a;
+	protected AbstractElementAlias match_Workspace___AgentsKeyword_4_1_0_ColonKeyword_4_1_1___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a__p;
+	protected AbstractElementAlias match_Workspace___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p_____DebugKeyword_4_2_0_EOLParserRuleCall_4_2_2_p__a_AgentsKeyword_4_1_0_ColonKeyword_4_1_1__a__a;
 	protected AbstractElementAlias match_Workspace___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a;
 	protected AbstractElementAlias match_Workspace___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p;
-	protected AbstractElementAlias match_Workspace___DebugKeyword_4_2_0_EOLParserRuleCall_4_2_1_p__a;
-	protected AbstractElementAlias match_Workspace_____DebugKeyword_4_2_0_EOLParserRuleCall_4_2_1_p__a_AgentsKeyword_4_1_0_ColonKeyword_4_1_1_AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a_____DebugKeyword_4_2_0_EOLParserRuleCall_4_2_1_p__a_AgentsKeyword_4_1_0_ColonKeyword_4_1_1__a__a;
-	protected AbstractElementAlias match_Workspace_____DebugKeyword_4_2_0_EOLParserRuleCall_4_2_1_p__a_AgentsKeyword_4_1_0_ColonKeyword_4_1_1___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a__p;
-	protected AbstractElementAlias match_Workspace_____DebugKeyword_4_2_0_EOLParserRuleCall_4_2_1_p__a_AgentsKeyword_4_1_0_ColonKeyword_4_1_1__a;
+	protected AbstractElementAlias match_Workspace___DebugKeyword_4_2_0_EOLParserRuleCall_4_2_2_p___AgentsKeyword_4_1_0_ColonKeyword_4_1_1___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a__a__a;
+	protected AbstractElementAlias match_Workspace___DebugKeyword_4_2_0_EOLParserRuleCall_4_2_2_p___DebugKeyword_4_2_0_EOLParserRuleCall_4_2_2_p__a___AgentsKeyword_4_1_0_ColonKeyword_4_1_1___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a__p__a;
+	protected AbstractElementAlias match_Workspace___DebugKeyword_4_2_0_EOLParserRuleCall_4_2_2_p__a;
+	protected AbstractElementAlias match_Workspace___DebugKeyword_4_2_0___EOLParserRuleCall_4_2_2_p_DebugKeyword_4_2_0__a_EOLParserRuleCall_4_2_2_p___AgentsKeyword_4_1_0_ColonKeyword_4_1_1__p_AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p_____AsteriskKeyword_4_1_2_0_1_or_____AgentsKeyword_4_1_0_ColonKeyword_4_1_1__p_AsteriskKeyword_4_1_2_0_1_______CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a__a;
+	protected AbstractElementAlias match_Workspace___DebugKeyword_4_2_0___EOLParserRuleCall_4_2_2_p_DebugKeyword_4_2_0__a___or_______AgentsKeyword_4_1_0_ColonKeyword_4_1_1__p_or___DebugKeyword_4_2_0___EOLParserRuleCall_4_2_2_p_DebugKeyword_4_2_0__a_EOLParserRuleCall_4_2_2_p___AgentsKeyword_4_1_0_ColonKeyword_4_1_1__p_______DebugKeyword_4_2_0___EOLParserRuleCall_4_2_2_p_DebugKeyword_4_2_0__a_EOLParserRuleCall_4_2_2_p___AgentsKeyword_4_1_0_ColonKeyword_4_1_1__p__a_DebugKeyword_4_2_0___EOLParserRuleCall_4_2_2_p_DebugKeyword_4_2_0__a__;
+	protected AbstractElementAlias match_Workspace___EOLParserRuleCall_4_2_2_p___AgentsKeyword_4_1_0_ColonKeyword_4_1_1___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a__a_DebugKeyword_4_2_0__a;
+	protected AbstractElementAlias match_Workspace___EOLParserRuleCall_4_2_2_p___AgentsKeyword_4_1_0_ColonKeyword_4_1_1___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a__a_DebugKeyword_4_2_0__p;
+	protected AbstractElementAlias match_Workspace_____AsteriskKeyword_4_1_2_0_1_or_____AgentsKeyword_4_1_0_ColonKeyword_4_1_1__p_AsteriskKeyword_4_1_2_0_1_______CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a;
+	protected AbstractElementAlias match_Workspace_____DebugKeyword_4_2_0_EOLParserRuleCall_4_2_2_p__a_AgentsKeyword_4_1_0_ColonKeyword_4_1_1_AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a_____DebugKeyword_4_2_0_EOLParserRuleCall_4_2_2_p__a_AgentsKeyword_4_1_0_ColonKeyword_4_1_1__a__a;
+	protected AbstractElementAlias match_Workspace_____DebugKeyword_4_2_0_EOLParserRuleCall_4_2_2_p__a_AgentsKeyword_4_1_0_ColonKeyword_4_1_1___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a__p;
+	protected AbstractElementAlias match_Workspace_____DebugKeyword_4_2_0_EOLParserRuleCall_4_2_2_p__a_AgentsKeyword_4_1_0_ColonKeyword_4_1_1__a;
+	protected AbstractElementAlias match_Workspace_______AgentsKeyword_4_1_0_ColonKeyword_4_1_1__p_or___DebugKeyword_4_2_0___EOLParserRuleCall_4_2_2_p_DebugKeyword_4_2_0__a_EOLParserRuleCall_4_2_2_p___AgentsKeyword_4_1_0_ColonKeyword_4_1_1__p_______DebugKeyword_4_2_0___EOLParserRuleCall_4_2_2_p_DebugKeyword_4_2_0__a_EOLParserRuleCall_4_2_2_p___AgentsKeyword_4_1_0_ColonKeyword_4_1_1__p__a_DebugKeyword_4_2_0___EOLParserRuleCall_4_2_2_p_DebugKeyword_4_2_0__a_EOLParserRuleCall_4_2_2_p___AgentsKeyword_4_1_0_ColonKeyword_4_1_1__p_AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p_____AsteriskKeyword_4_1_2_0_1_or_____AgentsKeyword_4_1_0_ColonKeyword_4_1_1__p_AsteriskKeyword_4_1_2_0_1_______CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a___DebugKeyword_4_2_0___EOLParserRuleCall_4_2_2_p_DebugKeyword_4_2_0__a_EOLParserRuleCall_4_2_2_p___AgentsKeyword_4_1_0_ColonKeyword_4_1_1__p_AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p_____AsteriskKeyword_4_1_2_0_1_or_____AgentsKeyword_4_1_0_ColonKeyword_4_1_1__p_AsteriskKeyword_4_1_2_0_1_______CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a__a__a;
 	
 	@Inject
 	protected void init(IGrammarAccess access) {
@@ -173,13 +195,21 @@ public class JcmSyntacticSequencer extends AbstractSyntacticSequencer {
 		match_Group_EOLParserRuleCall_4_1_a = new TokenAlias(true, true, grammarAccess.getGroupAccess().getEOLParserRuleCall_4_1());
 		match_Group_EOLParserRuleCall_4_2_1_3_p = new TokenAlias(true, false, grammarAccess.getGroupAccess().getEOLParserRuleCall_4_2_1_3());
 		match_Group_EOLParserRuleCall_4_2_2_3_p = new TokenAlias(true, false, grammarAccess.getGroupAccess().getEOLParserRuleCall_4_2_2_3());
+		match_Group_EOLParserRuleCall_4_2_3_2_p = new TokenAlias(true, false, grammarAccess.getGroupAccess().getEOLParserRuleCall_4_2_3_2());
 		match_Group_EOLParserRuleCall_4_2_4_3_p = new TokenAlias(true, false, grammarAccess.getGroupAccess().getEOLParserRuleCall_4_2_4_3());
 		match_Group_EOLParserRuleCall_5_a = new TokenAlias(true, true, grammarAccess.getGroupAccess().getEOLParserRuleCall_5());
 		match_Group___CommaKeyword_4_2_5_2_2_1_or_EOLParserRuleCall_4_2_5_2_2_0__p = new AlternativeAlias(true, false, new TokenAlias(false, false, grammarAccess.getGroupAccess().getCommaKeyword_4_2_5_2_2_1()), new TokenAlias(false, false, grammarAccess.getGroupAccess().getEOLParserRuleCall_4_2_5_2_2_0()));
-		match_Group___LeftCurlyBracketKeyword_4_0_EOLParserRuleCall_4_1_a_____DebugKeyword_4_2_3_0_EOLParserRuleCall_4_2_3_1_p___or___PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1____a_RightCurlyBracketKeyword_4_3__q = new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getGroupAccess().getLeftCurlyBracketKeyword_4_0()), new TokenAlias(true, true, grammarAccess.getGroupAccess().getEOLParserRuleCall_4_1()), new AlternativeAlias(true, true, new GroupAlias(false, false, new TokenAlias(false, false, grammarAccess.getGroupAccess().getDebugKeyword_4_2_3_0()), new TokenAlias(true, false, grammarAccess.getGroupAccess().getEOLParserRuleCall_4_2_3_1())), new GroupAlias(false, false, new TokenAlias(false, false, grammarAccess.getGroupAccess().getPlayersKeyword_4_2_5_0()), new TokenAlias(false, false, grammarAccess.getGroupAccess().getColonKeyword_4_2_5_1()))), new TokenAlias(false, false, grammarAccess.getGroupAccess().getRightCurlyBracketKeyword_4_3()));
-		match_Group_____DebugKeyword_4_2_3_0_EOLParserRuleCall_4_2_3_1_p___or___PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1____a = new AlternativeAlias(true, true, new GroupAlias(false, false, new TokenAlias(false, false, grammarAccess.getGroupAccess().getDebugKeyword_4_2_3_0()), new TokenAlias(true, false, grammarAccess.getGroupAccess().getEOLParserRuleCall_4_2_3_1())), new GroupAlias(false, false, new TokenAlias(false, false, grammarAccess.getGroupAccess().getPlayersKeyword_4_2_5_0()), new TokenAlias(false, false, grammarAccess.getGroupAccess().getColonKeyword_4_2_5_1())));
-		match_Group_____DebugKeyword_4_2_3_0_EOLParserRuleCall_4_2_3_1_p__a_PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1__a = new GroupAlias(true, true, new GroupAlias(true, true, new TokenAlias(false, false, grammarAccess.getGroupAccess().getDebugKeyword_4_2_3_0()), new TokenAlias(true, false, grammarAccess.getGroupAccess().getEOLParserRuleCall_4_2_3_1())), new TokenAlias(false, false, grammarAccess.getGroupAccess().getPlayersKeyword_4_2_5_0()), new TokenAlias(false, false, grammarAccess.getGroupAccess().getColonKeyword_4_2_5_1()));
-		match_Group_____DebugKeyword_4_2_3_0_EOLParserRuleCall_4_2_3_1_p__a_PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1__p = new GroupAlias(true, false, new GroupAlias(true, true, new TokenAlias(false, false, grammarAccess.getGroupAccess().getDebugKeyword_4_2_3_0()), new TokenAlias(true, false, grammarAccess.getGroupAccess().getEOLParserRuleCall_4_2_3_1())), new TokenAlias(false, false, grammarAccess.getGroupAccess().getPlayersKeyword_4_2_5_0()), new TokenAlias(false, false, grammarAccess.getGroupAccess().getColonKeyword_4_2_5_1()));
+		match_Group___DebugKeyword_4_2_3_0_EOLParserRuleCall_4_2_3_2_p___DebugKeyword_4_2_3_0_EOLParserRuleCall_4_2_3_2_p__a___PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1__p__a = new GroupAlias(true, true, new TokenAlias(false, false, grammarAccess.getGroupAccess().getDebugKeyword_4_2_3_0()), new TokenAlias(true, false, grammarAccess.getGroupAccess().getEOLParserRuleCall_4_2_3_2()), new GroupAlias(true, true, new TokenAlias(false, false, grammarAccess.getGroupAccess().getDebugKeyword_4_2_3_0()), new TokenAlias(true, false, grammarAccess.getGroupAccess().getEOLParserRuleCall_4_2_3_2())), new GroupAlias(true, false, new TokenAlias(false, false, grammarAccess.getGroupAccess().getPlayersKeyword_4_2_5_0()), new TokenAlias(false, false, grammarAccess.getGroupAccess().getColonKeyword_4_2_5_1())));
+		match_Group___DebugKeyword_4_2_3_0_EOLParserRuleCall_4_2_3_2_p___PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1__a__a = new GroupAlias(true, true, new TokenAlias(false, false, grammarAccess.getGroupAccess().getDebugKeyword_4_2_3_0()), new TokenAlias(true, false, grammarAccess.getGroupAccess().getEOLParserRuleCall_4_2_3_2()), new GroupAlias(true, true, new TokenAlias(false, false, grammarAccess.getGroupAccess().getPlayersKeyword_4_2_5_0()), new TokenAlias(false, false, grammarAccess.getGroupAccess().getColonKeyword_4_2_5_1())));
+		match_Group___DebugKeyword_4_2_3_0_EOLParserRuleCall_4_2_3_2_p__a = new GroupAlias(true, true, new TokenAlias(false, false, grammarAccess.getGroupAccess().getDebugKeyword_4_2_3_0()), new TokenAlias(true, false, grammarAccess.getGroupAccess().getEOLParserRuleCall_4_2_3_2()));
+		match_Group___EOLParserRuleCall_4_2_3_2_p___PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1__a_DebugKeyword_4_2_3_0__a = new GroupAlias(true, true, new TokenAlias(true, false, grammarAccess.getGroupAccess().getEOLParserRuleCall_4_2_3_2()), new GroupAlias(true, true, new TokenAlias(false, false, grammarAccess.getGroupAccess().getPlayersKeyword_4_2_5_0()), new TokenAlias(false, false, grammarAccess.getGroupAccess().getColonKeyword_4_2_5_1())), new TokenAlias(false, false, grammarAccess.getGroupAccess().getDebugKeyword_4_2_3_0()));
+		match_Group___EOLParserRuleCall_4_2_3_2_p___PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1__a_DebugKeyword_4_2_3_0__p = new GroupAlias(true, false, new TokenAlias(true, false, grammarAccess.getGroupAccess().getEOLParserRuleCall_4_2_3_2()), new GroupAlias(true, true, new TokenAlias(false, false, grammarAccess.getGroupAccess().getPlayersKeyword_4_2_5_0()), new TokenAlias(false, false, grammarAccess.getGroupAccess().getColonKeyword_4_2_5_1())), new TokenAlias(false, false, grammarAccess.getGroupAccess().getDebugKeyword_4_2_3_0()));
+		match_Group___LeftCurlyBracketKeyword_4_0_EOLParserRuleCall_4_1_a_____DebugKeyword_4_2_3_0_EOLParserRuleCall_4_2_3_2_p___or___PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1____a_RightCurlyBracketKeyword_4_3__q = new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getGroupAccess().getLeftCurlyBracketKeyword_4_0()), new TokenAlias(true, true, grammarAccess.getGroupAccess().getEOLParserRuleCall_4_1()), new AlternativeAlias(true, true, new GroupAlias(false, false, new TokenAlias(false, false, grammarAccess.getGroupAccess().getDebugKeyword_4_2_3_0()), new TokenAlias(true, false, grammarAccess.getGroupAccess().getEOLParserRuleCall_4_2_3_2())), new GroupAlias(false, false, new TokenAlias(false, false, grammarAccess.getGroupAccess().getPlayersKeyword_4_2_5_0()), new TokenAlias(false, false, grammarAccess.getGroupAccess().getColonKeyword_4_2_5_1()))), new TokenAlias(false, false, grammarAccess.getGroupAccess().getRightCurlyBracketKeyword_4_3()));
+		match_Group___PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1__a = new GroupAlias(true, true, new TokenAlias(false, false, grammarAccess.getGroupAccess().getPlayersKeyword_4_2_5_0()), new TokenAlias(false, false, grammarAccess.getGroupAccess().getColonKeyword_4_2_5_1()));
+		match_Group___PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1__p = new GroupAlias(true, false, new TokenAlias(false, false, grammarAccess.getGroupAccess().getPlayersKeyword_4_2_5_0()), new TokenAlias(false, false, grammarAccess.getGroupAccess().getColonKeyword_4_2_5_1()));
+		match_Group_____DebugKeyword_4_2_3_0_EOLParserRuleCall_4_2_3_2_p___or___PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1____a = new AlternativeAlias(true, true, new GroupAlias(false, false, new TokenAlias(false, false, grammarAccess.getGroupAccess().getDebugKeyword_4_2_3_0()), new TokenAlias(true, false, grammarAccess.getGroupAccess().getEOLParserRuleCall_4_2_3_2())), new GroupAlias(false, false, new TokenAlias(false, false, grammarAccess.getGroupAccess().getPlayersKeyword_4_2_5_0()), new TokenAlias(false, false, grammarAccess.getGroupAccess().getColonKeyword_4_2_5_1())));
+		match_Group_____DebugKeyword_4_2_3_0_EOLParserRuleCall_4_2_3_2_p__a_PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1__a = new GroupAlias(true, true, new GroupAlias(true, true, new TokenAlias(false, false, grammarAccess.getGroupAccess().getDebugKeyword_4_2_3_0()), new TokenAlias(true, false, grammarAccess.getGroupAccess().getEOLParserRuleCall_4_2_3_2())), new TokenAlias(false, false, grammarAccess.getGroupAccess().getPlayersKeyword_4_2_5_0()), new TokenAlias(false, false, grammarAccess.getGroupAccess().getColonKeyword_4_2_5_1()));
+		match_Group_____DebugKeyword_4_2_3_0_EOLParserRuleCall_4_2_3_2_p__a_PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1__p = new GroupAlias(true, false, new GroupAlias(true, true, new TokenAlias(false, false, grammarAccess.getGroupAccess().getDebugKeyword_4_2_3_0()), new TokenAlias(true, false, grammarAccess.getGroupAccess().getEOLParserRuleCall_4_2_3_2())), new TokenAlias(false, false, grammarAccess.getGroupAccess().getPlayersKeyword_4_2_5_0()), new TokenAlias(false, false, grammarAccess.getGroupAccess().getColonKeyword_4_2_5_1()));
 		match_JcmModel_EOLParserRuleCall_0_a = new TokenAlias(true, true, grammarAccess.getJcmModelAccess().getEOLParserRuleCall_0());
 		match_JcmModel_EOLParserRuleCall_12_a = new TokenAlias(true, true, grammarAccess.getJcmModelAccess().getEOLParserRuleCall_12());
 		match_JcmModel_EOLParserRuleCall_4_a = new TokenAlias(true, true, grammarAccess.getJcmModelAccess().getEOLParserRuleCall_4());
@@ -197,18 +227,32 @@ public class JcmSyntacticSequencer extends AbstractSyntacticSequencer {
 		match_Scheme_EOLParserRuleCall_4_2_1_3_p = new TokenAlias(true, false, grammarAccess.getSchemeAccess().getEOLParserRuleCall_4_2_1_3());
 		match_Scheme_EOLParserRuleCall_4_2_2_3_p = new TokenAlias(true, false, grammarAccess.getSchemeAccess().getEOLParserRuleCall_4_2_2_3());
 		match_Scheme_EOLParserRuleCall_5_a = new TokenAlias(true, true, grammarAccess.getSchemeAccess().getEOLParserRuleCall_5());
-		match_Scheme___DebugKeyword_4_2_0_0_EOLParserRuleCall_4_2_0_1_p__a = new GroupAlias(true, true, new TokenAlias(false, false, grammarAccess.getSchemeAccess().getDebugKeyword_4_2_0_0()), new TokenAlias(true, false, grammarAccess.getSchemeAccess().getEOLParserRuleCall_4_2_0_1()));
-		match_Scheme___LeftCurlyBracketKeyword_4_0_EOLParserRuleCall_4_1_a___DebugKeyword_4_2_0_0_EOLParserRuleCall_4_2_0_1_p__a_RightCurlyBracketKeyword_4_3__q = new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getSchemeAccess().getLeftCurlyBracketKeyword_4_0()), new TokenAlias(true, true, grammarAccess.getSchemeAccess().getEOLParserRuleCall_4_1()), new GroupAlias(true, true, new TokenAlias(false, false, grammarAccess.getSchemeAccess().getDebugKeyword_4_2_0_0()), new TokenAlias(true, false, grammarAccess.getSchemeAccess().getEOLParserRuleCall_4_2_0_1())), new TokenAlias(false, false, grammarAccess.getSchemeAccess().getRightCurlyBracketKeyword_4_3()));
+		match_Scheme___DebugKeyword_4_2_0_0_EOLParserRuleCall_4_2_0_2_p__a = new GroupAlias(true, true, new TokenAlias(false, false, grammarAccess.getSchemeAccess().getDebugKeyword_4_2_0_0()), new TokenAlias(true, false, grammarAccess.getSchemeAccess().getEOLParserRuleCall_4_2_0_2()));
+		match_Scheme___DebugKeyword_4_2_0_0_q_EOLParserRuleCall_4_2_0_2__a = new GroupAlias(true, true, new TokenAlias(false, true, grammarAccess.getSchemeAccess().getDebugKeyword_4_2_0_0()), new TokenAlias(false, false, grammarAccess.getSchemeAccess().getEOLParserRuleCall_4_2_0_2()));
+		match_Scheme___EOLParserRuleCall_4_2_0_2_p_DebugKeyword_4_2_0_0__a = new GroupAlias(true, true, new TokenAlias(true, false, grammarAccess.getSchemeAccess().getEOLParserRuleCall_4_2_0_2()), new TokenAlias(false, false, grammarAccess.getSchemeAccess().getDebugKeyword_4_2_0_0()));
+		match_Scheme___EOLParserRuleCall_4_2_0_2_p_DebugKeyword_4_2_0_0__p = new GroupAlias(true, false, new TokenAlias(true, false, grammarAccess.getSchemeAccess().getEOLParserRuleCall_4_2_0_2()), new TokenAlias(false, false, grammarAccess.getSchemeAccess().getDebugKeyword_4_2_0_0()));
+		match_Scheme___LeftCurlyBracketKeyword_4_0_EOLParserRuleCall_4_1_a___DebugKeyword_4_2_0_0_EOLParserRuleCall_4_2_0_2_p__a_RightCurlyBracketKeyword_4_3__q = new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getSchemeAccess().getLeftCurlyBracketKeyword_4_0()), new TokenAlias(true, true, grammarAccess.getSchemeAccess().getEOLParserRuleCall_4_1()), new GroupAlias(true, true, new TokenAlias(false, false, grammarAccess.getSchemeAccess().getDebugKeyword_4_2_0_0()), new TokenAlias(true, false, grammarAccess.getSchemeAccess().getEOLParserRuleCall_4_2_0_2())), new TokenAlias(false, false, grammarAccess.getSchemeAccess().getRightCurlyBracketKeyword_4_3()));
 		match_Workspace_EOLParserRuleCall_3_a = new TokenAlias(true, true, grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_3());
+		match_Workspace_EOLParserRuleCall_4_2_2_p = new TokenAlias(true, false, grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_4_2_2());
 		match_Workspace_EOLParserRuleCall_6_a = new TokenAlias(true, true, grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_6());
-		match_Workspace___AgentsKeyword_4_1_0_ColonKeyword_4_1_1___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a___DebugKeyword_4_2_0_EOLParserRuleCall_4_2_1_p__a__a = new GroupAlias(true, true, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getAgentsKeyword_4_1_0()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getColonKeyword_4_1_1()), new GroupAlias(true, true, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getAsteriskKeyword_4_1_2_0_1()), new AlternativeAlias(true, false, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getCommaKeyword_4_1_2_1_1()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_4_1_2_1_0()))), new GroupAlias(true, true, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getDebugKeyword_4_2_0()), new TokenAlias(true, false, grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_4_2_1())));
-		match_Workspace___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p_____DebugKeyword_4_2_0_EOLParserRuleCall_4_2_1_p__a_AgentsKeyword_4_1_0_ColonKeyword_4_1_1__a__a = new GroupAlias(true, true, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getAsteriskKeyword_4_1_2_0_1()), new AlternativeAlias(true, false, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getCommaKeyword_4_1_2_1_1()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_4_1_2_1_0())), new GroupAlias(true, true, new GroupAlias(true, true, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getDebugKeyword_4_2_0()), new TokenAlias(true, false, grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_4_2_1())), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getAgentsKeyword_4_1_0()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getColonKeyword_4_1_1())));
+		match_Workspace___AgentsKeyword_4_1_0_ColonKeyword_4_1_1___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a___DebugKeyword_4_2_0_EOLParserRuleCall_4_2_2_p__a__a = new GroupAlias(true, true, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getAgentsKeyword_4_1_0()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getColonKeyword_4_1_1()), new GroupAlias(true, true, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getAsteriskKeyword_4_1_2_0_1()), new AlternativeAlias(true, false, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getCommaKeyword_4_1_2_1_1()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_4_1_2_1_0()))), new GroupAlias(true, true, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getDebugKeyword_4_2_0()), new TokenAlias(true, false, grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_4_2_2())));
+		match_Workspace___AgentsKeyword_4_1_0_ColonKeyword_4_1_1___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a__a = new GroupAlias(true, true, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getAgentsKeyword_4_1_0()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getColonKeyword_4_1_1()), new GroupAlias(true, true, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getAsteriskKeyword_4_1_2_0_1()), new AlternativeAlias(true, false, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getCommaKeyword_4_1_2_1_1()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_4_1_2_1_0()))));
+		match_Workspace___AgentsKeyword_4_1_0_ColonKeyword_4_1_1___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a__p = new GroupAlias(true, false, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getAgentsKeyword_4_1_0()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getColonKeyword_4_1_1()), new GroupAlias(true, true, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getAsteriskKeyword_4_1_2_0_1()), new AlternativeAlias(true, false, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getCommaKeyword_4_1_2_1_1()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_4_1_2_1_0()))));
+		match_Workspace___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p_____DebugKeyword_4_2_0_EOLParserRuleCall_4_2_2_p__a_AgentsKeyword_4_1_0_ColonKeyword_4_1_1__a__a = new GroupAlias(true, true, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getAsteriskKeyword_4_1_2_0_1()), new AlternativeAlias(true, false, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getCommaKeyword_4_1_2_1_1()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_4_1_2_1_0())), new GroupAlias(true, true, new GroupAlias(true, true, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getDebugKeyword_4_2_0()), new TokenAlias(true, false, grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_4_2_2())), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getAgentsKeyword_4_1_0()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getColonKeyword_4_1_1())));
 		match_Workspace___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a = new GroupAlias(true, true, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getAsteriskKeyword_4_1_2_0_1()), new AlternativeAlias(true, false, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getCommaKeyword_4_1_2_1_1()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_4_1_2_1_0())));
 		match_Workspace___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p = new AlternativeAlias(true, false, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getCommaKeyword_4_1_2_1_1()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_4_1_2_1_0()));
-		match_Workspace___DebugKeyword_4_2_0_EOLParserRuleCall_4_2_1_p__a = new GroupAlias(true, true, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getDebugKeyword_4_2_0()), new TokenAlias(true, false, grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_4_2_1()));
-		match_Workspace_____DebugKeyword_4_2_0_EOLParserRuleCall_4_2_1_p__a_AgentsKeyword_4_1_0_ColonKeyword_4_1_1_AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a_____DebugKeyword_4_2_0_EOLParserRuleCall_4_2_1_p__a_AgentsKeyword_4_1_0_ColonKeyword_4_1_1__a__a = new GroupAlias(true, true, new GroupAlias(true, true, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getDebugKeyword_4_2_0()), new TokenAlias(true, false, grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_4_2_1())), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getAgentsKeyword_4_1_0()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getColonKeyword_4_1_1()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getAsteriskKeyword_4_1_2_0_1()), new AlternativeAlias(true, false, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getCommaKeyword_4_1_2_1_1()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_4_1_2_1_0())), new GroupAlias(true, true, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getAsteriskKeyword_4_1_2_0_1()), new AlternativeAlias(true, false, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getCommaKeyword_4_1_2_1_1()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_4_1_2_1_0()))), new GroupAlias(true, true, new GroupAlias(true, true, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getDebugKeyword_4_2_0()), new TokenAlias(true, false, grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_4_2_1())), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getAgentsKeyword_4_1_0()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getColonKeyword_4_1_1())));
-		match_Workspace_____DebugKeyword_4_2_0_EOLParserRuleCall_4_2_1_p__a_AgentsKeyword_4_1_0_ColonKeyword_4_1_1___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a__p = new GroupAlias(true, false, new GroupAlias(true, true, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getDebugKeyword_4_2_0()), new TokenAlias(true, false, grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_4_2_1())), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getAgentsKeyword_4_1_0()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getColonKeyword_4_1_1()), new GroupAlias(true, true, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getAsteriskKeyword_4_1_2_0_1()), new AlternativeAlias(true, false, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getCommaKeyword_4_1_2_1_1()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_4_1_2_1_0()))));
-		match_Workspace_____DebugKeyword_4_2_0_EOLParserRuleCall_4_2_1_p__a_AgentsKeyword_4_1_0_ColonKeyword_4_1_1__a = new GroupAlias(true, true, new GroupAlias(true, true, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getDebugKeyword_4_2_0()), new TokenAlias(true, false, grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_4_2_1())), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getAgentsKeyword_4_1_0()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getColonKeyword_4_1_1()));
+		match_Workspace___DebugKeyword_4_2_0_EOLParserRuleCall_4_2_2_p___AgentsKeyword_4_1_0_ColonKeyword_4_1_1___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a__a__a = new GroupAlias(true, true, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getDebugKeyword_4_2_0()), new TokenAlias(true, false, grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_4_2_2()), new GroupAlias(true, true, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getAgentsKeyword_4_1_0()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getColonKeyword_4_1_1()), new GroupAlias(true, true, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getAsteriskKeyword_4_1_2_0_1()), new AlternativeAlias(true, false, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getCommaKeyword_4_1_2_1_1()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_4_1_2_1_0())))));
+		match_Workspace___DebugKeyword_4_2_0_EOLParserRuleCall_4_2_2_p___DebugKeyword_4_2_0_EOLParserRuleCall_4_2_2_p__a___AgentsKeyword_4_1_0_ColonKeyword_4_1_1___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a__p__a = new GroupAlias(true, true, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getDebugKeyword_4_2_0()), new TokenAlias(true, false, grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_4_2_2()), new GroupAlias(true, true, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getDebugKeyword_4_2_0()), new TokenAlias(true, false, grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_4_2_2())), new GroupAlias(true, false, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getAgentsKeyword_4_1_0()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getColonKeyword_4_1_1()), new GroupAlias(true, true, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getAsteriskKeyword_4_1_2_0_1()), new AlternativeAlias(true, false, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getCommaKeyword_4_1_2_1_1()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_4_1_2_1_0())))));
+		match_Workspace___DebugKeyword_4_2_0_EOLParserRuleCall_4_2_2_p__a = new GroupAlias(true, true, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getDebugKeyword_4_2_0()), new TokenAlias(true, false, grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_4_2_2()));
+		match_Workspace___DebugKeyword_4_2_0___EOLParserRuleCall_4_2_2_p_DebugKeyword_4_2_0__a_EOLParserRuleCall_4_2_2_p___AgentsKeyword_4_1_0_ColonKeyword_4_1_1__p_AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p_____AsteriskKeyword_4_1_2_0_1_or_____AgentsKeyword_4_1_0_ColonKeyword_4_1_1__p_AsteriskKeyword_4_1_2_0_1_______CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a__a = new GroupAlias(true, true, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getDebugKeyword_4_2_0()), new GroupAlias(true, true, new TokenAlias(true, false, grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_4_2_2()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getDebugKeyword_4_2_0())), new TokenAlias(true, false, grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_4_2_2()), new GroupAlias(true, false, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getAgentsKeyword_4_1_0()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getColonKeyword_4_1_1())), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getAsteriskKeyword_4_1_2_0_1()), new AlternativeAlias(true, false, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getCommaKeyword_4_1_2_1_1()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_4_1_2_1_0())), new GroupAlias(true, true, new AlternativeAlias(false, false, new GroupAlias(false, false, new GroupAlias(true, false, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getAgentsKeyword_4_1_0()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getColonKeyword_4_1_1())), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getAsteriskKeyword_4_1_2_0_1())), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getAsteriskKeyword_4_1_2_0_1())), new AlternativeAlias(true, false, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getCommaKeyword_4_1_2_1_1()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_4_1_2_1_0()))));
+		match_Workspace___DebugKeyword_4_2_0___EOLParserRuleCall_4_2_2_p_DebugKeyword_4_2_0__a___or_______AgentsKeyword_4_1_0_ColonKeyword_4_1_1__p_or___DebugKeyword_4_2_0___EOLParserRuleCall_4_2_2_p_DebugKeyword_4_2_0__a_EOLParserRuleCall_4_2_2_p___AgentsKeyword_4_1_0_ColonKeyword_4_1_1__p_______DebugKeyword_4_2_0___EOLParserRuleCall_4_2_2_p_DebugKeyword_4_2_0__a_EOLParserRuleCall_4_2_2_p___AgentsKeyword_4_1_0_ColonKeyword_4_1_1__p__a_DebugKeyword_4_2_0___EOLParserRuleCall_4_2_2_p_DebugKeyword_4_2_0__a__ = new AlternativeAlias(false, false, new GroupAlias(false, false, new AlternativeAlias(false, false, new GroupAlias(false, false, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getDebugKeyword_4_2_0()), new GroupAlias(true, true, new TokenAlias(true, false, grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_4_2_2()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getDebugKeyword_4_2_0())), new TokenAlias(true, false, grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_4_2_2()), new GroupAlias(true, false, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getAgentsKeyword_4_1_0()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getColonKeyword_4_1_1()))), new GroupAlias(true, false, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getAgentsKeyword_4_1_0()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getColonKeyword_4_1_1()))), new GroupAlias(true, true, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getDebugKeyword_4_2_0()), new GroupAlias(true, true, new TokenAlias(true, false, grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_4_2_2()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getDebugKeyword_4_2_0())), new TokenAlias(true, false, grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_4_2_2()), new GroupAlias(true, false, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getAgentsKeyword_4_1_0()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getColonKeyword_4_1_1()))), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getDebugKeyword_4_2_0()), new GroupAlias(true, true, new TokenAlias(true, false, grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_4_2_2()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getDebugKeyword_4_2_0()))), new GroupAlias(false, false, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getDebugKeyword_4_2_0()), new GroupAlias(true, true, new TokenAlias(true, false, grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_4_2_2()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getDebugKeyword_4_2_0()))));
+		match_Workspace___EOLParserRuleCall_4_2_2_p___AgentsKeyword_4_1_0_ColonKeyword_4_1_1___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a__a_DebugKeyword_4_2_0__a = new GroupAlias(true, true, new TokenAlias(true, false, grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_4_2_2()), new GroupAlias(true, true, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getAgentsKeyword_4_1_0()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getColonKeyword_4_1_1()), new GroupAlias(true, true, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getAsteriskKeyword_4_1_2_0_1()), new AlternativeAlias(true, false, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getCommaKeyword_4_1_2_1_1()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_4_1_2_1_0())))), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getDebugKeyword_4_2_0()));
+		match_Workspace___EOLParserRuleCall_4_2_2_p___AgentsKeyword_4_1_0_ColonKeyword_4_1_1___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a__a_DebugKeyword_4_2_0__p = new GroupAlias(true, false, new TokenAlias(true, false, grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_4_2_2()), new GroupAlias(true, true, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getAgentsKeyword_4_1_0()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getColonKeyword_4_1_1()), new GroupAlias(true, true, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getAsteriskKeyword_4_1_2_0_1()), new AlternativeAlias(true, false, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getCommaKeyword_4_1_2_1_1()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_4_1_2_1_0())))), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getDebugKeyword_4_2_0()));
+		match_Workspace_____AsteriskKeyword_4_1_2_0_1_or_____AgentsKeyword_4_1_0_ColonKeyword_4_1_1__p_AsteriskKeyword_4_1_2_0_1_______CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a = new GroupAlias(true, true, new AlternativeAlias(false, false, new GroupAlias(false, false, new GroupAlias(true, false, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getAgentsKeyword_4_1_0()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getColonKeyword_4_1_1())), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getAsteriskKeyword_4_1_2_0_1())), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getAsteriskKeyword_4_1_2_0_1())), new AlternativeAlias(true, false, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getCommaKeyword_4_1_2_1_1()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_4_1_2_1_0())));
+		match_Workspace_____DebugKeyword_4_2_0_EOLParserRuleCall_4_2_2_p__a_AgentsKeyword_4_1_0_ColonKeyword_4_1_1_AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a_____DebugKeyword_4_2_0_EOLParserRuleCall_4_2_2_p__a_AgentsKeyword_4_1_0_ColonKeyword_4_1_1__a__a = new GroupAlias(true, true, new GroupAlias(true, true, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getDebugKeyword_4_2_0()), new TokenAlias(true, false, grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_4_2_2())), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getAgentsKeyword_4_1_0()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getColonKeyword_4_1_1()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getAsteriskKeyword_4_1_2_0_1()), new AlternativeAlias(true, false, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getCommaKeyword_4_1_2_1_1()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_4_1_2_1_0())), new GroupAlias(true, true, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getAsteriskKeyword_4_1_2_0_1()), new AlternativeAlias(true, false, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getCommaKeyword_4_1_2_1_1()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_4_1_2_1_0()))), new GroupAlias(true, true, new GroupAlias(true, true, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getDebugKeyword_4_2_0()), new TokenAlias(true, false, grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_4_2_2())), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getAgentsKeyword_4_1_0()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getColonKeyword_4_1_1())));
+		match_Workspace_____DebugKeyword_4_2_0_EOLParserRuleCall_4_2_2_p__a_AgentsKeyword_4_1_0_ColonKeyword_4_1_1___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a__p = new GroupAlias(true, false, new GroupAlias(true, true, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getDebugKeyword_4_2_0()), new TokenAlias(true, false, grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_4_2_2())), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getAgentsKeyword_4_1_0()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getColonKeyword_4_1_1()), new GroupAlias(true, true, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getAsteriskKeyword_4_1_2_0_1()), new AlternativeAlias(true, false, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getCommaKeyword_4_1_2_1_1()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_4_1_2_1_0()))));
+		match_Workspace_____DebugKeyword_4_2_0_EOLParserRuleCall_4_2_2_p__a_AgentsKeyword_4_1_0_ColonKeyword_4_1_1__a = new GroupAlias(true, true, new GroupAlias(true, true, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getDebugKeyword_4_2_0()), new TokenAlias(true, false, grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_4_2_2())), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getAgentsKeyword_4_1_0()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getColonKeyword_4_1_1()));
+		match_Workspace_______AgentsKeyword_4_1_0_ColonKeyword_4_1_1__p_or___DebugKeyword_4_2_0___EOLParserRuleCall_4_2_2_p_DebugKeyword_4_2_0__a_EOLParserRuleCall_4_2_2_p___AgentsKeyword_4_1_0_ColonKeyword_4_1_1__p_______DebugKeyword_4_2_0___EOLParserRuleCall_4_2_2_p_DebugKeyword_4_2_0__a_EOLParserRuleCall_4_2_2_p___AgentsKeyword_4_1_0_ColonKeyword_4_1_1__p__a_DebugKeyword_4_2_0___EOLParserRuleCall_4_2_2_p_DebugKeyword_4_2_0__a_EOLParserRuleCall_4_2_2_p___AgentsKeyword_4_1_0_ColonKeyword_4_1_1__p_AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p_____AsteriskKeyword_4_1_2_0_1_or_____AgentsKeyword_4_1_0_ColonKeyword_4_1_1__p_AsteriskKeyword_4_1_2_0_1_______CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a___DebugKeyword_4_2_0___EOLParserRuleCall_4_2_2_p_DebugKeyword_4_2_0__a_EOLParserRuleCall_4_2_2_p___AgentsKeyword_4_1_0_ColonKeyword_4_1_1__p_AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p_____AsteriskKeyword_4_1_2_0_1_or_____AgentsKeyword_4_1_0_ColonKeyword_4_1_1__p_AsteriskKeyword_4_1_2_0_1_______CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a__a__a = new GroupAlias(true, true, new AlternativeAlias(false, false, new GroupAlias(false, false, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getDebugKeyword_4_2_0()), new GroupAlias(true, true, new TokenAlias(true, false, grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_4_2_2()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getDebugKeyword_4_2_0())), new TokenAlias(true, false, grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_4_2_2()), new GroupAlias(true, false, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getAgentsKeyword_4_1_0()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getColonKeyword_4_1_1()))), new GroupAlias(true, false, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getAgentsKeyword_4_1_0()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getColonKeyword_4_1_1()))), new GroupAlias(true, true, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getDebugKeyword_4_2_0()), new GroupAlias(true, true, new TokenAlias(true, false, grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_4_2_2()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getDebugKeyword_4_2_0())), new TokenAlias(true, false, grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_4_2_2()), new GroupAlias(true, false, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getAgentsKeyword_4_1_0()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getColonKeyword_4_1_1()))), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getDebugKeyword_4_2_0()), new GroupAlias(true, true, new TokenAlias(true, false, grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_4_2_2()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getDebugKeyword_4_2_0())), new TokenAlias(true, false, grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_4_2_2()), new GroupAlias(true, false, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getAgentsKeyword_4_1_0()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getColonKeyword_4_1_1())), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getAsteriskKeyword_4_1_2_0_1()), new AlternativeAlias(true, false, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getCommaKeyword_4_1_2_1_1()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_4_1_2_1_0())), new GroupAlias(true, true, new AlternativeAlias(false, false, new GroupAlias(false, false, new GroupAlias(true, false, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getAgentsKeyword_4_1_0()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getColonKeyword_4_1_1())), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getAsteriskKeyword_4_1_2_0_1())), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getAsteriskKeyword_4_1_2_0_1())), new AlternativeAlias(true, false, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getCommaKeyword_4_1_2_1_1()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_4_1_2_1_0()))), new GroupAlias(true, true, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getDebugKeyword_4_2_0()), new GroupAlias(true, true, new TokenAlias(true, false, grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_4_2_2()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getDebugKeyword_4_2_0())), new TokenAlias(true, false, grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_4_2_2()), new GroupAlias(true, false, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getAgentsKeyword_4_1_0()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getColonKeyword_4_1_1())), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getAsteriskKeyword_4_1_2_0_1()), new AlternativeAlias(true, false, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getCommaKeyword_4_1_2_1_1()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_4_1_2_1_0())), new GroupAlias(true, true, new AlternativeAlias(false, false, new GroupAlias(false, false, new GroupAlias(true, false, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getAgentsKeyword_4_1_0()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getColonKeyword_4_1_1())), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getAsteriskKeyword_4_1_2_0_1())), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getAsteriskKeyword_4_1_2_0_1())), new AlternativeAlias(true, false, new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getCommaKeyword_4_1_2_1_1()), new TokenAlias(false, false, grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_4_1_2_1_0())))));
 	}
 	
 	@Override
@@ -348,20 +392,36 @@ public class JcmSyntacticSequencer extends AbstractSyntacticSequencer {
 				emit_Group_EOLParserRuleCall_4_2_1_3_p(semanticObject, getLastNavigableState(), syntaxNodes);
 			else if(match_Group_EOLParserRuleCall_4_2_2_3_p.equals(syntax))
 				emit_Group_EOLParserRuleCall_4_2_2_3_p(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if(match_Group_EOLParserRuleCall_4_2_3_2_p.equals(syntax))
+				emit_Group_EOLParserRuleCall_4_2_3_2_p(semanticObject, getLastNavigableState(), syntaxNodes);
 			else if(match_Group_EOLParserRuleCall_4_2_4_3_p.equals(syntax))
 				emit_Group_EOLParserRuleCall_4_2_4_3_p(semanticObject, getLastNavigableState(), syntaxNodes);
 			else if(match_Group_EOLParserRuleCall_5_a.equals(syntax))
 				emit_Group_EOLParserRuleCall_5_a(semanticObject, getLastNavigableState(), syntaxNodes);
 			else if(match_Group___CommaKeyword_4_2_5_2_2_1_or_EOLParserRuleCall_4_2_5_2_2_0__p.equals(syntax))
 				emit_Group___CommaKeyword_4_2_5_2_2_1_or_EOLParserRuleCall_4_2_5_2_2_0__p(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if(match_Group___LeftCurlyBracketKeyword_4_0_EOLParserRuleCall_4_1_a_____DebugKeyword_4_2_3_0_EOLParserRuleCall_4_2_3_1_p___or___PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1____a_RightCurlyBracketKeyword_4_3__q.equals(syntax))
-				emit_Group___LeftCurlyBracketKeyword_4_0_EOLParserRuleCall_4_1_a_____DebugKeyword_4_2_3_0_EOLParserRuleCall_4_2_3_1_p___or___PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1____a_RightCurlyBracketKeyword_4_3__q(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if(match_Group_____DebugKeyword_4_2_3_0_EOLParserRuleCall_4_2_3_1_p___or___PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1____a.equals(syntax))
-				emit_Group_____DebugKeyword_4_2_3_0_EOLParserRuleCall_4_2_3_1_p___or___PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1____a(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if(match_Group_____DebugKeyword_4_2_3_0_EOLParserRuleCall_4_2_3_1_p__a_PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1__a.equals(syntax))
-				emit_Group_____DebugKeyword_4_2_3_0_EOLParserRuleCall_4_2_3_1_p__a_PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1__a(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if(match_Group_____DebugKeyword_4_2_3_0_EOLParserRuleCall_4_2_3_1_p__a_PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1__p.equals(syntax))
-				emit_Group_____DebugKeyword_4_2_3_0_EOLParserRuleCall_4_2_3_1_p__a_PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1__p(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if(match_Group___DebugKeyword_4_2_3_0_EOLParserRuleCall_4_2_3_2_p___DebugKeyword_4_2_3_0_EOLParserRuleCall_4_2_3_2_p__a___PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1__p__a.equals(syntax))
+				emit_Group___DebugKeyword_4_2_3_0_EOLParserRuleCall_4_2_3_2_p___DebugKeyword_4_2_3_0_EOLParserRuleCall_4_2_3_2_p__a___PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1__p__a(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if(match_Group___DebugKeyword_4_2_3_0_EOLParserRuleCall_4_2_3_2_p___PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1__a__a.equals(syntax))
+				emit_Group___DebugKeyword_4_2_3_0_EOLParserRuleCall_4_2_3_2_p___PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1__a__a(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if(match_Group___DebugKeyword_4_2_3_0_EOLParserRuleCall_4_2_3_2_p__a.equals(syntax))
+				emit_Group___DebugKeyword_4_2_3_0_EOLParserRuleCall_4_2_3_2_p__a(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if(match_Group___EOLParserRuleCall_4_2_3_2_p___PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1__a_DebugKeyword_4_2_3_0__a.equals(syntax))
+				emit_Group___EOLParserRuleCall_4_2_3_2_p___PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1__a_DebugKeyword_4_2_3_0__a(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if(match_Group___EOLParserRuleCall_4_2_3_2_p___PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1__a_DebugKeyword_4_2_3_0__p.equals(syntax))
+				emit_Group___EOLParserRuleCall_4_2_3_2_p___PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1__a_DebugKeyword_4_2_3_0__p(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if(match_Group___LeftCurlyBracketKeyword_4_0_EOLParserRuleCall_4_1_a_____DebugKeyword_4_2_3_0_EOLParserRuleCall_4_2_3_2_p___or___PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1____a_RightCurlyBracketKeyword_4_3__q.equals(syntax))
+				emit_Group___LeftCurlyBracketKeyword_4_0_EOLParserRuleCall_4_1_a_____DebugKeyword_4_2_3_0_EOLParserRuleCall_4_2_3_2_p___or___PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1____a_RightCurlyBracketKeyword_4_3__q(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if(match_Group___PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1__a.equals(syntax))
+				emit_Group___PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1__a(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if(match_Group___PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1__p.equals(syntax))
+				emit_Group___PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1__p(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if(match_Group_____DebugKeyword_4_2_3_0_EOLParserRuleCall_4_2_3_2_p___or___PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1____a.equals(syntax))
+				emit_Group_____DebugKeyword_4_2_3_0_EOLParserRuleCall_4_2_3_2_p___or___PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1____a(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if(match_Group_____DebugKeyword_4_2_3_0_EOLParserRuleCall_4_2_3_2_p__a_PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1__a.equals(syntax))
+				emit_Group_____DebugKeyword_4_2_3_0_EOLParserRuleCall_4_2_3_2_p__a_PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1__a(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if(match_Group_____DebugKeyword_4_2_3_0_EOLParserRuleCall_4_2_3_2_p__a_PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1__p.equals(syntax))
+				emit_Group_____DebugKeyword_4_2_3_0_EOLParserRuleCall_4_2_3_2_p__a_PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1__p(semanticObject, getLastNavigableState(), syntaxNodes);
 			else if(match_JcmModel_EOLParserRuleCall_0_a.equals(syntax))
 				emit_JcmModel_EOLParserRuleCall_0_a(semanticObject, getLastNavigableState(), syntaxNodes);
 			else if(match_JcmModel_EOLParserRuleCall_12_a.equals(syntax))
@@ -396,30 +456,58 @@ public class JcmSyntacticSequencer extends AbstractSyntacticSequencer {
 				emit_Scheme_EOLParserRuleCall_4_2_2_3_p(semanticObject, getLastNavigableState(), syntaxNodes);
 			else if(match_Scheme_EOLParserRuleCall_5_a.equals(syntax))
 				emit_Scheme_EOLParserRuleCall_5_a(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if(match_Scheme___DebugKeyword_4_2_0_0_EOLParserRuleCall_4_2_0_1_p__a.equals(syntax))
-				emit_Scheme___DebugKeyword_4_2_0_0_EOLParserRuleCall_4_2_0_1_p__a(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if(match_Scheme___LeftCurlyBracketKeyword_4_0_EOLParserRuleCall_4_1_a___DebugKeyword_4_2_0_0_EOLParserRuleCall_4_2_0_1_p__a_RightCurlyBracketKeyword_4_3__q.equals(syntax))
-				emit_Scheme___LeftCurlyBracketKeyword_4_0_EOLParserRuleCall_4_1_a___DebugKeyword_4_2_0_0_EOLParserRuleCall_4_2_0_1_p__a_RightCurlyBracketKeyword_4_3__q(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if(match_Scheme___DebugKeyword_4_2_0_0_EOLParserRuleCall_4_2_0_2_p__a.equals(syntax))
+				emit_Scheme___DebugKeyword_4_2_0_0_EOLParserRuleCall_4_2_0_2_p__a(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if(match_Scheme___DebugKeyword_4_2_0_0_q_EOLParserRuleCall_4_2_0_2__a.equals(syntax))
+				emit_Scheme___DebugKeyword_4_2_0_0_q_EOLParserRuleCall_4_2_0_2__a(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if(match_Scheme___EOLParserRuleCall_4_2_0_2_p_DebugKeyword_4_2_0_0__a.equals(syntax))
+				emit_Scheme___EOLParserRuleCall_4_2_0_2_p_DebugKeyword_4_2_0_0__a(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if(match_Scheme___EOLParserRuleCall_4_2_0_2_p_DebugKeyword_4_2_0_0__p.equals(syntax))
+				emit_Scheme___EOLParserRuleCall_4_2_0_2_p_DebugKeyword_4_2_0_0__p(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if(match_Scheme___LeftCurlyBracketKeyword_4_0_EOLParserRuleCall_4_1_a___DebugKeyword_4_2_0_0_EOLParserRuleCall_4_2_0_2_p__a_RightCurlyBracketKeyword_4_3__q.equals(syntax))
+				emit_Scheme___LeftCurlyBracketKeyword_4_0_EOLParserRuleCall_4_1_a___DebugKeyword_4_2_0_0_EOLParserRuleCall_4_2_0_2_p__a_RightCurlyBracketKeyword_4_3__q(semanticObject, getLastNavigableState(), syntaxNodes);
 			else if(match_Workspace_EOLParserRuleCall_3_a.equals(syntax))
 				emit_Workspace_EOLParserRuleCall_3_a(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if(match_Workspace_EOLParserRuleCall_4_2_2_p.equals(syntax))
+				emit_Workspace_EOLParserRuleCall_4_2_2_p(semanticObject, getLastNavigableState(), syntaxNodes);
 			else if(match_Workspace_EOLParserRuleCall_6_a.equals(syntax))
 				emit_Workspace_EOLParserRuleCall_6_a(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if(match_Workspace___AgentsKeyword_4_1_0_ColonKeyword_4_1_1___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a___DebugKeyword_4_2_0_EOLParserRuleCall_4_2_1_p__a__a.equals(syntax))
-				emit_Workspace___AgentsKeyword_4_1_0_ColonKeyword_4_1_1___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a___DebugKeyword_4_2_0_EOLParserRuleCall_4_2_1_p__a__a(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if(match_Workspace___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p_____DebugKeyword_4_2_0_EOLParserRuleCall_4_2_1_p__a_AgentsKeyword_4_1_0_ColonKeyword_4_1_1__a__a.equals(syntax))
-				emit_Workspace___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p_____DebugKeyword_4_2_0_EOLParserRuleCall_4_2_1_p__a_AgentsKeyword_4_1_0_ColonKeyword_4_1_1__a__a(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if(match_Workspace___AgentsKeyword_4_1_0_ColonKeyword_4_1_1___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a___DebugKeyword_4_2_0_EOLParserRuleCall_4_2_2_p__a__a.equals(syntax))
+				emit_Workspace___AgentsKeyword_4_1_0_ColonKeyword_4_1_1___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a___DebugKeyword_4_2_0_EOLParserRuleCall_4_2_2_p__a__a(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if(match_Workspace___AgentsKeyword_4_1_0_ColonKeyword_4_1_1___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a__a.equals(syntax))
+				emit_Workspace___AgentsKeyword_4_1_0_ColonKeyword_4_1_1___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a__a(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if(match_Workspace___AgentsKeyword_4_1_0_ColonKeyword_4_1_1___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a__p.equals(syntax))
+				emit_Workspace___AgentsKeyword_4_1_0_ColonKeyword_4_1_1___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a__p(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if(match_Workspace___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p_____DebugKeyword_4_2_0_EOLParserRuleCall_4_2_2_p__a_AgentsKeyword_4_1_0_ColonKeyword_4_1_1__a__a.equals(syntax))
+				emit_Workspace___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p_____DebugKeyword_4_2_0_EOLParserRuleCall_4_2_2_p__a_AgentsKeyword_4_1_0_ColonKeyword_4_1_1__a__a(semanticObject, getLastNavigableState(), syntaxNodes);
 			else if(match_Workspace___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a.equals(syntax))
 				emit_Workspace___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a(semanticObject, getLastNavigableState(), syntaxNodes);
 			else if(match_Workspace___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p.equals(syntax))
 				emit_Workspace___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if(match_Workspace___DebugKeyword_4_2_0_EOLParserRuleCall_4_2_1_p__a.equals(syntax))
-				emit_Workspace___DebugKeyword_4_2_0_EOLParserRuleCall_4_2_1_p__a(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if(match_Workspace_____DebugKeyword_4_2_0_EOLParserRuleCall_4_2_1_p__a_AgentsKeyword_4_1_0_ColonKeyword_4_1_1_AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a_____DebugKeyword_4_2_0_EOLParserRuleCall_4_2_1_p__a_AgentsKeyword_4_1_0_ColonKeyword_4_1_1__a__a.equals(syntax))
-				emit_Workspace_____DebugKeyword_4_2_0_EOLParserRuleCall_4_2_1_p__a_AgentsKeyword_4_1_0_ColonKeyword_4_1_1_AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a_____DebugKeyword_4_2_0_EOLParserRuleCall_4_2_1_p__a_AgentsKeyword_4_1_0_ColonKeyword_4_1_1__a__a(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if(match_Workspace_____DebugKeyword_4_2_0_EOLParserRuleCall_4_2_1_p__a_AgentsKeyword_4_1_0_ColonKeyword_4_1_1___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a__p.equals(syntax))
-				emit_Workspace_____DebugKeyword_4_2_0_EOLParserRuleCall_4_2_1_p__a_AgentsKeyword_4_1_0_ColonKeyword_4_1_1___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a__p(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if(match_Workspace_____DebugKeyword_4_2_0_EOLParserRuleCall_4_2_1_p__a_AgentsKeyword_4_1_0_ColonKeyword_4_1_1__a.equals(syntax))
-				emit_Workspace_____DebugKeyword_4_2_0_EOLParserRuleCall_4_2_1_p__a_AgentsKeyword_4_1_0_ColonKeyword_4_1_1__a(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if(match_Workspace___DebugKeyword_4_2_0_EOLParserRuleCall_4_2_2_p___AgentsKeyword_4_1_0_ColonKeyword_4_1_1___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a__a__a.equals(syntax))
+				emit_Workspace___DebugKeyword_4_2_0_EOLParserRuleCall_4_2_2_p___AgentsKeyword_4_1_0_ColonKeyword_4_1_1___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a__a__a(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if(match_Workspace___DebugKeyword_4_2_0_EOLParserRuleCall_4_2_2_p___DebugKeyword_4_2_0_EOLParserRuleCall_4_2_2_p__a___AgentsKeyword_4_1_0_ColonKeyword_4_1_1___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a__p__a.equals(syntax))
+				emit_Workspace___DebugKeyword_4_2_0_EOLParserRuleCall_4_2_2_p___DebugKeyword_4_2_0_EOLParserRuleCall_4_2_2_p__a___AgentsKeyword_4_1_0_ColonKeyword_4_1_1___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a__p__a(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if(match_Workspace___DebugKeyword_4_2_0_EOLParserRuleCall_4_2_2_p__a.equals(syntax))
+				emit_Workspace___DebugKeyword_4_2_0_EOLParserRuleCall_4_2_2_p__a(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if(match_Workspace___DebugKeyword_4_2_0___EOLParserRuleCall_4_2_2_p_DebugKeyword_4_2_0__a_EOLParserRuleCall_4_2_2_p___AgentsKeyword_4_1_0_ColonKeyword_4_1_1__p_AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p_____AsteriskKeyword_4_1_2_0_1_or_____AgentsKeyword_4_1_0_ColonKeyword_4_1_1__p_AsteriskKeyword_4_1_2_0_1_______CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a__a.equals(syntax))
+				emit_Workspace___DebugKeyword_4_2_0___EOLParserRuleCall_4_2_2_p_DebugKeyword_4_2_0__a_EOLParserRuleCall_4_2_2_p___AgentsKeyword_4_1_0_ColonKeyword_4_1_1__p_AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p_____AsteriskKeyword_4_1_2_0_1_or_____AgentsKeyword_4_1_0_ColonKeyword_4_1_1__p_AsteriskKeyword_4_1_2_0_1_______CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a__a(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if(match_Workspace___DebugKeyword_4_2_0___EOLParserRuleCall_4_2_2_p_DebugKeyword_4_2_0__a___or_______AgentsKeyword_4_1_0_ColonKeyword_4_1_1__p_or___DebugKeyword_4_2_0___EOLParserRuleCall_4_2_2_p_DebugKeyword_4_2_0__a_EOLParserRuleCall_4_2_2_p___AgentsKeyword_4_1_0_ColonKeyword_4_1_1__p_______DebugKeyword_4_2_0___EOLParserRuleCall_4_2_2_p_DebugKeyword_4_2_0__a_EOLParserRuleCall_4_2_2_p___AgentsKeyword_4_1_0_ColonKeyword_4_1_1__p__a_DebugKeyword_4_2_0___EOLParserRuleCall_4_2_2_p_DebugKeyword_4_2_0__a__.equals(syntax))
+				emit_Workspace___DebugKeyword_4_2_0___EOLParserRuleCall_4_2_2_p_DebugKeyword_4_2_0__a___or_______AgentsKeyword_4_1_0_ColonKeyword_4_1_1__p_or___DebugKeyword_4_2_0___EOLParserRuleCall_4_2_2_p_DebugKeyword_4_2_0__a_EOLParserRuleCall_4_2_2_p___AgentsKeyword_4_1_0_ColonKeyword_4_1_1__p_______DebugKeyword_4_2_0___EOLParserRuleCall_4_2_2_p_DebugKeyword_4_2_0__a_EOLParserRuleCall_4_2_2_p___AgentsKeyword_4_1_0_ColonKeyword_4_1_1__p__a_DebugKeyword_4_2_0___EOLParserRuleCall_4_2_2_p_DebugKeyword_4_2_0__a__(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if(match_Workspace___EOLParserRuleCall_4_2_2_p___AgentsKeyword_4_1_0_ColonKeyword_4_1_1___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a__a_DebugKeyword_4_2_0__a.equals(syntax))
+				emit_Workspace___EOLParserRuleCall_4_2_2_p___AgentsKeyword_4_1_0_ColonKeyword_4_1_1___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a__a_DebugKeyword_4_2_0__a(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if(match_Workspace___EOLParserRuleCall_4_2_2_p___AgentsKeyword_4_1_0_ColonKeyword_4_1_1___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a__a_DebugKeyword_4_2_0__p.equals(syntax))
+				emit_Workspace___EOLParserRuleCall_4_2_2_p___AgentsKeyword_4_1_0_ColonKeyword_4_1_1___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a__a_DebugKeyword_4_2_0__p(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if(match_Workspace_____AsteriskKeyword_4_1_2_0_1_or_____AgentsKeyword_4_1_0_ColonKeyword_4_1_1__p_AsteriskKeyword_4_1_2_0_1_______CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a.equals(syntax))
+				emit_Workspace_____AsteriskKeyword_4_1_2_0_1_or_____AgentsKeyword_4_1_0_ColonKeyword_4_1_1__p_AsteriskKeyword_4_1_2_0_1_______CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if(match_Workspace_____DebugKeyword_4_2_0_EOLParserRuleCall_4_2_2_p__a_AgentsKeyword_4_1_0_ColonKeyword_4_1_1_AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a_____DebugKeyword_4_2_0_EOLParserRuleCall_4_2_2_p__a_AgentsKeyword_4_1_0_ColonKeyword_4_1_1__a__a.equals(syntax))
+				emit_Workspace_____DebugKeyword_4_2_0_EOLParserRuleCall_4_2_2_p__a_AgentsKeyword_4_1_0_ColonKeyword_4_1_1_AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a_____DebugKeyword_4_2_0_EOLParserRuleCall_4_2_2_p__a_AgentsKeyword_4_1_0_ColonKeyword_4_1_1__a__a(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if(match_Workspace_____DebugKeyword_4_2_0_EOLParserRuleCall_4_2_2_p__a_AgentsKeyword_4_1_0_ColonKeyword_4_1_1___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a__p.equals(syntax))
+				emit_Workspace_____DebugKeyword_4_2_0_EOLParserRuleCall_4_2_2_p__a_AgentsKeyword_4_1_0_ColonKeyword_4_1_1___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a__p(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if(match_Workspace_____DebugKeyword_4_2_0_EOLParserRuleCall_4_2_2_p__a_AgentsKeyword_4_1_0_ColonKeyword_4_1_1__a.equals(syntax))
+				emit_Workspace_____DebugKeyword_4_2_0_EOLParserRuleCall_4_2_2_p__a_AgentsKeyword_4_1_0_ColonKeyword_4_1_1__a(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if(match_Workspace_______AgentsKeyword_4_1_0_ColonKeyword_4_1_1__p_or___DebugKeyword_4_2_0___EOLParserRuleCall_4_2_2_p_DebugKeyword_4_2_0__a_EOLParserRuleCall_4_2_2_p___AgentsKeyword_4_1_0_ColonKeyword_4_1_1__p_______DebugKeyword_4_2_0___EOLParserRuleCall_4_2_2_p_DebugKeyword_4_2_0__a_EOLParserRuleCall_4_2_2_p___AgentsKeyword_4_1_0_ColonKeyword_4_1_1__p__a_DebugKeyword_4_2_0___EOLParserRuleCall_4_2_2_p_DebugKeyword_4_2_0__a_EOLParserRuleCall_4_2_2_p___AgentsKeyword_4_1_0_ColonKeyword_4_1_1__p_AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p_____AsteriskKeyword_4_1_2_0_1_or_____AgentsKeyword_4_1_0_ColonKeyword_4_1_1__p_AsteriskKeyword_4_1_2_0_1_______CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a___DebugKeyword_4_2_0___EOLParserRuleCall_4_2_2_p_DebugKeyword_4_2_0__a_EOLParserRuleCall_4_2_2_p___AgentsKeyword_4_1_0_ColonKeyword_4_1_1__p_AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p_____AsteriskKeyword_4_1_2_0_1_or_____AgentsKeyword_4_1_0_ColonKeyword_4_1_1__p_AsteriskKeyword_4_1_2_0_1_______CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a__a__a.equals(syntax))
+				emit_Workspace_______AgentsKeyword_4_1_0_ColonKeyword_4_1_1__p_or___DebugKeyword_4_2_0___EOLParserRuleCall_4_2_2_p_DebugKeyword_4_2_0__a_EOLParserRuleCall_4_2_2_p___AgentsKeyword_4_1_0_ColonKeyword_4_1_1__p_______DebugKeyword_4_2_0___EOLParserRuleCall_4_2_2_p_DebugKeyword_4_2_0__a_EOLParserRuleCall_4_2_2_p___AgentsKeyword_4_1_0_ColonKeyword_4_1_1__p__a_DebugKeyword_4_2_0___EOLParserRuleCall_4_2_2_p_DebugKeyword_4_2_0__a_EOLParserRuleCall_4_2_2_p___AgentsKeyword_4_1_0_ColonKeyword_4_1_1__p_AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p_____AsteriskKeyword_4_1_2_0_1_or_____AgentsKeyword_4_1_0_ColonKeyword_4_1_1__p_AsteriskKeyword_4_1_2_0_1_______CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a___DebugKeyword_4_2_0___EOLParserRuleCall_4_2_2_p_DebugKeyword_4_2_0__a_EOLParserRuleCall_4_2_2_p___AgentsKeyword_4_1_0_ColonKeyword_4_1_1__p_AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p_____AsteriskKeyword_4_1_2_0_1_or_____AgentsKeyword_4_1_0_ColonKeyword_4_1_1__p_AsteriskKeyword_4_1_2_0_1_______CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a__a__a(semanticObject, getLastNavigableState(), syntaxNodes);
 			else acceptNodes(getLastNavigableState(), syntaxNodes);
 		}
 	}
@@ -490,7 +578,7 @@ public class JcmSyntacticSequencer extends AbstractSyntacticSequencer {
 	
 	/**
 	 * Syntax:
-	 *     (',' | EOL)+
+	 *     (EOL | ',')+
 	 */
 	protected void emit_Agent___CommaKeyword_3_2_0_2_0_1_1_or_EOLParserRuleCall_3_2_0_2_0_1_0__p(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
@@ -498,7 +586,7 @@ public class JcmSyntacticSequencer extends AbstractSyntacticSequencer {
 	
 	/**
 	 * Syntax:
-	 *     (EOL | ',')+
+	 *     (',' | EOL)+
 	 */
 	protected void emit_Agent___CommaKeyword_3_2_0_2_1_1_1_or_EOLParserRuleCall_3_2_0_2_1_1_0__p(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
@@ -506,7 +594,7 @@ public class JcmSyntacticSequencer extends AbstractSyntacticSequencer {
 	
 	/**
 	 * Syntax:
-	 *     (EOL | ',')+
+	 *     (',' | EOL)+
 	 */
 	protected void emit_Agent___CommaKeyword_3_2_10_3_1_or_EOLParserRuleCall_3_2_10_3_0__p(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
@@ -546,7 +634,7 @@ public class JcmSyntacticSequencer extends AbstractSyntacticSequencer {
 	
 	/**
 	 * Syntax:
-	 *     (EOL | ',')+
+	 *     (',' | EOL)+
 	 */
 	protected void emit_Agent___CommaKeyword_3_2_8_2_2_1_or_EOLParserRuleCall_3_2_8_2_2_0__p(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
@@ -554,7 +642,7 @@ public class JcmSyntacticSequencer extends AbstractSyntacticSequencer {
 	
 	/**
 	 * Syntax:
-	 *     (',' | EOL)+
+	 *     (EOL | ',')+
 	 */
 	protected void emit_Agent___CommaKeyword_3_2_9_2_4_1_or_EOLParserRuleCall_3_2_9_2_4_0__p(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
@@ -566,24 +654,24 @@ public class JcmSyntacticSequencer extends AbstractSyntacticSequencer {
 	     '{' 
 	     EOL* 
 	     (
-	         ('ag-arch' ':') | 
+	         ('roles' ':') | 
+	         ('beliefs' ':') | 
 	         ('instances' ':') | 
-	         ('join' ':') | 
 	         ('focus' ':') | 
 	         ('goals' ':') | 
-	         ('roles' ':') | 
-	         ('beliefs' ':')
+	         ('ag-arch' ':') | 
+	         ('join' ':')
 	     )* 
 	     (
-	         (('events' ':' ('discard' | 'retrieve' | 'requeue') EOL+) | ('intBels' ':' ('newFocus' | 'sameFocus') EOL+)) 
+	         (('events' ':' ('discard' | 'requeue' | 'retrieve') EOL+) | ('intBels' ':' ('newFocus' | 'sameFocus') EOL+)) 
 	         (
-	             ('ag-arch' ':') | 
+	             ('roles' ':') | 
+	             ('beliefs' ':') | 
 	             ('instances' ':') | 
-	             ('join' ':') | 
 	             ('focus' ':') | 
 	             ('goals' ':') | 
-	             ('roles' ':') | 
-	             ('beliefs' ':')
+	             ('ag-arch' ':') | 
+	             ('join' ':')
 	         )*
 	     )* 
 	     '}'
@@ -596,12 +684,12 @@ public class JcmSyntacticSequencer extends AbstractSyntacticSequencer {
 	/**
 	 * Syntax:
 	 *     (
-	     ('ag-arch' ':') | 
-	     ('join' ':') | 
 	     ('instances' ':') | 
+	     ('beliefs' ':') | 
 	     ('focus' ':') | 
 	     ('goals' ':') | 
-	     ('beliefs' ':')
+	     ('ag-arch' ':') | 
+	     ('join' ':')
 	 )*
 	 */
 	protected void emit_Agent_____AgArchKeyword_3_2_2_0_ColonKeyword_3_2_2_1___or___BeliefsKeyword_3_2_5_0_ColonKeyword_3_2_5_1___or___FocusKeyword_3_2_7_0_ColonKeyword_3_2_7_1___or___GoalsKeyword_3_2_6_0_ColonKeyword_3_2_6_1___or___InstancesKeyword_3_2_0_0_ColonKeyword_3_2_0_1___or___JoinKeyword_3_2_8_0_ColonKeyword_3_2_8_1____a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
@@ -611,13 +699,13 @@ public class JcmSyntacticSequencer extends AbstractSyntacticSequencer {
 	/**
 	 * Syntax:
 	 *     (
-	     ('ag-arch' ':') | 
-	     ('join' ':') | 
-	     ('focus' ':') | 
-	     ('instances' ':') | 
-	     ('goals' ':') | 
 	     ('roles' ':') | 
-	     ('beliefs' ':')
+	     ('instances' ':') | 
+	     ('beliefs' ':') | 
+	     ('ag-arch' ':') | 
+	     ('goals' ':') | 
+	     ('focus' ':') | 
+	     ('join' ':')
 	 )*
 	 */
 	protected void emit_Agent_____AgArchKeyword_3_2_2_0_ColonKeyword_3_2_2_1___or___BeliefsKeyword_3_2_5_0_ColonKeyword_3_2_5_1___or___FocusKeyword_3_2_7_0_ColonKeyword_3_2_7_1___or___GoalsKeyword_3_2_6_0_ColonKeyword_3_2_6_1___or___InstancesKeyword_3_2_0_0_ColonKeyword_3_2_0_1___or___JoinKeyword_3_2_8_0_ColonKeyword_3_2_8_1___or___RolesKeyword_3_2_9_0_ColonKeyword_3_2_9_1____a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
@@ -627,12 +715,12 @@ public class JcmSyntacticSequencer extends AbstractSyntacticSequencer {
 	/**
 	 * Syntax:
 	 *     (
-	     ('ag-arch' ':') | 
-	     ('focus' ':') | 
-	     ('instances' ':') | 
-	     ('goals' ':') | 
 	     ('roles' ':') | 
-	     ('beliefs' ':')
+	     ('instances' ':') | 
+	     ('beliefs' ':') | 
+	     ('goals' ':') | 
+	     ('ag-arch' ':') | 
+	     ('focus' ':')
 	 )*
 	 */
 	protected void emit_Agent_____AgArchKeyword_3_2_2_0_ColonKeyword_3_2_2_1___or___BeliefsKeyword_3_2_5_0_ColonKeyword_3_2_5_1___or___FocusKeyword_3_2_7_0_ColonKeyword_3_2_7_1___or___GoalsKeyword_3_2_6_0_ColonKeyword_3_2_6_1___or___InstancesKeyword_3_2_0_0_ColonKeyword_3_2_0_1___or___RolesKeyword_3_2_9_0_ColonKeyword_3_2_9_1____a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
@@ -642,12 +730,12 @@ public class JcmSyntacticSequencer extends AbstractSyntacticSequencer {
 	/**
 	 * Syntax:
 	 *     (
-	     ('ag-arch' ':') | 
-	     ('join' ':') | 
-	     ('focus' ':') | 
-	     ('goals' ':') | 
 	     ('roles' ':') | 
-	     ('beliefs' ':')
+	     ('beliefs' ':') | 
+	     ('focus' ':') | 
+	     ('ag-arch' ':') | 
+	     ('goals' ':') | 
+	     ('join' ':')
 	 )*
 	 */
 	protected void emit_Agent_____AgArchKeyword_3_2_2_0_ColonKeyword_3_2_2_1___or___BeliefsKeyword_3_2_5_0_ColonKeyword_3_2_5_1___or___FocusKeyword_3_2_7_0_ColonKeyword_3_2_7_1___or___GoalsKeyword_3_2_6_0_ColonKeyword_3_2_6_1___or___JoinKeyword_3_2_8_0_ColonKeyword_3_2_8_1___or___RolesKeyword_3_2_9_0_ColonKeyword_3_2_9_1____a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
@@ -657,12 +745,12 @@ public class JcmSyntacticSequencer extends AbstractSyntacticSequencer {
 	/**
 	 * Syntax:
 	 *     (
+	     ('roles' ':') | 
+	     ('instances' ':') | 
+	     ('beliefs' ':') | 
 	     ('ag-arch' ':') | 
 	     ('focus' ':') | 
-	     ('join' ':') | 
-	     ('instances' ':') | 
-	     ('roles' ':') | 
-	     ('beliefs' ':')
+	     ('join' ':')
 	 )*
 	 */
 	protected void emit_Agent_____AgArchKeyword_3_2_2_0_ColonKeyword_3_2_2_1___or___BeliefsKeyword_3_2_5_0_ColonKeyword_3_2_5_1___or___FocusKeyword_3_2_7_0_ColonKeyword_3_2_7_1___or___InstancesKeyword_3_2_0_0_ColonKeyword_3_2_0_1___or___JoinKeyword_3_2_8_0_ColonKeyword_3_2_8_1___or___RolesKeyword_3_2_9_0_ColonKeyword_3_2_9_1____a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
@@ -672,12 +760,12 @@ public class JcmSyntacticSequencer extends AbstractSyntacticSequencer {
 	/**
 	 * Syntax:
 	 *     (
-	     ('ag-arch' ':') | 
-	     ('join' ':') | 
-	     ('instances' ':') | 
-	     ('goals' ':') | 
 	     ('roles' ':') | 
-	     ('beliefs' ':')
+	     ('instances' ':') | 
+	     ('beliefs' ':') | 
+	     ('ag-arch' ':') | 
+	     ('goals' ':') | 
+	     ('join' ':')
 	 )*
 	 */
 	protected void emit_Agent_____AgArchKeyword_3_2_2_0_ColonKeyword_3_2_2_1___or___BeliefsKeyword_3_2_5_0_ColonKeyword_3_2_5_1___or___GoalsKeyword_3_2_6_0_ColonKeyword_3_2_6_1___or___InstancesKeyword_3_2_0_0_ColonKeyword_3_2_0_1___or___JoinKeyword_3_2_8_0_ColonKeyword_3_2_8_1___or___RolesKeyword_3_2_9_0_ColonKeyword_3_2_9_1____a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
@@ -687,12 +775,12 @@ public class JcmSyntacticSequencer extends AbstractSyntacticSequencer {
 	/**
 	 * Syntax:
 	 *     (
-	     ('ag-arch' ':') | 
-	     ('join' ':') | 
-	     ('focus' ':') | 
+	     ('roles' ':') | 
 	     ('instances' ':') | 
+	     ('focus' ':') | 
+	     ('ag-arch' ':') | 
 	     ('goals' ':') | 
-	     ('roles' ':')
+	     ('join' ':')
 	 )*
 	 */
 	protected void emit_Agent_____AgArchKeyword_3_2_2_0_ColonKeyword_3_2_2_1___or___FocusKeyword_3_2_7_0_ColonKeyword_3_2_7_1___or___GoalsKeyword_3_2_6_0_ColonKeyword_3_2_6_1___or___InstancesKeyword_3_2_0_0_ColonKeyword_3_2_0_1___or___JoinKeyword_3_2_8_0_ColonKeyword_3_2_8_1___or___RolesKeyword_3_2_9_0_ColonKeyword_3_2_9_1____a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
@@ -702,12 +790,12 @@ public class JcmSyntacticSequencer extends AbstractSyntacticSequencer {
 	/**
 	 * Syntax:
 	 *     (
+	     ('roles' ':') | 
 	     ('instances' ':') | 
-	     ('join' ':') | 
+	     ('beliefs' ':') | 
 	     ('focus' ':') | 
 	     ('goals' ':') | 
-	     ('roles' ':') | 
-	     ('beliefs' ':')
+	     ('join' ':')
 	 )*
 	 */
 	protected void emit_Agent_____BeliefsKeyword_3_2_5_0_ColonKeyword_3_2_5_1___or___FocusKeyword_3_2_7_0_ColonKeyword_3_2_7_1___or___GoalsKeyword_3_2_6_0_ColonKeyword_3_2_6_1___or___InstancesKeyword_3_2_0_0_ColonKeyword_3_2_0_1___or___JoinKeyword_3_2_8_0_ColonKeyword_3_2_8_1___or___RolesKeyword_3_2_9_0_ColonKeyword_3_2_9_1____a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
@@ -718,22 +806,22 @@ public class JcmSyntacticSequencer extends AbstractSyntacticSequencer {
 	 * Syntax:
 	 *     (
 	     (
-	         ('ag-arch' ':') | 
-	         ('focus' ':') | 
-	         ('join' ':') | 
+	         ('beliefs' ':') | 
 	         ('instances' ':') | 
 	         ('goals' ':') | 
-	         ('beliefs' ':')
+	         ('ag-arch' ':') | 
+	         ('focus' ':') | 
+	         ('join' ':')
 	     )* 
 	     (
-	         ((('events' ':' ('discard' | 'retrieve' | 'requeue') EOL+) | ('intBels' ':' ('newFocus' | 'sameFocus') EOL+)) | ('roles' ':')) 
+	         (('roles' ':') | (('events' ':' ('discard' | 'requeue' | 'retrieve') EOL+) | ('intBels' ':' ('newFocus' | 'sameFocus') EOL+))) 
 	         (
-	             ('ag-arch' ':') | 
-	             ('focus' ':') | 
-	             ('join' ':') | 
+	             ('beliefs' ':') | 
 	             ('instances' ':') | 
 	             ('goals' ':') | 
-	             ('beliefs' ':')
+	             ('ag-arch' ':') | 
+	             ('focus' ':') | 
+	             ('join' ':')
 	         )*
 	     )* 
 	     'roles' 
@@ -748,22 +836,22 @@ public class JcmSyntacticSequencer extends AbstractSyntacticSequencer {
 	 * Syntax:
 	 *     (
 	     (
-	         ('ag-arch' ':') | 
-	         ('instances' ':') | 
-	         ('focus' ':') | 
-	         ('goals' ':') | 
 	         ('roles' ':') | 
-	         ('beliefs' ':')
+	         ('beliefs' ':') | 
+	         ('instances' ':') | 
+	         ('goals' ':') | 
+	         ('focus' ':') | 
+	         ('ag-arch' ':')
 	     )* 
 	     (
-	         ((('events' ':' ('discard' | 'retrieve' | 'requeue') EOL+) | ('intBels' ':' ('newFocus' | 'sameFocus') EOL+)) | ('join' ':')) 
+	         ((('events' ':' ('discard' | 'requeue' | 'retrieve') EOL+) | ('intBels' ':' ('newFocus' | 'sameFocus') EOL+)) | ('join' ':')) 
 	         (
-	             ('ag-arch' ':') | 
-	             ('instances' ':') | 
-	             ('focus' ':') | 
-	             ('goals' ':') | 
 	             ('roles' ':') | 
-	             ('beliefs' ':')
+	             ('beliefs' ':') | 
+	             ('instances' ':') | 
+	             ('goals' ':') | 
+	             ('focus' ':') | 
+	             ('ag-arch' ':')
 	         )*
 	     )* 
 	     'join' 
@@ -778,22 +866,22 @@ public class JcmSyntacticSequencer extends AbstractSyntacticSequencer {
 	 * Syntax:
 	 *     (
 	     (
-	         ('ag-arch' ':') | 
-	         ('join' ':') | 
+	         ('roles' ':') | 
+	         ('beliefs' ':') | 
 	         ('focus' ':') | 
 	         ('goals' ':') | 
-	         ('roles' ':') | 
-	         ('beliefs' ':')
+	         ('ag-arch' ':') | 
+	         ('join' ':')
 	     )* 
 	     (
-	         ((('events' ':' ('discard' | 'retrieve' | 'requeue') EOL+) | ('intBels' ':' ('newFocus' | 'sameFocus') EOL+)) | ('instances' ':')) 
+	         (('instances' ':') | (('events' ':' ('discard' | 'requeue' | 'retrieve') EOL+) | ('intBels' ':' ('newFocus' | 'sameFocus') EOL+))) 
 	         (
-	             ('ag-arch' ':') | 
-	             ('join' ':') | 
+	             ('roles' ':') | 
+	             ('beliefs' ':') | 
 	             ('focus' ':') | 
 	             ('goals' ':') | 
-	             ('roles' ':') | 
-	             ('beliefs' ':')
+	             ('ag-arch' ':') | 
+	             ('join' ':')
 	         )*
 	     )* 
 	     'instances' 
@@ -808,22 +896,22 @@ public class JcmSyntacticSequencer extends AbstractSyntacticSequencer {
 	 * Syntax:
 	 *     (
 	     (
-	         ('ag-arch' ':') | 
-	         ('join' ':') | 
-	         ('instances' ':') | 
-	         ('focus' ':') | 
 	         ('roles' ':') | 
-	         ('beliefs' ':')
+	         ('beliefs' ':') | 
+	         ('instances' ':') | 
+	         ('ag-arch' ':') | 
+	         ('focus' ':') | 
+	         ('join' ':')
 	     )* 
 	     (
-	         ((('events' ':' ('discard' | 'retrieve' | 'requeue') EOL+) | ('intBels' ':' ('newFocus' | 'sameFocus') EOL+)) | ('goals' ':')) 
+	         ((('events' ':' ('discard' | 'requeue' | 'retrieve') EOL+) | ('intBels' ':' ('newFocus' | 'sameFocus') EOL+)) | ('goals' ':')) 
 	         (
-	             ('ag-arch' ':') | 
-	             ('join' ':') | 
-	             ('instances' ':') | 
-	             ('focus' ':') | 
 	             ('roles' ':') | 
-	             ('beliefs' ':')
+	             ('beliefs' ':') | 
+	             ('instances' ':') | 
+	             ('ag-arch' ':') | 
+	             ('focus' ':') | 
+	             ('join' ':')
 	         )*
 	     )* 
 	     'goals' 
@@ -838,22 +926,22 @@ public class JcmSyntacticSequencer extends AbstractSyntacticSequencer {
 	 * Syntax:
 	 *     (
 	     (
-	         ('ag-arch' ':') | 
-	         ('instances' ':') | 
-	         ('join' ':') | 
-	         ('goals' ':') | 
 	         ('roles' ':') | 
-	         ('beliefs' ':')
+	         ('instances' ':') | 
+	         ('beliefs' ':') | 
+	         ('ag-arch' ':') | 
+	         ('goals' ':') | 
+	         ('join' ':')
 	     )* 
 	     (
-	         ((('events' ':' ('discard' | 'retrieve' | 'requeue') EOL+) | ('intBels' ':' ('newFocus' | 'sameFocus') EOL+)) | ('focus' ':')) 
+	         ((('events' ':' ('discard' | 'requeue' | 'retrieve') EOL+) | ('intBels' ':' ('newFocus' | 'sameFocus') EOL+)) | ('focus' ':')) 
 	         (
-	             ('ag-arch' ':') | 
-	             ('instances' ':') | 
-	             ('join' ':') | 
-	             ('goals' ':') | 
 	             ('roles' ':') | 
-	             ('beliefs' ':')
+	             ('instances' ':') | 
+	             ('beliefs' ':') | 
+	             ('ag-arch' ':') | 
+	             ('goals' ':') | 
+	             ('join' ':')
 	         )*
 	     )* 
 	     'focus' 
@@ -868,22 +956,22 @@ public class JcmSyntacticSequencer extends AbstractSyntacticSequencer {
 	 * Syntax:
 	 *     (
 	     (
-	         ('ag-arch' ':') | 
-	         ('join' ':') | 
-	         ('focus' ':') | 
+	         ('roles' ':') | 
 	         ('instances' ':') | 
+	         ('ag-arch' ':') | 
 	         ('goals' ':') | 
-	         ('roles' ':')
+	         ('focus' ':') | 
+	         ('join' ':')
 	     )* 
 	     (
-	         ((('events' ':' ('discard' | 'retrieve' | 'requeue') EOL+) | ('intBels' ':' ('newFocus' | 'sameFocus') EOL+)) | ('beliefs' ':')) 
+	         (('beliefs' ':') | (('events' ':' ('discard' | 'requeue' | 'retrieve') EOL+) | ('intBels' ':' ('newFocus' | 'sameFocus') EOL+))) 
 	         (
-	             ('ag-arch' ':') | 
-	             ('join' ':') | 
-	             ('focus' ':') | 
+	             ('roles' ':') | 
 	             ('instances' ':') | 
+	             ('ag-arch' ':') | 
 	             ('goals' ':') | 
-	             ('roles' ':')
+	             ('focus' ':') | 
+	             ('join' ':')
 	         )*
 	     )* 
 	     'beliefs' 
@@ -897,14 +985,14 @@ public class JcmSyntacticSequencer extends AbstractSyntacticSequencer {
 	/**
 	 * Syntax:
 	 *     (
-	     (('ag-arch' ':') | (('events' ':' ('discard' | 'retrieve' | 'requeue') EOL+) | ('intBels' ':' ('newFocus' | 'sameFocus') EOL+))) 
+	     ((('events' ':' ('discard' | 'requeue' | 'retrieve') EOL+) | ('intBels' ':' ('newFocus' | 'sameFocus') EOL+)) | ('ag-arch' ':')) 
 	     (
+	         ('roles' ':') | 
 	         ('instances' ':') | 
-	         ('join' ':') | 
+	         ('beliefs' ':') | 
 	         ('focus' ':') | 
 	         ('goals' ':') | 
-	         ('roles' ':') | 
-	         ('beliefs' ':')
+	         ('join' ':')
 	     )*
 	 )*
 	 */
@@ -916,22 +1004,22 @@ public class JcmSyntacticSequencer extends AbstractSyntacticSequencer {
 	 * Syntax:
 	 *     (
 	     (
-	         ('focus' ':') | 
-	         ('instances' ':') | 
-	         ('join' ':') | 
-	         ('goals' ':') | 
 	         ('roles' ':') | 
-	         ('beliefs' ':')
+	         ('instances' ':') | 
+	         ('beliefs' ':') | 
+	         ('focus' ':') | 
+	         ('goals' ':') | 
+	         ('join' ':')
 	     )* 
 	     (
-	         (('ag-arch' ':') | (('events' ':' ('discard' | 'retrieve' | 'requeue') EOL+) | ('intBels' ':' ('newFocus' | 'sameFocus') EOL+))) 
+	         ((('events' ':' ('discard' | 'requeue' | 'retrieve') EOL+) | ('intBels' ':' ('newFocus' | 'sameFocus') EOL+)) | ('ag-arch' ':')) 
 	         (
-	             ('focus' ':') | 
-	             ('instances' ':') | 
-	             ('join' ':') | 
-	             ('goals' ':') | 
 	             ('roles' ':') | 
-	             ('beliefs' ':')
+	             ('instances' ':') | 
+	             ('beliefs' ':') | 
+	             ('focus' ':') | 
+	             ('goals' ':') | 
+	             ('join' ':')
 	         )*
 	     )* 
 	     'ag-arch' 
@@ -945,14 +1033,14 @@ public class JcmSyntacticSequencer extends AbstractSyntacticSequencer {
 	/**
 	 * Syntax:
 	 *     (
-	     ((('events' ':' ('discard' | 'retrieve' | 'requeue') EOL+) | ('intBels' ':' ('newFocus' | 'sameFocus') EOL+)) | ('beliefs' ':')) 
+	     (('beliefs' ':') | (('events' ':' ('discard' | 'requeue' | 'retrieve') EOL+) | ('intBels' ':' ('newFocus' | 'sameFocus') EOL+))) 
 	     (
-	         ('ag-arch' ':') | 
-	         ('join' ':') | 
-	         ('focus' ':') | 
+	         ('roles' ':') | 
 	         ('instances' ':') | 
+	         ('focus' ':') | 
+	         ('ag-arch' ':') | 
 	         ('goals' ':') | 
-	         ('roles' ':')
+	         ('join' ':')
 	     )*
 	 )*
 	 */
@@ -963,15 +1051,15 @@ public class JcmSyntacticSequencer extends AbstractSyntacticSequencer {
 	/**
 	 * Syntax:
 	 *     (
-	     (('events' ':' ('discard' | 'retrieve' | 'requeue') EOL+) | ('intBels' ':' ('newFocus' | 'sameFocus') EOL+)) 
+	     (('events' ':' ('discard' | 'requeue' | 'retrieve') EOL+) | ('intBels' ':' ('newFocus' | 'sameFocus') EOL+)) 
 	     (
-	         ('ag-arch' ':') | 
-	         ('join' ':') | 
-	         ('focus' ':') | 
-	         ('instances' ':') | 
-	         ('goals' ':') | 
 	         ('roles' ':') | 
-	         ('beliefs' ':')
+	         ('instances' ':') | 
+	         ('beliefs' ':') | 
+	         ('ag-arch' ':') | 
+	         ('goals' ':') | 
+	         ('focus' ':') | 
+	         ('join' ':')
 	     )*
 	 )*
 	 */
@@ -982,14 +1070,14 @@ public class JcmSyntacticSequencer extends AbstractSyntacticSequencer {
 	/**
 	 * Syntax:
 	 *     (
-	     ((('events' ':' ('discard' | 'retrieve' | 'requeue') EOL+) | ('intBels' ':' ('newFocus' | 'sameFocus') EOL+)) | ('focus' ':')) 
+	     ((('events' ':' ('discard' | 'requeue' | 'retrieve') EOL+) | ('intBels' ':' ('newFocus' | 'sameFocus') EOL+)) | ('focus' ':')) 
 	     (
-	         ('ag-arch' ':') | 
-	         ('join' ':') | 
-	         ('instances' ':') | 
-	         ('goals' ':') | 
 	         ('roles' ':') | 
-	         ('beliefs' ':')
+	         ('instances' ':') | 
+	         ('beliefs' ':') | 
+	         ('ag-arch' ':') | 
+	         ('goals' ':') | 
+	         ('join' ':')
 	     )*
 	 )*
 	 */
@@ -1000,14 +1088,14 @@ public class JcmSyntacticSequencer extends AbstractSyntacticSequencer {
 	/**
 	 * Syntax:
 	 *     (
-	     ((('events' ':' ('discard' | 'retrieve' | 'requeue') EOL+) | ('intBels' ':' ('newFocus' | 'sameFocus') EOL+)) | ('goals' ':')) 
+	     ((('events' ':' ('discard' | 'requeue' | 'retrieve') EOL+) | ('intBels' ':' ('newFocus' | 'sameFocus') EOL+)) | ('goals' ':')) 
 	     (
+	         ('roles' ':') | 
+	         ('instances' ':') | 
+	         ('beliefs' ':') | 
 	         ('ag-arch' ':') | 
 	         ('focus' ':') | 
-	         ('join' ':') | 
-	         ('instances' ':') | 
-	         ('roles' ':') | 
-	         ('beliefs' ':')
+	         ('join' ':')
 	     )*
 	 )*
 	 */
@@ -1018,14 +1106,14 @@ public class JcmSyntacticSequencer extends AbstractSyntacticSequencer {
 	/**
 	 * Syntax:
 	 *     (
-	     ((('events' ':' ('discard' | 'retrieve' | 'requeue') EOL+) | ('intBels' ':' ('newFocus' | 'sameFocus') EOL+)) | ('instances' ':')) 
+	     (('instances' ':') | (('events' ':' ('discard' | 'requeue' | 'retrieve') EOL+) | ('intBels' ':' ('newFocus' | 'sameFocus') EOL+))) 
 	     (
-	         ('ag-arch' ':') | 
-	         ('join' ':') | 
-	         ('focus' ':') | 
-	         ('goals' ':') | 
 	         ('roles' ':') | 
-	         ('beliefs' ':')
+	         ('beliefs' ':') | 
+	         ('focus' ':') | 
+	         ('ag-arch' ':') | 
+	         ('goals' ':') | 
+	         ('join' ':')
 	     )*
 	 )*
 	 */
@@ -1036,14 +1124,14 @@ public class JcmSyntacticSequencer extends AbstractSyntacticSequencer {
 	/**
 	 * Syntax:
 	 *     (
-	     ((('events' ':' ('discard' | 'retrieve' | 'requeue') EOL+) | ('intBels' ':' ('newFocus' | 'sameFocus') EOL+)) | ('join' ':')) 
+	     ((('events' ':' ('discard' | 'requeue' | 'retrieve') EOL+) | ('intBels' ':' ('newFocus' | 'sameFocus') EOL+)) | ('join' ':')) 
 	     (
-	         ('ag-arch' ':') | 
-	         ('focus' ':') | 
-	         ('instances' ':') | 
-	         ('goals' ':') | 
 	         ('roles' ':') | 
-	         ('beliefs' ':')
+	         ('instances' ':') | 
+	         ('beliefs' ':') | 
+	         ('goals' ':') | 
+	         ('ag-arch' ':') | 
+	         ('focus' ':')
 	     )*
 	 )*
 	 */
@@ -1054,14 +1142,14 @@ public class JcmSyntacticSequencer extends AbstractSyntacticSequencer {
 	/**
 	 * Syntax:
 	 *     (
-	     ((('events' ':' ('discard' | 'retrieve' | 'requeue') EOL+) | ('intBels' ':' ('newFocus' | 'sameFocus') EOL+)) | ('roles' ':')) 
+	     (('roles' ':') | (('events' ':' ('discard' | 'requeue' | 'retrieve') EOL+) | ('intBels' ':' ('newFocus' | 'sameFocus') EOL+))) 
 	     (
-	         ('ag-arch' ':') | 
-	         ('join' ':') | 
 	         ('instances' ':') | 
+	         ('beliefs' ':') | 
 	         ('focus' ':') | 
 	         ('goals' ':') | 
-	         ('beliefs' ':')
+	         ('ag-arch' ':') | 
+	         ('join' ':')
 	     )*
 	 )*
 	 */
@@ -1087,7 +1175,7 @@ public class JcmSyntacticSequencer extends AbstractSyntacticSequencer {
 	
 	/**
 	 * Syntax:
-	 *     ('*' (EOL | ',')+)*
+	 *     ('*' (',' | EOL)+)*
 	 */
 	protected void emit_Artifact___AsteriskKeyword_4_2_2_0_1___CommaKeyword_4_2_2_1_1_or_EOLParserRuleCall_4_2_2_1_0__p__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
@@ -1095,7 +1183,7 @@ public class JcmSyntacticSequencer extends AbstractSyntacticSequencer {
 	
 	/**
 	 * Syntax:
-	 *     (EOL | ',')+
+	 *     (',' | EOL)+
 	 */
 	protected void emit_Artifact___CommaKeyword_4_2_2_1_1_or_EOLParserRuleCall_4_2_2_1_0__p(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
@@ -1103,7 +1191,7 @@ public class JcmSyntacticSequencer extends AbstractSyntacticSequencer {
 	
 	/**
 	 * Syntax:
-	 *     ('{' EOL* ('focused-by' ':' ('*' (EOL | ',')+)*)? '}')?
+	 *     ('{' EOL* ('focused-by' ':' ('*' (',' | EOL)+)*)? '}')?
 	 */
 	protected void emit_Artifact___LeftCurlyBracketKeyword_4_0_EOLParserRuleCall_4_1_a___FocusedByKeyword_4_2_0_ColonKeyword_4_2_1___AsteriskKeyword_4_2_2_0_1___CommaKeyword_4_2_2_1_1_or_EOLParserRuleCall_4_2_2_1_0__p__a__q_RightCurlyBracketKeyword_4_3__q(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
@@ -1119,7 +1207,7 @@ public class JcmSyntacticSequencer extends AbstractSyntacticSequencer {
 	
 	/**
 	 * Syntax:
-	 *     (',' | EOL)+
+	 *     (EOL | ',')+
 	 */
 	protected void emit_DAslPath___CommaKeyword_3_1_1_or_EOLParserRuleCall_3_1_0__p(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
@@ -1127,7 +1215,7 @@ public class JcmSyntacticSequencer extends AbstractSyntacticSequencer {
 	
 	/**
 	 * Syntax:
-	 *     (',' | EOL)+
+	 *     (EOL | ',')+
 	 */
 	protected void emit_DClassPath___CommaKeyword_3_1_1_or_EOLParserRuleCall_3_1_0__p(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
@@ -1143,7 +1231,7 @@ public class JcmSyntacticSequencer extends AbstractSyntacticSequencer {
 	
 	/**
 	 * Syntax:
-	 *     (',' | EOL)+
+	 *     (EOL | ',')+
 	 */
 	protected void emit_DNode___CommaKeyword_4_1_or_EOLParserRuleCall_4_0__p(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
@@ -1151,7 +1239,7 @@ public class JcmSyntacticSequencer extends AbstractSyntacticSequencer {
 	
 	/**
 	 * Syntax:
-	 *     (EOL | ',')+
+	 *     (',' | EOL)+
 	 */
 	protected void emit_DPlatform___CommaKeyword_3_1_1_or_EOLParserRuleCall_3_1_0__p(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
@@ -1159,7 +1247,7 @@ public class JcmSyntacticSequencer extends AbstractSyntacticSequencer {
 	
 	/**
 	 * Syntax:
-	 *     ('..' | '.' | '/' | '-')*
+	 *     ('-' | '.' | '..' | '/')*
 	 */
 	protected void emit_FileName___FullStopFullStopKeyword_1_0_3_or_FullStopKeyword_1_0_2_or_HyphenMinusKeyword_1_0_1_or_SolidusKeyword_1_0_0__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
@@ -1167,7 +1255,7 @@ public class JcmSyntacticSequencer extends AbstractSyntacticSequencer {
 	
 	/**
 	 * Syntax:
-	 *     ('..' | '.' | '/' | '-')+
+	 *     ('-' | '.' | '..' | '/')+
 	 */
 	protected void emit_FileName___FullStopFullStopKeyword_1_0_3_or_FullStopKeyword_1_0_2_or_HyphenMinusKeyword_1_0_1_or_SolidusKeyword_1_0_0__p(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
@@ -1201,6 +1289,14 @@ public class JcmSyntacticSequencer extends AbstractSyntacticSequencer {
 	 * Syntax:
 	 *     EOL+
 	 */
+	protected void emit_Group_EOLParserRuleCall_4_2_3_2_p(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+		acceptNodes(transition, nodes);
+	}
+	
+	/**
+	 * Syntax:
+	 *     EOL+
+	 */
 	protected void emit_Group_EOLParserRuleCall_4_2_4_3_p(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
@@ -1215,7 +1311,7 @@ public class JcmSyntacticSequencer extends AbstractSyntacticSequencer {
 	
 	/**
 	 * Syntax:
-	 *     (',' | EOL)+
+	 *     (EOL | ',')+
 	 */
 	protected void emit_Group___CommaKeyword_4_2_5_2_2_1_or_EOLParserRuleCall_4_2_5_2_2_0__p(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
@@ -1223,17 +1319,73 @@ public class JcmSyntacticSequencer extends AbstractSyntacticSequencer {
 	
 	/**
 	 * Syntax:
-	 *     ('{' EOL* (('debug' EOL+) | ('players' ':'))* '}')?
+	 *     ('debug' EOL+ ('debug' EOL+)* ('players' ':')+)*
 	 */
-	protected void emit_Group___LeftCurlyBracketKeyword_4_0_EOLParserRuleCall_4_1_a_____DebugKeyword_4_2_3_0_EOLParserRuleCall_4_2_3_1_p___or___PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1____a_RightCurlyBracketKeyword_4_3__q(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+	protected void emit_Group___DebugKeyword_4_2_3_0_EOLParserRuleCall_4_2_3_2_p___DebugKeyword_4_2_3_0_EOLParserRuleCall_4_2_3_2_p__a___PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1__p__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	
 	/**
 	 * Syntax:
-	 *     (('debug' EOL+) | ('players' ':'))*
+	 *     ('debug' EOL+ ('players' ':')*)*
 	 */
-	protected void emit_Group_____DebugKeyword_4_2_3_0_EOLParserRuleCall_4_2_3_1_p___or___PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1____a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+	protected void emit_Group___DebugKeyword_4_2_3_0_EOLParserRuleCall_4_2_3_2_p___PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1__a__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+		acceptNodes(transition, nodes);
+	}
+	
+	/**
+	 * Syntax:
+	 *     ('debug' EOL+)*
+	 */
+	protected void emit_Group___DebugKeyword_4_2_3_0_EOLParserRuleCall_4_2_3_2_p__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+		acceptNodes(transition, nodes);
+	}
+	
+	/**
+	 * Syntax:
+	 *     (EOL+ ('players' ':')* 'debug')*
+	 */
+	protected void emit_Group___EOLParserRuleCall_4_2_3_2_p___PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1__a_DebugKeyword_4_2_3_0__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+		acceptNodes(transition, nodes);
+	}
+	
+	/**
+	 * Syntax:
+	 *     (EOL+ ('players' ':')* 'debug')+
+	 */
+	protected void emit_Group___EOLParserRuleCall_4_2_3_2_p___PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1__a_DebugKeyword_4_2_3_0__p(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+		acceptNodes(transition, nodes);
+	}
+	
+	/**
+	 * Syntax:
+	 *     ('{' EOL* (('players' ':') | ('debug' EOL+))* '}')?
+	 */
+	protected void emit_Group___LeftCurlyBracketKeyword_4_0_EOLParserRuleCall_4_1_a_____DebugKeyword_4_2_3_0_EOLParserRuleCall_4_2_3_2_p___or___PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1____a_RightCurlyBracketKeyword_4_3__q(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+		acceptNodes(transition, nodes);
+	}
+	
+	/**
+	 * Syntax:
+	 *     ('players' ':')*
+	 */
+	protected void emit_Group___PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+		acceptNodes(transition, nodes);
+	}
+	
+	/**
+	 * Syntax:
+	 *     ('players' ':')+
+	 */
+	protected void emit_Group___PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1__p(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+		acceptNodes(transition, nodes);
+	}
+	
+	/**
+	 * Syntax:
+	 *     (('players' ':') | ('debug' EOL+))*
+	 */
+	protected void emit_Group_____DebugKeyword_4_2_3_0_EOLParserRuleCall_4_2_3_2_p___or___PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1____a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	
@@ -1241,7 +1393,7 @@ public class JcmSyntacticSequencer extends AbstractSyntacticSequencer {
 	 * Syntax:
 	 *     (('debug' EOL+)* 'players' ':')*
 	 */
-	protected void emit_Group_____DebugKeyword_4_2_3_0_EOLParserRuleCall_4_2_3_1_p__a_PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+	protected void emit_Group_____DebugKeyword_4_2_3_0_EOLParserRuleCall_4_2_3_2_p__a_PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	
@@ -1249,7 +1401,7 @@ public class JcmSyntacticSequencer extends AbstractSyntacticSequencer {
 	 * Syntax:
 	 *     (('debug' EOL+)* 'players' ':')+
 	 */
-	protected void emit_Group_____DebugKeyword_4_2_3_0_EOLParserRuleCall_4_2_3_1_p__a_PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1__p(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+	protected void emit_Group_____DebugKeyword_4_2_3_0_EOLParserRuleCall_4_2_3_2_p__a_PlayersKeyword_4_2_5_0_ColonKeyword_4_2_5_1__p(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	
@@ -1393,7 +1545,31 @@ public class JcmSyntacticSequencer extends AbstractSyntacticSequencer {
 	 * Syntax:
 	 *     ('debug' EOL+)*
 	 */
-	protected void emit_Scheme___DebugKeyword_4_2_0_0_EOLParserRuleCall_4_2_0_1_p__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+	protected void emit_Scheme___DebugKeyword_4_2_0_0_EOLParserRuleCall_4_2_0_2_p__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+		acceptNodes(transition, nodes);
+	}
+	
+	/**
+	 * Syntax:
+	 *     ('debug'? EOL)*
+	 */
+	protected void emit_Scheme___DebugKeyword_4_2_0_0_q_EOLParserRuleCall_4_2_0_2__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+		acceptNodes(transition, nodes);
+	}
+	
+	/**
+	 * Syntax:
+	 *     (EOL+ 'debug')*
+	 */
+	protected void emit_Scheme___EOLParserRuleCall_4_2_0_2_p_DebugKeyword_4_2_0_0__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+		acceptNodes(transition, nodes);
+	}
+	
+	/**
+	 * Syntax:
+	 *     (EOL+ 'debug')+
+	 */
+	protected void emit_Scheme___EOLParserRuleCall_4_2_0_2_p_DebugKeyword_4_2_0_0__p(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	
@@ -1401,7 +1577,7 @@ public class JcmSyntacticSequencer extends AbstractSyntacticSequencer {
 	 * Syntax:
 	 *     ('{' EOL* ('debug' EOL+)* '}')?
 	 */
-	protected void emit_Scheme___LeftCurlyBracketKeyword_4_0_EOLParserRuleCall_4_1_a___DebugKeyword_4_2_0_0_EOLParserRuleCall_4_2_0_1_p__a_RightCurlyBracketKeyword_4_3__q(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+	protected void emit_Scheme___LeftCurlyBracketKeyword_4_0_EOLParserRuleCall_4_1_a___DebugKeyword_4_2_0_0_EOLParserRuleCall_4_2_0_2_p__a_RightCurlyBracketKeyword_4_3__q(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	
@@ -1410,6 +1586,14 @@ public class JcmSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     EOL*
 	 */
 	protected void emit_Workspace_EOLParserRuleCall_3_a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+		acceptNodes(transition, nodes);
+	}
+	
+	/**
+	 * Syntax:
+	 *     EOL+
+	 */
+	protected void emit_Workspace_EOLParserRuleCall_4_2_2_p(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	
@@ -1425,7 +1609,23 @@ public class JcmSyntacticSequencer extends AbstractSyntacticSequencer {
 	 * Syntax:
 	 *     ('agents' ':' ('*' (EOL | ',')+)* ('debug' EOL+)*)*
 	 */
-	protected void emit_Workspace___AgentsKeyword_4_1_0_ColonKeyword_4_1_1___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a___DebugKeyword_4_2_0_EOLParserRuleCall_4_2_1_p__a__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+	protected void emit_Workspace___AgentsKeyword_4_1_0_ColonKeyword_4_1_1___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a___DebugKeyword_4_2_0_EOLParserRuleCall_4_2_2_p__a__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+		acceptNodes(transition, nodes);
+	}
+	
+	/**
+	 * Syntax:
+	 *     ('agents' ':' ('*' (EOL | ',')+)*)*
+	 */
+	protected void emit_Workspace___AgentsKeyword_4_1_0_ColonKeyword_4_1_1___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+		acceptNodes(transition, nodes);
+	}
+	
+	/**
+	 * Syntax:
+	 *     ('agents' ':' ('*' (EOL | ',')+)*)+
+	 */
+	protected void emit_Workspace___AgentsKeyword_4_1_0_ColonKeyword_4_1_1___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a__p(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	
@@ -1433,7 +1633,7 @@ public class JcmSyntacticSequencer extends AbstractSyntacticSequencer {
 	 * Syntax:
 	 *     ('*' (EOL | ',')+ (('debug' EOL+)* 'agents' ':')*)*
 	 */
-	protected void emit_Workspace___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p_____DebugKeyword_4_2_0_EOLParserRuleCall_4_2_1_p__a_AgentsKeyword_4_1_0_ColonKeyword_4_1_1__a__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+	protected void emit_Workspace___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p_____DebugKeyword_4_2_0_EOLParserRuleCall_4_2_2_p__a_AgentsKeyword_4_1_0_ColonKeyword_4_1_1__a__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	
@@ -1455,9 +1655,76 @@ public class JcmSyntacticSequencer extends AbstractSyntacticSequencer {
 	
 	/**
 	 * Syntax:
+	 *     ('debug' EOL+ ('agents' ':' ('*' (EOL | ',')+)*)*)*
+	 */
+	protected void emit_Workspace___DebugKeyword_4_2_0_EOLParserRuleCall_4_2_2_p___AgentsKeyword_4_1_0_ColonKeyword_4_1_1___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a__a__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+		acceptNodes(transition, nodes);
+	}
+	
+	/**
+	 * Syntax:
+	 *     ('debug' EOL+ ('debug' EOL+)* ('agents' ':' ('*' (EOL | ',')+)*)+)*
+	 */
+	protected void emit_Workspace___DebugKeyword_4_2_0_EOLParserRuleCall_4_2_2_p___DebugKeyword_4_2_0_EOLParserRuleCall_4_2_2_p__a___AgentsKeyword_4_1_0_ColonKeyword_4_1_1___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a__p__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+		acceptNodes(transition, nodes);
+	}
+	
+	/**
+	 * Syntax:
 	 *     ('debug' EOL+)*
 	 */
-	protected void emit_Workspace___DebugKeyword_4_2_0_EOLParserRuleCall_4_2_1_p__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+	protected void emit_Workspace___DebugKeyword_4_2_0_EOLParserRuleCall_4_2_2_p__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+		acceptNodes(transition, nodes);
+	}
+	
+	/**
+	 * Syntax:
+	 *     (
+	     'debug' 
+	     (EOL+ 'debug')* 
+	     EOL+ 
+	     ('agents' ':')+ 
+	     '*' 
+	     (EOL | ',')+ 
+	     (('*' | (('agents' ':')+ '*')) (EOL | ',')+)*
+	 )*
+	 */
+	protected void emit_Workspace___DebugKeyword_4_2_0___EOLParserRuleCall_4_2_2_p_DebugKeyword_4_2_0__a_EOLParserRuleCall_4_2_2_p___AgentsKeyword_4_1_0_ColonKeyword_4_1_1__p_AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p_____AsteriskKeyword_4_1_2_0_1_or_____AgentsKeyword_4_1_0_ColonKeyword_4_1_1__p_AsteriskKeyword_4_1_2_0_1_______CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+		acceptNodes(transition, nodes);
+	}
+	
+	/**
+	 * Syntax:
+	 *     (
+	     ('debug' (EOL+ 'debug')*) | 
+	     ((('debug' (EOL+ 'debug')* EOL+ ('agents' ':')+) | ('agents' ':')+) ('debug' (EOL+ 'debug')* EOL+ ('agents' ':')+)* 'debug' (EOL+ 'debug')*)
+	 )
+	 */
+	protected void emit_Workspace___DebugKeyword_4_2_0___EOLParserRuleCall_4_2_2_p_DebugKeyword_4_2_0__a___or_______AgentsKeyword_4_1_0_ColonKeyword_4_1_1__p_or___DebugKeyword_4_2_0___EOLParserRuleCall_4_2_2_p_DebugKeyword_4_2_0__a_EOLParserRuleCall_4_2_2_p___AgentsKeyword_4_1_0_ColonKeyword_4_1_1__p_______DebugKeyword_4_2_0___EOLParserRuleCall_4_2_2_p_DebugKeyword_4_2_0__a_EOLParserRuleCall_4_2_2_p___AgentsKeyword_4_1_0_ColonKeyword_4_1_1__p__a_DebugKeyword_4_2_0___EOLParserRuleCall_4_2_2_p_DebugKeyword_4_2_0__a__(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+		acceptNodes(transition, nodes);
+	}
+	
+	/**
+	 * Syntax:
+	 *     (EOL+ ('agents' ':' ('*' (EOL | ',')+)*)* 'debug')*
+	 */
+	protected void emit_Workspace___EOLParserRuleCall_4_2_2_p___AgentsKeyword_4_1_0_ColonKeyword_4_1_1___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a__a_DebugKeyword_4_2_0__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+		acceptNodes(transition, nodes);
+	}
+	
+	/**
+	 * Syntax:
+	 *     (EOL+ ('agents' ':' ('*' (EOL | ',')+)*)* 'debug')+
+	 */
+	protected void emit_Workspace___EOLParserRuleCall_4_2_2_p___AgentsKeyword_4_1_0_ColonKeyword_4_1_1___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a__a_DebugKeyword_4_2_0__p(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+		acceptNodes(transition, nodes);
+	}
+	
+	/**
+	 * Syntax:
+	 *     (('*' | (('agents' ':')+ '*')) (EOL | ',')+)*
+	 */
+	protected void emit_Workspace_____AsteriskKeyword_4_1_2_0_1_or_____AgentsKeyword_4_1_0_ColonKeyword_4_1_1__p_AsteriskKeyword_4_1_2_0_1_______CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	
@@ -1473,7 +1740,7 @@ public class JcmSyntacticSequencer extends AbstractSyntacticSequencer {
 	     (('debug' EOL+)* 'agents' ':')*
 	 )*
 	 */
-	protected void emit_Workspace_____DebugKeyword_4_2_0_EOLParserRuleCall_4_2_1_p__a_AgentsKeyword_4_1_0_ColonKeyword_4_1_1_AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a_____DebugKeyword_4_2_0_EOLParserRuleCall_4_2_1_p__a_AgentsKeyword_4_1_0_ColonKeyword_4_1_1__a__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+	protected void emit_Workspace_____DebugKeyword_4_2_0_EOLParserRuleCall_4_2_2_p__a_AgentsKeyword_4_1_0_ColonKeyword_4_1_1_AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a_____DebugKeyword_4_2_0_EOLParserRuleCall_4_2_2_p__a_AgentsKeyword_4_1_0_ColonKeyword_4_1_1__a__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	
@@ -1481,7 +1748,7 @@ public class JcmSyntacticSequencer extends AbstractSyntacticSequencer {
 	 * Syntax:
 	 *     (('debug' EOL+)* 'agents' ':' ('*' (EOL | ',')+)*)+
 	 */
-	protected void emit_Workspace_____DebugKeyword_4_2_0_EOLParserRuleCall_4_2_1_p__a_AgentsKeyword_4_1_0_ColonKeyword_4_1_1___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a__p(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+	protected void emit_Workspace_____DebugKeyword_4_2_0_EOLParserRuleCall_4_2_2_p__a_AgentsKeyword_4_1_0_ColonKeyword_4_1_1___AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a__p(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	
@@ -1489,7 +1756,34 @@ public class JcmSyntacticSequencer extends AbstractSyntacticSequencer {
 	 * Syntax:
 	 *     (('debug' EOL+)* 'agents' ':')*
 	 */
-	protected void emit_Workspace_____DebugKeyword_4_2_0_EOLParserRuleCall_4_2_1_p__a_AgentsKeyword_4_1_0_ColonKeyword_4_1_1__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+	protected void emit_Workspace_____DebugKeyword_4_2_0_EOLParserRuleCall_4_2_2_p__a_AgentsKeyword_4_1_0_ColonKeyword_4_1_1__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+		acceptNodes(transition, nodes);
+	}
+	
+	/**
+	 * Syntax:
+	 *     (
+	     (('debug' (EOL+ 'debug')* EOL+ ('agents' ':')+) | ('agents' ':')+) 
+	     ('debug' (EOL+ 'debug')* EOL+ ('agents' ':')+)* 
+	     'debug' 
+	     (EOL+ 'debug')* 
+	     EOL+ 
+	     ('agents' ':')+ 
+	     '*' 
+	     (EOL | ',')+ 
+	     (('*' | (('agents' ':')+ '*')) (EOL | ',')+)* 
+	     (
+	         'debug' 
+	         (EOL+ 'debug')* 
+	         EOL+ 
+	         ('agents' ':')+ 
+	         '*' 
+	         (EOL | ',')+ 
+	         (('*' | (('agents' ':')+ '*')) (EOL | ',')+)*
+	     )*
+	 )*
+	 */
+	protected void emit_Workspace_______AgentsKeyword_4_1_0_ColonKeyword_4_1_1__p_or___DebugKeyword_4_2_0___EOLParserRuleCall_4_2_2_p_DebugKeyword_4_2_0__a_EOLParserRuleCall_4_2_2_p___AgentsKeyword_4_1_0_ColonKeyword_4_1_1__p_______DebugKeyword_4_2_0___EOLParserRuleCall_4_2_2_p_DebugKeyword_4_2_0__a_EOLParserRuleCall_4_2_2_p___AgentsKeyword_4_1_0_ColonKeyword_4_1_1__p__a_DebugKeyword_4_2_0___EOLParserRuleCall_4_2_2_p_DebugKeyword_4_2_0__a_EOLParserRuleCall_4_2_2_p___AgentsKeyword_4_1_0_ColonKeyword_4_1_1__p_AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p_____AsteriskKeyword_4_1_2_0_1_or_____AgentsKeyword_4_1_0_ColonKeyword_4_1_1__p_AsteriskKeyword_4_1_2_0_1_______CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a___DebugKeyword_4_2_0___EOLParserRuleCall_4_2_2_p_DebugKeyword_4_2_0__a_EOLParserRuleCall_4_2_2_p___AgentsKeyword_4_1_0_ColonKeyword_4_1_1__p_AsteriskKeyword_4_1_2_0_1___CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p_____AsteriskKeyword_4_1_2_0_1_or_____AgentsKeyword_4_1_0_ColonKeyword_4_1_1__p_AsteriskKeyword_4_1_2_0_1_______CommaKeyword_4_1_2_1_1_or_EOLParserRuleCall_4_1_2_1_0__p__a__a__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	

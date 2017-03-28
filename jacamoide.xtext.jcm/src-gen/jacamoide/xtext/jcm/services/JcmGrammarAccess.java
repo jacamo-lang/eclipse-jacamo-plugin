@@ -1102,19 +1102,23 @@ public class JcmGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cCommaKeyword_4_1_2_1_1 = (Keyword)cAlternatives_4_1_2_1.eContents().get(1);
 		private final Group cGroup_4_2 = (Group)cAlternatives_4.eContents().get(2);
 		private final Keyword cDebugKeyword_4_2_0 = (Keyword)cGroup_4_2.eContents().get(0);
-		private final RuleCall cEOLParserRuleCall_4_2_1 = (RuleCall)cGroup_4_2.eContents().get(1);
+		private final Group cGroup_4_2_1 = (Group)cGroup_4_2.eContents().get(1);
+		private final Keyword cColonKeyword_4_2_1_0 = (Keyword)cGroup_4_2_1.eContents().get(0);
+		private final Assignment cDebugAssignment_4_2_1_1 = (Assignment)cGroup_4_2_1.eContents().get(1);
+		private final RuleCall cDebugLiteralParserRuleCall_4_2_1_1_0 = (RuleCall)cDebugAssignment_4_2_1_1.eContents().get(0);
+		private final RuleCall cEOLParserRuleCall_4_2_2 = (RuleCall)cGroup_4_2.eContents().get(2);
 		private final Assignment cNodeAssignment_4_3 = (Assignment)cAlternatives_4.eContents().get(3);
 		private final RuleCall cNodeONodeParserRuleCall_4_3_0 = (RuleCall)cNodeAssignment_4_3.eContents().get(0);
 		private final Keyword cRightCurlyBracketKeyword_5 = (Keyword)cGroup.eContents().get(5);
 		private final RuleCall cEOLParserRuleCall_6 = (RuleCall)cGroup.eContents().get(6);
 		
 		//Workspace:
-		//	"workspace" name=ATOM "{" EOL* (artifact+=Artifact | "agents" ":" ((agent+=ATOM | "*") (EOL | ",")+)* | "debug" EOL+ |
-		//	node+=ONode)* "}" EOL*;
+		//	"workspace" name=ATOM "{" EOL* (artifact+=Artifact | "agents" ":" ((agent+=ATOM | "*") (EOL | ",")+)* | "debug" (":"
+		//	debug+=Literal)? EOL+ | node+=ONode)* "}" EOL*;
 		public ParserRule getRule() { return rule; }
 
-		//"workspace" name=ATOM "{" EOL* (artifact+=Artifact | "agents" ":" ((agent+=ATOM | "*") (EOL | ",")+)* | "debug" EOL+ |
-		//node+=ONode)* "}" EOL*
+		//"workspace" name=ATOM "{" EOL* (artifact+=Artifact | "agents" ":" ((agent+=ATOM | "*") (EOL | ",")+)* | "debug" (":"
+		//debug+=Literal)? EOL+ | node+=ONode)* "}" EOL*
 		public Group getGroup() { return cGroup; }
 
 		//"workspace"
@@ -1132,7 +1136,8 @@ public class JcmGrammarAccess extends AbstractGrammarElementFinder {
 		//EOL*
 		public RuleCall getEOLParserRuleCall_3() { return cEOLParserRuleCall_3; }
 
-		//(artifact+=Artifact | "agents" ":" ((agent+=ATOM | "*") (EOL | ",")+)* | "debug" EOL+ | node+=ONode)*
+		//(artifact+=Artifact | "agents" ":" ((agent+=ATOM | "*") (EOL | ",")+)* | "debug" (":" debug+=Literal)? EOL+ |
+		//node+=ONode)*
 		public Alternatives getAlternatives_4() { return cAlternatives_4; }
 
 		//artifact+=Artifact
@@ -1174,14 +1179,26 @@ public class JcmGrammarAccess extends AbstractGrammarElementFinder {
 		//","
 		public Keyword getCommaKeyword_4_1_2_1_1() { return cCommaKeyword_4_1_2_1_1; }
 
-		//"debug" EOL+
+		//"debug" (":" debug+=Literal)? EOL+
 		public Group getGroup_4_2() { return cGroup_4_2; }
 
 		//"debug"
 		public Keyword getDebugKeyword_4_2_0() { return cDebugKeyword_4_2_0; }
 
+		//(":" debug+=Literal)?
+		public Group getGroup_4_2_1() { return cGroup_4_2_1; }
+
+		//":"
+		public Keyword getColonKeyword_4_2_1_0() { return cColonKeyword_4_2_1_0; }
+
+		//debug+=Literal
+		public Assignment getDebugAssignment_4_2_1_1() { return cDebugAssignment_4_2_1_1; }
+
+		//Literal
+		public RuleCall getDebugLiteralParserRuleCall_4_2_1_1_0() { return cDebugLiteralParserRuleCall_4_2_1_1_0; }
+
 		//EOL+
-		public RuleCall getEOLParserRuleCall_4_2_1() { return cEOLParserRuleCall_4_2_1; }
+		public RuleCall getEOLParserRuleCall_4_2_2() { return cEOLParserRuleCall_4_2_2; }
 
 		//node+=ONode
 		public Assignment getNodeAssignment_4_3() { return cNodeAssignment_4_3; }
@@ -1596,7 +1613,11 @@ public class JcmGrammarAccess extends AbstractGrammarElementFinder {
 		private final RuleCall cEOLParserRuleCall_4_2_2_3 = (RuleCall)cGroup_4_2_2.eContents().get(3);
 		private final Group cGroup_4_2_3 = (Group)cAlternatives_4_2.eContents().get(3);
 		private final Keyword cDebugKeyword_4_2_3_0 = (Keyword)cGroup_4_2_3.eContents().get(0);
-		private final RuleCall cEOLParserRuleCall_4_2_3_1 = (RuleCall)cGroup_4_2_3.eContents().get(1);
+		private final Group cGroup_4_2_3_1 = (Group)cGroup_4_2_3.eContents().get(1);
+		private final Keyword cColonKeyword_4_2_3_1_0 = (Keyword)cGroup_4_2_3_1.eContents().get(0);
+		private final Assignment cDebugAssignment_4_2_3_1_1 = (Assignment)cGroup_4_2_3_1.eContents().get(1);
+		private final RuleCall cDebugLiteralParserRuleCall_4_2_3_1_1_0 = (RuleCall)cDebugAssignment_4_2_3_1_1.eContents().get(0);
+		private final RuleCall cEOLParserRuleCall_4_2_3_2 = (RuleCall)cGroup_4_2_3.eContents().get(2);
 		private final Group cGroup_4_2_4 = (Group)cAlternatives_4_2.eContents().get(4);
 		private final Assignment cOtherAssignment_4_2_4_0 = (Assignment)cGroup_4_2_4.eContents().get(0);
 		private final RuleCall cOtherATOMTerminalRuleCall_4_2_4_0_0 = (RuleCall)cOtherAssignment_4_2_4_0.eContents().get(0);
@@ -1627,13 +1648,13 @@ public class JcmGrammarAccess extends AbstractGrammarElementFinder {
 		
 		//Group:
 		//	"group" name=ATOM ":" kind=ATOM ("{" EOL* (group+=Group | "responsible-for" ":" responsibleFor+=ATOM EOL+ | "owner"
-		//	":" owner+=ATOM EOL+ | "debug" EOL+ | other+=ATOM ":" (string+=STRING | val+=INT_LITERAL | literal+=Literal |
-		//	val_real+=REAL_LITERAL) EOL+ | "players" ":" (agent+=ATOM role+=ATOM (EOL | ",")+)*)* "}")? EOL*;
+		//	":" owner+=ATOM EOL+ | "debug" (":" debug+=Literal)? EOL+ | other+=ATOM ":" (string+=STRING | val+=INT_LITERAL |
+		//	literal+=Literal | val_real+=REAL_LITERAL) EOL+ | "players" ":" (agent+=ATOM role+=ATOM (EOL | ",")+)*)* "}")? EOL*;
 		public ParserRule getRule() { return rule; }
 
 		//"group" name=ATOM ":" kind=ATOM ("{" EOL* (group+=Group | "responsible-for" ":" responsibleFor+=ATOM EOL+ | "owner" ":"
-		//owner+=ATOM EOL+ | "debug" EOL+ | other+=ATOM ":" (string+=STRING | val+=INT_LITERAL | literal+=Literal |
-		//val_real+=REAL_LITERAL) EOL+ | "players" ":" (agent+=ATOM role+=ATOM (EOL | ",")+)*)* "}")? EOL*
+		//owner+=ATOM EOL+ | "debug" (":" debug+=Literal)? EOL+ | other+=ATOM ":" (string+=STRING | val+=INT_LITERAL |
+		//literal+=Literal | val_real+=REAL_LITERAL) EOL+ | "players" ":" (agent+=ATOM role+=ATOM (EOL | ",")+)*)* "}")? EOL*
 		public Group getGroup() { return cGroup; }
 
 		//"group"
@@ -1654,9 +1675,9 @@ public class JcmGrammarAccess extends AbstractGrammarElementFinder {
 		//ATOM
 		public RuleCall getKindATOMTerminalRuleCall_3_0() { return cKindATOMTerminalRuleCall_3_0; }
 
-		//("{" EOL* (group+=Group | "responsible-for" ":" responsibleFor+=ATOM EOL+ | "owner" ":" owner+=ATOM EOL+ | "debug" EOL+
-		//| other+=ATOM ":" (string+=STRING | val+=INT_LITERAL | literal+=Literal | val_real+=REAL_LITERAL) EOL+ | "players" ":"
-		//(agent+=ATOM role+=ATOM (EOL | ",")+)*)* "}")?
+		//("{" EOL* (group+=Group | "responsible-for" ":" responsibleFor+=ATOM EOL+ | "owner" ":" owner+=ATOM EOL+ | "debug" (":"
+		//debug+=Literal)? EOL+ | other+=ATOM ":" (string+=STRING | val+=INT_LITERAL | literal+=Literal | val_real+=REAL_LITERAL)
+		//EOL+ | "players" ":" (agent+=ATOM role+=ATOM (EOL | ",")+)*)* "}")?
 		public Group getGroup_4() { return cGroup_4; }
 
 		//"{"
@@ -1665,9 +1686,9 @@ public class JcmGrammarAccess extends AbstractGrammarElementFinder {
 		//EOL*
 		public RuleCall getEOLParserRuleCall_4_1() { return cEOLParserRuleCall_4_1; }
 
-		//(group+=Group | "responsible-for" ":" responsibleFor+=ATOM EOL+ | "owner" ":" owner+=ATOM EOL+ | "debug" EOL+ |
-		//other+=ATOM ":" (string+=STRING | val+=INT_LITERAL | literal+=Literal | val_real+=REAL_LITERAL) EOL+ | "players" ":"
-		//(agent+=ATOM role+=ATOM (EOL | ",")+)*)*
+		//(group+=Group | "responsible-for" ":" responsibleFor+=ATOM EOL+ | "owner" ":" owner+=ATOM EOL+ | "debug" (":"
+		//debug+=Literal)? EOL+ | other+=ATOM ":" (string+=STRING | val+=INT_LITERAL | literal+=Literal | val_real+=REAL_LITERAL)
+		//EOL+ | "players" ":" (agent+=ATOM role+=ATOM (EOL | ",")+)*)*
 		public Alternatives getAlternatives_4_2() { return cAlternatives_4_2; }
 
 		//group+=Group
@@ -1712,14 +1733,26 @@ public class JcmGrammarAccess extends AbstractGrammarElementFinder {
 		//EOL+
 		public RuleCall getEOLParserRuleCall_4_2_2_3() { return cEOLParserRuleCall_4_2_2_3; }
 
-		//"debug" EOL+
+		//"debug" (":" debug+=Literal)? EOL+
 		public Group getGroup_4_2_3() { return cGroup_4_2_3; }
 
 		//"debug"
 		public Keyword getDebugKeyword_4_2_3_0() { return cDebugKeyword_4_2_3_0; }
 
+		//(":" debug+=Literal)?
+		public Group getGroup_4_2_3_1() { return cGroup_4_2_3_1; }
+
+		//":"
+		public Keyword getColonKeyword_4_2_3_1_0() { return cColonKeyword_4_2_3_1_0; }
+
+		//debug+=Literal
+		public Assignment getDebugAssignment_4_2_3_1_1() { return cDebugAssignment_4_2_3_1_1; }
+
+		//Literal
+		public RuleCall getDebugLiteralParserRuleCall_4_2_3_1_1_0() { return cDebugLiteralParserRuleCall_4_2_3_1_1_0; }
+
 		//EOL+
-		public RuleCall getEOLParserRuleCall_4_2_3_1() { return cEOLParserRuleCall_4_2_3_1; }
+		public RuleCall getEOLParserRuleCall_4_2_3_2() { return cEOLParserRuleCall_4_2_3_2; }
 
 		//other+=ATOM ":" (string+=STRING | val+=INT_LITERAL | literal+=Literal | val_real+=REAL_LITERAL) EOL+
 		public Group getGroup_4_2_4() { return cGroup_4_2_4; }
@@ -1818,7 +1851,11 @@ public class JcmGrammarAccess extends AbstractGrammarElementFinder {
 		private final Alternatives cAlternatives_4_2 = (Alternatives)cGroup_4.eContents().get(2);
 		private final Group cGroup_4_2_0 = (Group)cAlternatives_4_2.eContents().get(0);
 		private final Keyword cDebugKeyword_4_2_0_0 = (Keyword)cGroup_4_2_0.eContents().get(0);
-		private final RuleCall cEOLParserRuleCall_4_2_0_1 = (RuleCall)cGroup_4_2_0.eContents().get(1);
+		private final Group cGroup_4_2_0_1 = (Group)cGroup_4_2_0.eContents().get(1);
+		private final Keyword cColonKeyword_4_2_0_1_0 = (Keyword)cGroup_4_2_0_1.eContents().get(0);
+		private final Assignment cDebugAssignment_4_2_0_1_1 = (Assignment)cGroup_4_2_0_1.eContents().get(1);
+		private final RuleCall cDebugLiteralParserRuleCall_4_2_0_1_1_0 = (RuleCall)cDebugAssignment_4_2_0_1_1.eContents().get(0);
+		private final RuleCall cEOLParserRuleCall_4_2_0_2 = (RuleCall)cGroup_4_2_0.eContents().get(2);
 		private final Group cGroup_4_2_1 = (Group)cAlternatives_4_2.eContents().get(1);
 		private final Keyword cOwnerKeyword_4_2_1_0 = (Keyword)cGroup_4_2_1.eContents().get(0);
 		private final Keyword cColonKeyword_4_2_1_1 = (Keyword)cGroup_4_2_1.eContents().get(1);
@@ -1843,12 +1880,12 @@ public class JcmGrammarAccess extends AbstractGrammarElementFinder {
 		private final RuleCall cEOLParserRuleCall_5 = (RuleCall)cGroup.eContents().get(5);
 		
 		//Scheme:
-		//	"scheme" name=ATOM ":" kind=ATOM ("{" EOL* ("debug" EOL+ | "owner" ":" owner+=ATOM EOL+ | other+=ATOM ":"
-		//	(string+=STRING | val+=INT_LITERAL | literal+=Literal | val_real+=REAL_LITERAL) EOL+)* "}")? EOL*;
+		//	"scheme" name=ATOM ":" kind=ATOM ("{" EOL* ("debug" (":" debug+=Literal)? EOL+ | "owner" ":" owner+=ATOM EOL+ |
+		//	other+=ATOM ":" (string+=STRING | val+=INT_LITERAL | literal+=Literal | val_real+=REAL_LITERAL) EOL+)* "}")? EOL*;
 		public ParserRule getRule() { return rule; }
 
-		//"scheme" name=ATOM ":" kind=ATOM ("{" EOL* ("debug" EOL+ | "owner" ":" owner+=ATOM EOL+ | other+=ATOM ":"
-		//(string+=STRING | val+=INT_LITERAL | literal+=Literal | val_real+=REAL_LITERAL) EOL+)* "}")? EOL*
+		//"scheme" name=ATOM ":" kind=ATOM ("{" EOL* ("debug" (":" debug+=Literal)? EOL+ | "owner" ":" owner+=ATOM EOL+ |
+		//other+=ATOM ":" (string+=STRING | val+=INT_LITERAL | literal+=Literal | val_real+=REAL_LITERAL) EOL+)* "}")? EOL*
 		public Group getGroup() { return cGroup; }
 
 		//"scheme"
@@ -1869,8 +1906,8 @@ public class JcmGrammarAccess extends AbstractGrammarElementFinder {
 		//ATOM
 		public RuleCall getKindATOMTerminalRuleCall_3_0() { return cKindATOMTerminalRuleCall_3_0; }
 
-		//("{" EOL* ("debug" EOL+ | "owner" ":" owner+=ATOM EOL+ | other+=ATOM ":" (string+=STRING | val+=INT_LITERAL |
-		//literal+=Literal | val_real+=REAL_LITERAL) EOL+)* "}")?
+		//("{" EOL* ("debug" (":" debug+=Literal)? EOL+ | "owner" ":" owner+=ATOM EOL+ | other+=ATOM ":" (string+=STRING |
+		//val+=INT_LITERAL | literal+=Literal | val_real+=REAL_LITERAL) EOL+)* "}")?
 		public Group getGroup_4() { return cGroup_4; }
 
 		//"{"
@@ -1879,18 +1916,30 @@ public class JcmGrammarAccess extends AbstractGrammarElementFinder {
 		//EOL*
 		public RuleCall getEOLParserRuleCall_4_1() { return cEOLParserRuleCall_4_1; }
 
-		//("debug" EOL+ | "owner" ":" owner+=ATOM EOL+ | other+=ATOM ":" (string+=STRING | val+=INT_LITERAL | literal+=Literal |
-		//val_real+=REAL_LITERAL) EOL+)*
+		//("debug" (":" debug+=Literal)? EOL+ | "owner" ":" owner+=ATOM EOL+ | other+=ATOM ":" (string+=STRING | val+=INT_LITERAL
+		//| literal+=Literal | val_real+=REAL_LITERAL) EOL+)*
 		public Alternatives getAlternatives_4_2() { return cAlternatives_4_2; }
 
-		//"debug" EOL+
+		//"debug" (":" debug+=Literal)? EOL+
 		public Group getGroup_4_2_0() { return cGroup_4_2_0; }
 
 		//"debug"
 		public Keyword getDebugKeyword_4_2_0_0() { return cDebugKeyword_4_2_0_0; }
 
+		//(":" debug+=Literal)?
+		public Group getGroup_4_2_0_1() { return cGroup_4_2_0_1; }
+
+		//":"
+		public Keyword getColonKeyword_4_2_0_1_0() { return cColonKeyword_4_2_0_1_0; }
+
+		//debug+=Literal
+		public Assignment getDebugAssignment_4_2_0_1_1() { return cDebugAssignment_4_2_0_1_1; }
+
+		//Literal
+		public RuleCall getDebugLiteralParserRuleCall_4_2_0_1_1_0() { return cDebugLiteralParserRuleCall_4_2_0_1_1_0; }
+
 		//EOL+
-		public RuleCall getEOLParserRuleCall_4_2_0_1() { return cEOLParserRuleCall_4_2_0_1; }
+		public RuleCall getEOLParserRuleCall_4_2_0_2() { return cEOLParserRuleCall_4_2_0_2; }
 
 		//"owner" ":" owner+=ATOM EOL+
 		public Group getGroup_4_2_1() { return cGroup_4_2_1; }
@@ -2787,8 +2836,8 @@ public class JcmGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//Workspace:
-	//	"workspace" name=ATOM "{" EOL* (artifact+=Artifact | "agents" ":" ((agent+=ATOM | "*") (EOL | ",")+)* | "debug" EOL+ |
-	//	node+=ONode)* "}" EOL*;
+	//	"workspace" name=ATOM "{" EOL* (artifact+=Artifact | "agents" ":" ((agent+=ATOM | "*") (EOL | ",")+)* | "debug" (":"
+	//	debug+=Literal)? EOL+ | node+=ONode)* "}" EOL*;
 	public WorkspaceElements getWorkspaceAccess() {
 		return (pWorkspace != null) ? pWorkspace : (pWorkspace = new WorkspaceElements());
 	}
@@ -2861,8 +2910,8 @@ public class JcmGrammarAccess extends AbstractGrammarElementFinder {
 
 	//Group:
 	//	"group" name=ATOM ":" kind=ATOM ("{" EOL* (group+=Group | "responsible-for" ":" responsibleFor+=ATOM EOL+ | "owner"
-	//	":" owner+=ATOM EOL+ | "debug" EOL+ | other+=ATOM ":" (string+=STRING | val+=INT_LITERAL | literal+=Literal |
-	//	val_real+=REAL_LITERAL) EOL+ | "players" ":" (agent+=ATOM role+=ATOM (EOL | ",")+)*)* "}")? EOL*;
+	//	":" owner+=ATOM EOL+ | "debug" (":" debug+=Literal)? EOL+ | other+=ATOM ":" (string+=STRING | val+=INT_LITERAL |
+	//	literal+=Literal | val_real+=REAL_LITERAL) EOL+ | "players" ":" (agent+=ATOM role+=ATOM (EOL | ",")+)*)* "}")? EOL*;
 	public GroupElements getGroupAccess() {
 		return (pGroup != null) ? pGroup : (pGroup = new GroupElements());
 	}
@@ -2872,8 +2921,8 @@ public class JcmGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//Scheme:
-	//	"scheme" name=ATOM ":" kind=ATOM ("{" EOL* ("debug" EOL+ | "owner" ":" owner+=ATOM EOL+ | other+=ATOM ":"
-	//	(string+=STRING | val+=INT_LITERAL | literal+=Literal | val_real+=REAL_LITERAL) EOL+)* "}")? EOL*;
+	//	"scheme" name=ATOM ":" kind=ATOM ("{" EOL* ("debug" (":" debug+=Literal)? EOL+ | "owner" ":" owner+=ATOM EOL+ |
+	//	other+=ATOM ":" (string+=STRING | val+=INT_LITERAL | literal+=Literal | val_real+=REAL_LITERAL) EOL+)* "}")? EOL*;
 	public SchemeElements getSchemeAccess() {
 		return (pScheme != null) ? pScheme : (pScheme = new SchemeElements());
 	}

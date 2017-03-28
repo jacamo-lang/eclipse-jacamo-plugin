@@ -814,9 +814,19 @@ public class JcmPackageImpl extends EPackageImpl implements JcmPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getWorkspace_Node()
+  public EReference getWorkspace_Debug()
   {
     return (EReference)workspaceEClass.getEStructuralFeatures().get(3);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EReference getWorkspace_Node()
+  {
+    return (EReference)workspaceEClass.getEStructuralFeatures().get(4);
   }
 
   /**
@@ -1124,9 +1134,9 @@ public class JcmPackageImpl extends EPackageImpl implements JcmPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getGroup_Other()
+  public EReference getGroup_Debug()
   {
-    return (EAttribute)groupEClass.getEStructuralFeatures().get(5);
+    return (EReference)groupEClass.getEStructuralFeatures().get(5);
   }
 
   /**
@@ -1134,7 +1144,7 @@ public class JcmPackageImpl extends EPackageImpl implements JcmPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getGroup_String()
+  public EAttribute getGroup_Other()
   {
     return (EAttribute)groupEClass.getEStructuralFeatures().get(6);
   }
@@ -1144,7 +1154,7 @@ public class JcmPackageImpl extends EPackageImpl implements JcmPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getGroup_Val()
+  public EAttribute getGroup_String()
   {
     return (EAttribute)groupEClass.getEStructuralFeatures().get(7);
   }
@@ -1154,9 +1164,19 @@ public class JcmPackageImpl extends EPackageImpl implements JcmPackage
    * <!-- end-user-doc -->
    * @generated
    */
+  public EAttribute getGroup_Val()
+  {
+    return (EAttribute)groupEClass.getEStructuralFeatures().get(8);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public EReference getGroup_Literal()
   {
-    return (EReference)groupEClass.getEStructuralFeatures().get(8);
+    return (EReference)groupEClass.getEStructuralFeatures().get(9);
   }
 
   /**
@@ -1166,7 +1186,7 @@ public class JcmPackageImpl extends EPackageImpl implements JcmPackage
    */
   public EAttribute getGroup_Val_real()
   {
-    return (EAttribute)groupEClass.getEStructuralFeatures().get(9);
+    return (EAttribute)groupEClass.getEStructuralFeatures().get(10);
   }
 
   /**
@@ -1176,7 +1196,7 @@ public class JcmPackageImpl extends EPackageImpl implements JcmPackage
    */
   public EAttribute getGroup_Agent()
   {
-    return (EAttribute)groupEClass.getEStructuralFeatures().get(10);
+    return (EAttribute)groupEClass.getEStructuralFeatures().get(11);
   }
 
   /**
@@ -1186,7 +1206,7 @@ public class JcmPackageImpl extends EPackageImpl implements JcmPackage
    */
   public EAttribute getGroup_Role()
   {
-    return (EAttribute)groupEClass.getEStructuralFeatures().get(11);
+    return (EAttribute)groupEClass.getEStructuralFeatures().get(12);
   }
 
   /**
@@ -1224,9 +1244,9 @@ public class JcmPackageImpl extends EPackageImpl implements JcmPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getScheme_Owner()
+  public EReference getScheme_Debug()
   {
-    return (EAttribute)schemeEClass.getEStructuralFeatures().get(2);
+    return (EReference)schemeEClass.getEStructuralFeatures().get(2);
   }
 
   /**
@@ -1234,7 +1254,7 @@ public class JcmPackageImpl extends EPackageImpl implements JcmPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getScheme_Other()
+  public EAttribute getScheme_Owner()
   {
     return (EAttribute)schemeEClass.getEStructuralFeatures().get(3);
   }
@@ -1244,7 +1264,7 @@ public class JcmPackageImpl extends EPackageImpl implements JcmPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getScheme_String()
+  public EAttribute getScheme_Other()
   {
     return (EAttribute)schemeEClass.getEStructuralFeatures().get(4);
   }
@@ -1254,7 +1274,7 @@ public class JcmPackageImpl extends EPackageImpl implements JcmPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getScheme_Val()
+  public EAttribute getScheme_String()
   {
     return (EAttribute)schemeEClass.getEStructuralFeatures().get(5);
   }
@@ -1264,9 +1284,19 @@ public class JcmPackageImpl extends EPackageImpl implements JcmPackage
    * <!-- end-user-doc -->
    * @generated
    */
+  public EAttribute getScheme_Val()
+  {
+    return (EAttribute)schemeEClass.getEStructuralFeatures().get(6);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public EReference getScheme_Literal()
   {
-    return (EReference)schemeEClass.getEStructuralFeatures().get(6);
+    return (EReference)schemeEClass.getEStructuralFeatures().get(7);
   }
 
   /**
@@ -1276,7 +1306,7 @@ public class JcmPackageImpl extends EPackageImpl implements JcmPackage
    */
   public EAttribute getScheme_Val_real()
   {
-    return (EAttribute)schemeEClass.getEStructuralFeatures().get(7);
+    return (EAttribute)schemeEClass.getEStructuralFeatures().get(8);
   }
 
   /**
@@ -1797,6 +1827,7 @@ public class JcmPackageImpl extends EPackageImpl implements JcmPackage
     createEAttribute(workspaceEClass, WORKSPACE__NAME);
     createEReference(workspaceEClass, WORKSPACE__ARTIFACT);
     createEAttribute(workspaceEClass, WORKSPACE__AGENT);
+    createEReference(workspaceEClass, WORKSPACE__DEBUG);
     createEReference(workspaceEClass, WORKSPACE__NODE);
 
     artifactEClass = createEClass(ARTIFACT);
@@ -1835,6 +1866,7 @@ public class JcmPackageImpl extends EPackageImpl implements JcmPackage
     createEReference(groupEClass, GROUP__GROUP);
     createEAttribute(groupEClass, GROUP__RESPONSIBLE_FOR);
     createEAttribute(groupEClass, GROUP__OWNER);
+    createEReference(groupEClass, GROUP__DEBUG);
     createEAttribute(groupEClass, GROUP__OTHER);
     createEAttribute(groupEClass, GROUP__STRING);
     createEAttribute(groupEClass, GROUP__VAL);
@@ -1846,6 +1878,7 @@ public class JcmPackageImpl extends EPackageImpl implements JcmPackage
     schemeEClass = createEClass(SCHEME);
     createEAttribute(schemeEClass, SCHEME__NAME);
     createEAttribute(schemeEClass, SCHEME__KIND);
+    createEReference(schemeEClass, SCHEME__DEBUG);
     createEAttribute(schemeEClass, SCHEME__OWNER);
     createEAttribute(schemeEClass, SCHEME__OTHER);
     createEAttribute(schemeEClass, SCHEME__STRING);
@@ -1997,6 +2030,7 @@ public class JcmPackageImpl extends EPackageImpl implements JcmPackage
     initEAttribute(getWorkspace_Name(), ecorePackage.getEString(), "name", null, 0, 1, Workspace.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getWorkspace_Artifact(), this.getArtifact(), null, "artifact", null, 0, -1, Workspace.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getWorkspace_Agent(), ecorePackage.getEString(), "agent", null, 0, -1, Workspace.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getWorkspace_Debug(), this.getLiteral(), null, "debug", null, 0, -1, Workspace.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getWorkspace_Node(), this.getONode(), null, "node", null, 0, -1, Workspace.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(artifactEClass, Artifact.class, "Artifact", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -2035,6 +2069,7 @@ public class JcmPackageImpl extends EPackageImpl implements JcmPackage
     initEReference(getGroup_Group(), this.getGroup(), null, "group", null, 0, -1, Group.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getGroup_ResponsibleFor(), ecorePackage.getEString(), "responsibleFor", null, 0, -1, Group.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getGroup_Owner(), ecorePackage.getEString(), "owner", null, 0, -1, Group.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getGroup_Debug(), this.getLiteral(), null, "debug", null, 0, -1, Group.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getGroup_Other(), ecorePackage.getEString(), "other", null, 0, -1, Group.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getGroup_String(), ecorePackage.getEString(), "string", null, 0, -1, Group.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getGroup_Val(), ecorePackage.getEInt(), "val", null, 0, -1, Group.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -2046,6 +2081,7 @@ public class JcmPackageImpl extends EPackageImpl implements JcmPackage
     initEClass(schemeEClass, Scheme.class, "Scheme", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getScheme_Name(), ecorePackage.getEString(), "name", null, 0, 1, Scheme.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getScheme_Kind(), ecorePackage.getEString(), "kind", null, 0, 1, Scheme.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getScheme_Debug(), this.getLiteral(), null, "debug", null, 0, -1, Scheme.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getScheme_Owner(), ecorePackage.getEString(), "owner", null, 0, -1, Scheme.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getScheme_Other(), ecorePackage.getEString(), "other", null, 0, -1, Scheme.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getScheme_String(), ecorePackage.getEString(), "string", null, 0, -1, Scheme.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

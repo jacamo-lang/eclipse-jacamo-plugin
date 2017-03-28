@@ -32,6 +32,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <ul>
  *   <li>{@link jacamoide.xtext.jcm.jcm.impl.SchemeImpl#getName <em>Name</em>}</li>
  *   <li>{@link jacamoide.xtext.jcm.jcm.impl.SchemeImpl#getKind <em>Kind</em>}</li>
+ *   <li>{@link jacamoide.xtext.jcm.jcm.impl.SchemeImpl#getDebug <em>Debug</em>}</li>
  *   <li>{@link jacamoide.xtext.jcm.jcm.impl.SchemeImpl#getOwner <em>Owner</em>}</li>
  *   <li>{@link jacamoide.xtext.jcm.jcm.impl.SchemeImpl#getOther <em>Other</em>}</li>
  *   <li>{@link jacamoide.xtext.jcm.jcm.impl.SchemeImpl#getString <em>String</em>}</li>
@@ -84,6 +85,16 @@ public class SchemeImpl extends MinimalEObjectImpl.Container implements Scheme
    * @ordered
    */
   protected String kind = KIND_EDEFAULT;
+
+  /**
+   * The cached value of the '{@link #getDebug() <em>Debug</em>}' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getDebug()
+   * @generated
+   * @ordered
+   */
+  protected EList<Literal> debug;
 
   /**
    * The cached value of the '{@link #getOwner() <em>Owner</em>}' attribute list.
@@ -217,6 +228,20 @@ public class SchemeImpl extends MinimalEObjectImpl.Container implements Scheme
    * <!-- end-user-doc -->
    * @generated
    */
+  public EList<Literal> getDebug()
+  {
+    if (debug == null)
+    {
+      debug = new EObjectContainmentEList<Literal>(Literal.class, this, JcmPackage.SCHEME__DEBUG);
+    }
+    return debug;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public EList<String> getOwner()
   {
     if (owner == null)
@@ -306,6 +331,8 @@ public class SchemeImpl extends MinimalEObjectImpl.Container implements Scheme
   {
     switch (featureID)
     {
+      case JcmPackage.SCHEME__DEBUG:
+        return ((InternalEList<?>)getDebug()).basicRemove(otherEnd, msgs);
       case JcmPackage.SCHEME__LITERAL:
         return ((InternalEList<?>)getLiteral()).basicRemove(otherEnd, msgs);
     }
@@ -326,6 +353,8 @@ public class SchemeImpl extends MinimalEObjectImpl.Container implements Scheme
         return getName();
       case JcmPackage.SCHEME__KIND:
         return getKind();
+      case JcmPackage.SCHEME__DEBUG:
+        return getDebug();
       case JcmPackage.SCHEME__OWNER:
         return getOwner();
       case JcmPackage.SCHEME__OTHER:
@@ -358,6 +387,10 @@ public class SchemeImpl extends MinimalEObjectImpl.Container implements Scheme
         return;
       case JcmPackage.SCHEME__KIND:
         setKind((String)newValue);
+        return;
+      case JcmPackage.SCHEME__DEBUG:
+        getDebug().clear();
+        getDebug().addAll((Collection<? extends Literal>)newValue);
         return;
       case JcmPackage.SCHEME__OWNER:
         getOwner().clear();
@@ -403,6 +436,9 @@ public class SchemeImpl extends MinimalEObjectImpl.Container implements Scheme
       case JcmPackage.SCHEME__KIND:
         setKind(KIND_EDEFAULT);
         return;
+      case JcmPackage.SCHEME__DEBUG:
+        getDebug().clear();
+        return;
       case JcmPackage.SCHEME__OWNER:
         getOwner().clear();
         return;
@@ -439,6 +475,8 @@ public class SchemeImpl extends MinimalEObjectImpl.Container implements Scheme
         return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
       case JcmPackage.SCHEME__KIND:
         return KIND_EDEFAULT == null ? kind != null : !KIND_EDEFAULT.equals(kind);
+      case JcmPackage.SCHEME__DEBUG:
+        return debug != null && !debug.isEmpty();
       case JcmPackage.SCHEME__OWNER:
         return owner != null && !owner.isEmpty();
       case JcmPackage.SCHEME__OTHER:

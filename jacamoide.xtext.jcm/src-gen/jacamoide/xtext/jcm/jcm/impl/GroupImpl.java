@@ -35,6 +35,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link jacamoide.xtext.jcm.jcm.impl.GroupImpl#getGroup <em>Group</em>}</li>
  *   <li>{@link jacamoide.xtext.jcm.jcm.impl.GroupImpl#getResponsibleFor <em>Responsible For</em>}</li>
  *   <li>{@link jacamoide.xtext.jcm.jcm.impl.GroupImpl#getOwner <em>Owner</em>}</li>
+ *   <li>{@link jacamoide.xtext.jcm.jcm.impl.GroupImpl#getDebug <em>Debug</em>}</li>
  *   <li>{@link jacamoide.xtext.jcm.jcm.impl.GroupImpl#getOther <em>Other</em>}</li>
  *   <li>{@link jacamoide.xtext.jcm.jcm.impl.GroupImpl#getString <em>String</em>}</li>
  *   <li>{@link jacamoide.xtext.jcm.jcm.impl.GroupImpl#getVal <em>Val</em>}</li>
@@ -118,6 +119,16 @@ public class GroupImpl extends MinimalEObjectImpl.Container implements Group
    * @ordered
    */
   protected EList<String> owner;
+
+  /**
+   * The cached value of the '{@link #getDebug() <em>Debug</em>}' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getDebug()
+   * @generated
+   * @ordered
+   */
+  protected EList<Literal> debug;
 
   /**
    * The cached value of the '{@link #getOther() <em>Other</em>}' attribute list.
@@ -303,6 +314,20 @@ public class GroupImpl extends MinimalEObjectImpl.Container implements Group
    * <!-- end-user-doc -->
    * @generated
    */
+  public EList<Literal> getDebug()
+  {
+    if (debug == null)
+    {
+      debug = new EObjectContainmentEList<Literal>(Literal.class, this, JcmPackage.GROUP__DEBUG);
+    }
+    return debug;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public EList<String> getOther()
   {
     if (other == null)
@@ -408,6 +433,8 @@ public class GroupImpl extends MinimalEObjectImpl.Container implements Group
     {
       case JcmPackage.GROUP__GROUP:
         return ((InternalEList<?>)getGroup()).basicRemove(otherEnd, msgs);
+      case JcmPackage.GROUP__DEBUG:
+        return ((InternalEList<?>)getDebug()).basicRemove(otherEnd, msgs);
       case JcmPackage.GROUP__LITERAL:
         return ((InternalEList<?>)getLiteral()).basicRemove(otherEnd, msgs);
     }
@@ -434,6 +461,8 @@ public class GroupImpl extends MinimalEObjectImpl.Container implements Group
         return getResponsibleFor();
       case JcmPackage.GROUP__OWNER:
         return getOwner();
+      case JcmPackage.GROUP__DEBUG:
+        return getDebug();
       case JcmPackage.GROUP__OTHER:
         return getOther();
       case JcmPackage.GROUP__STRING:
@@ -480,6 +509,10 @@ public class GroupImpl extends MinimalEObjectImpl.Container implements Group
       case JcmPackage.GROUP__OWNER:
         getOwner().clear();
         getOwner().addAll((Collection<? extends String>)newValue);
+        return;
+      case JcmPackage.GROUP__DEBUG:
+        getDebug().clear();
+        getDebug().addAll((Collection<? extends Literal>)newValue);
         return;
       case JcmPackage.GROUP__OTHER:
         getOther().clear();
@@ -538,6 +571,9 @@ public class GroupImpl extends MinimalEObjectImpl.Container implements Group
       case JcmPackage.GROUP__OWNER:
         getOwner().clear();
         return;
+      case JcmPackage.GROUP__DEBUG:
+        getDebug().clear();
+        return;
       case JcmPackage.GROUP__OTHER:
         getOther().clear();
         return;
@@ -583,6 +619,8 @@ public class GroupImpl extends MinimalEObjectImpl.Container implements Group
         return responsibleFor != null && !responsibleFor.isEmpty();
       case JcmPackage.GROUP__OWNER:
         return owner != null && !owner.isEmpty();
+      case JcmPackage.GROUP__DEBUG:
+        return debug != null && !debug.isEmpty();
       case JcmPackage.GROUP__OTHER:
         return other != null && !other.isEmpty();
       case JcmPackage.GROUP__STRING:

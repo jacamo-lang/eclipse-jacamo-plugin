@@ -17,6 +17,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link jacamoide.xtext.jcm.jcm.Workspace#getName <em>Name</em>}</li>
  *   <li>{@link jacamoide.xtext.jcm.jcm.Workspace#getArtifact <em>Artifact</em>}</li>
  *   <li>{@link jacamoide.xtext.jcm.jcm.Workspace#getAgent <em>Agent</em>}</li>
+ *   <li>{@link jacamoide.xtext.jcm.jcm.Workspace#getDebug <em>Debug</em>}</li>
  *   <li>{@link jacamoide.xtext.jcm.jcm.Workspace#getNode <em>Node</em>}</li>
  * </ul>
  * </p>
@@ -84,6 +85,22 @@ public interface Workspace extends EObject
    * @generated
    */
   EList<String> getAgent();
+
+  /**
+   * Returns the value of the '<em><b>Debug</b></em>' containment reference list.
+   * The list contents are of type {@link jacamoide.xtext.jcm.jcm.Literal}.
+   * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of the '<em>Debug</em>' containment reference list isn't clear,
+   * there really should be more of a description here...
+   * </p>
+   * <!-- end-user-doc -->
+   * @return the value of the '<em>Debug</em>' containment reference list.
+   * @see jacamoide.xtext.jcm.jcm.JcmPackage#getWorkspace_Debug()
+   * @model containment="true"
+   * @generated
+   */
+  EList<Literal> getDebug();
 
   /**
    * Returns the value of the '<em><b>Node</b></em>' containment reference list.

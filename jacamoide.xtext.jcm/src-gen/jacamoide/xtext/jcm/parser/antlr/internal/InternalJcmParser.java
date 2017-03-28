@@ -4495,7 +4495,7 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleWorkspace"
-    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1517:1: ruleWorkspace returns [EObject current=null] : (otherlv_0= 'workspace' ( (lv_name_1_0= RULE_ATOM ) ) otherlv_2= '{' ( ruleEOL )* ( ( (lv_artifact_4_0= ruleArtifact ) ) | (otherlv_5= 'agents' otherlv_6= ':' ( ( ( (lv_agent_7_0= RULE_ATOM ) ) | otherlv_8= '*' ) ( ruleEOL | otherlv_10= ',' )+ )* ) | (otherlv_11= 'debug' ( ruleEOL )+ ) | ( (lv_node_13_0= ruleONode ) ) )* otherlv_14= '}' ( ruleEOL )* ) ;
+    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1517:1: ruleWorkspace returns [EObject current=null] : (otherlv_0= 'workspace' ( (lv_name_1_0= RULE_ATOM ) ) otherlv_2= '{' ( ruleEOL )* ( ( (lv_artifact_4_0= ruleArtifact ) ) | (otherlv_5= 'agents' otherlv_6= ':' ( ( ( (lv_agent_7_0= RULE_ATOM ) ) | otherlv_8= '*' ) ( ruleEOL | otherlv_10= ',' )+ )* ) | (otherlv_11= 'debug' (otherlv_12= ':' ( (lv_debug_13_0= ruleLiteral ) ) )? ( ruleEOL )+ ) | ( (lv_node_15_0= ruleONode ) ) )* otherlv_16= '}' ( ruleEOL )* ) ;
     public final EObject ruleWorkspace() throws RecognitionException {
         EObject current = null;
 
@@ -4508,20 +4508,23 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
         Token otherlv_8=null;
         Token otherlv_10=null;
         Token otherlv_11=null;
-        Token otherlv_14=null;
+        Token otherlv_12=null;
+        Token otherlv_16=null;
         EObject lv_artifact_4_0 = null;
 
-        EObject lv_node_13_0 = null;
+        EObject lv_debug_13_0 = null;
+
+        EObject lv_node_15_0 = null;
 
 
          enterRule(); 
             
         try {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1520:28: ( (otherlv_0= 'workspace' ( (lv_name_1_0= RULE_ATOM ) ) otherlv_2= '{' ( ruleEOL )* ( ( (lv_artifact_4_0= ruleArtifact ) ) | (otherlv_5= 'agents' otherlv_6= ':' ( ( ( (lv_agent_7_0= RULE_ATOM ) ) | otherlv_8= '*' ) ( ruleEOL | otherlv_10= ',' )+ )* ) | (otherlv_11= 'debug' ( ruleEOL )+ ) | ( (lv_node_13_0= ruleONode ) ) )* otherlv_14= '}' ( ruleEOL )* ) )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1521:1: (otherlv_0= 'workspace' ( (lv_name_1_0= RULE_ATOM ) ) otherlv_2= '{' ( ruleEOL )* ( ( (lv_artifact_4_0= ruleArtifact ) ) | (otherlv_5= 'agents' otherlv_6= ':' ( ( ( (lv_agent_7_0= RULE_ATOM ) ) | otherlv_8= '*' ) ( ruleEOL | otherlv_10= ',' )+ )* ) | (otherlv_11= 'debug' ( ruleEOL )+ ) | ( (lv_node_13_0= ruleONode ) ) )* otherlv_14= '}' ( ruleEOL )* )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1520:28: ( (otherlv_0= 'workspace' ( (lv_name_1_0= RULE_ATOM ) ) otherlv_2= '{' ( ruleEOL )* ( ( (lv_artifact_4_0= ruleArtifact ) ) | (otherlv_5= 'agents' otherlv_6= ':' ( ( ( (lv_agent_7_0= RULE_ATOM ) ) | otherlv_8= '*' ) ( ruleEOL | otherlv_10= ',' )+ )* ) | (otherlv_11= 'debug' (otherlv_12= ':' ( (lv_debug_13_0= ruleLiteral ) ) )? ( ruleEOL )+ ) | ( (lv_node_15_0= ruleONode ) ) )* otherlv_16= '}' ( ruleEOL )* ) )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1521:1: (otherlv_0= 'workspace' ( (lv_name_1_0= RULE_ATOM ) ) otherlv_2= '{' ( ruleEOL )* ( ( (lv_artifact_4_0= ruleArtifact ) ) | (otherlv_5= 'agents' otherlv_6= ':' ( ( ( (lv_agent_7_0= RULE_ATOM ) ) | otherlv_8= '*' ) ( ruleEOL | otherlv_10= ',' )+ )* ) | (otherlv_11= 'debug' (otherlv_12= ':' ( (lv_debug_13_0= ruleLiteral ) ) )? ( ruleEOL )+ ) | ( (lv_node_15_0= ruleONode ) ) )* otherlv_16= '}' ( ruleEOL )* )
             {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1521:1: (otherlv_0= 'workspace' ( (lv_name_1_0= RULE_ATOM ) ) otherlv_2= '{' ( ruleEOL )* ( ( (lv_artifact_4_0= ruleArtifact ) ) | (otherlv_5= 'agents' otherlv_6= ':' ( ( ( (lv_agent_7_0= RULE_ATOM ) ) | otherlv_8= '*' ) ( ruleEOL | otherlv_10= ',' )+ )* ) | (otherlv_11= 'debug' ( ruleEOL )+ ) | ( (lv_node_13_0= ruleONode ) ) )* otherlv_14= '}' ( ruleEOL )* )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1521:3: otherlv_0= 'workspace' ( (lv_name_1_0= RULE_ATOM ) ) otherlv_2= '{' ( ruleEOL )* ( ( (lv_artifact_4_0= ruleArtifact ) ) | (otherlv_5= 'agents' otherlv_6= ':' ( ( ( (lv_agent_7_0= RULE_ATOM ) ) | otherlv_8= '*' ) ( ruleEOL | otherlv_10= ',' )+ )* ) | (otherlv_11= 'debug' ( ruleEOL )+ ) | ( (lv_node_13_0= ruleONode ) ) )* otherlv_14= '}' ( ruleEOL )*
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1521:1: (otherlv_0= 'workspace' ( (lv_name_1_0= RULE_ATOM ) ) otherlv_2= '{' ( ruleEOL )* ( ( (lv_artifact_4_0= ruleArtifact ) ) | (otherlv_5= 'agents' otherlv_6= ':' ( ( ( (lv_agent_7_0= RULE_ATOM ) ) | otherlv_8= '*' ) ( ruleEOL | otherlv_10= ',' )+ )* ) | (otherlv_11= 'debug' (otherlv_12= ':' ( (lv_debug_13_0= ruleLiteral ) ) )? ( ruleEOL )+ ) | ( (lv_node_15_0= ruleONode ) ) )* otherlv_16= '}' ( ruleEOL )* )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1521:3: otherlv_0= 'workspace' ( (lv_name_1_0= RULE_ATOM ) ) otherlv_2= '{' ( ruleEOL )* ( ( (lv_artifact_4_0= ruleArtifact ) ) | (otherlv_5= 'agents' otherlv_6= ':' ( ( ( (lv_agent_7_0= RULE_ATOM ) ) | otherlv_8= '*' ) ( ruleEOL | otherlv_10= ',' )+ )* ) | (otherlv_11= 'debug' (otherlv_12= ':' ( (lv_debug_13_0= ruleLiteral ) ) )? ( ruleEOL )+ ) | ( (lv_node_15_0= ruleONode ) ) )* otherlv_16= '}' ( ruleEOL )*
             {
             otherlv_0=(Token)match(input,56,FOLLOW_56_in_ruleWorkspace3198); 
 
@@ -4592,35 +4595,35 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
                 }
             } while (true);
 
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1555:3: ( ( (lv_artifact_4_0= ruleArtifact ) ) | (otherlv_5= 'agents' otherlv_6= ':' ( ( ( (lv_agent_7_0= RULE_ATOM ) ) | otherlv_8= '*' ) ( ruleEOL | otherlv_10= ',' )+ )* ) | (otherlv_11= 'debug' ( ruleEOL )+ ) | ( (lv_node_13_0= ruleONode ) ) )*
-            loop61:
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1555:3: ( ( (lv_artifact_4_0= ruleArtifact ) ) | (otherlv_5= 'agents' otherlv_6= ':' ( ( ( (lv_agent_7_0= RULE_ATOM ) ) | otherlv_8= '*' ) ( ruleEOL | otherlv_10= ',' )+ )* ) | (otherlv_11= 'debug' (otherlv_12= ':' ( (lv_debug_13_0= ruleLiteral ) ) )? ( ruleEOL )+ ) | ( (lv_node_15_0= ruleONode ) ) )*
+            loop62:
             do {
-                int alt61=5;
+                int alt62=5;
                 switch ( input.LA(1) ) {
                 case 59:
                     {
-                    alt61=1;
+                    alt62=1;
                     }
                     break;
                 case 57:
                     {
-                    alt61=2;
+                    alt62=2;
                     }
                     break;
                 case 46:
                     {
-                    alt61=3;
+                    alt62=3;
                     }
                     break;
                 case 32:
                     {
-                    alt61=4;
+                    alt62=4;
                     }
                     break;
 
                 }
 
-                switch (alt61) {
+                switch (alt62) {
             	case 1 :
             	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1555:4: ( (lv_artifact_4_0= ruleArtifact ) )
             	    {
@@ -4818,35 +4821,87 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
             	    }
             	    break;
             	case 3 :
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1619:6: (otherlv_11= 'debug' ( ruleEOL )+ )
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1619:6: (otherlv_11= 'debug' (otherlv_12= ':' ( (lv_debug_13_0= ruleLiteral ) ) )? ( ruleEOL )+ )
             	    {
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1619:6: (otherlv_11= 'debug' ( ruleEOL )+ )
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1619:8: otherlv_11= 'debug' ( ruleEOL )+
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1619:6: (otherlv_11= 'debug' (otherlv_12= ':' ( (lv_debug_13_0= ruleLiteral ) ) )? ( ruleEOL )+ )
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1619:8: otherlv_11= 'debug' (otherlv_12= ':' ( (lv_debug_13_0= ruleLiteral ) ) )? ( ruleEOL )+
             	    {
             	    otherlv_11=(Token)match(input,46,FOLLOW_46_in_ruleWorkspace3404); 
 
             	        	newLeafNode(otherlv_11, grammarAccess.getWorkspaceAccess().getDebugKeyword_4_2_0());
             	        
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1623:1: ( ruleEOL )+
-            	    int cnt60=0;
-            	    loop60:
-            	    do {
-            	        int alt60=2;
-            	        int LA60_0 = input.LA(1);
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1623:1: (otherlv_12= ':' ( (lv_debug_13_0= ruleLiteral ) ) )?
+            	    int alt60=2;
+            	    int LA60_0 = input.LA(1);
 
-            	        if ( ((LA60_0>=RULE_NEWLINE && LA60_0<=RULE_SL_COMMENT)) ) {
-            	            alt60=1;
+            	    if ( (LA60_0==29) ) {
+            	        alt60=1;
+            	    }
+            	    switch (alt60) {
+            	        case 1 :
+            	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1623:3: otherlv_12= ':' ( (lv_debug_13_0= ruleLiteral ) )
+            	            {
+            	            otherlv_12=(Token)match(input,29,FOLLOW_29_in_ruleWorkspace3417); 
+
+            	                	newLeafNode(otherlv_12, grammarAccess.getWorkspaceAccess().getColonKeyword_4_2_1_0());
+            	                
+            	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1627:1: ( (lv_debug_13_0= ruleLiteral ) )
+            	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1628:1: (lv_debug_13_0= ruleLiteral )
+            	            {
+            	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1628:1: (lv_debug_13_0= ruleLiteral )
+            	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1629:3: lv_debug_13_0= ruleLiteral
+            	            {
+            	             
+            	            	        newCompositeNode(grammarAccess.getWorkspaceAccess().getDebugLiteralParserRuleCall_4_2_1_1_0()); 
+            	            	    
+            	            pushFollow(FOLLOW_ruleLiteral_in_ruleWorkspace3438);
+            	            lv_debug_13_0=ruleLiteral();
+
+            	            state._fsp--;
+
+
+            	            	        if (current==null) {
+            	            	            current = createModelElementForParent(grammarAccess.getWorkspaceRule());
+            	            	        }
+            	                   		add(
+            	                   			current, 
+            	                   			"debug",
+            	                    		lv_debug_13_0, 
+            	                    		"Literal");
+            	            	        afterParserOrEnumRuleCall();
+            	            	    
+
+            	            }
+
+
+            	            }
+
+
+            	            }
+            	            break;
+
+            	    }
+
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1645:4: ( ruleEOL )+
+            	    int cnt61=0;
+            	    loop61:
+            	    do {
+            	        int alt61=2;
+            	        int LA61_0 = input.LA(1);
+
+            	        if ( ((LA61_0>=RULE_NEWLINE && LA61_0<=RULE_SL_COMMENT)) ) {
+            	            alt61=1;
             	        }
 
 
-            	        switch (alt60) {
+            	        switch (alt61) {
             	    	case 1 :
-            	    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1624:5: ruleEOL
+            	    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1646:5: ruleEOL
             	    	    {
             	    	     
-            	    	            newCompositeNode(grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_4_2_1()); 
+            	    	            newCompositeNode(grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_4_2_2()); 
             	    	        
-            	    	    pushFollow(FOLLOW_ruleEOL_in_ruleWorkspace3421);
+            	    	    pushFollow(FOLLOW_ruleEOL_in_ruleWorkspace3457);
             	    	    ruleEOL();
 
             	    	    state._fsp--;
@@ -4859,12 +4914,12 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
             	    	    break;
 
             	    	default :
-            	    	    if ( cnt60 >= 1 ) break loop60;
+            	    	    if ( cnt61 >= 1 ) break loop61;
             	                EarlyExitException eee =
-            	                    new EarlyExitException(60, input);
+            	                    new EarlyExitException(61, input);
             	                throw eee;
             	        }
-            	        cnt60++;
+            	        cnt61++;
             	    } while (true);
 
 
@@ -4874,19 +4929,19 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
             	    }
             	    break;
             	case 4 :
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1632:6: ( (lv_node_13_0= ruleONode ) )
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1654:6: ( (lv_node_15_0= ruleONode ) )
             	    {
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1632:6: ( (lv_node_13_0= ruleONode ) )
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1633:1: (lv_node_13_0= ruleONode )
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1654:6: ( (lv_node_15_0= ruleONode ) )
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1655:1: (lv_node_15_0= ruleONode )
             	    {
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1633:1: (lv_node_13_0= ruleONode )
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1634:3: lv_node_13_0= ruleONode
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1655:1: (lv_node_15_0= ruleONode )
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1656:3: lv_node_15_0= ruleONode
             	    {
             	     
             	    	        newCompositeNode(grammarAccess.getWorkspaceAccess().getNodeONodeParserRuleCall_4_3_0()); 
             	    	    
-            	    pushFollow(FOLLOW_ruleONode_in_ruleWorkspace3450);
-            	    lv_node_13_0=ruleONode();
+            	    pushFollow(FOLLOW_ruleONode_in_ruleWorkspace3486);
+            	    lv_node_15_0=ruleONode();
 
             	    state._fsp--;
 
@@ -4897,7 +4952,7 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
             	           		add(
             	           			current, 
             	           			"node",
-            	            		lv_node_13_0, 
+            	            		lv_node_15_0, 
             	            		"ONode");
             	    	        afterParserOrEnumRuleCall();
             	    	    
@@ -4912,33 +4967,33 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    break loop61;
+            	    break loop62;
                 }
             } while (true);
 
-            otherlv_14=(Token)match(input,25,FOLLOW_25_in_ruleWorkspace3464); 
+            otherlv_16=(Token)match(input,25,FOLLOW_25_in_ruleWorkspace3500); 
 
-                	newLeafNode(otherlv_14, grammarAccess.getWorkspaceAccess().getRightCurlyBracketKeyword_5());
+                	newLeafNode(otherlv_16, grammarAccess.getWorkspaceAccess().getRightCurlyBracketKeyword_5());
                 
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1654:1: ( ruleEOL )*
-            loop62:
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1676:1: ( ruleEOL )*
+            loop63:
             do {
-                int alt62=2;
-                int LA62_0 = input.LA(1);
+                int alt63=2;
+                int LA63_0 = input.LA(1);
 
-                if ( ((LA62_0>=RULE_NEWLINE && LA62_0<=RULE_SL_COMMENT)) ) {
-                    alt62=1;
+                if ( ((LA63_0>=RULE_NEWLINE && LA63_0<=RULE_SL_COMMENT)) ) {
+                    alt63=1;
                 }
 
 
-                switch (alt62) {
+                switch (alt63) {
             	case 1 :
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1655:5: ruleEOL
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1677:5: ruleEOL
             	    {
             	     
             	            newCompositeNode(grammarAccess.getWorkspaceAccess().getEOLParserRuleCall_6()); 
             	        
-            	    pushFollow(FOLLOW_ruleEOL_in_ruleWorkspace3481);
+            	    pushFollow(FOLLOW_ruleEOL_in_ruleWorkspace3517);
             	    ruleEOL();
 
             	    state._fsp--;
@@ -4951,7 +5006,7 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    break loop62;
+            	    break loop63;
                 }
             } while (true);
 
@@ -4976,7 +5031,7 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleArtifact"
-    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1670:1: entryRuleArtifact returns [EObject current=null] : iv_ruleArtifact= ruleArtifact EOF ;
+    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1692:1: entryRuleArtifact returns [EObject current=null] : iv_ruleArtifact= ruleArtifact EOF ;
     public final EObject entryRuleArtifact() throws RecognitionException {
         EObject current = null;
 
@@ -4984,17 +5039,17 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1671:2: (iv_ruleArtifact= ruleArtifact EOF )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1672:2: iv_ruleArtifact= ruleArtifact EOF
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1693:2: (iv_ruleArtifact= ruleArtifact EOF )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1694:2: iv_ruleArtifact= ruleArtifact EOF
             {
              newCompositeNode(grammarAccess.getArtifactRule()); 
-            pushFollow(FOLLOW_ruleArtifact_in_entryRuleArtifact3518);
+            pushFollow(FOLLOW_ruleArtifact_in_entryRuleArtifact3554);
             iv_ruleArtifact=ruleArtifact();
 
             state._fsp--;
 
              current =iv_ruleArtifact; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleArtifact3528); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleArtifact3564); 
 
             }
 
@@ -5012,7 +5067,7 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleArtifact"
-    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1679:1: ruleArtifact returns [EObject current=null] : (otherlv_0= 'artifact' ( (lv_name_1_0= RULE_ATOM ) ) otherlv_2= ':' ( (lv_classDef_3_0= ruleClassDef ) ) (otherlv_4= '{' ( ruleEOL )* (otherlv_6= 'focused-by' otherlv_7= ':' ( ( ( (lv_agent_8_0= RULE_ATOM ) ) | otherlv_9= '*' ) ( ruleEOL | otherlv_11= ',' )+ )* )? otherlv_12= '}' )? ( ruleEOL )* ) ;
+    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1701:1: ruleArtifact returns [EObject current=null] : (otherlv_0= 'artifact' ( (lv_name_1_0= RULE_ATOM ) ) otherlv_2= ':' ( (lv_classDef_3_0= ruleClassDef ) ) (otherlv_4= '{' ( ruleEOL )* (otherlv_6= 'focused-by' otherlv_7= ':' ( ( ( (lv_agent_8_0= RULE_ATOM ) ) | otherlv_9= '*' ) ( ruleEOL | otherlv_11= ',' )+ )* )? otherlv_12= '}' )? ( ruleEOL )* ) ;
     public final EObject ruleArtifact() throws RecognitionException {
         EObject current = null;
 
@@ -5032,23 +5087,23 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1682:28: ( (otherlv_0= 'artifact' ( (lv_name_1_0= RULE_ATOM ) ) otherlv_2= ':' ( (lv_classDef_3_0= ruleClassDef ) ) (otherlv_4= '{' ( ruleEOL )* (otherlv_6= 'focused-by' otherlv_7= ':' ( ( ( (lv_agent_8_0= RULE_ATOM ) ) | otherlv_9= '*' ) ( ruleEOL | otherlv_11= ',' )+ )* )? otherlv_12= '}' )? ( ruleEOL )* ) )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1683:1: (otherlv_0= 'artifact' ( (lv_name_1_0= RULE_ATOM ) ) otherlv_2= ':' ( (lv_classDef_3_0= ruleClassDef ) ) (otherlv_4= '{' ( ruleEOL )* (otherlv_6= 'focused-by' otherlv_7= ':' ( ( ( (lv_agent_8_0= RULE_ATOM ) ) | otherlv_9= '*' ) ( ruleEOL | otherlv_11= ',' )+ )* )? otherlv_12= '}' )? ( ruleEOL )* )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1704:28: ( (otherlv_0= 'artifact' ( (lv_name_1_0= RULE_ATOM ) ) otherlv_2= ':' ( (lv_classDef_3_0= ruleClassDef ) ) (otherlv_4= '{' ( ruleEOL )* (otherlv_6= 'focused-by' otherlv_7= ':' ( ( ( (lv_agent_8_0= RULE_ATOM ) ) | otherlv_9= '*' ) ( ruleEOL | otherlv_11= ',' )+ )* )? otherlv_12= '}' )? ( ruleEOL )* ) )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1705:1: (otherlv_0= 'artifact' ( (lv_name_1_0= RULE_ATOM ) ) otherlv_2= ':' ( (lv_classDef_3_0= ruleClassDef ) ) (otherlv_4= '{' ( ruleEOL )* (otherlv_6= 'focused-by' otherlv_7= ':' ( ( ( (lv_agent_8_0= RULE_ATOM ) ) | otherlv_9= '*' ) ( ruleEOL | otherlv_11= ',' )+ )* )? otherlv_12= '}' )? ( ruleEOL )* )
             {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1683:1: (otherlv_0= 'artifact' ( (lv_name_1_0= RULE_ATOM ) ) otherlv_2= ':' ( (lv_classDef_3_0= ruleClassDef ) ) (otherlv_4= '{' ( ruleEOL )* (otherlv_6= 'focused-by' otherlv_7= ':' ( ( ( (lv_agent_8_0= RULE_ATOM ) ) | otherlv_9= '*' ) ( ruleEOL | otherlv_11= ',' )+ )* )? otherlv_12= '}' )? ( ruleEOL )* )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1683:3: otherlv_0= 'artifact' ( (lv_name_1_0= RULE_ATOM ) ) otherlv_2= ':' ( (lv_classDef_3_0= ruleClassDef ) ) (otherlv_4= '{' ( ruleEOL )* (otherlv_6= 'focused-by' otherlv_7= ':' ( ( ( (lv_agent_8_0= RULE_ATOM ) ) | otherlv_9= '*' ) ( ruleEOL | otherlv_11= ',' )+ )* )? otherlv_12= '}' )? ( ruleEOL )*
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1705:1: (otherlv_0= 'artifact' ( (lv_name_1_0= RULE_ATOM ) ) otherlv_2= ':' ( (lv_classDef_3_0= ruleClassDef ) ) (otherlv_4= '{' ( ruleEOL )* (otherlv_6= 'focused-by' otherlv_7= ':' ( ( ( (lv_agent_8_0= RULE_ATOM ) ) | otherlv_9= '*' ) ( ruleEOL | otherlv_11= ',' )+ )* )? otherlv_12= '}' )? ( ruleEOL )* )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1705:3: otherlv_0= 'artifact' ( (lv_name_1_0= RULE_ATOM ) ) otherlv_2= ':' ( (lv_classDef_3_0= ruleClassDef ) ) (otherlv_4= '{' ( ruleEOL )* (otherlv_6= 'focused-by' otherlv_7= ':' ( ( ( (lv_agent_8_0= RULE_ATOM ) ) | otherlv_9= '*' ) ( ruleEOL | otherlv_11= ',' )+ )* )? otherlv_12= '}' )? ( ruleEOL )*
             {
-            otherlv_0=(Token)match(input,59,FOLLOW_59_in_ruleArtifact3565); 
+            otherlv_0=(Token)match(input,59,FOLLOW_59_in_ruleArtifact3601); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getArtifactAccess().getArtifactKeyword_0());
                 
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1687:1: ( (lv_name_1_0= RULE_ATOM ) )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1688:1: (lv_name_1_0= RULE_ATOM )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1709:1: ( (lv_name_1_0= RULE_ATOM ) )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1710:1: (lv_name_1_0= RULE_ATOM )
             {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1688:1: (lv_name_1_0= RULE_ATOM )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1689:3: lv_name_1_0= RULE_ATOM
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1710:1: (lv_name_1_0= RULE_ATOM )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1711:3: lv_name_1_0= RULE_ATOM
             {
-            lv_name_1_0=(Token)match(input,RULE_ATOM,FOLLOW_RULE_ATOM_in_ruleArtifact3582); 
+            lv_name_1_0=(Token)match(input,RULE_ATOM,FOLLOW_RULE_ATOM_in_ruleArtifact3618); 
 
             			newLeafNode(lv_name_1_0, grammarAccess.getArtifactAccess().getNameATOMTerminalRuleCall_1_0()); 
             		
@@ -5068,20 +5123,20 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_2=(Token)match(input,29,FOLLOW_29_in_ruleArtifact3599); 
+            otherlv_2=(Token)match(input,29,FOLLOW_29_in_ruleArtifact3635); 
 
                 	newLeafNode(otherlv_2, grammarAccess.getArtifactAccess().getColonKeyword_2());
                 
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1709:1: ( (lv_classDef_3_0= ruleClassDef ) )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1710:1: (lv_classDef_3_0= ruleClassDef )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1731:1: ( (lv_classDef_3_0= ruleClassDef ) )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1732:1: (lv_classDef_3_0= ruleClassDef )
             {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1710:1: (lv_classDef_3_0= ruleClassDef )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1711:3: lv_classDef_3_0= ruleClassDef
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1732:1: (lv_classDef_3_0= ruleClassDef )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1733:3: lv_classDef_3_0= ruleClassDef
             {
              
             	        newCompositeNode(grammarAccess.getArtifactAccess().getClassDefClassDefParserRuleCall_3_0()); 
             	    
-            pushFollow(FOLLOW_ruleClassDef_in_ruleArtifact3620);
+            pushFollow(FOLLOW_ruleClassDef_in_ruleArtifact3656);
             lv_classDef_3_0=ruleClassDef();
 
             state._fsp--;
@@ -5103,40 +5158,40 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1727:2: (otherlv_4= '{' ( ruleEOL )* (otherlv_6= 'focused-by' otherlv_7= ':' ( ( ( (lv_agent_8_0= RULE_ATOM ) ) | otherlv_9= '*' ) ( ruleEOL | otherlv_11= ',' )+ )* )? otherlv_12= '}' )?
-            int alt68=2;
-            int LA68_0 = input.LA(1);
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1749:2: (otherlv_4= '{' ( ruleEOL )* (otherlv_6= 'focused-by' otherlv_7= ':' ( ( ( (lv_agent_8_0= RULE_ATOM ) ) | otherlv_9= '*' ) ( ruleEOL | otherlv_11= ',' )+ )* )? otherlv_12= '}' )?
+            int alt69=2;
+            int LA69_0 = input.LA(1);
 
-            if ( (LA68_0==24) ) {
-                alt68=1;
+            if ( (LA69_0==24) ) {
+                alt69=1;
             }
-            switch (alt68) {
+            switch (alt69) {
                 case 1 :
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1727:4: otherlv_4= '{' ( ruleEOL )* (otherlv_6= 'focused-by' otherlv_7= ':' ( ( ( (lv_agent_8_0= RULE_ATOM ) ) | otherlv_9= '*' ) ( ruleEOL | otherlv_11= ',' )+ )* )? otherlv_12= '}'
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1749:4: otherlv_4= '{' ( ruleEOL )* (otherlv_6= 'focused-by' otherlv_7= ':' ( ( ( (lv_agent_8_0= RULE_ATOM ) ) | otherlv_9= '*' ) ( ruleEOL | otherlv_11= ',' )+ )* )? otherlv_12= '}'
                     {
-                    otherlv_4=(Token)match(input,24,FOLLOW_24_in_ruleArtifact3633); 
+                    otherlv_4=(Token)match(input,24,FOLLOW_24_in_ruleArtifact3669); 
 
                         	newLeafNode(otherlv_4, grammarAccess.getArtifactAccess().getLeftCurlyBracketKeyword_4_0());
                         
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1731:1: ( ruleEOL )*
-                    loop63:
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1753:1: ( ruleEOL )*
+                    loop64:
                     do {
-                        int alt63=2;
-                        int LA63_0 = input.LA(1);
+                        int alt64=2;
+                        int LA64_0 = input.LA(1);
 
-                        if ( ((LA63_0>=RULE_NEWLINE && LA63_0<=RULE_SL_COMMENT)) ) {
-                            alt63=1;
+                        if ( ((LA64_0>=RULE_NEWLINE && LA64_0<=RULE_SL_COMMENT)) ) {
+                            alt64=1;
                         }
 
 
-                        switch (alt63) {
+                        switch (alt64) {
                     	case 1 :
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1732:5: ruleEOL
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1754:5: ruleEOL
                     	    {
                     	     
                     	            newCompositeNode(grammarAccess.getArtifactAccess().getEOLParserRuleCall_4_1()); 
                     	        
-                    	    pushFollow(FOLLOW_ruleEOL_in_ruleArtifact3650);
+                    	    pushFollow(FOLLOW_ruleEOL_in_ruleArtifact3686);
                     	    ruleEOL();
 
                     	    state._fsp--;
@@ -5149,71 +5204,71 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop63;
+                    	    break loop64;
                         }
                     } while (true);
 
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1739:3: (otherlv_6= 'focused-by' otherlv_7= ':' ( ( ( (lv_agent_8_0= RULE_ATOM ) ) | otherlv_9= '*' ) ( ruleEOL | otherlv_11= ',' )+ )* )?
-                    int alt67=2;
-                    int LA67_0 = input.LA(1);
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1761:3: (otherlv_6= 'focused-by' otherlv_7= ':' ( ( ( (lv_agent_8_0= RULE_ATOM ) ) | otherlv_9= '*' ) ( ruleEOL | otherlv_11= ',' )+ )* )?
+                    int alt68=2;
+                    int LA68_0 = input.LA(1);
 
-                    if ( (LA67_0==60) ) {
-                        alt67=1;
+                    if ( (LA68_0==60) ) {
+                        alt68=1;
                     }
-                    switch (alt67) {
+                    switch (alt68) {
                         case 1 :
-                            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1739:5: otherlv_6= 'focused-by' otherlv_7= ':' ( ( ( (lv_agent_8_0= RULE_ATOM ) ) | otherlv_9= '*' ) ( ruleEOL | otherlv_11= ',' )+ )*
+                            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1761:5: otherlv_6= 'focused-by' otherlv_7= ':' ( ( ( (lv_agent_8_0= RULE_ATOM ) ) | otherlv_9= '*' ) ( ruleEOL | otherlv_11= ',' )+ )*
                             {
-                            otherlv_6=(Token)match(input,60,FOLLOW_60_in_ruleArtifact3664); 
+                            otherlv_6=(Token)match(input,60,FOLLOW_60_in_ruleArtifact3700); 
 
                                 	newLeafNode(otherlv_6, grammarAccess.getArtifactAccess().getFocusedByKeyword_4_2_0());
                                 
-                            otherlv_7=(Token)match(input,29,FOLLOW_29_in_ruleArtifact3676); 
+                            otherlv_7=(Token)match(input,29,FOLLOW_29_in_ruleArtifact3712); 
 
                                 	newLeafNode(otherlv_7, grammarAccess.getArtifactAccess().getColonKeyword_4_2_1());
                                 
-                            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1747:1: ( ( ( (lv_agent_8_0= RULE_ATOM ) ) | otherlv_9= '*' ) ( ruleEOL | otherlv_11= ',' )+ )*
-                            loop66:
+                            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1769:1: ( ( ( (lv_agent_8_0= RULE_ATOM ) ) | otherlv_9= '*' ) ( ruleEOL | otherlv_11= ',' )+ )*
+                            loop67:
                             do {
-                                int alt66=2;
-                                int LA66_0 = input.LA(1);
+                                int alt67=2;
+                                int LA67_0 = input.LA(1);
 
-                                if ( (LA66_0==RULE_ATOM||LA66_0==58) ) {
-                                    alt66=1;
+                                if ( (LA67_0==RULE_ATOM||LA67_0==58) ) {
+                                    alt67=1;
                                 }
 
 
-                                switch (alt66) {
+                                switch (alt67) {
                             	case 1 :
-                            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1747:2: ( ( (lv_agent_8_0= RULE_ATOM ) ) | otherlv_9= '*' ) ( ruleEOL | otherlv_11= ',' )+
+                            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1769:2: ( ( (lv_agent_8_0= RULE_ATOM ) ) | otherlv_9= '*' ) ( ruleEOL | otherlv_11= ',' )+
                             	    {
-                            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1747:2: ( ( (lv_agent_8_0= RULE_ATOM ) ) | otherlv_9= '*' )
-                            	    int alt64=2;
-                            	    int LA64_0 = input.LA(1);
+                            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1769:2: ( ( (lv_agent_8_0= RULE_ATOM ) ) | otherlv_9= '*' )
+                            	    int alt65=2;
+                            	    int LA65_0 = input.LA(1);
 
-                            	    if ( (LA64_0==RULE_ATOM) ) {
-                            	        alt64=1;
+                            	    if ( (LA65_0==RULE_ATOM) ) {
+                            	        alt65=1;
                             	    }
-                            	    else if ( (LA64_0==58) ) {
-                            	        alt64=2;
+                            	    else if ( (LA65_0==58) ) {
+                            	        alt65=2;
                             	    }
                             	    else {
                             	        NoViableAltException nvae =
-                            	            new NoViableAltException("", 64, 0, input);
+                            	            new NoViableAltException("", 65, 0, input);
 
                             	        throw nvae;
                             	    }
-                            	    switch (alt64) {
+                            	    switch (alt65) {
                             	        case 1 :
-                            	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1747:3: ( (lv_agent_8_0= RULE_ATOM ) )
+                            	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1769:3: ( (lv_agent_8_0= RULE_ATOM ) )
                             	            {
-                            	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1747:3: ( (lv_agent_8_0= RULE_ATOM ) )
-                            	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1748:1: (lv_agent_8_0= RULE_ATOM )
+                            	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1769:3: ( (lv_agent_8_0= RULE_ATOM ) )
+                            	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1770:1: (lv_agent_8_0= RULE_ATOM )
                             	            {
-                            	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1748:1: (lv_agent_8_0= RULE_ATOM )
-                            	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1749:3: lv_agent_8_0= RULE_ATOM
+                            	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1770:1: (lv_agent_8_0= RULE_ATOM )
+                            	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1771:3: lv_agent_8_0= RULE_ATOM
                             	            {
-                            	            lv_agent_8_0=(Token)match(input,RULE_ATOM,FOLLOW_RULE_ATOM_in_ruleArtifact3695); 
+                            	            lv_agent_8_0=(Token)match(input,RULE_ATOM,FOLLOW_RULE_ATOM_in_ruleArtifact3731); 
 
                             	            			newLeafNode(lv_agent_8_0, grammarAccess.getArtifactAccess().getAgentATOMTerminalRuleCall_4_2_2_0_0_0()); 
                             	            		
@@ -5237,9 +5292,9 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
                             	            }
                             	            break;
                             	        case 2 :
-                            	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1766:7: otherlv_9= '*'
+                            	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1788:7: otherlv_9= '*'
                             	            {
-                            	            otherlv_9=(Token)match(input,58,FOLLOW_58_in_ruleArtifact3718); 
+                            	            otherlv_9=(Token)match(input,58,FOLLOW_58_in_ruleArtifact3754); 
 
                             	                	newLeafNode(otherlv_9, grammarAccess.getArtifactAccess().getAsteriskKeyword_4_2_2_0_1());
                             	                
@@ -5249,29 +5304,29 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
                             	    }
 
-                            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1770:2: ( ruleEOL | otherlv_11= ',' )+
-                            	    int cnt65=0;
-                            	    loop65:
+                            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1792:2: ( ruleEOL | otherlv_11= ',' )+
+                            	    int cnt66=0;
+                            	    loop66:
                             	    do {
-                            	        int alt65=3;
-                            	        int LA65_0 = input.LA(1);
+                            	        int alt66=3;
+                            	        int LA66_0 = input.LA(1);
 
-                            	        if ( ((LA65_0>=RULE_NEWLINE && LA65_0<=RULE_SL_COMMENT)) ) {
-                            	            alt65=1;
+                            	        if ( ((LA66_0>=RULE_NEWLINE && LA66_0<=RULE_SL_COMMENT)) ) {
+                            	            alt66=1;
                             	        }
-                            	        else if ( (LA65_0==27) ) {
-                            	            alt65=2;
+                            	        else if ( (LA66_0==27) ) {
+                            	            alt66=2;
                             	        }
 
 
-                            	        switch (alt65) {
+                            	        switch (alt66) {
                             	    	case 1 :
-                            	    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1771:5: ruleEOL
+                            	    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1793:5: ruleEOL
                             	    	    {
                             	    	     
                             	    	            newCompositeNode(grammarAccess.getArtifactAccess().getEOLParserRuleCall_4_2_2_1_0()); 
                             	    	        
-                            	    	    pushFollow(FOLLOW_ruleEOL_in_ruleArtifact3736);
+                            	    	    pushFollow(FOLLOW_ruleEOL_in_ruleArtifact3772);
                             	    	    ruleEOL();
 
                             	    	    state._fsp--;
@@ -5283,9 +5338,9 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
                             	    	    }
                             	    	    break;
                             	    	case 2 :
-                            	    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1779:7: otherlv_11= ','
+                            	    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1801:7: otherlv_11= ','
                             	    	    {
-                            	    	    otherlv_11=(Token)match(input,27,FOLLOW_27_in_ruleArtifact3753); 
+                            	    	    otherlv_11=(Token)match(input,27,FOLLOW_27_in_ruleArtifact3789); 
 
                             	    	        	newLeafNode(otherlv_11, grammarAccess.getArtifactAccess().getCommaKeyword_4_2_2_1_1());
                             	    	        
@@ -5294,12 +5349,12 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
                             	    	    break;
 
                             	    	default :
-                            	    	    if ( cnt65 >= 1 ) break loop65;
+                            	    	    if ( cnt66 >= 1 ) break loop66;
                             	                EarlyExitException eee =
-                            	                    new EarlyExitException(65, input);
+                            	                    new EarlyExitException(66, input);
                             	                throw eee;
                             	        }
-                            	        cnt65++;
+                            	        cnt66++;
                             	    } while (true);
 
 
@@ -5307,7 +5362,7 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
                             	    break;
 
                             	default :
-                            	    break loop66;
+                            	    break loop67;
                                 }
                             } while (true);
 
@@ -5317,7 +5372,7 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
                     }
 
-                    otherlv_12=(Token)match(input,25,FOLLOW_25_in_ruleArtifact3771); 
+                    otherlv_12=(Token)match(input,25,FOLLOW_25_in_ruleArtifact3807); 
 
                         	newLeafNode(otherlv_12, grammarAccess.getArtifactAccess().getRightCurlyBracketKeyword_4_3());
                         
@@ -5327,25 +5382,25 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1787:3: ( ruleEOL )*
-            loop69:
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1809:3: ( ruleEOL )*
+            loop70:
             do {
-                int alt69=2;
-                int LA69_0 = input.LA(1);
+                int alt70=2;
+                int LA70_0 = input.LA(1);
 
-                if ( ((LA69_0>=RULE_NEWLINE && LA69_0<=RULE_SL_COMMENT)) ) {
-                    alt69=1;
+                if ( ((LA70_0>=RULE_NEWLINE && LA70_0<=RULE_SL_COMMENT)) ) {
+                    alt70=1;
                 }
 
 
-                switch (alt69) {
+                switch (alt70) {
             	case 1 :
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1788:5: ruleEOL
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1810:5: ruleEOL
             	    {
             	     
             	            newCompositeNode(grammarAccess.getArtifactAccess().getEOLParserRuleCall_5()); 
             	        
-            	    pushFollow(FOLLOW_ruleEOL_in_ruleArtifact3790);
+            	    pushFollow(FOLLOW_ruleEOL_in_ruleArtifact3826);
             	    ruleEOL();
 
             	    state._fsp--;
@@ -5358,7 +5413,7 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    break loop69;
+            	    break loop70;
                 }
             } while (true);
 
@@ -5383,7 +5438,7 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleOrganisation"
-    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1803:1: entryRuleOrganisation returns [EObject current=null] : iv_ruleOrganisation= ruleOrganisation EOF ;
+    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1825:1: entryRuleOrganisation returns [EObject current=null] : iv_ruleOrganisation= ruleOrganisation EOF ;
     public final EObject entryRuleOrganisation() throws RecognitionException {
         EObject current = null;
 
@@ -5391,17 +5446,17 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1804:2: (iv_ruleOrganisation= ruleOrganisation EOF )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1805:2: iv_ruleOrganisation= ruleOrganisation EOF
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1826:2: (iv_ruleOrganisation= ruleOrganisation EOF )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1827:2: iv_ruleOrganisation= ruleOrganisation EOF
             {
              newCompositeNode(grammarAccess.getOrganisationRule()); 
-            pushFollow(FOLLOW_ruleOrganisation_in_entryRuleOrganisation3827);
+            pushFollow(FOLLOW_ruleOrganisation_in_entryRuleOrganisation3863);
             iv_ruleOrganisation=ruleOrganisation();
 
             state._fsp--;
 
              current =iv_ruleOrganisation; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleOrganisation3837); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleOrganisation3873); 
 
             }
 
@@ -5419,7 +5474,7 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleOrganisation"
-    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1812:1: ruleOrganisation returns [EObject current=null] : (otherlv_0= 'organisation' ( (lv_name_1_0= RULE_ATOM ) ) ( (lv_fileName_2_0= ruleOFileName ) )? otherlv_3= '{' ( ruleEOL )* ( ( (lv_group_5_0= ruleGroup ) ) | ( (lv_scheme_6_0= ruleScheme ) ) | ( (lv_agents_7_0= ruleOAgents ) ) | ( (lv_node_8_0= ruleONode ) ) | ( (lv_other_9_0= ruleOOthers ) ) )* otherlv_10= '}' ( ruleEOL )* ) ;
+    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1834:1: ruleOrganisation returns [EObject current=null] : (otherlv_0= 'organisation' ( (lv_name_1_0= RULE_ATOM ) ) ( (lv_fileName_2_0= ruleOFileName ) )? otherlv_3= '{' ( ruleEOL )* ( ( (lv_group_5_0= ruleGroup ) ) | ( (lv_scheme_6_0= ruleScheme ) ) | ( (lv_agents_7_0= ruleOAgents ) ) | ( (lv_node_8_0= ruleONode ) ) | ( (lv_other_9_0= ruleOOthers ) ) )* otherlv_10= '}' ( ruleEOL )* ) ;
     public final EObject ruleOrganisation() throws RecognitionException {
         EObject current = null;
 
@@ -5443,23 +5498,23 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1815:28: ( (otherlv_0= 'organisation' ( (lv_name_1_0= RULE_ATOM ) ) ( (lv_fileName_2_0= ruleOFileName ) )? otherlv_3= '{' ( ruleEOL )* ( ( (lv_group_5_0= ruleGroup ) ) | ( (lv_scheme_6_0= ruleScheme ) ) | ( (lv_agents_7_0= ruleOAgents ) ) | ( (lv_node_8_0= ruleONode ) ) | ( (lv_other_9_0= ruleOOthers ) ) )* otherlv_10= '}' ( ruleEOL )* ) )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1816:1: (otherlv_0= 'organisation' ( (lv_name_1_0= RULE_ATOM ) ) ( (lv_fileName_2_0= ruleOFileName ) )? otherlv_3= '{' ( ruleEOL )* ( ( (lv_group_5_0= ruleGroup ) ) | ( (lv_scheme_6_0= ruleScheme ) ) | ( (lv_agents_7_0= ruleOAgents ) ) | ( (lv_node_8_0= ruleONode ) ) | ( (lv_other_9_0= ruleOOthers ) ) )* otherlv_10= '}' ( ruleEOL )* )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1837:28: ( (otherlv_0= 'organisation' ( (lv_name_1_0= RULE_ATOM ) ) ( (lv_fileName_2_0= ruleOFileName ) )? otherlv_3= '{' ( ruleEOL )* ( ( (lv_group_5_0= ruleGroup ) ) | ( (lv_scheme_6_0= ruleScheme ) ) | ( (lv_agents_7_0= ruleOAgents ) ) | ( (lv_node_8_0= ruleONode ) ) | ( (lv_other_9_0= ruleOOthers ) ) )* otherlv_10= '}' ( ruleEOL )* ) )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1838:1: (otherlv_0= 'organisation' ( (lv_name_1_0= RULE_ATOM ) ) ( (lv_fileName_2_0= ruleOFileName ) )? otherlv_3= '{' ( ruleEOL )* ( ( (lv_group_5_0= ruleGroup ) ) | ( (lv_scheme_6_0= ruleScheme ) ) | ( (lv_agents_7_0= ruleOAgents ) ) | ( (lv_node_8_0= ruleONode ) ) | ( (lv_other_9_0= ruleOOthers ) ) )* otherlv_10= '}' ( ruleEOL )* )
             {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1816:1: (otherlv_0= 'organisation' ( (lv_name_1_0= RULE_ATOM ) ) ( (lv_fileName_2_0= ruleOFileName ) )? otherlv_3= '{' ( ruleEOL )* ( ( (lv_group_5_0= ruleGroup ) ) | ( (lv_scheme_6_0= ruleScheme ) ) | ( (lv_agents_7_0= ruleOAgents ) ) | ( (lv_node_8_0= ruleONode ) ) | ( (lv_other_9_0= ruleOOthers ) ) )* otherlv_10= '}' ( ruleEOL )* )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1816:3: otherlv_0= 'organisation' ( (lv_name_1_0= RULE_ATOM ) ) ( (lv_fileName_2_0= ruleOFileName ) )? otherlv_3= '{' ( ruleEOL )* ( ( (lv_group_5_0= ruleGroup ) ) | ( (lv_scheme_6_0= ruleScheme ) ) | ( (lv_agents_7_0= ruleOAgents ) ) | ( (lv_node_8_0= ruleONode ) ) | ( (lv_other_9_0= ruleOOthers ) ) )* otherlv_10= '}' ( ruleEOL )*
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1838:1: (otherlv_0= 'organisation' ( (lv_name_1_0= RULE_ATOM ) ) ( (lv_fileName_2_0= ruleOFileName ) )? otherlv_3= '{' ( ruleEOL )* ( ( (lv_group_5_0= ruleGroup ) ) | ( (lv_scheme_6_0= ruleScheme ) ) | ( (lv_agents_7_0= ruleOAgents ) ) | ( (lv_node_8_0= ruleONode ) ) | ( (lv_other_9_0= ruleOOthers ) ) )* otherlv_10= '}' ( ruleEOL )* )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1838:3: otherlv_0= 'organisation' ( (lv_name_1_0= RULE_ATOM ) ) ( (lv_fileName_2_0= ruleOFileName ) )? otherlv_3= '{' ( ruleEOL )* ( ( (lv_group_5_0= ruleGroup ) ) | ( (lv_scheme_6_0= ruleScheme ) ) | ( (lv_agents_7_0= ruleOAgents ) ) | ( (lv_node_8_0= ruleONode ) ) | ( (lv_other_9_0= ruleOOthers ) ) )* otherlv_10= '}' ( ruleEOL )*
             {
-            otherlv_0=(Token)match(input,61,FOLLOW_61_in_ruleOrganisation3874); 
+            otherlv_0=(Token)match(input,61,FOLLOW_61_in_ruleOrganisation3910); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getOrganisationAccess().getOrganisationKeyword_0());
                 
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1820:1: ( (lv_name_1_0= RULE_ATOM ) )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1821:1: (lv_name_1_0= RULE_ATOM )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1842:1: ( (lv_name_1_0= RULE_ATOM ) )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1843:1: (lv_name_1_0= RULE_ATOM )
             {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1821:1: (lv_name_1_0= RULE_ATOM )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1822:3: lv_name_1_0= RULE_ATOM
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1843:1: (lv_name_1_0= RULE_ATOM )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1844:3: lv_name_1_0= RULE_ATOM
             {
-            lv_name_1_0=(Token)match(input,RULE_ATOM,FOLLOW_RULE_ATOM_in_ruleOrganisation3891); 
+            lv_name_1_0=(Token)match(input,RULE_ATOM,FOLLOW_RULE_ATOM_in_ruleOrganisation3927); 
 
             			newLeafNode(lv_name_1_0, grammarAccess.getOrganisationAccess().getNameATOMTerminalRuleCall_1_0()); 
             		
@@ -5479,24 +5534,24 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1838:2: ( (lv_fileName_2_0= ruleOFileName ) )?
-            int alt70=2;
-            int LA70_0 = input.LA(1);
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1860:2: ( (lv_fileName_2_0= ruleOFileName ) )?
+            int alt71=2;
+            int LA71_0 = input.LA(1);
 
-            if ( (LA70_0==29) ) {
-                alt70=1;
+            if ( (LA71_0==29) ) {
+                alt71=1;
             }
-            switch (alt70) {
+            switch (alt71) {
                 case 1 :
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1839:1: (lv_fileName_2_0= ruleOFileName )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1861:1: (lv_fileName_2_0= ruleOFileName )
                     {
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1839:1: (lv_fileName_2_0= ruleOFileName )
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1840:3: lv_fileName_2_0= ruleOFileName
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1861:1: (lv_fileName_2_0= ruleOFileName )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1862:3: lv_fileName_2_0= ruleOFileName
                     {
                      
                     	        newCompositeNode(grammarAccess.getOrganisationAccess().getFileNameOFileNameParserRuleCall_2_0()); 
                     	    
-                    pushFollow(FOLLOW_ruleOFileName_in_ruleOrganisation3917);
+                    pushFollow(FOLLOW_ruleOFileName_in_ruleOrganisation3953);
                     lv_fileName_2_0=ruleOFileName();
 
                     state._fsp--;
@@ -5521,29 +5576,29 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_3=(Token)match(input,24,FOLLOW_24_in_ruleOrganisation3930); 
+            otherlv_3=(Token)match(input,24,FOLLOW_24_in_ruleOrganisation3966); 
 
                 	newLeafNode(otherlv_3, grammarAccess.getOrganisationAccess().getLeftCurlyBracketKeyword_3());
                 
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1860:1: ( ruleEOL )*
-            loop71:
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1882:1: ( ruleEOL )*
+            loop72:
             do {
-                int alt71=2;
-                int LA71_0 = input.LA(1);
+                int alt72=2;
+                int LA72_0 = input.LA(1);
 
-                if ( ((LA71_0>=RULE_NEWLINE && LA71_0<=RULE_SL_COMMENT)) ) {
-                    alt71=1;
+                if ( ((LA72_0>=RULE_NEWLINE && LA72_0<=RULE_SL_COMMENT)) ) {
+                    alt72=1;
                 }
 
 
-                switch (alt71) {
+                switch (alt72) {
             	case 1 :
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1861:5: ruleEOL
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1883:5: ruleEOL
             	    {
             	     
             	            newCompositeNode(grammarAccess.getOrganisationAccess().getEOLParserRuleCall_4()); 
             	        
-            	    pushFollow(FOLLOW_ruleEOL_in_ruleOrganisation3947);
+            	    pushFollow(FOLLOW_ruleEOL_in_ruleOrganisation3983);
             	    ruleEOL();
 
             	    state._fsp--;
@@ -5556,57 +5611,57 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    break loop71;
+            	    break loop72;
                 }
             } while (true);
 
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1868:3: ( ( (lv_group_5_0= ruleGroup ) ) | ( (lv_scheme_6_0= ruleScheme ) ) | ( (lv_agents_7_0= ruleOAgents ) ) | ( (lv_node_8_0= ruleONode ) ) | ( (lv_other_9_0= ruleOOthers ) ) )*
-            loop72:
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1890:3: ( ( (lv_group_5_0= ruleGroup ) ) | ( (lv_scheme_6_0= ruleScheme ) ) | ( (lv_agents_7_0= ruleOAgents ) ) | ( (lv_node_8_0= ruleONode ) ) | ( (lv_other_9_0= ruleOOthers ) ) )*
+            loop73:
             do {
-                int alt72=6;
+                int alt73=6;
                 switch ( input.LA(1) ) {
                 case 62:
                     {
-                    alt72=1;
+                    alt73=1;
                     }
                     break;
                 case 66:
                     {
-                    alt72=2;
+                    alt73=2;
                     }
                     break;
                 case 57:
                     {
-                    alt72=3;
+                    alt73=3;
                     }
                     break;
                 case 32:
                     {
-                    alt72=4;
+                    alt73=4;
                     }
                     break;
                 case RULE_ATOM:
                     {
-                    alt72=5;
+                    alt73=5;
                     }
                     break;
 
                 }
 
-                switch (alt72) {
+                switch (alt73) {
             	case 1 :
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1868:4: ( (lv_group_5_0= ruleGroup ) )
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1890:4: ( (lv_group_5_0= ruleGroup ) )
             	    {
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1868:4: ( (lv_group_5_0= ruleGroup ) )
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1869:1: (lv_group_5_0= ruleGroup )
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1890:4: ( (lv_group_5_0= ruleGroup ) )
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1891:1: (lv_group_5_0= ruleGroup )
             	    {
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1869:1: (lv_group_5_0= ruleGroup )
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1870:3: lv_group_5_0= ruleGroup
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1891:1: (lv_group_5_0= ruleGroup )
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1892:3: lv_group_5_0= ruleGroup
             	    {
             	     
             	    	        newCompositeNode(grammarAccess.getOrganisationAccess().getGroupGroupParserRuleCall_5_0_0()); 
             	    	    
-            	    pushFollow(FOLLOW_ruleGroup_in_ruleOrganisation3970);
+            	    pushFollow(FOLLOW_ruleGroup_in_ruleOrganisation4006);
             	    lv_group_5_0=ruleGroup();
 
             	    state._fsp--;
@@ -5632,18 +5687,18 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
             	    }
             	    break;
             	case 2 :
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1887:6: ( (lv_scheme_6_0= ruleScheme ) )
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1909:6: ( (lv_scheme_6_0= ruleScheme ) )
             	    {
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1887:6: ( (lv_scheme_6_0= ruleScheme ) )
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1888:1: (lv_scheme_6_0= ruleScheme )
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1909:6: ( (lv_scheme_6_0= ruleScheme ) )
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1910:1: (lv_scheme_6_0= ruleScheme )
             	    {
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1888:1: (lv_scheme_6_0= ruleScheme )
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1889:3: lv_scheme_6_0= ruleScheme
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1910:1: (lv_scheme_6_0= ruleScheme )
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1911:3: lv_scheme_6_0= ruleScheme
             	    {
             	     
             	    	        newCompositeNode(grammarAccess.getOrganisationAccess().getSchemeSchemeParserRuleCall_5_1_0()); 
             	    	    
-            	    pushFollow(FOLLOW_ruleScheme_in_ruleOrganisation3997);
+            	    pushFollow(FOLLOW_ruleScheme_in_ruleOrganisation4033);
             	    lv_scheme_6_0=ruleScheme();
 
             	    state._fsp--;
@@ -5669,18 +5724,18 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
             	    }
             	    break;
             	case 3 :
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1906:6: ( (lv_agents_7_0= ruleOAgents ) )
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1928:6: ( (lv_agents_7_0= ruleOAgents ) )
             	    {
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1906:6: ( (lv_agents_7_0= ruleOAgents ) )
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1907:1: (lv_agents_7_0= ruleOAgents )
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1928:6: ( (lv_agents_7_0= ruleOAgents ) )
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1929:1: (lv_agents_7_0= ruleOAgents )
             	    {
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1907:1: (lv_agents_7_0= ruleOAgents )
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1908:3: lv_agents_7_0= ruleOAgents
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1929:1: (lv_agents_7_0= ruleOAgents )
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1930:3: lv_agents_7_0= ruleOAgents
             	    {
             	     
             	    	        newCompositeNode(grammarAccess.getOrganisationAccess().getAgentsOAgentsParserRuleCall_5_2_0()); 
             	    	    
-            	    pushFollow(FOLLOW_ruleOAgents_in_ruleOrganisation4024);
+            	    pushFollow(FOLLOW_ruleOAgents_in_ruleOrganisation4060);
             	    lv_agents_7_0=ruleOAgents();
 
             	    state._fsp--;
@@ -5706,18 +5761,18 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
             	    }
             	    break;
             	case 4 :
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1925:6: ( (lv_node_8_0= ruleONode ) )
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1947:6: ( (lv_node_8_0= ruleONode ) )
             	    {
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1925:6: ( (lv_node_8_0= ruleONode ) )
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1926:1: (lv_node_8_0= ruleONode )
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1947:6: ( (lv_node_8_0= ruleONode ) )
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1948:1: (lv_node_8_0= ruleONode )
             	    {
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1926:1: (lv_node_8_0= ruleONode )
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1927:3: lv_node_8_0= ruleONode
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1948:1: (lv_node_8_0= ruleONode )
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1949:3: lv_node_8_0= ruleONode
             	    {
             	     
             	    	        newCompositeNode(grammarAccess.getOrganisationAccess().getNodeONodeParserRuleCall_5_3_0()); 
             	    	    
-            	    pushFollow(FOLLOW_ruleONode_in_ruleOrganisation4051);
+            	    pushFollow(FOLLOW_ruleONode_in_ruleOrganisation4087);
             	    lv_node_8_0=ruleONode();
 
             	    state._fsp--;
@@ -5743,18 +5798,18 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
             	    }
             	    break;
             	case 5 :
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1944:6: ( (lv_other_9_0= ruleOOthers ) )
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1966:6: ( (lv_other_9_0= ruleOOthers ) )
             	    {
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1944:6: ( (lv_other_9_0= ruleOOthers ) )
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1945:1: (lv_other_9_0= ruleOOthers )
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1966:6: ( (lv_other_9_0= ruleOOthers ) )
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1967:1: (lv_other_9_0= ruleOOthers )
             	    {
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1945:1: (lv_other_9_0= ruleOOthers )
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1946:3: lv_other_9_0= ruleOOthers
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1967:1: (lv_other_9_0= ruleOOthers )
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1968:3: lv_other_9_0= ruleOOthers
             	    {
             	     
             	    	        newCompositeNode(grammarAccess.getOrganisationAccess().getOtherOOthersParserRuleCall_5_4_0()); 
             	    	    
-            	    pushFollow(FOLLOW_ruleOOthers_in_ruleOrganisation4078);
+            	    pushFollow(FOLLOW_ruleOOthers_in_ruleOrganisation4114);
             	    lv_other_9_0=ruleOOthers();
 
             	    state._fsp--;
@@ -5781,33 +5836,33 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    break loop72;
+            	    break loop73;
                 }
             } while (true);
 
-            otherlv_10=(Token)match(input,25,FOLLOW_25_in_ruleOrganisation4092); 
+            otherlv_10=(Token)match(input,25,FOLLOW_25_in_ruleOrganisation4128); 
 
                 	newLeafNode(otherlv_10, grammarAccess.getOrganisationAccess().getRightCurlyBracketKeyword_6());
                 
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1966:1: ( ruleEOL )*
-            loop73:
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1988:1: ( ruleEOL )*
+            loop74:
             do {
-                int alt73=2;
-                int LA73_0 = input.LA(1);
+                int alt74=2;
+                int LA74_0 = input.LA(1);
 
-                if ( ((LA73_0>=RULE_NEWLINE && LA73_0<=RULE_SL_COMMENT)) ) {
-                    alt73=1;
+                if ( ((LA74_0>=RULE_NEWLINE && LA74_0<=RULE_SL_COMMENT)) ) {
+                    alt74=1;
                 }
 
 
-                switch (alt73) {
+                switch (alt74) {
             	case 1 :
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1967:5: ruleEOL
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1989:5: ruleEOL
             	    {
             	     
             	            newCompositeNode(grammarAccess.getOrganisationAccess().getEOLParserRuleCall_7()); 
             	        
-            	    pushFollow(FOLLOW_ruleEOL_in_ruleOrganisation4109);
+            	    pushFollow(FOLLOW_ruleEOL_in_ruleOrganisation4145);
             	    ruleEOL();
 
             	    state._fsp--;
@@ -5820,7 +5875,7 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    break loop73;
+            	    break loop74;
                 }
             } while (true);
 
@@ -5845,7 +5900,7 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleOFileName"
-    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1982:1: entryRuleOFileName returns [EObject current=null] : iv_ruleOFileName= ruleOFileName EOF ;
+    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2004:1: entryRuleOFileName returns [EObject current=null] : iv_ruleOFileName= ruleOFileName EOF ;
     public final EObject entryRuleOFileName() throws RecognitionException {
         EObject current = null;
 
@@ -5853,17 +5908,17 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1983:2: (iv_ruleOFileName= ruleOFileName EOF )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1984:2: iv_ruleOFileName= ruleOFileName EOF
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2005:2: (iv_ruleOFileName= ruleOFileName EOF )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2006:2: iv_ruleOFileName= ruleOFileName EOF
             {
              newCompositeNode(grammarAccess.getOFileNameRule()); 
-            pushFollow(FOLLOW_ruleOFileName_in_entryRuleOFileName4146);
+            pushFollow(FOLLOW_ruleOFileName_in_entryRuleOFileName4182);
             iv_ruleOFileName=ruleOFileName();
 
             state._fsp--;
 
              current =iv_ruleOFileName; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleOFileName4156); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleOFileName4192); 
 
             }
 
@@ -5881,7 +5936,7 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleOFileName"
-    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1991:1: ruleOFileName returns [EObject current=null] : (otherlv_0= ':' ( (lv_name_1_0= ruleFileName ) ) ) ;
+    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2013:1: ruleOFileName returns [EObject current=null] : (otherlv_0= ':' ( (lv_name_1_0= ruleFileName ) ) ) ;
     public final EObject ruleOFileName() throws RecognitionException {
         EObject current = null;
 
@@ -5892,26 +5947,26 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1994:28: ( (otherlv_0= ':' ( (lv_name_1_0= ruleFileName ) ) ) )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1995:1: (otherlv_0= ':' ( (lv_name_1_0= ruleFileName ) ) )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2016:28: ( (otherlv_0= ':' ( (lv_name_1_0= ruleFileName ) ) ) )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2017:1: (otherlv_0= ':' ( (lv_name_1_0= ruleFileName ) ) )
             {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1995:1: (otherlv_0= ':' ( (lv_name_1_0= ruleFileName ) ) )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1995:3: otherlv_0= ':' ( (lv_name_1_0= ruleFileName ) )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2017:1: (otherlv_0= ':' ( (lv_name_1_0= ruleFileName ) ) )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2017:3: otherlv_0= ':' ( (lv_name_1_0= ruleFileName ) )
             {
-            otherlv_0=(Token)match(input,29,FOLLOW_29_in_ruleOFileName4193); 
+            otherlv_0=(Token)match(input,29,FOLLOW_29_in_ruleOFileName4229); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getOFileNameAccess().getColonKeyword_0());
                 
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:1999:1: ( (lv_name_1_0= ruleFileName ) )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2000:1: (lv_name_1_0= ruleFileName )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2021:1: ( (lv_name_1_0= ruleFileName ) )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2022:1: (lv_name_1_0= ruleFileName )
             {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2000:1: (lv_name_1_0= ruleFileName )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2001:3: lv_name_1_0= ruleFileName
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2022:1: (lv_name_1_0= ruleFileName )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2023:3: lv_name_1_0= ruleFileName
             {
              
             	        newCompositeNode(grammarAccess.getOFileNameAccess().getNameFileNameParserRuleCall_1_0()); 
             	    
-            pushFollow(FOLLOW_ruleFileName_in_ruleOFileName4214);
+            pushFollow(FOLLOW_ruleFileName_in_ruleOFileName4250);
             lv_name_1_0=ruleFileName();
 
             state._fsp--;
@@ -5954,7 +6009,7 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleONode"
-    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2025:1: entryRuleONode returns [EObject current=null] : iv_ruleONode= ruleONode EOF ;
+    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2047:1: entryRuleONode returns [EObject current=null] : iv_ruleONode= ruleONode EOF ;
     public final EObject entryRuleONode() throws RecognitionException {
         EObject current = null;
 
@@ -5962,17 +6017,17 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2026:2: (iv_ruleONode= ruleONode EOF )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2027:2: iv_ruleONode= ruleONode EOF
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2048:2: (iv_ruleONode= ruleONode EOF )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2049:2: iv_ruleONode= ruleONode EOF
             {
              newCompositeNode(grammarAccess.getONodeRule()); 
-            pushFollow(FOLLOW_ruleONode_in_entryRuleONode4250);
+            pushFollow(FOLLOW_ruleONode_in_entryRuleONode4286);
             iv_ruleONode=ruleONode();
 
             state._fsp--;
 
              current =iv_ruleONode; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleONode4260); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleONode4296); 
 
             }
 
@@ -5990,7 +6045,7 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleONode"
-    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2034:1: ruleONode returns [EObject current=null] : (otherlv_0= 'node' otherlv_1= ':' ( (lv_name_2_0= RULE_ATOM ) ) ( ruleEOL )+ ) ;
+    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2056:1: ruleONode returns [EObject current=null] : (otherlv_0= 'node' otherlv_1= ':' ( (lv_name_2_0= RULE_ATOM ) ) ( ruleEOL )+ ) ;
     public final EObject ruleONode() throws RecognitionException {
         EObject current = null;
 
@@ -6001,27 +6056,27 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2037:28: ( (otherlv_0= 'node' otherlv_1= ':' ( (lv_name_2_0= RULE_ATOM ) ) ( ruleEOL )+ ) )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2038:1: (otherlv_0= 'node' otherlv_1= ':' ( (lv_name_2_0= RULE_ATOM ) ) ( ruleEOL )+ )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2059:28: ( (otherlv_0= 'node' otherlv_1= ':' ( (lv_name_2_0= RULE_ATOM ) ) ( ruleEOL )+ ) )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2060:1: (otherlv_0= 'node' otherlv_1= ':' ( (lv_name_2_0= RULE_ATOM ) ) ( ruleEOL )+ )
             {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2038:1: (otherlv_0= 'node' otherlv_1= ':' ( (lv_name_2_0= RULE_ATOM ) ) ( ruleEOL )+ )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2038:3: otherlv_0= 'node' otherlv_1= ':' ( (lv_name_2_0= RULE_ATOM ) ) ( ruleEOL )+
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2060:1: (otherlv_0= 'node' otherlv_1= ':' ( (lv_name_2_0= RULE_ATOM ) ) ( ruleEOL )+ )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2060:3: otherlv_0= 'node' otherlv_1= ':' ( (lv_name_2_0= RULE_ATOM ) ) ( ruleEOL )+
             {
-            otherlv_0=(Token)match(input,32,FOLLOW_32_in_ruleONode4297); 
+            otherlv_0=(Token)match(input,32,FOLLOW_32_in_ruleONode4333); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getONodeAccess().getNodeKeyword_0());
                 
-            otherlv_1=(Token)match(input,29,FOLLOW_29_in_ruleONode4309); 
+            otherlv_1=(Token)match(input,29,FOLLOW_29_in_ruleONode4345); 
 
                 	newLeafNode(otherlv_1, grammarAccess.getONodeAccess().getColonKeyword_1());
                 
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2046:1: ( (lv_name_2_0= RULE_ATOM ) )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2047:1: (lv_name_2_0= RULE_ATOM )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2068:1: ( (lv_name_2_0= RULE_ATOM ) )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2069:1: (lv_name_2_0= RULE_ATOM )
             {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2047:1: (lv_name_2_0= RULE_ATOM )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2048:3: lv_name_2_0= RULE_ATOM
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2069:1: (lv_name_2_0= RULE_ATOM )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2070:3: lv_name_2_0= RULE_ATOM
             {
-            lv_name_2_0=(Token)match(input,RULE_ATOM,FOLLOW_RULE_ATOM_in_ruleONode4326); 
+            lv_name_2_0=(Token)match(input,RULE_ATOM,FOLLOW_RULE_ATOM_in_ruleONode4362); 
 
             			newLeafNode(lv_name_2_0, grammarAccess.getONodeAccess().getNameATOMTerminalRuleCall_2_0()); 
             		
@@ -6041,26 +6096,26 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2064:2: ( ruleEOL )+
-            int cnt74=0;
-            loop74:
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2086:2: ( ruleEOL )+
+            int cnt75=0;
+            loop75:
             do {
-                int alt74=2;
-                int LA74_0 = input.LA(1);
+                int alt75=2;
+                int LA75_0 = input.LA(1);
 
-                if ( ((LA74_0>=RULE_NEWLINE && LA74_0<=RULE_SL_COMMENT)) ) {
-                    alt74=1;
+                if ( ((LA75_0>=RULE_NEWLINE && LA75_0<=RULE_SL_COMMENT)) ) {
+                    alt75=1;
                 }
 
 
-                switch (alt74) {
+                switch (alt75) {
             	case 1 :
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2065:5: ruleEOL
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2087:5: ruleEOL
             	    {
             	     
             	            newCompositeNode(grammarAccess.getONodeAccess().getEOLParserRuleCall_3()); 
             	        
-            	    pushFollow(FOLLOW_ruleEOL_in_ruleONode4348);
+            	    pushFollow(FOLLOW_ruleEOL_in_ruleONode4384);
             	    ruleEOL();
 
             	    state._fsp--;
@@ -6073,12 +6128,12 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    if ( cnt74 >= 1 ) break loop74;
+            	    if ( cnt75 >= 1 ) break loop75;
                         EarlyExitException eee =
-                            new EarlyExitException(74, input);
+                            new EarlyExitException(75, input);
                         throw eee;
                 }
-                cnt74++;
+                cnt75++;
             } while (true);
 
 
@@ -6102,7 +6157,7 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleOAgents"
-    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2080:1: entryRuleOAgents returns [EObject current=null] : iv_ruleOAgents= ruleOAgents EOF ;
+    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2102:1: entryRuleOAgents returns [EObject current=null] : iv_ruleOAgents= ruleOAgents EOF ;
     public final EObject entryRuleOAgents() throws RecognitionException {
         EObject current = null;
 
@@ -6110,17 +6165,17 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2081:2: (iv_ruleOAgents= ruleOAgents EOF )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2082:2: iv_ruleOAgents= ruleOAgents EOF
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2103:2: (iv_ruleOAgents= ruleOAgents EOF )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2104:2: iv_ruleOAgents= ruleOAgents EOF
             {
              newCompositeNode(grammarAccess.getOAgentsRule()); 
-            pushFollow(FOLLOW_ruleOAgents_in_entryRuleOAgents4385);
+            pushFollow(FOLLOW_ruleOAgents_in_entryRuleOAgents4421);
             iv_ruleOAgents=ruleOAgents();
 
             state._fsp--;
 
              current =iv_ruleOAgents; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleOAgents4395); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleOAgents4431); 
 
             }
 
@@ -6138,7 +6193,7 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleOAgents"
-    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2089:1: ruleOAgents returns [EObject current=null] : ( () otherlv_1= 'agents' otherlv_2= ':' ( ( ( (lv_agent_3_0= RULE_ATOM ) ) | otherlv_4= '*' ) ( ruleEOL | otherlv_6= ',' )+ )* ) ;
+    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2111:1: ruleOAgents returns [EObject current=null] : ( () otherlv_1= 'agents' otherlv_2= ':' ( ( ( (lv_agent_3_0= RULE_ATOM ) ) | otherlv_4= '*' ) ( ruleEOL | otherlv_6= ',' )+ )* ) ;
     public final EObject ruleOAgents() throws RecognitionException {
         EObject current = null;
 
@@ -6151,14 +6206,14 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2092:28: ( ( () otherlv_1= 'agents' otherlv_2= ':' ( ( ( (lv_agent_3_0= RULE_ATOM ) ) | otherlv_4= '*' ) ( ruleEOL | otherlv_6= ',' )+ )* ) )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2093:1: ( () otherlv_1= 'agents' otherlv_2= ':' ( ( ( (lv_agent_3_0= RULE_ATOM ) ) | otherlv_4= '*' ) ( ruleEOL | otherlv_6= ',' )+ )* )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2114:28: ( ( () otherlv_1= 'agents' otherlv_2= ':' ( ( ( (lv_agent_3_0= RULE_ATOM ) ) | otherlv_4= '*' ) ( ruleEOL | otherlv_6= ',' )+ )* ) )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2115:1: ( () otherlv_1= 'agents' otherlv_2= ':' ( ( ( (lv_agent_3_0= RULE_ATOM ) ) | otherlv_4= '*' ) ( ruleEOL | otherlv_6= ',' )+ )* )
             {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2093:1: ( () otherlv_1= 'agents' otherlv_2= ':' ( ( ( (lv_agent_3_0= RULE_ATOM ) ) | otherlv_4= '*' ) ( ruleEOL | otherlv_6= ',' )+ )* )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2093:2: () otherlv_1= 'agents' otherlv_2= ':' ( ( ( (lv_agent_3_0= RULE_ATOM ) ) | otherlv_4= '*' ) ( ruleEOL | otherlv_6= ',' )+ )*
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2115:1: ( () otherlv_1= 'agents' otherlv_2= ':' ( ( ( (lv_agent_3_0= RULE_ATOM ) ) | otherlv_4= '*' ) ( ruleEOL | otherlv_6= ',' )+ )* )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2115:2: () otherlv_1= 'agents' otherlv_2= ':' ( ( ( (lv_agent_3_0= RULE_ATOM ) ) | otherlv_4= '*' ) ( ruleEOL | otherlv_6= ',' )+ )*
             {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2093:2: ()
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2094:5: 
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2115:2: ()
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2116:5: 
             {
 
                     current = forceCreateModelElement(
@@ -6168,65 +6223,65 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_1=(Token)match(input,57,FOLLOW_57_in_ruleOAgents4441); 
+            otherlv_1=(Token)match(input,57,FOLLOW_57_in_ruleOAgents4477); 
 
                 	newLeafNode(otherlv_1, grammarAccess.getOAgentsAccess().getAgentsKeyword_1());
                 
-            otherlv_2=(Token)match(input,29,FOLLOW_29_in_ruleOAgents4453); 
+            otherlv_2=(Token)match(input,29,FOLLOW_29_in_ruleOAgents4489); 
 
                 	newLeafNode(otherlv_2, grammarAccess.getOAgentsAccess().getColonKeyword_2());
                 
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2107:1: ( ( ( (lv_agent_3_0= RULE_ATOM ) ) | otherlv_4= '*' ) ( ruleEOL | otherlv_6= ',' )+ )*
-            loop77:
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2129:1: ( ( ( (lv_agent_3_0= RULE_ATOM ) ) | otherlv_4= '*' ) ( ruleEOL | otherlv_6= ',' )+ )*
+            loop78:
             do {
-                int alt77=2;
-                int LA77_0 = input.LA(1);
+                int alt78=2;
+                int LA78_0 = input.LA(1);
 
-                if ( (LA77_0==RULE_ATOM) ) {
-                    int LA77_2 = input.LA(2);
+                if ( (LA78_0==RULE_ATOM) ) {
+                    int LA78_2 = input.LA(2);
 
-                    if ( ((LA77_2>=RULE_NEWLINE && LA77_2<=RULE_SL_COMMENT)||LA77_2==27) ) {
-                        alt77=1;
+                    if ( ((LA78_2>=RULE_NEWLINE && LA78_2<=RULE_SL_COMMENT)||LA78_2==27) ) {
+                        alt78=1;
                     }
 
 
                 }
-                else if ( (LA77_0==58) ) {
-                    alt77=1;
+                else if ( (LA78_0==58) ) {
+                    alt78=1;
                 }
 
 
-                switch (alt77) {
+                switch (alt78) {
             	case 1 :
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2107:2: ( ( (lv_agent_3_0= RULE_ATOM ) ) | otherlv_4= '*' ) ( ruleEOL | otherlv_6= ',' )+
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2129:2: ( ( (lv_agent_3_0= RULE_ATOM ) ) | otherlv_4= '*' ) ( ruleEOL | otherlv_6= ',' )+
             	    {
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2107:2: ( ( (lv_agent_3_0= RULE_ATOM ) ) | otherlv_4= '*' )
-            	    int alt75=2;
-            	    int LA75_0 = input.LA(1);
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2129:2: ( ( (lv_agent_3_0= RULE_ATOM ) ) | otherlv_4= '*' )
+            	    int alt76=2;
+            	    int LA76_0 = input.LA(1);
 
-            	    if ( (LA75_0==RULE_ATOM) ) {
-            	        alt75=1;
+            	    if ( (LA76_0==RULE_ATOM) ) {
+            	        alt76=1;
             	    }
-            	    else if ( (LA75_0==58) ) {
-            	        alt75=2;
+            	    else if ( (LA76_0==58) ) {
+            	        alt76=2;
             	    }
             	    else {
             	        NoViableAltException nvae =
-            	            new NoViableAltException("", 75, 0, input);
+            	            new NoViableAltException("", 76, 0, input);
 
             	        throw nvae;
             	    }
-            	    switch (alt75) {
+            	    switch (alt76) {
             	        case 1 :
-            	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2107:3: ( (lv_agent_3_0= RULE_ATOM ) )
+            	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2129:3: ( (lv_agent_3_0= RULE_ATOM ) )
             	            {
-            	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2107:3: ( (lv_agent_3_0= RULE_ATOM ) )
-            	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2108:1: (lv_agent_3_0= RULE_ATOM )
+            	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2129:3: ( (lv_agent_3_0= RULE_ATOM ) )
+            	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2130:1: (lv_agent_3_0= RULE_ATOM )
             	            {
-            	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2108:1: (lv_agent_3_0= RULE_ATOM )
-            	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2109:3: lv_agent_3_0= RULE_ATOM
+            	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2130:1: (lv_agent_3_0= RULE_ATOM )
+            	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2131:3: lv_agent_3_0= RULE_ATOM
             	            {
-            	            lv_agent_3_0=(Token)match(input,RULE_ATOM,FOLLOW_RULE_ATOM_in_ruleOAgents4472); 
+            	            lv_agent_3_0=(Token)match(input,RULE_ATOM,FOLLOW_RULE_ATOM_in_ruleOAgents4508); 
 
             	            			newLeafNode(lv_agent_3_0, grammarAccess.getOAgentsAccess().getAgentATOMTerminalRuleCall_3_0_0_0()); 
             	            		
@@ -6250,9 +6305,9 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
             	            }
             	            break;
             	        case 2 :
-            	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2126:7: otherlv_4= '*'
+            	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2148:7: otherlv_4= '*'
             	            {
-            	            otherlv_4=(Token)match(input,58,FOLLOW_58_in_ruleOAgents4495); 
+            	            otherlv_4=(Token)match(input,58,FOLLOW_58_in_ruleOAgents4531); 
 
             	                	newLeafNode(otherlv_4, grammarAccess.getOAgentsAccess().getAsteriskKeyword_3_0_1());
             	                
@@ -6262,29 +6317,29 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
             	    }
 
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2130:2: ( ruleEOL | otherlv_6= ',' )+
-            	    int cnt76=0;
-            	    loop76:
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2152:2: ( ruleEOL | otherlv_6= ',' )+
+            	    int cnt77=0;
+            	    loop77:
             	    do {
-            	        int alt76=3;
-            	        int LA76_0 = input.LA(1);
+            	        int alt77=3;
+            	        int LA77_0 = input.LA(1);
 
-            	        if ( ((LA76_0>=RULE_NEWLINE && LA76_0<=RULE_SL_COMMENT)) ) {
-            	            alt76=1;
+            	        if ( ((LA77_0>=RULE_NEWLINE && LA77_0<=RULE_SL_COMMENT)) ) {
+            	            alt77=1;
             	        }
-            	        else if ( (LA76_0==27) ) {
-            	            alt76=2;
+            	        else if ( (LA77_0==27) ) {
+            	            alt77=2;
             	        }
 
 
-            	        switch (alt76) {
+            	        switch (alt77) {
             	    	case 1 :
-            	    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2131:5: ruleEOL
+            	    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2153:5: ruleEOL
             	    	    {
             	    	     
             	    	            newCompositeNode(grammarAccess.getOAgentsAccess().getEOLParserRuleCall_3_1_0()); 
             	    	        
-            	    	    pushFollow(FOLLOW_ruleEOL_in_ruleOAgents4513);
+            	    	    pushFollow(FOLLOW_ruleEOL_in_ruleOAgents4549);
             	    	    ruleEOL();
 
             	    	    state._fsp--;
@@ -6296,9 +6351,9 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
             	    	    }
             	    	    break;
             	    	case 2 :
-            	    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2139:7: otherlv_6= ','
+            	    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2161:7: otherlv_6= ','
             	    	    {
-            	    	    otherlv_6=(Token)match(input,27,FOLLOW_27_in_ruleOAgents4530); 
+            	    	    otherlv_6=(Token)match(input,27,FOLLOW_27_in_ruleOAgents4566); 
 
             	    	        	newLeafNode(otherlv_6, grammarAccess.getOAgentsAccess().getCommaKeyword_3_1_1());
             	    	        
@@ -6307,12 +6362,12 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
             	    	    break;
 
             	    	default :
-            	    	    if ( cnt76 >= 1 ) break loop76;
+            	    	    if ( cnt77 >= 1 ) break loop77;
             	                EarlyExitException eee =
-            	                    new EarlyExitException(76, input);
+            	                    new EarlyExitException(77, input);
             	                throw eee;
             	        }
-            	        cnt76++;
+            	        cnt77++;
             	    } while (true);
 
 
@@ -6320,7 +6375,7 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    break loop77;
+            	    break loop78;
                 }
             } while (true);
 
@@ -6345,7 +6400,7 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleOOthers"
-    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2151:1: entryRuleOOthers returns [EObject current=null] : iv_ruleOOthers= ruleOOthers EOF ;
+    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2173:1: entryRuleOOthers returns [EObject current=null] : iv_ruleOOthers= ruleOOthers EOF ;
     public final EObject entryRuleOOthers() throws RecognitionException {
         EObject current = null;
 
@@ -6353,17 +6408,17 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2152:2: (iv_ruleOOthers= ruleOOthers EOF )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2153:2: iv_ruleOOthers= ruleOOthers EOF
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2174:2: (iv_ruleOOthers= ruleOOthers EOF )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2175:2: iv_ruleOOthers= ruleOOthers EOF
             {
              newCompositeNode(grammarAccess.getOOthersRule()); 
-            pushFollow(FOLLOW_ruleOOthers_in_entryRuleOOthers4570);
+            pushFollow(FOLLOW_ruleOOthers_in_entryRuleOOthers4606);
             iv_ruleOOthers=ruleOOthers();
 
             state._fsp--;
 
              current =iv_ruleOOthers; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleOOthers4580); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleOOthers4616); 
 
             }
 
@@ -6381,7 +6436,7 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleOOthers"
-    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2160:1: ruleOOthers returns [EObject current=null] : ( ( (lv_name_0_0= RULE_ATOM ) ) otherlv_1= ':' ( ( (lv_string_2_0= RULE_STRING ) ) | ( (lv_val_3_0= RULE_INT_LITERAL ) ) | ( (lv_literal_4_0= ruleLiteral ) ) | ( (lv_val_real_5_0= RULE_REAL_LITERAL ) ) ) ( ruleEOL )+ ) ;
+    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2182:1: ruleOOthers returns [EObject current=null] : ( ( (lv_name_0_0= RULE_ATOM ) ) otherlv_1= ':' ( ( (lv_string_2_0= RULE_STRING ) ) | ( (lv_val_3_0= RULE_INT_LITERAL ) ) | ( (lv_literal_4_0= ruleLiteral ) ) | ( (lv_val_real_5_0= RULE_REAL_LITERAL ) ) ) ( ruleEOL )+ ) ;
     public final EObject ruleOOthers() throws RecognitionException {
         EObject current = null;
 
@@ -6396,19 +6451,19 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2163:28: ( ( ( (lv_name_0_0= RULE_ATOM ) ) otherlv_1= ':' ( ( (lv_string_2_0= RULE_STRING ) ) | ( (lv_val_3_0= RULE_INT_LITERAL ) ) | ( (lv_literal_4_0= ruleLiteral ) ) | ( (lv_val_real_5_0= RULE_REAL_LITERAL ) ) ) ( ruleEOL )+ ) )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2164:1: ( ( (lv_name_0_0= RULE_ATOM ) ) otherlv_1= ':' ( ( (lv_string_2_0= RULE_STRING ) ) | ( (lv_val_3_0= RULE_INT_LITERAL ) ) | ( (lv_literal_4_0= ruleLiteral ) ) | ( (lv_val_real_5_0= RULE_REAL_LITERAL ) ) ) ( ruleEOL )+ )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2185:28: ( ( ( (lv_name_0_0= RULE_ATOM ) ) otherlv_1= ':' ( ( (lv_string_2_0= RULE_STRING ) ) | ( (lv_val_3_0= RULE_INT_LITERAL ) ) | ( (lv_literal_4_0= ruleLiteral ) ) | ( (lv_val_real_5_0= RULE_REAL_LITERAL ) ) ) ( ruleEOL )+ ) )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2186:1: ( ( (lv_name_0_0= RULE_ATOM ) ) otherlv_1= ':' ( ( (lv_string_2_0= RULE_STRING ) ) | ( (lv_val_3_0= RULE_INT_LITERAL ) ) | ( (lv_literal_4_0= ruleLiteral ) ) | ( (lv_val_real_5_0= RULE_REAL_LITERAL ) ) ) ( ruleEOL )+ )
             {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2164:1: ( ( (lv_name_0_0= RULE_ATOM ) ) otherlv_1= ':' ( ( (lv_string_2_0= RULE_STRING ) ) | ( (lv_val_3_0= RULE_INT_LITERAL ) ) | ( (lv_literal_4_0= ruleLiteral ) ) | ( (lv_val_real_5_0= RULE_REAL_LITERAL ) ) ) ( ruleEOL )+ )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2164:2: ( (lv_name_0_0= RULE_ATOM ) ) otherlv_1= ':' ( ( (lv_string_2_0= RULE_STRING ) ) | ( (lv_val_3_0= RULE_INT_LITERAL ) ) | ( (lv_literal_4_0= ruleLiteral ) ) | ( (lv_val_real_5_0= RULE_REAL_LITERAL ) ) ) ( ruleEOL )+
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2186:1: ( ( (lv_name_0_0= RULE_ATOM ) ) otherlv_1= ':' ( ( (lv_string_2_0= RULE_STRING ) ) | ( (lv_val_3_0= RULE_INT_LITERAL ) ) | ( (lv_literal_4_0= ruleLiteral ) ) | ( (lv_val_real_5_0= RULE_REAL_LITERAL ) ) ) ( ruleEOL )+ )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2186:2: ( (lv_name_0_0= RULE_ATOM ) ) otherlv_1= ':' ( ( (lv_string_2_0= RULE_STRING ) ) | ( (lv_val_3_0= RULE_INT_LITERAL ) ) | ( (lv_literal_4_0= ruleLiteral ) ) | ( (lv_val_real_5_0= RULE_REAL_LITERAL ) ) ) ( ruleEOL )+
             {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2164:2: ( (lv_name_0_0= RULE_ATOM ) )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2165:1: (lv_name_0_0= RULE_ATOM )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2186:2: ( (lv_name_0_0= RULE_ATOM ) )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2187:1: (lv_name_0_0= RULE_ATOM )
             {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2165:1: (lv_name_0_0= RULE_ATOM )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2166:3: lv_name_0_0= RULE_ATOM
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2187:1: (lv_name_0_0= RULE_ATOM )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2188:3: lv_name_0_0= RULE_ATOM
             {
-            lv_name_0_0=(Token)match(input,RULE_ATOM,FOLLOW_RULE_ATOM_in_ruleOOthers4622); 
+            lv_name_0_0=(Token)match(input,RULE_ATOM,FOLLOW_RULE_ATOM_in_ruleOOthers4658); 
 
             			newLeafNode(lv_name_0_0, grammarAccess.getOOthersAccess().getNameATOMTerminalRuleCall_0_0()); 
             		
@@ -6428,21 +6483,21 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_1=(Token)match(input,29,FOLLOW_29_in_ruleOOthers4639); 
+            otherlv_1=(Token)match(input,29,FOLLOW_29_in_ruleOOthers4675); 
 
                 	newLeafNode(otherlv_1, grammarAccess.getOOthersAccess().getColonKeyword_1());
                 
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2186:1: ( ( (lv_string_2_0= RULE_STRING ) ) | ( (lv_val_3_0= RULE_INT_LITERAL ) ) | ( (lv_literal_4_0= ruleLiteral ) ) | ( (lv_val_real_5_0= RULE_REAL_LITERAL ) ) )
-            int alt78=4;
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2208:1: ( ( (lv_string_2_0= RULE_STRING ) ) | ( (lv_val_3_0= RULE_INT_LITERAL ) ) | ( (lv_literal_4_0= ruleLiteral ) ) | ( (lv_val_real_5_0= RULE_REAL_LITERAL ) ) )
+            int alt79=4;
             switch ( input.LA(1) ) {
             case RULE_STRING:
                 {
-                alt78=1;
+                alt79=1;
                 }
                 break;
             case RULE_INT_LITERAL:
                 {
-                alt78=2;
+                alt79=2;
                 }
                 break;
             case RULE_ATOM:
@@ -6454,32 +6509,32 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
             case 78:
             case 79:
                 {
-                alt78=3;
+                alt79=3;
                 }
                 break;
             case RULE_REAL_LITERAL:
                 {
-                alt78=4;
+                alt79=4;
                 }
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("", 78, 0, input);
+                    new NoViableAltException("", 79, 0, input);
 
                 throw nvae;
             }
 
-            switch (alt78) {
+            switch (alt79) {
                 case 1 :
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2186:2: ( (lv_string_2_0= RULE_STRING ) )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2208:2: ( (lv_string_2_0= RULE_STRING ) )
                     {
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2186:2: ( (lv_string_2_0= RULE_STRING ) )
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2187:1: (lv_string_2_0= RULE_STRING )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2208:2: ( (lv_string_2_0= RULE_STRING ) )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2209:1: (lv_string_2_0= RULE_STRING )
                     {
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2187:1: (lv_string_2_0= RULE_STRING )
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2188:3: lv_string_2_0= RULE_STRING
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2209:1: (lv_string_2_0= RULE_STRING )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2210:3: lv_string_2_0= RULE_STRING
                     {
-                    lv_string_2_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleOOthers4657); 
+                    lv_string_2_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleOOthers4693); 
 
                     			newLeafNode(lv_string_2_0, grammarAccess.getOOthersAccess().getStringSTRINGTerminalRuleCall_2_0_0()); 
                     		
@@ -6503,15 +6558,15 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2205:6: ( (lv_val_3_0= RULE_INT_LITERAL ) )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2227:6: ( (lv_val_3_0= RULE_INT_LITERAL ) )
                     {
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2205:6: ( (lv_val_3_0= RULE_INT_LITERAL ) )
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2206:1: (lv_val_3_0= RULE_INT_LITERAL )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2227:6: ( (lv_val_3_0= RULE_INT_LITERAL ) )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2228:1: (lv_val_3_0= RULE_INT_LITERAL )
                     {
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2206:1: (lv_val_3_0= RULE_INT_LITERAL )
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2207:3: lv_val_3_0= RULE_INT_LITERAL
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2228:1: (lv_val_3_0= RULE_INT_LITERAL )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2229:3: lv_val_3_0= RULE_INT_LITERAL
                     {
-                    lv_val_3_0=(Token)match(input,RULE_INT_LITERAL,FOLLOW_RULE_INT_LITERAL_in_ruleOOthers4685); 
+                    lv_val_3_0=(Token)match(input,RULE_INT_LITERAL,FOLLOW_RULE_INT_LITERAL_in_ruleOOthers4721); 
 
                     			newLeafNode(lv_val_3_0, grammarAccess.getOOthersAccess().getValINT_LITERALTerminalRuleCall_2_1_0()); 
                     		
@@ -6535,18 +6590,18 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 3 :
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2224:6: ( (lv_literal_4_0= ruleLiteral ) )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2246:6: ( (lv_literal_4_0= ruleLiteral ) )
                     {
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2224:6: ( (lv_literal_4_0= ruleLiteral ) )
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2225:1: (lv_literal_4_0= ruleLiteral )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2246:6: ( (lv_literal_4_0= ruleLiteral ) )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2247:1: (lv_literal_4_0= ruleLiteral )
                     {
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2225:1: (lv_literal_4_0= ruleLiteral )
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2226:3: lv_literal_4_0= ruleLiteral
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2247:1: (lv_literal_4_0= ruleLiteral )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2248:3: lv_literal_4_0= ruleLiteral
                     {
                      
                     	        newCompositeNode(grammarAccess.getOOthersAccess().getLiteralLiteralParserRuleCall_2_2_0()); 
                     	    
-                    pushFollow(FOLLOW_ruleLiteral_in_ruleOOthers4717);
+                    pushFollow(FOLLOW_ruleLiteral_in_ruleOOthers4753);
                     lv_literal_4_0=ruleLiteral();
 
                     state._fsp--;
@@ -6572,15 +6627,15 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 4 :
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2243:6: ( (lv_val_real_5_0= RULE_REAL_LITERAL ) )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2265:6: ( (lv_val_real_5_0= RULE_REAL_LITERAL ) )
                     {
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2243:6: ( (lv_val_real_5_0= RULE_REAL_LITERAL ) )
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2244:1: (lv_val_real_5_0= RULE_REAL_LITERAL )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2265:6: ( (lv_val_real_5_0= RULE_REAL_LITERAL ) )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2266:1: (lv_val_real_5_0= RULE_REAL_LITERAL )
                     {
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2244:1: (lv_val_real_5_0= RULE_REAL_LITERAL )
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2245:3: lv_val_real_5_0= RULE_REAL_LITERAL
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2266:1: (lv_val_real_5_0= RULE_REAL_LITERAL )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2267:3: lv_val_real_5_0= RULE_REAL_LITERAL
                     {
-                    lv_val_real_5_0=(Token)match(input,RULE_REAL_LITERAL,FOLLOW_RULE_REAL_LITERAL_in_ruleOOthers4740); 
+                    lv_val_real_5_0=(Token)match(input,RULE_REAL_LITERAL,FOLLOW_RULE_REAL_LITERAL_in_ruleOOthers4776); 
 
                     			newLeafNode(lv_val_real_5_0, grammarAccess.getOOthersAccess().getVal_realREAL_LITERALTerminalRuleCall_2_3_0()); 
                     		
@@ -6606,26 +6661,26 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2261:3: ( ruleEOL )+
-            int cnt79=0;
-            loop79:
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2283:3: ( ruleEOL )+
+            int cnt80=0;
+            loop80:
             do {
-                int alt79=2;
-                int LA79_0 = input.LA(1);
+                int alt80=2;
+                int LA80_0 = input.LA(1);
 
-                if ( ((LA79_0>=RULE_NEWLINE && LA79_0<=RULE_SL_COMMENT)) ) {
-                    alt79=1;
+                if ( ((LA80_0>=RULE_NEWLINE && LA80_0<=RULE_SL_COMMENT)) ) {
+                    alt80=1;
                 }
 
 
-                switch (alt79) {
+                switch (alt80) {
             	case 1 :
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2262:5: ruleEOL
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2284:5: ruleEOL
             	    {
             	     
             	            newCompositeNode(grammarAccess.getOOthersAccess().getEOLParserRuleCall_3()); 
             	        
-            	    pushFollow(FOLLOW_ruleEOL_in_ruleOOthers4763);
+            	    pushFollow(FOLLOW_ruleEOL_in_ruleOOthers4799);
             	    ruleEOL();
 
             	    state._fsp--;
@@ -6638,12 +6693,12 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    if ( cnt79 >= 1 ) break loop79;
+            	    if ( cnt80 >= 1 ) break loop80;
                         EarlyExitException eee =
-                            new EarlyExitException(79, input);
+                            new EarlyExitException(80, input);
                         throw eee;
                 }
-                cnt79++;
+                cnt80++;
             } while (true);
 
 
@@ -6667,7 +6722,7 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleGroup"
-    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2277:1: entryRuleGroup returns [EObject current=null] : iv_ruleGroup= ruleGroup EOF ;
+    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2299:1: entryRuleGroup returns [EObject current=null] : iv_ruleGroup= ruleGroup EOF ;
     public final EObject entryRuleGroup() throws RecognitionException {
         EObject current = null;
 
@@ -6675,17 +6730,17 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2278:2: (iv_ruleGroup= ruleGroup EOF )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2279:2: iv_ruleGroup= ruleGroup EOF
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2300:2: (iv_ruleGroup= ruleGroup EOF )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2301:2: iv_ruleGroup= ruleGroup EOF
             {
              newCompositeNode(grammarAccess.getGroupRule()); 
-            pushFollow(FOLLOW_ruleGroup_in_entryRuleGroup4800);
+            pushFollow(FOLLOW_ruleGroup_in_entryRuleGroup4836);
             iv_ruleGroup=ruleGroup();
 
             state._fsp--;
 
              current =iv_ruleGroup; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleGroup4810); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleGroup4846); 
 
             }
 
@@ -6703,7 +6758,7 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleGroup"
-    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2286:1: ruleGroup returns [EObject current=null] : (otherlv_0= 'group' ( (lv_name_1_0= RULE_ATOM ) ) otherlv_2= ':' ( (lv_kind_3_0= RULE_ATOM ) ) (otherlv_4= '{' ( ruleEOL )* ( ( (lv_group_6_0= ruleGroup ) ) | (otherlv_7= 'responsible-for' otherlv_8= ':' ( (lv_responsibleFor_9_0= RULE_ATOM ) ) ( ruleEOL )+ ) | (otherlv_11= 'owner' otherlv_12= ':' ( (lv_owner_13_0= RULE_ATOM ) ) ( ruleEOL )+ ) | (otherlv_15= 'debug' ( ruleEOL )+ ) | ( ( (lv_other_17_0= RULE_ATOM ) ) otherlv_18= ':' ( ( (lv_string_19_0= RULE_STRING ) ) | ( (lv_val_20_0= RULE_INT_LITERAL ) ) | ( (lv_literal_21_0= ruleLiteral ) ) | ( (lv_val_real_22_0= RULE_REAL_LITERAL ) ) ) ( ruleEOL )+ ) | (otherlv_24= 'players' otherlv_25= ':' ( ( (lv_agent_26_0= RULE_ATOM ) ) ( (lv_role_27_0= RULE_ATOM ) ) ( ruleEOL | otherlv_29= ',' )+ )* ) )* otherlv_30= '}' )? ( ruleEOL )* ) ;
+    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2308:1: ruleGroup returns [EObject current=null] : (otherlv_0= 'group' ( (lv_name_1_0= RULE_ATOM ) ) otherlv_2= ':' ( (lv_kind_3_0= RULE_ATOM ) ) (otherlv_4= '{' ( ruleEOL )* ( ( (lv_group_6_0= ruleGroup ) ) | (otherlv_7= 'responsible-for' otherlv_8= ':' ( (lv_responsibleFor_9_0= RULE_ATOM ) ) ( ruleEOL )+ ) | (otherlv_11= 'owner' otherlv_12= ':' ( (lv_owner_13_0= RULE_ATOM ) ) ( ruleEOL )+ ) | (otherlv_15= 'debug' (otherlv_16= ':' ( (lv_debug_17_0= ruleLiteral ) ) )? ( ruleEOL )+ ) | ( ( (lv_other_19_0= RULE_ATOM ) ) otherlv_20= ':' ( ( (lv_string_21_0= RULE_STRING ) ) | ( (lv_val_22_0= RULE_INT_LITERAL ) ) | ( (lv_literal_23_0= ruleLiteral ) ) | ( (lv_val_real_24_0= RULE_REAL_LITERAL ) ) ) ( ruleEOL )+ ) | (otherlv_26= 'players' otherlv_27= ':' ( ( (lv_agent_28_0= RULE_ATOM ) ) ( (lv_role_29_0= RULE_ATOM ) ) ( ruleEOL | otherlv_31= ',' )+ )* ) )* otherlv_32= '}' )? ( ruleEOL )* ) ;
     public final EObject ruleGroup() throws RecognitionException {
         EObject current = null;
 
@@ -6719,42 +6774,45 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
         Token otherlv_12=null;
         Token lv_owner_13_0=null;
         Token otherlv_15=null;
-        Token lv_other_17_0=null;
-        Token otherlv_18=null;
-        Token lv_string_19_0=null;
-        Token lv_val_20_0=null;
-        Token lv_val_real_22_0=null;
-        Token otherlv_24=null;
-        Token otherlv_25=null;
-        Token lv_agent_26_0=null;
-        Token lv_role_27_0=null;
-        Token otherlv_29=null;
-        Token otherlv_30=null;
+        Token otherlv_16=null;
+        Token lv_other_19_0=null;
+        Token otherlv_20=null;
+        Token lv_string_21_0=null;
+        Token lv_val_22_0=null;
+        Token lv_val_real_24_0=null;
+        Token otherlv_26=null;
+        Token otherlv_27=null;
+        Token lv_agent_28_0=null;
+        Token lv_role_29_0=null;
+        Token otherlv_31=null;
+        Token otherlv_32=null;
         EObject lv_group_6_0 = null;
 
-        EObject lv_literal_21_0 = null;
+        EObject lv_debug_17_0 = null;
+
+        EObject lv_literal_23_0 = null;
 
 
          enterRule(); 
             
         try {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2289:28: ( (otherlv_0= 'group' ( (lv_name_1_0= RULE_ATOM ) ) otherlv_2= ':' ( (lv_kind_3_0= RULE_ATOM ) ) (otherlv_4= '{' ( ruleEOL )* ( ( (lv_group_6_0= ruleGroup ) ) | (otherlv_7= 'responsible-for' otherlv_8= ':' ( (lv_responsibleFor_9_0= RULE_ATOM ) ) ( ruleEOL )+ ) | (otherlv_11= 'owner' otherlv_12= ':' ( (lv_owner_13_0= RULE_ATOM ) ) ( ruleEOL )+ ) | (otherlv_15= 'debug' ( ruleEOL )+ ) | ( ( (lv_other_17_0= RULE_ATOM ) ) otherlv_18= ':' ( ( (lv_string_19_0= RULE_STRING ) ) | ( (lv_val_20_0= RULE_INT_LITERAL ) ) | ( (lv_literal_21_0= ruleLiteral ) ) | ( (lv_val_real_22_0= RULE_REAL_LITERAL ) ) ) ( ruleEOL )+ ) | (otherlv_24= 'players' otherlv_25= ':' ( ( (lv_agent_26_0= RULE_ATOM ) ) ( (lv_role_27_0= RULE_ATOM ) ) ( ruleEOL | otherlv_29= ',' )+ )* ) )* otherlv_30= '}' )? ( ruleEOL )* ) )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2290:1: (otherlv_0= 'group' ( (lv_name_1_0= RULE_ATOM ) ) otherlv_2= ':' ( (lv_kind_3_0= RULE_ATOM ) ) (otherlv_4= '{' ( ruleEOL )* ( ( (lv_group_6_0= ruleGroup ) ) | (otherlv_7= 'responsible-for' otherlv_8= ':' ( (lv_responsibleFor_9_0= RULE_ATOM ) ) ( ruleEOL )+ ) | (otherlv_11= 'owner' otherlv_12= ':' ( (lv_owner_13_0= RULE_ATOM ) ) ( ruleEOL )+ ) | (otherlv_15= 'debug' ( ruleEOL )+ ) | ( ( (lv_other_17_0= RULE_ATOM ) ) otherlv_18= ':' ( ( (lv_string_19_0= RULE_STRING ) ) | ( (lv_val_20_0= RULE_INT_LITERAL ) ) | ( (lv_literal_21_0= ruleLiteral ) ) | ( (lv_val_real_22_0= RULE_REAL_LITERAL ) ) ) ( ruleEOL )+ ) | (otherlv_24= 'players' otherlv_25= ':' ( ( (lv_agent_26_0= RULE_ATOM ) ) ( (lv_role_27_0= RULE_ATOM ) ) ( ruleEOL | otherlv_29= ',' )+ )* ) )* otherlv_30= '}' )? ( ruleEOL )* )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2311:28: ( (otherlv_0= 'group' ( (lv_name_1_0= RULE_ATOM ) ) otherlv_2= ':' ( (lv_kind_3_0= RULE_ATOM ) ) (otherlv_4= '{' ( ruleEOL )* ( ( (lv_group_6_0= ruleGroup ) ) | (otherlv_7= 'responsible-for' otherlv_8= ':' ( (lv_responsibleFor_9_0= RULE_ATOM ) ) ( ruleEOL )+ ) | (otherlv_11= 'owner' otherlv_12= ':' ( (lv_owner_13_0= RULE_ATOM ) ) ( ruleEOL )+ ) | (otherlv_15= 'debug' (otherlv_16= ':' ( (lv_debug_17_0= ruleLiteral ) ) )? ( ruleEOL )+ ) | ( ( (lv_other_19_0= RULE_ATOM ) ) otherlv_20= ':' ( ( (lv_string_21_0= RULE_STRING ) ) | ( (lv_val_22_0= RULE_INT_LITERAL ) ) | ( (lv_literal_23_0= ruleLiteral ) ) | ( (lv_val_real_24_0= RULE_REAL_LITERAL ) ) ) ( ruleEOL )+ ) | (otherlv_26= 'players' otherlv_27= ':' ( ( (lv_agent_28_0= RULE_ATOM ) ) ( (lv_role_29_0= RULE_ATOM ) ) ( ruleEOL | otherlv_31= ',' )+ )* ) )* otherlv_32= '}' )? ( ruleEOL )* ) )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2312:1: (otherlv_0= 'group' ( (lv_name_1_0= RULE_ATOM ) ) otherlv_2= ':' ( (lv_kind_3_0= RULE_ATOM ) ) (otherlv_4= '{' ( ruleEOL )* ( ( (lv_group_6_0= ruleGroup ) ) | (otherlv_7= 'responsible-for' otherlv_8= ':' ( (lv_responsibleFor_9_0= RULE_ATOM ) ) ( ruleEOL )+ ) | (otherlv_11= 'owner' otherlv_12= ':' ( (lv_owner_13_0= RULE_ATOM ) ) ( ruleEOL )+ ) | (otherlv_15= 'debug' (otherlv_16= ':' ( (lv_debug_17_0= ruleLiteral ) ) )? ( ruleEOL )+ ) | ( ( (lv_other_19_0= RULE_ATOM ) ) otherlv_20= ':' ( ( (lv_string_21_0= RULE_STRING ) ) | ( (lv_val_22_0= RULE_INT_LITERAL ) ) | ( (lv_literal_23_0= ruleLiteral ) ) | ( (lv_val_real_24_0= RULE_REAL_LITERAL ) ) ) ( ruleEOL )+ ) | (otherlv_26= 'players' otherlv_27= ':' ( ( (lv_agent_28_0= RULE_ATOM ) ) ( (lv_role_29_0= RULE_ATOM ) ) ( ruleEOL | otherlv_31= ',' )+ )* ) )* otherlv_32= '}' )? ( ruleEOL )* )
             {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2290:1: (otherlv_0= 'group' ( (lv_name_1_0= RULE_ATOM ) ) otherlv_2= ':' ( (lv_kind_3_0= RULE_ATOM ) ) (otherlv_4= '{' ( ruleEOL )* ( ( (lv_group_6_0= ruleGroup ) ) | (otherlv_7= 'responsible-for' otherlv_8= ':' ( (lv_responsibleFor_9_0= RULE_ATOM ) ) ( ruleEOL )+ ) | (otherlv_11= 'owner' otherlv_12= ':' ( (lv_owner_13_0= RULE_ATOM ) ) ( ruleEOL )+ ) | (otherlv_15= 'debug' ( ruleEOL )+ ) | ( ( (lv_other_17_0= RULE_ATOM ) ) otherlv_18= ':' ( ( (lv_string_19_0= RULE_STRING ) ) | ( (lv_val_20_0= RULE_INT_LITERAL ) ) | ( (lv_literal_21_0= ruleLiteral ) ) | ( (lv_val_real_22_0= RULE_REAL_LITERAL ) ) ) ( ruleEOL )+ ) | (otherlv_24= 'players' otherlv_25= ':' ( ( (lv_agent_26_0= RULE_ATOM ) ) ( (lv_role_27_0= RULE_ATOM ) ) ( ruleEOL | otherlv_29= ',' )+ )* ) )* otherlv_30= '}' )? ( ruleEOL )* )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2290:3: otherlv_0= 'group' ( (lv_name_1_0= RULE_ATOM ) ) otherlv_2= ':' ( (lv_kind_3_0= RULE_ATOM ) ) (otherlv_4= '{' ( ruleEOL )* ( ( (lv_group_6_0= ruleGroup ) ) | (otherlv_7= 'responsible-for' otherlv_8= ':' ( (lv_responsibleFor_9_0= RULE_ATOM ) ) ( ruleEOL )+ ) | (otherlv_11= 'owner' otherlv_12= ':' ( (lv_owner_13_0= RULE_ATOM ) ) ( ruleEOL )+ ) | (otherlv_15= 'debug' ( ruleEOL )+ ) | ( ( (lv_other_17_0= RULE_ATOM ) ) otherlv_18= ':' ( ( (lv_string_19_0= RULE_STRING ) ) | ( (lv_val_20_0= RULE_INT_LITERAL ) ) | ( (lv_literal_21_0= ruleLiteral ) ) | ( (lv_val_real_22_0= RULE_REAL_LITERAL ) ) ) ( ruleEOL )+ ) | (otherlv_24= 'players' otherlv_25= ':' ( ( (lv_agent_26_0= RULE_ATOM ) ) ( (lv_role_27_0= RULE_ATOM ) ) ( ruleEOL | otherlv_29= ',' )+ )* ) )* otherlv_30= '}' )? ( ruleEOL )*
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2312:1: (otherlv_0= 'group' ( (lv_name_1_0= RULE_ATOM ) ) otherlv_2= ':' ( (lv_kind_3_0= RULE_ATOM ) ) (otherlv_4= '{' ( ruleEOL )* ( ( (lv_group_6_0= ruleGroup ) ) | (otherlv_7= 'responsible-for' otherlv_8= ':' ( (lv_responsibleFor_9_0= RULE_ATOM ) ) ( ruleEOL )+ ) | (otherlv_11= 'owner' otherlv_12= ':' ( (lv_owner_13_0= RULE_ATOM ) ) ( ruleEOL )+ ) | (otherlv_15= 'debug' (otherlv_16= ':' ( (lv_debug_17_0= ruleLiteral ) ) )? ( ruleEOL )+ ) | ( ( (lv_other_19_0= RULE_ATOM ) ) otherlv_20= ':' ( ( (lv_string_21_0= RULE_STRING ) ) | ( (lv_val_22_0= RULE_INT_LITERAL ) ) | ( (lv_literal_23_0= ruleLiteral ) ) | ( (lv_val_real_24_0= RULE_REAL_LITERAL ) ) ) ( ruleEOL )+ ) | (otherlv_26= 'players' otherlv_27= ':' ( ( (lv_agent_28_0= RULE_ATOM ) ) ( (lv_role_29_0= RULE_ATOM ) ) ( ruleEOL | otherlv_31= ',' )+ )* ) )* otherlv_32= '}' )? ( ruleEOL )* )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2312:3: otherlv_0= 'group' ( (lv_name_1_0= RULE_ATOM ) ) otherlv_2= ':' ( (lv_kind_3_0= RULE_ATOM ) ) (otherlv_4= '{' ( ruleEOL )* ( ( (lv_group_6_0= ruleGroup ) ) | (otherlv_7= 'responsible-for' otherlv_8= ':' ( (lv_responsibleFor_9_0= RULE_ATOM ) ) ( ruleEOL )+ ) | (otherlv_11= 'owner' otherlv_12= ':' ( (lv_owner_13_0= RULE_ATOM ) ) ( ruleEOL )+ ) | (otherlv_15= 'debug' (otherlv_16= ':' ( (lv_debug_17_0= ruleLiteral ) ) )? ( ruleEOL )+ ) | ( ( (lv_other_19_0= RULE_ATOM ) ) otherlv_20= ':' ( ( (lv_string_21_0= RULE_STRING ) ) | ( (lv_val_22_0= RULE_INT_LITERAL ) ) | ( (lv_literal_23_0= ruleLiteral ) ) | ( (lv_val_real_24_0= RULE_REAL_LITERAL ) ) ) ( ruleEOL )+ ) | (otherlv_26= 'players' otherlv_27= ':' ( ( (lv_agent_28_0= RULE_ATOM ) ) ( (lv_role_29_0= RULE_ATOM ) ) ( ruleEOL | otherlv_31= ',' )+ )* ) )* otherlv_32= '}' )? ( ruleEOL )*
             {
-            otherlv_0=(Token)match(input,62,FOLLOW_62_in_ruleGroup4847); 
+            otherlv_0=(Token)match(input,62,FOLLOW_62_in_ruleGroup4883); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getGroupAccess().getGroupKeyword_0());
                 
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2294:1: ( (lv_name_1_0= RULE_ATOM ) )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2295:1: (lv_name_1_0= RULE_ATOM )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2316:1: ( (lv_name_1_0= RULE_ATOM ) )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2317:1: (lv_name_1_0= RULE_ATOM )
             {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2295:1: (lv_name_1_0= RULE_ATOM )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2296:3: lv_name_1_0= RULE_ATOM
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2317:1: (lv_name_1_0= RULE_ATOM )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2318:3: lv_name_1_0= RULE_ATOM
             {
-            lv_name_1_0=(Token)match(input,RULE_ATOM,FOLLOW_RULE_ATOM_in_ruleGroup4864); 
+            lv_name_1_0=(Token)match(input,RULE_ATOM,FOLLOW_RULE_ATOM_in_ruleGroup4900); 
 
             			newLeafNode(lv_name_1_0, grammarAccess.getGroupAccess().getNameATOMTerminalRuleCall_1_0()); 
             		
@@ -6774,17 +6832,17 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_2=(Token)match(input,29,FOLLOW_29_in_ruleGroup4881); 
+            otherlv_2=(Token)match(input,29,FOLLOW_29_in_ruleGroup4917); 
 
                 	newLeafNode(otherlv_2, grammarAccess.getGroupAccess().getColonKeyword_2());
                 
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2316:1: ( (lv_kind_3_0= RULE_ATOM ) )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2317:1: (lv_kind_3_0= RULE_ATOM )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2338:1: ( (lv_kind_3_0= RULE_ATOM ) )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2339:1: (lv_kind_3_0= RULE_ATOM )
             {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2317:1: (lv_kind_3_0= RULE_ATOM )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2318:3: lv_kind_3_0= RULE_ATOM
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2339:1: (lv_kind_3_0= RULE_ATOM )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2340:3: lv_kind_3_0= RULE_ATOM
             {
-            lv_kind_3_0=(Token)match(input,RULE_ATOM,FOLLOW_RULE_ATOM_in_ruleGroup4898); 
+            lv_kind_3_0=(Token)match(input,RULE_ATOM,FOLLOW_RULE_ATOM_in_ruleGroup4934); 
 
             			newLeafNode(lv_kind_3_0, grammarAccess.getGroupAccess().getKindATOMTerminalRuleCall_3_0()); 
             		
@@ -6804,40 +6862,40 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2334:2: (otherlv_4= '{' ( ruleEOL )* ( ( (lv_group_6_0= ruleGroup ) ) | (otherlv_7= 'responsible-for' otherlv_8= ':' ( (lv_responsibleFor_9_0= RULE_ATOM ) ) ( ruleEOL )+ ) | (otherlv_11= 'owner' otherlv_12= ':' ( (lv_owner_13_0= RULE_ATOM ) ) ( ruleEOL )+ ) | (otherlv_15= 'debug' ( ruleEOL )+ ) | ( ( (lv_other_17_0= RULE_ATOM ) ) otherlv_18= ':' ( ( (lv_string_19_0= RULE_STRING ) ) | ( (lv_val_20_0= RULE_INT_LITERAL ) ) | ( (lv_literal_21_0= ruleLiteral ) ) | ( (lv_val_real_22_0= RULE_REAL_LITERAL ) ) ) ( ruleEOL )+ ) | (otherlv_24= 'players' otherlv_25= ':' ( ( (lv_agent_26_0= RULE_ATOM ) ) ( (lv_role_27_0= RULE_ATOM ) ) ( ruleEOL | otherlv_29= ',' )+ )* ) )* otherlv_30= '}' )?
-            int alt89=2;
-            int LA89_0 = input.LA(1);
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2356:2: (otherlv_4= '{' ( ruleEOL )* ( ( (lv_group_6_0= ruleGroup ) ) | (otherlv_7= 'responsible-for' otherlv_8= ':' ( (lv_responsibleFor_9_0= RULE_ATOM ) ) ( ruleEOL )+ ) | (otherlv_11= 'owner' otherlv_12= ':' ( (lv_owner_13_0= RULE_ATOM ) ) ( ruleEOL )+ ) | (otherlv_15= 'debug' (otherlv_16= ':' ( (lv_debug_17_0= ruleLiteral ) ) )? ( ruleEOL )+ ) | ( ( (lv_other_19_0= RULE_ATOM ) ) otherlv_20= ':' ( ( (lv_string_21_0= RULE_STRING ) ) | ( (lv_val_22_0= RULE_INT_LITERAL ) ) | ( (lv_literal_23_0= ruleLiteral ) ) | ( (lv_val_real_24_0= RULE_REAL_LITERAL ) ) ) ( ruleEOL )+ ) | (otherlv_26= 'players' otherlv_27= ':' ( ( (lv_agent_28_0= RULE_ATOM ) ) ( (lv_role_29_0= RULE_ATOM ) ) ( ruleEOL | otherlv_31= ',' )+ )* ) )* otherlv_32= '}' )?
+            int alt91=2;
+            int LA91_0 = input.LA(1);
 
-            if ( (LA89_0==24) ) {
-                alt89=1;
+            if ( (LA91_0==24) ) {
+                alt91=1;
             }
-            switch (alt89) {
+            switch (alt91) {
                 case 1 :
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2334:4: otherlv_4= '{' ( ruleEOL )* ( ( (lv_group_6_0= ruleGroup ) ) | (otherlv_7= 'responsible-for' otherlv_8= ':' ( (lv_responsibleFor_9_0= RULE_ATOM ) ) ( ruleEOL )+ ) | (otherlv_11= 'owner' otherlv_12= ':' ( (lv_owner_13_0= RULE_ATOM ) ) ( ruleEOL )+ ) | (otherlv_15= 'debug' ( ruleEOL )+ ) | ( ( (lv_other_17_0= RULE_ATOM ) ) otherlv_18= ':' ( ( (lv_string_19_0= RULE_STRING ) ) | ( (lv_val_20_0= RULE_INT_LITERAL ) ) | ( (lv_literal_21_0= ruleLiteral ) ) | ( (lv_val_real_22_0= RULE_REAL_LITERAL ) ) ) ( ruleEOL )+ ) | (otherlv_24= 'players' otherlv_25= ':' ( ( (lv_agent_26_0= RULE_ATOM ) ) ( (lv_role_27_0= RULE_ATOM ) ) ( ruleEOL | otherlv_29= ',' )+ )* ) )* otherlv_30= '}'
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2356:4: otherlv_4= '{' ( ruleEOL )* ( ( (lv_group_6_0= ruleGroup ) ) | (otherlv_7= 'responsible-for' otherlv_8= ':' ( (lv_responsibleFor_9_0= RULE_ATOM ) ) ( ruleEOL )+ ) | (otherlv_11= 'owner' otherlv_12= ':' ( (lv_owner_13_0= RULE_ATOM ) ) ( ruleEOL )+ ) | (otherlv_15= 'debug' (otherlv_16= ':' ( (lv_debug_17_0= ruleLiteral ) ) )? ( ruleEOL )+ ) | ( ( (lv_other_19_0= RULE_ATOM ) ) otherlv_20= ':' ( ( (lv_string_21_0= RULE_STRING ) ) | ( (lv_val_22_0= RULE_INT_LITERAL ) ) | ( (lv_literal_23_0= ruleLiteral ) ) | ( (lv_val_real_24_0= RULE_REAL_LITERAL ) ) ) ( ruleEOL )+ ) | (otherlv_26= 'players' otherlv_27= ':' ( ( (lv_agent_28_0= RULE_ATOM ) ) ( (lv_role_29_0= RULE_ATOM ) ) ( ruleEOL | otherlv_31= ',' )+ )* ) )* otherlv_32= '}'
                     {
-                    otherlv_4=(Token)match(input,24,FOLLOW_24_in_ruleGroup4916); 
+                    otherlv_4=(Token)match(input,24,FOLLOW_24_in_ruleGroup4952); 
 
                         	newLeafNode(otherlv_4, grammarAccess.getGroupAccess().getLeftCurlyBracketKeyword_4_0());
                         
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2338:1: ( ruleEOL )*
-                    loop80:
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2360:1: ( ruleEOL )*
+                    loop81:
                     do {
-                        int alt80=2;
-                        int LA80_0 = input.LA(1);
+                        int alt81=2;
+                        int LA81_0 = input.LA(1);
 
-                        if ( ((LA80_0>=RULE_NEWLINE && LA80_0<=RULE_SL_COMMENT)) ) {
-                            alt80=1;
+                        if ( ((LA81_0>=RULE_NEWLINE && LA81_0<=RULE_SL_COMMENT)) ) {
+                            alt81=1;
                         }
 
 
-                        switch (alt80) {
+                        switch (alt81) {
                     	case 1 :
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2339:5: ruleEOL
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2361:5: ruleEOL
                     	    {
                     	     
                     	            newCompositeNode(grammarAccess.getGroupAccess().getEOLParserRuleCall_4_1()); 
                     	        
-                    	    pushFollow(FOLLOW_ruleEOL_in_ruleGroup4933);
+                    	    pushFollow(FOLLOW_ruleEOL_in_ruleGroup4969);
                     	    ruleEOL();
 
                     	    state._fsp--;
@@ -6850,62 +6908,62 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop80;
+                    	    break loop81;
                         }
                     } while (true);
 
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2346:3: ( ( (lv_group_6_0= ruleGroup ) ) | (otherlv_7= 'responsible-for' otherlv_8= ':' ( (lv_responsibleFor_9_0= RULE_ATOM ) ) ( ruleEOL )+ ) | (otherlv_11= 'owner' otherlv_12= ':' ( (lv_owner_13_0= RULE_ATOM ) ) ( ruleEOL )+ ) | (otherlv_15= 'debug' ( ruleEOL )+ ) | ( ( (lv_other_17_0= RULE_ATOM ) ) otherlv_18= ':' ( ( (lv_string_19_0= RULE_STRING ) ) | ( (lv_val_20_0= RULE_INT_LITERAL ) ) | ( (lv_literal_21_0= ruleLiteral ) ) | ( (lv_val_real_22_0= RULE_REAL_LITERAL ) ) ) ( ruleEOL )+ ) | (otherlv_24= 'players' otherlv_25= ':' ( ( (lv_agent_26_0= RULE_ATOM ) ) ( (lv_role_27_0= RULE_ATOM ) ) ( ruleEOL | otherlv_29= ',' )+ )* ) )*
-                    loop88:
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2368:3: ( ( (lv_group_6_0= ruleGroup ) ) | (otherlv_7= 'responsible-for' otherlv_8= ':' ( (lv_responsibleFor_9_0= RULE_ATOM ) ) ( ruleEOL )+ ) | (otherlv_11= 'owner' otherlv_12= ':' ( (lv_owner_13_0= RULE_ATOM ) ) ( ruleEOL )+ ) | (otherlv_15= 'debug' (otherlv_16= ':' ( (lv_debug_17_0= ruleLiteral ) ) )? ( ruleEOL )+ ) | ( ( (lv_other_19_0= RULE_ATOM ) ) otherlv_20= ':' ( ( (lv_string_21_0= RULE_STRING ) ) | ( (lv_val_22_0= RULE_INT_LITERAL ) ) | ( (lv_literal_23_0= ruleLiteral ) ) | ( (lv_val_real_24_0= RULE_REAL_LITERAL ) ) ) ( ruleEOL )+ ) | (otherlv_26= 'players' otherlv_27= ':' ( ( (lv_agent_28_0= RULE_ATOM ) ) ( (lv_role_29_0= RULE_ATOM ) ) ( ruleEOL | otherlv_31= ',' )+ )* ) )*
+                    loop90:
                     do {
-                        int alt88=7;
+                        int alt90=7;
                         switch ( input.LA(1) ) {
                         case 62:
                             {
-                            alt88=1;
+                            alt90=1;
                             }
                             break;
                         case 63:
                             {
-                            alt88=2;
+                            alt90=2;
                             }
                             break;
                         case 64:
                             {
-                            alt88=3;
+                            alt90=3;
                             }
                             break;
                         case 46:
                             {
-                            alt88=4;
+                            alt90=4;
                             }
                             break;
                         case RULE_ATOM:
                             {
-                            alt88=5;
+                            alt90=5;
                             }
                             break;
                         case 65:
                             {
-                            alt88=6;
+                            alt90=6;
                             }
                             break;
 
                         }
 
-                        switch (alt88) {
+                        switch (alt90) {
                     	case 1 :
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2346:4: ( (lv_group_6_0= ruleGroup ) )
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2368:4: ( (lv_group_6_0= ruleGroup ) )
                     	    {
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2346:4: ( (lv_group_6_0= ruleGroup ) )
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2347:1: (lv_group_6_0= ruleGroup )
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2368:4: ( (lv_group_6_0= ruleGroup ) )
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2369:1: (lv_group_6_0= ruleGroup )
                     	    {
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2347:1: (lv_group_6_0= ruleGroup )
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2348:3: lv_group_6_0= ruleGroup
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2369:1: (lv_group_6_0= ruleGroup )
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2370:3: lv_group_6_0= ruleGroup
                     	    {
                     	     
                     	    	        newCompositeNode(grammarAccess.getGroupAccess().getGroupGroupParserRuleCall_4_2_0_0()); 
                     	    	    
-                    	    pushFollow(FOLLOW_ruleGroup_in_ruleGroup4956);
+                    	    pushFollow(FOLLOW_ruleGroup_in_ruleGroup4992);
                     	    lv_group_6_0=ruleGroup();
 
                     	    state._fsp--;
@@ -6931,26 +6989,26 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2365:6: (otherlv_7= 'responsible-for' otherlv_8= ':' ( (lv_responsibleFor_9_0= RULE_ATOM ) ) ( ruleEOL )+ )
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2387:6: (otherlv_7= 'responsible-for' otherlv_8= ':' ( (lv_responsibleFor_9_0= RULE_ATOM ) ) ( ruleEOL )+ )
                     	    {
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2365:6: (otherlv_7= 'responsible-for' otherlv_8= ':' ( (lv_responsibleFor_9_0= RULE_ATOM ) ) ( ruleEOL )+ )
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2365:8: otherlv_7= 'responsible-for' otherlv_8= ':' ( (lv_responsibleFor_9_0= RULE_ATOM ) ) ( ruleEOL )+
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2387:6: (otherlv_7= 'responsible-for' otherlv_8= ':' ( (lv_responsibleFor_9_0= RULE_ATOM ) ) ( ruleEOL )+ )
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2387:8: otherlv_7= 'responsible-for' otherlv_8= ':' ( (lv_responsibleFor_9_0= RULE_ATOM ) ) ( ruleEOL )+
                     	    {
-                    	    otherlv_7=(Token)match(input,63,FOLLOW_63_in_ruleGroup4975); 
+                    	    otherlv_7=(Token)match(input,63,FOLLOW_63_in_ruleGroup5011); 
 
                     	        	newLeafNode(otherlv_7, grammarAccess.getGroupAccess().getResponsibleForKeyword_4_2_1_0());
                     	        
-                    	    otherlv_8=(Token)match(input,29,FOLLOW_29_in_ruleGroup4987); 
+                    	    otherlv_8=(Token)match(input,29,FOLLOW_29_in_ruleGroup5023); 
 
                     	        	newLeafNode(otherlv_8, grammarAccess.getGroupAccess().getColonKeyword_4_2_1_1());
                     	        
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2373:1: ( (lv_responsibleFor_9_0= RULE_ATOM ) )
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2374:1: (lv_responsibleFor_9_0= RULE_ATOM )
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2395:1: ( (lv_responsibleFor_9_0= RULE_ATOM ) )
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2396:1: (lv_responsibleFor_9_0= RULE_ATOM )
                     	    {
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2374:1: (lv_responsibleFor_9_0= RULE_ATOM )
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2375:3: lv_responsibleFor_9_0= RULE_ATOM
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2396:1: (lv_responsibleFor_9_0= RULE_ATOM )
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2397:3: lv_responsibleFor_9_0= RULE_ATOM
                     	    {
-                    	    lv_responsibleFor_9_0=(Token)match(input,RULE_ATOM,FOLLOW_RULE_ATOM_in_ruleGroup5004); 
+                    	    lv_responsibleFor_9_0=(Token)match(input,RULE_ATOM,FOLLOW_RULE_ATOM_in_ruleGroup5040); 
 
                     	    			newLeafNode(lv_responsibleFor_9_0, grammarAccess.getGroupAccess().getResponsibleForATOMTerminalRuleCall_4_2_1_2_0()); 
                     	    		
@@ -6970,93 +7028,7 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
                     	    }
 
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2391:2: ( ruleEOL )+
-                    	    int cnt81=0;
-                    	    loop81:
-                    	    do {
-                    	        int alt81=2;
-                    	        int LA81_0 = input.LA(1);
-
-                    	        if ( ((LA81_0>=RULE_NEWLINE && LA81_0<=RULE_SL_COMMENT)) ) {
-                    	            alt81=1;
-                    	        }
-
-
-                    	        switch (alt81) {
-                    	    	case 1 :
-                    	    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2392:5: ruleEOL
-                    	    	    {
-                    	    	     
-                    	    	            newCompositeNode(grammarAccess.getGroupAccess().getEOLParserRuleCall_4_2_1_3()); 
-                    	    	        
-                    	    	    pushFollow(FOLLOW_ruleEOL_in_ruleGroup5026);
-                    	    	    ruleEOL();
-
-                    	    	    state._fsp--;
-
-                    	    	     
-                    	    	            afterParserOrEnumRuleCall();
-                    	    	        
-
-                    	    	    }
-                    	    	    break;
-
-                    	    	default :
-                    	    	    if ( cnt81 >= 1 ) break loop81;
-                    	                EarlyExitException eee =
-                    	                    new EarlyExitException(81, input);
-                    	                throw eee;
-                    	        }
-                    	        cnt81++;
-                    	    } while (true);
-
-
-                    	    }
-
-
-                    	    }
-                    	    break;
-                    	case 3 :
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2400:6: (otherlv_11= 'owner' otherlv_12= ':' ( (lv_owner_13_0= RULE_ATOM ) ) ( ruleEOL )+ )
-                    	    {
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2400:6: (otherlv_11= 'owner' otherlv_12= ':' ( (lv_owner_13_0= RULE_ATOM ) ) ( ruleEOL )+ )
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2400:8: otherlv_11= 'owner' otherlv_12= ':' ( (lv_owner_13_0= RULE_ATOM ) ) ( ruleEOL )+
-                    	    {
-                    	    otherlv_11=(Token)match(input,64,FOLLOW_64_in_ruleGroup5047); 
-
-                    	        	newLeafNode(otherlv_11, grammarAccess.getGroupAccess().getOwnerKeyword_4_2_2_0());
-                    	        
-                    	    otherlv_12=(Token)match(input,29,FOLLOW_29_in_ruleGroup5059); 
-
-                    	        	newLeafNode(otherlv_12, grammarAccess.getGroupAccess().getColonKeyword_4_2_2_1());
-                    	        
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2408:1: ( (lv_owner_13_0= RULE_ATOM ) )
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2409:1: (lv_owner_13_0= RULE_ATOM )
-                    	    {
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2409:1: (lv_owner_13_0= RULE_ATOM )
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2410:3: lv_owner_13_0= RULE_ATOM
-                    	    {
-                    	    lv_owner_13_0=(Token)match(input,RULE_ATOM,FOLLOW_RULE_ATOM_in_ruleGroup5076); 
-
-                    	    			newLeafNode(lv_owner_13_0, grammarAccess.getGroupAccess().getOwnerATOMTerminalRuleCall_4_2_2_2_0()); 
-                    	    		
-
-                    	    	        if (current==null) {
-                    	    	            current = createModelElement(grammarAccess.getGroupRule());
-                    	    	        }
-                    	           		addWithLastConsumed(
-                    	           			current, 
-                    	           			"owner",
-                    	            		lv_owner_13_0, 
-                    	            		"ATOM");
-                    	    	    
-
-                    	    }
-
-
-                    	    }
-
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2426:2: ( ruleEOL )+
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2413:2: ( ruleEOL )+
                     	    int cnt82=0;
                     	    loop82:
                     	    do {
@@ -7070,12 +7042,12 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
                     	        switch (alt82) {
                     	    	case 1 :
-                    	    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2427:5: ruleEOL
+                    	    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2414:5: ruleEOL
                     	    	    {
                     	    	     
-                    	    	            newCompositeNode(grammarAccess.getGroupAccess().getEOLParserRuleCall_4_2_2_3()); 
+                    	    	            newCompositeNode(grammarAccess.getGroupAccess().getEOLParserRuleCall_4_2_1_3()); 
                     	    	        
-                    	    	    pushFollow(FOLLOW_ruleEOL_in_ruleGroup5098);
+                    	    	    pushFollow(FOLLOW_ruleEOL_in_ruleGroup5062);
                     	    	    ruleEOL();
 
                     	    	    state._fsp--;
@@ -7102,17 +7074,47 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
                     	    }
                     	    break;
-                    	case 4 :
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2435:6: (otherlv_15= 'debug' ( ruleEOL )+ )
+                    	case 3 :
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2422:6: (otherlv_11= 'owner' otherlv_12= ':' ( (lv_owner_13_0= RULE_ATOM ) ) ( ruleEOL )+ )
                     	    {
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2435:6: (otherlv_15= 'debug' ( ruleEOL )+ )
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2435:8: otherlv_15= 'debug' ( ruleEOL )+
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2422:6: (otherlv_11= 'owner' otherlv_12= ':' ( (lv_owner_13_0= RULE_ATOM ) ) ( ruleEOL )+ )
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2422:8: otherlv_11= 'owner' otherlv_12= ':' ( (lv_owner_13_0= RULE_ATOM ) ) ( ruleEOL )+
                     	    {
-                    	    otherlv_15=(Token)match(input,46,FOLLOW_46_in_ruleGroup5119); 
+                    	    otherlv_11=(Token)match(input,64,FOLLOW_64_in_ruleGroup5083); 
 
-                    	        	newLeafNode(otherlv_15, grammarAccess.getGroupAccess().getDebugKeyword_4_2_3_0());
+                    	        	newLeafNode(otherlv_11, grammarAccess.getGroupAccess().getOwnerKeyword_4_2_2_0());
                     	        
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2439:1: ( ruleEOL )+
+                    	    otherlv_12=(Token)match(input,29,FOLLOW_29_in_ruleGroup5095); 
+
+                    	        	newLeafNode(otherlv_12, grammarAccess.getGroupAccess().getColonKeyword_4_2_2_1());
+                    	        
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2430:1: ( (lv_owner_13_0= RULE_ATOM ) )
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2431:1: (lv_owner_13_0= RULE_ATOM )
+                    	    {
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2431:1: (lv_owner_13_0= RULE_ATOM )
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2432:3: lv_owner_13_0= RULE_ATOM
+                    	    {
+                    	    lv_owner_13_0=(Token)match(input,RULE_ATOM,FOLLOW_RULE_ATOM_in_ruleGroup5112); 
+
+                    	    			newLeafNode(lv_owner_13_0, grammarAccess.getGroupAccess().getOwnerATOMTerminalRuleCall_4_2_2_2_0()); 
+                    	    		
+
+                    	    	        if (current==null) {
+                    	    	            current = createModelElement(grammarAccess.getGroupRule());
+                    	    	        }
+                    	           		addWithLastConsumed(
+                    	           			current, 
+                    	           			"owner",
+                    	            		lv_owner_13_0, 
+                    	            		"ATOM");
+                    	    	    
+
+                    	    }
+
+
+                    	    }
+
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2448:2: ( ruleEOL )+
                     	    int cnt83=0;
                     	    loop83:
                     	    do {
@@ -7126,12 +7128,12 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
                     	        switch (alt83) {
                     	    	case 1 :
-                    	    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2440:5: ruleEOL
+                    	    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2449:5: ruleEOL
                     	    	    {
                     	    	     
-                    	    	            newCompositeNode(grammarAccess.getGroupAccess().getEOLParserRuleCall_4_2_3_1()); 
+                    	    	            newCompositeNode(grammarAccess.getGroupAccess().getEOLParserRuleCall_4_2_2_3()); 
                     	    	        
-                    	    	    pushFollow(FOLLOW_ruleEOL_in_ruleGroup5136);
+                    	    	    pushFollow(FOLLOW_ruleEOL_in_ruleGroup5134);
                     	    	    ruleEOL();
 
                     	    	    state._fsp--;
@@ -7158,158 +7160,42 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
                     	    }
                     	    break;
-                    	case 5 :
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2448:6: ( ( (lv_other_17_0= RULE_ATOM ) ) otherlv_18= ':' ( ( (lv_string_19_0= RULE_STRING ) ) | ( (lv_val_20_0= RULE_INT_LITERAL ) ) | ( (lv_literal_21_0= ruleLiteral ) ) | ( (lv_val_real_22_0= RULE_REAL_LITERAL ) ) ) ( ruleEOL )+ )
+                    	case 4 :
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2457:6: (otherlv_15= 'debug' (otherlv_16= ':' ( (lv_debug_17_0= ruleLiteral ) ) )? ( ruleEOL )+ )
                     	    {
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2448:6: ( ( (lv_other_17_0= RULE_ATOM ) ) otherlv_18= ':' ( ( (lv_string_19_0= RULE_STRING ) ) | ( (lv_val_20_0= RULE_INT_LITERAL ) ) | ( (lv_literal_21_0= ruleLiteral ) ) | ( (lv_val_real_22_0= RULE_REAL_LITERAL ) ) ) ( ruleEOL )+ )
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2448:7: ( (lv_other_17_0= RULE_ATOM ) ) otherlv_18= ':' ( ( (lv_string_19_0= RULE_STRING ) ) | ( (lv_val_20_0= RULE_INT_LITERAL ) ) | ( (lv_literal_21_0= ruleLiteral ) ) | ( (lv_val_real_22_0= RULE_REAL_LITERAL ) ) ) ( ruleEOL )+
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2457:6: (otherlv_15= 'debug' (otherlv_16= ':' ( (lv_debug_17_0= ruleLiteral ) ) )? ( ruleEOL )+ )
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2457:8: otherlv_15= 'debug' (otherlv_16= ':' ( (lv_debug_17_0= ruleLiteral ) ) )? ( ruleEOL )+
                     	    {
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2448:7: ( (lv_other_17_0= RULE_ATOM ) )
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2449:1: (lv_other_17_0= RULE_ATOM )
-                    	    {
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2449:1: (lv_other_17_0= RULE_ATOM )
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2450:3: lv_other_17_0= RULE_ATOM
-                    	    {
-                    	    lv_other_17_0=(Token)match(input,RULE_ATOM,FOLLOW_RULE_ATOM_in_ruleGroup5162); 
+                    	    otherlv_15=(Token)match(input,46,FOLLOW_46_in_ruleGroup5155); 
 
-                    	    			newLeafNode(lv_other_17_0, grammarAccess.getGroupAccess().getOtherATOMTerminalRuleCall_4_2_4_0_0()); 
-                    	    		
-
-                    	    	        if (current==null) {
-                    	    	            current = createModelElement(grammarAccess.getGroupRule());
-                    	    	        }
-                    	           		addWithLastConsumed(
-                    	           			current, 
-                    	           			"other",
-                    	            		lv_other_17_0, 
-                    	            		"ATOM");
-                    	    	    
-
-                    	    }
-
-
-                    	    }
-
-                    	    otherlv_18=(Token)match(input,29,FOLLOW_29_in_ruleGroup5179); 
-
-                    	        	newLeafNode(otherlv_18, grammarAccess.getGroupAccess().getColonKeyword_4_2_4_1());
+                    	        	newLeafNode(otherlv_15, grammarAccess.getGroupAccess().getDebugKeyword_4_2_3_0());
                     	        
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2470:1: ( ( (lv_string_19_0= RULE_STRING ) ) | ( (lv_val_20_0= RULE_INT_LITERAL ) ) | ( (lv_literal_21_0= ruleLiteral ) ) | ( (lv_val_real_22_0= RULE_REAL_LITERAL ) ) )
-                    	    int alt84=4;
-                    	    switch ( input.LA(1) ) {
-                    	    case RULE_STRING:
-                    	        {
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2461:1: (otherlv_16= ':' ( (lv_debug_17_0= ruleLiteral ) ) )?
+                    	    int alt84=2;
+                    	    int LA84_0 = input.LA(1);
+
+                    	    if ( (LA84_0==29) ) {
                     	        alt84=1;
-                    	        }
-                    	        break;
-                    	    case RULE_INT_LITERAL:
-                    	        {
-                    	        alt84=2;
-                    	        }
-                    	        break;
-                    	    case RULE_ATOM:
-                    	    case RULE_VART:
-                    	    case RULE_UNNAMEDVART:
-                    	    case 75:
-                    	    case 76:
-                    	    case 77:
-                    	    case 78:
-                    	    case 79:
-                    	        {
-                    	        alt84=3;
-                    	        }
-                    	        break;
-                    	    case RULE_REAL_LITERAL:
-                    	        {
-                    	        alt84=4;
-                    	        }
-                    	        break;
-                    	    default:
-                    	        NoViableAltException nvae =
-                    	            new NoViableAltException("", 84, 0, input);
-
-                    	        throw nvae;
                     	    }
-
                     	    switch (alt84) {
                     	        case 1 :
-                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2470:2: ( (lv_string_19_0= RULE_STRING ) )
+                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2461:3: otherlv_16= ':' ( (lv_debug_17_0= ruleLiteral ) )
                     	            {
-                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2470:2: ( (lv_string_19_0= RULE_STRING ) )
-                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2471:1: (lv_string_19_0= RULE_STRING )
+                    	            otherlv_16=(Token)match(input,29,FOLLOW_29_in_ruleGroup5168); 
+
+                    	                	newLeafNode(otherlv_16, grammarAccess.getGroupAccess().getColonKeyword_4_2_3_1_0());
+                    	                
+                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2465:1: ( (lv_debug_17_0= ruleLiteral ) )
+                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2466:1: (lv_debug_17_0= ruleLiteral )
                     	            {
-                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2471:1: (lv_string_19_0= RULE_STRING )
-                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2472:3: lv_string_19_0= RULE_STRING
-                    	            {
-                    	            lv_string_19_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleGroup5197); 
-
-                    	            			newLeafNode(lv_string_19_0, grammarAccess.getGroupAccess().getStringSTRINGTerminalRuleCall_4_2_4_2_0_0()); 
-                    	            		
-
-                    	            	        if (current==null) {
-                    	            	            current = createModelElement(grammarAccess.getGroupRule());
-                    	            	        }
-                    	                   		addWithLastConsumed(
-                    	                   			current, 
-                    	                   			"string",
-                    	                    		lv_string_19_0, 
-                    	                    		"STRING");
-                    	            	    
-
-                    	            }
-
-
-                    	            }
-
-
-                    	            }
-                    	            break;
-                    	        case 2 :
-                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2489:6: ( (lv_val_20_0= RULE_INT_LITERAL ) )
-                    	            {
-                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2489:6: ( (lv_val_20_0= RULE_INT_LITERAL ) )
-                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2490:1: (lv_val_20_0= RULE_INT_LITERAL )
-                    	            {
-                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2490:1: (lv_val_20_0= RULE_INT_LITERAL )
-                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2491:3: lv_val_20_0= RULE_INT_LITERAL
-                    	            {
-                    	            lv_val_20_0=(Token)match(input,RULE_INT_LITERAL,FOLLOW_RULE_INT_LITERAL_in_ruleGroup5225); 
-
-                    	            			newLeafNode(lv_val_20_0, grammarAccess.getGroupAccess().getValINT_LITERALTerminalRuleCall_4_2_4_2_1_0()); 
-                    	            		
-
-                    	            	        if (current==null) {
-                    	            	            current = createModelElement(grammarAccess.getGroupRule());
-                    	            	        }
-                    	                   		addWithLastConsumed(
-                    	                   			current, 
-                    	                   			"val",
-                    	                    		lv_val_20_0, 
-                    	                    		"INT_LITERAL");
-                    	            	    
-
-                    	            }
-
-
-                    	            }
-
-
-                    	            }
-                    	            break;
-                    	        case 3 :
-                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2508:6: ( (lv_literal_21_0= ruleLiteral ) )
-                    	            {
-                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2508:6: ( (lv_literal_21_0= ruleLiteral ) )
-                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2509:1: (lv_literal_21_0= ruleLiteral )
-                    	            {
-                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2509:1: (lv_literal_21_0= ruleLiteral )
-                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2510:3: lv_literal_21_0= ruleLiteral
+                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2466:1: (lv_debug_17_0= ruleLiteral )
+                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2467:3: lv_debug_17_0= ruleLiteral
                     	            {
                     	             
-                    	            	        newCompositeNode(grammarAccess.getGroupAccess().getLiteralLiteralParserRuleCall_4_2_4_2_2_0()); 
+                    	            	        newCompositeNode(grammarAccess.getGroupAccess().getDebugLiteralParserRuleCall_4_2_3_1_1_0()); 
                     	            	    
-                    	            pushFollow(FOLLOW_ruleLiteral_in_ruleGroup5257);
-                    	            lv_literal_21_0=ruleLiteral();
+                    	            pushFollow(FOLLOW_ruleLiteral_in_ruleGroup5189);
+                    	            lv_debug_17_0=ruleLiteral();
 
                     	            state._fsp--;
 
@@ -7319,8 +7205,8 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
                     	            	        }
                     	                   		add(
                     	                   			current, 
-                    	                   			"literal",
-                    	                    		lv_literal_21_0, 
+                    	                   			"debug",
+                    	                    		lv_debug_17_0, 
                     	                    		"Literal");
                     	            	        afterParserOrEnumRuleCall();
                     	            	    
@@ -7333,42 +7219,10 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
                     	            }
                     	            break;
-                    	        case 4 :
-                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2527:6: ( (lv_val_real_22_0= RULE_REAL_LITERAL ) )
-                    	            {
-                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2527:6: ( (lv_val_real_22_0= RULE_REAL_LITERAL ) )
-                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2528:1: (lv_val_real_22_0= RULE_REAL_LITERAL )
-                    	            {
-                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2528:1: (lv_val_real_22_0= RULE_REAL_LITERAL )
-                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2529:3: lv_val_real_22_0= RULE_REAL_LITERAL
-                    	            {
-                    	            lv_val_real_22_0=(Token)match(input,RULE_REAL_LITERAL,FOLLOW_RULE_REAL_LITERAL_in_ruleGroup5280); 
-
-                    	            			newLeafNode(lv_val_real_22_0, grammarAccess.getGroupAccess().getVal_realREAL_LITERALTerminalRuleCall_4_2_4_2_3_0()); 
-                    	            		
-
-                    	            	        if (current==null) {
-                    	            	            current = createModelElement(grammarAccess.getGroupRule());
-                    	            	        }
-                    	                   		addWithLastConsumed(
-                    	                   			current, 
-                    	                   			"val_real",
-                    	                    		lv_val_real_22_0, 
-                    	                    		"REAL_LITERAL");
-                    	            	    
-
-                    	            }
-
-
-                    	            }
-
-
-                    	            }
-                    	            break;
 
                     	    }
 
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2545:3: ( ruleEOL )+
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2483:4: ( ruleEOL )+
                     	    int cnt85=0;
                     	    loop85:
                     	    do {
@@ -7382,12 +7236,12 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
                     	        switch (alt85) {
                     	    	case 1 :
-                    	    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2546:5: ruleEOL
+                    	    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2484:5: ruleEOL
                     	    	    {
                     	    	     
-                    	    	            newCompositeNode(grammarAccess.getGroupAccess().getEOLParserRuleCall_4_2_4_3()); 
+                    	    	            newCompositeNode(grammarAccess.getGroupAccess().getEOLParserRuleCall_4_2_3_2()); 
                     	    	        
-                    	    	    pushFollow(FOLLOW_ruleEOL_in_ruleGroup5303);
+                    	    	    pushFollow(FOLLOW_ruleEOL_in_ruleGroup5208);
                     	    	    ruleEOL();
 
                     	    	    state._fsp--;
@@ -7414,50 +7268,306 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
                     	    }
                     	    break;
-                    	case 6 :
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2554:6: (otherlv_24= 'players' otherlv_25= ':' ( ( (lv_agent_26_0= RULE_ATOM ) ) ( (lv_role_27_0= RULE_ATOM ) ) ( ruleEOL | otherlv_29= ',' )+ )* )
+                    	case 5 :
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2492:6: ( ( (lv_other_19_0= RULE_ATOM ) ) otherlv_20= ':' ( ( (lv_string_21_0= RULE_STRING ) ) | ( (lv_val_22_0= RULE_INT_LITERAL ) ) | ( (lv_literal_23_0= ruleLiteral ) ) | ( (lv_val_real_24_0= RULE_REAL_LITERAL ) ) ) ( ruleEOL )+ )
                     	    {
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2554:6: (otherlv_24= 'players' otherlv_25= ':' ( ( (lv_agent_26_0= RULE_ATOM ) ) ( (lv_role_27_0= RULE_ATOM ) ) ( ruleEOL | otherlv_29= ',' )+ )* )
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2554:8: otherlv_24= 'players' otherlv_25= ':' ( ( (lv_agent_26_0= RULE_ATOM ) ) ( (lv_role_27_0= RULE_ATOM ) ) ( ruleEOL | otherlv_29= ',' )+ )*
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2492:6: ( ( (lv_other_19_0= RULE_ATOM ) ) otherlv_20= ':' ( ( (lv_string_21_0= RULE_STRING ) ) | ( (lv_val_22_0= RULE_INT_LITERAL ) ) | ( (lv_literal_23_0= ruleLiteral ) ) | ( (lv_val_real_24_0= RULE_REAL_LITERAL ) ) ) ( ruleEOL )+ )
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2492:7: ( (lv_other_19_0= RULE_ATOM ) ) otherlv_20= ':' ( ( (lv_string_21_0= RULE_STRING ) ) | ( (lv_val_22_0= RULE_INT_LITERAL ) ) | ( (lv_literal_23_0= ruleLiteral ) ) | ( (lv_val_real_24_0= RULE_REAL_LITERAL ) ) ) ( ruleEOL )+
                     	    {
-                    	    otherlv_24=(Token)match(input,65,FOLLOW_65_in_ruleGroup5324); 
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2492:7: ( (lv_other_19_0= RULE_ATOM ) )
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2493:1: (lv_other_19_0= RULE_ATOM )
+                    	    {
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2493:1: (lv_other_19_0= RULE_ATOM )
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2494:3: lv_other_19_0= RULE_ATOM
+                    	    {
+                    	    lv_other_19_0=(Token)match(input,RULE_ATOM,FOLLOW_RULE_ATOM_in_ruleGroup5234); 
 
-                    	        	newLeafNode(otherlv_24, grammarAccess.getGroupAccess().getPlayersKeyword_4_2_5_0());
-                    	        
-                    	    otherlv_25=(Token)match(input,29,FOLLOW_29_in_ruleGroup5336); 
+                    	    			newLeafNode(lv_other_19_0, grammarAccess.getGroupAccess().getOtherATOMTerminalRuleCall_4_2_4_0_0()); 
+                    	    		
 
-                    	        	newLeafNode(otherlv_25, grammarAccess.getGroupAccess().getColonKeyword_4_2_5_1());
+                    	    	        if (current==null) {
+                    	    	            current = createModelElement(grammarAccess.getGroupRule());
+                    	    	        }
+                    	           		addWithLastConsumed(
+                    	           			current, 
+                    	           			"other",
+                    	            		lv_other_19_0, 
+                    	            		"ATOM");
+                    	    	    
+
+                    	    }
+
+
+                    	    }
+
+                    	    otherlv_20=(Token)match(input,29,FOLLOW_29_in_ruleGroup5251); 
+
+                    	        	newLeafNode(otherlv_20, grammarAccess.getGroupAccess().getColonKeyword_4_2_4_1());
                     	        
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2562:1: ( ( (lv_agent_26_0= RULE_ATOM ) ) ( (lv_role_27_0= RULE_ATOM ) ) ( ruleEOL | otherlv_29= ',' )+ )*
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2514:1: ( ( (lv_string_21_0= RULE_STRING ) ) | ( (lv_val_22_0= RULE_INT_LITERAL ) ) | ( (lv_literal_23_0= ruleLiteral ) ) | ( (lv_val_real_24_0= RULE_REAL_LITERAL ) ) )
+                    	    int alt86=4;
+                    	    switch ( input.LA(1) ) {
+                    	    case RULE_STRING:
+                    	        {
+                    	        alt86=1;
+                    	        }
+                    	        break;
+                    	    case RULE_INT_LITERAL:
+                    	        {
+                    	        alt86=2;
+                    	        }
+                    	        break;
+                    	    case RULE_ATOM:
+                    	    case RULE_VART:
+                    	    case RULE_UNNAMEDVART:
+                    	    case 75:
+                    	    case 76:
+                    	    case 77:
+                    	    case 78:
+                    	    case 79:
+                    	        {
+                    	        alt86=3;
+                    	        }
+                    	        break;
+                    	    case RULE_REAL_LITERAL:
+                    	        {
+                    	        alt86=4;
+                    	        }
+                    	        break;
+                    	    default:
+                    	        NoViableAltException nvae =
+                    	            new NoViableAltException("", 86, 0, input);
+
+                    	        throw nvae;
+                    	    }
+
+                    	    switch (alt86) {
+                    	        case 1 :
+                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2514:2: ( (lv_string_21_0= RULE_STRING ) )
+                    	            {
+                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2514:2: ( (lv_string_21_0= RULE_STRING ) )
+                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2515:1: (lv_string_21_0= RULE_STRING )
+                    	            {
+                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2515:1: (lv_string_21_0= RULE_STRING )
+                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2516:3: lv_string_21_0= RULE_STRING
+                    	            {
+                    	            lv_string_21_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleGroup5269); 
+
+                    	            			newLeafNode(lv_string_21_0, grammarAccess.getGroupAccess().getStringSTRINGTerminalRuleCall_4_2_4_2_0_0()); 
+                    	            		
+
+                    	            	        if (current==null) {
+                    	            	            current = createModelElement(grammarAccess.getGroupRule());
+                    	            	        }
+                    	                   		addWithLastConsumed(
+                    	                   			current, 
+                    	                   			"string",
+                    	                    		lv_string_21_0, 
+                    	                    		"STRING");
+                    	            	    
+
+                    	            }
+
+
+                    	            }
+
+
+                    	            }
+                    	            break;
+                    	        case 2 :
+                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2533:6: ( (lv_val_22_0= RULE_INT_LITERAL ) )
+                    	            {
+                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2533:6: ( (lv_val_22_0= RULE_INT_LITERAL ) )
+                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2534:1: (lv_val_22_0= RULE_INT_LITERAL )
+                    	            {
+                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2534:1: (lv_val_22_0= RULE_INT_LITERAL )
+                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2535:3: lv_val_22_0= RULE_INT_LITERAL
+                    	            {
+                    	            lv_val_22_0=(Token)match(input,RULE_INT_LITERAL,FOLLOW_RULE_INT_LITERAL_in_ruleGroup5297); 
+
+                    	            			newLeafNode(lv_val_22_0, grammarAccess.getGroupAccess().getValINT_LITERALTerminalRuleCall_4_2_4_2_1_0()); 
+                    	            		
+
+                    	            	        if (current==null) {
+                    	            	            current = createModelElement(grammarAccess.getGroupRule());
+                    	            	        }
+                    	                   		addWithLastConsumed(
+                    	                   			current, 
+                    	                   			"val",
+                    	                    		lv_val_22_0, 
+                    	                    		"INT_LITERAL");
+                    	            	    
+
+                    	            }
+
+
+                    	            }
+
+
+                    	            }
+                    	            break;
+                    	        case 3 :
+                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2552:6: ( (lv_literal_23_0= ruleLiteral ) )
+                    	            {
+                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2552:6: ( (lv_literal_23_0= ruleLiteral ) )
+                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2553:1: (lv_literal_23_0= ruleLiteral )
+                    	            {
+                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2553:1: (lv_literal_23_0= ruleLiteral )
+                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2554:3: lv_literal_23_0= ruleLiteral
+                    	            {
+                    	             
+                    	            	        newCompositeNode(grammarAccess.getGroupAccess().getLiteralLiteralParserRuleCall_4_2_4_2_2_0()); 
+                    	            	    
+                    	            pushFollow(FOLLOW_ruleLiteral_in_ruleGroup5329);
+                    	            lv_literal_23_0=ruleLiteral();
+
+                    	            state._fsp--;
+
+
+                    	            	        if (current==null) {
+                    	            	            current = createModelElementForParent(grammarAccess.getGroupRule());
+                    	            	        }
+                    	                   		add(
+                    	                   			current, 
+                    	                   			"literal",
+                    	                    		lv_literal_23_0, 
+                    	                    		"Literal");
+                    	            	        afterParserOrEnumRuleCall();
+                    	            	    
+
+                    	            }
+
+
+                    	            }
+
+
+                    	            }
+                    	            break;
+                    	        case 4 :
+                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2571:6: ( (lv_val_real_24_0= RULE_REAL_LITERAL ) )
+                    	            {
+                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2571:6: ( (lv_val_real_24_0= RULE_REAL_LITERAL ) )
+                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2572:1: (lv_val_real_24_0= RULE_REAL_LITERAL )
+                    	            {
+                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2572:1: (lv_val_real_24_0= RULE_REAL_LITERAL )
+                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2573:3: lv_val_real_24_0= RULE_REAL_LITERAL
+                    	            {
+                    	            lv_val_real_24_0=(Token)match(input,RULE_REAL_LITERAL,FOLLOW_RULE_REAL_LITERAL_in_ruleGroup5352); 
+
+                    	            			newLeafNode(lv_val_real_24_0, grammarAccess.getGroupAccess().getVal_realREAL_LITERALTerminalRuleCall_4_2_4_2_3_0()); 
+                    	            		
+
+                    	            	        if (current==null) {
+                    	            	            current = createModelElement(grammarAccess.getGroupRule());
+                    	            	        }
+                    	                   		addWithLastConsumed(
+                    	                   			current, 
+                    	                   			"val_real",
+                    	                    		lv_val_real_24_0, 
+                    	                    		"REAL_LITERAL");
+                    	            	    
+
+                    	            }
+
+
+                    	            }
+
+
+                    	            }
+                    	            break;
+
+                    	    }
+
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2589:3: ( ruleEOL )+
+                    	    int cnt87=0;
                     	    loop87:
                     	    do {
                     	        int alt87=2;
                     	        int LA87_0 = input.LA(1);
 
-                    	        if ( (LA87_0==RULE_ATOM) ) {
-                    	            int LA87_2 = input.LA(2);
+                    	        if ( ((LA87_0>=RULE_NEWLINE && LA87_0<=RULE_SL_COMMENT)) ) {
+                    	            alt87=1;
+                    	        }
 
-                    	            if ( (LA87_2==RULE_ATOM) ) {
-                    	                alt87=1;
+
+                    	        switch (alt87) {
+                    	    	case 1 :
+                    	    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2590:5: ruleEOL
+                    	    	    {
+                    	    	     
+                    	    	            newCompositeNode(grammarAccess.getGroupAccess().getEOLParserRuleCall_4_2_4_3()); 
+                    	    	        
+                    	    	    pushFollow(FOLLOW_ruleEOL_in_ruleGroup5375);
+                    	    	    ruleEOL();
+
+                    	    	    state._fsp--;
+
+                    	    	     
+                    	    	            afterParserOrEnumRuleCall();
+                    	    	        
+
+                    	    	    }
+                    	    	    break;
+
+                    	    	default :
+                    	    	    if ( cnt87 >= 1 ) break loop87;
+                    	                EarlyExitException eee =
+                    	                    new EarlyExitException(87, input);
+                    	                throw eee;
+                    	        }
+                    	        cnt87++;
+                    	    } while (true);
+
+
+                    	    }
+
+
+                    	    }
+                    	    break;
+                    	case 6 :
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2598:6: (otherlv_26= 'players' otherlv_27= ':' ( ( (lv_agent_28_0= RULE_ATOM ) ) ( (lv_role_29_0= RULE_ATOM ) ) ( ruleEOL | otherlv_31= ',' )+ )* )
+                    	    {
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2598:6: (otherlv_26= 'players' otherlv_27= ':' ( ( (lv_agent_28_0= RULE_ATOM ) ) ( (lv_role_29_0= RULE_ATOM ) ) ( ruleEOL | otherlv_31= ',' )+ )* )
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2598:8: otherlv_26= 'players' otherlv_27= ':' ( ( (lv_agent_28_0= RULE_ATOM ) ) ( (lv_role_29_0= RULE_ATOM ) ) ( ruleEOL | otherlv_31= ',' )+ )*
+                    	    {
+                    	    otherlv_26=(Token)match(input,65,FOLLOW_65_in_ruleGroup5396); 
+
+                    	        	newLeafNode(otherlv_26, grammarAccess.getGroupAccess().getPlayersKeyword_4_2_5_0());
+                    	        
+                    	    otherlv_27=(Token)match(input,29,FOLLOW_29_in_ruleGroup5408); 
+
+                    	        	newLeafNode(otherlv_27, grammarAccess.getGroupAccess().getColonKeyword_4_2_5_1());
+                    	        
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2606:1: ( ( (lv_agent_28_0= RULE_ATOM ) ) ( (lv_role_29_0= RULE_ATOM ) ) ( ruleEOL | otherlv_31= ',' )+ )*
+                    	    loop89:
+                    	    do {
+                    	        int alt89=2;
+                    	        int LA89_0 = input.LA(1);
+
+                    	        if ( (LA89_0==RULE_ATOM) ) {
+                    	            int LA89_2 = input.LA(2);
+
+                    	            if ( (LA89_2==RULE_ATOM) ) {
+                    	                alt89=1;
                     	            }
 
 
                     	        }
 
 
-                    	        switch (alt87) {
+                    	        switch (alt89) {
                     	    	case 1 :
-                    	    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2562:2: ( (lv_agent_26_0= RULE_ATOM ) ) ( (lv_role_27_0= RULE_ATOM ) ) ( ruleEOL | otherlv_29= ',' )+
+                    	    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2606:2: ( (lv_agent_28_0= RULE_ATOM ) ) ( (lv_role_29_0= RULE_ATOM ) ) ( ruleEOL | otherlv_31= ',' )+
                     	    	    {
-                    	    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2562:2: ( (lv_agent_26_0= RULE_ATOM ) )
-                    	    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2563:1: (lv_agent_26_0= RULE_ATOM )
+                    	    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2606:2: ( (lv_agent_28_0= RULE_ATOM ) )
+                    	    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2607:1: (lv_agent_28_0= RULE_ATOM )
                     	    	    {
-                    	    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2563:1: (lv_agent_26_0= RULE_ATOM )
-                    	    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2564:3: lv_agent_26_0= RULE_ATOM
+                    	    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2607:1: (lv_agent_28_0= RULE_ATOM )
+                    	    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2608:3: lv_agent_28_0= RULE_ATOM
                     	    	    {
-                    	    	    lv_agent_26_0=(Token)match(input,RULE_ATOM,FOLLOW_RULE_ATOM_in_ruleGroup5354); 
+                    	    	    lv_agent_28_0=(Token)match(input,RULE_ATOM,FOLLOW_RULE_ATOM_in_ruleGroup5426); 
 
-                    	    	    			newLeafNode(lv_agent_26_0, grammarAccess.getGroupAccess().getAgentATOMTerminalRuleCall_4_2_5_2_0_0()); 
+                    	    	    			newLeafNode(lv_agent_28_0, grammarAccess.getGroupAccess().getAgentATOMTerminalRuleCall_4_2_5_2_0_0()); 
                     	    	    		
 
                     	    	    	        if (current==null) {
@@ -7466,7 +7576,7 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
                     	    	           		addWithLastConsumed(
                     	    	           			current, 
                     	    	           			"agent",
-                    	    	            		lv_agent_26_0, 
+                    	    	            		lv_agent_28_0, 
                     	    	            		"ATOM");
                     	    	    	    
 
@@ -7475,15 +7585,15 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
                     	    	    }
 
-                    	    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2580:2: ( (lv_role_27_0= RULE_ATOM ) )
-                    	    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2581:1: (lv_role_27_0= RULE_ATOM )
+                    	    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2624:2: ( (lv_role_29_0= RULE_ATOM ) )
+                    	    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2625:1: (lv_role_29_0= RULE_ATOM )
                     	    	    {
-                    	    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2581:1: (lv_role_27_0= RULE_ATOM )
-                    	    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2582:3: lv_role_27_0= RULE_ATOM
+                    	    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2625:1: (lv_role_29_0= RULE_ATOM )
+                    	    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2626:3: lv_role_29_0= RULE_ATOM
                     	    	    {
-                    	    	    lv_role_27_0=(Token)match(input,RULE_ATOM,FOLLOW_RULE_ATOM_in_ruleGroup5376); 
+                    	    	    lv_role_29_0=(Token)match(input,RULE_ATOM,FOLLOW_RULE_ATOM_in_ruleGroup5448); 
 
-                    	    	    			newLeafNode(lv_role_27_0, grammarAccess.getGroupAccess().getRoleATOMTerminalRuleCall_4_2_5_2_1_0()); 
+                    	    	    			newLeafNode(lv_role_29_0, grammarAccess.getGroupAccess().getRoleATOMTerminalRuleCall_4_2_5_2_1_0()); 
                     	    	    		
 
                     	    	    	        if (current==null) {
@@ -7492,7 +7602,7 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
                     	    	           		addWithLastConsumed(
                     	    	           			current, 
                     	    	           			"role",
-                    	    	            		lv_role_27_0, 
+                    	    	            		lv_role_29_0, 
                     	    	            		"ATOM");
                     	    	    	    
 
@@ -7501,29 +7611,29 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
                     	    	    }
 
-                    	    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2598:2: ( ruleEOL | otherlv_29= ',' )+
-                    	    	    int cnt86=0;
-                    	    	    loop86:
+                    	    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2642:2: ( ruleEOL | otherlv_31= ',' )+
+                    	    	    int cnt88=0;
+                    	    	    loop88:
                     	    	    do {
-                    	    	        int alt86=3;
-                    	    	        int LA86_0 = input.LA(1);
+                    	    	        int alt88=3;
+                    	    	        int LA88_0 = input.LA(1);
 
-                    	    	        if ( ((LA86_0>=RULE_NEWLINE && LA86_0<=RULE_SL_COMMENT)) ) {
-                    	    	            alt86=1;
+                    	    	        if ( ((LA88_0>=RULE_NEWLINE && LA88_0<=RULE_SL_COMMENT)) ) {
+                    	    	            alt88=1;
                     	    	        }
-                    	    	        else if ( (LA86_0==27) ) {
-                    	    	            alt86=2;
+                    	    	        else if ( (LA88_0==27) ) {
+                    	    	            alt88=2;
                     	    	        }
 
 
-                    	    	        switch (alt86) {
+                    	    	        switch (alt88) {
                     	    	    	case 1 :
-                    	    	    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2599:5: ruleEOL
+                    	    	    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2643:5: ruleEOL
                     	    	    	    {
                     	    	    	     
                     	    	    	            newCompositeNode(grammarAccess.getGroupAccess().getEOLParserRuleCall_4_2_5_2_2_0()); 
                     	    	    	        
-                    	    	    	    pushFollow(FOLLOW_ruleEOL_in_ruleGroup5398);
+                    	    	    	    pushFollow(FOLLOW_ruleEOL_in_ruleGroup5470);
                     	    	    	    ruleEOL();
 
                     	    	    	    state._fsp--;
@@ -7535,23 +7645,23 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
                     	    	    	    }
                     	    	    	    break;
                     	    	    	case 2 :
-                    	    	    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2607:7: otherlv_29= ','
+                    	    	    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2651:7: otherlv_31= ','
                     	    	    	    {
-                    	    	    	    otherlv_29=(Token)match(input,27,FOLLOW_27_in_ruleGroup5415); 
+                    	    	    	    otherlv_31=(Token)match(input,27,FOLLOW_27_in_ruleGroup5487); 
 
-                    	    	    	        	newLeafNode(otherlv_29, grammarAccess.getGroupAccess().getCommaKeyword_4_2_5_2_2_1());
+                    	    	    	        	newLeafNode(otherlv_31, grammarAccess.getGroupAccess().getCommaKeyword_4_2_5_2_2_1());
                     	    	    	        
 
                     	    	    	    }
                     	    	    	    break;
 
                     	    	    	default :
-                    	    	    	    if ( cnt86 >= 1 ) break loop86;
+                    	    	    	    if ( cnt88 >= 1 ) break loop88;
                     	    	                EarlyExitException eee =
-                    	    	                    new EarlyExitException(86, input);
+                    	    	                    new EarlyExitException(88, input);
                     	    	                throw eee;
                     	    	        }
-                    	    	        cnt86++;
+                    	    	        cnt88++;
                     	    	    } while (true);
 
 
@@ -7559,7 +7669,7 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
                     	    	    break;
 
                     	    	default :
-                    	    	    break loop87;
+                    	    	    break loop89;
                     	        }
                     	    } while (true);
 
@@ -7571,13 +7681,13 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop88;
+                    	    break loop90;
                         }
                     } while (true);
 
-                    otherlv_30=(Token)match(input,25,FOLLOW_25_in_ruleGroup5434); 
+                    otherlv_32=(Token)match(input,25,FOLLOW_25_in_ruleGroup5506); 
 
-                        	newLeafNode(otherlv_30, grammarAccess.getGroupAccess().getRightCurlyBracketKeyword_4_3());
+                        	newLeafNode(otherlv_32, grammarAccess.getGroupAccess().getRightCurlyBracketKeyword_4_3());
                         
 
                     }
@@ -7585,25 +7695,25 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2615:3: ( ruleEOL )*
-            loop90:
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2659:3: ( ruleEOL )*
+            loop92:
             do {
-                int alt90=2;
-                int LA90_0 = input.LA(1);
+                int alt92=2;
+                int LA92_0 = input.LA(1);
 
-                if ( ((LA90_0>=RULE_NEWLINE && LA90_0<=RULE_SL_COMMENT)) ) {
-                    alt90=1;
+                if ( ((LA92_0>=RULE_NEWLINE && LA92_0<=RULE_SL_COMMENT)) ) {
+                    alt92=1;
                 }
 
 
-                switch (alt90) {
+                switch (alt92) {
             	case 1 :
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2616:5: ruleEOL
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2660:5: ruleEOL
             	    {
             	     
             	            newCompositeNode(grammarAccess.getGroupAccess().getEOLParserRuleCall_5()); 
             	        
-            	    pushFollow(FOLLOW_ruleEOL_in_ruleGroup5453);
+            	    pushFollow(FOLLOW_ruleEOL_in_ruleGroup5525);
             	    ruleEOL();
 
             	    state._fsp--;
@@ -7616,7 +7726,7 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    break loop90;
+            	    break loop92;
                 }
             } while (true);
 
@@ -7641,7 +7751,7 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleScheme"
-    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2631:1: entryRuleScheme returns [EObject current=null] : iv_ruleScheme= ruleScheme EOF ;
+    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2675:1: entryRuleScheme returns [EObject current=null] : iv_ruleScheme= ruleScheme EOF ;
     public final EObject entryRuleScheme() throws RecognitionException {
         EObject current = null;
 
@@ -7649,17 +7759,17 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2632:2: (iv_ruleScheme= ruleScheme EOF )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2633:2: iv_ruleScheme= ruleScheme EOF
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2676:2: (iv_ruleScheme= ruleScheme EOF )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2677:2: iv_ruleScheme= ruleScheme EOF
             {
              newCompositeNode(grammarAccess.getSchemeRule()); 
-            pushFollow(FOLLOW_ruleScheme_in_entryRuleScheme5490);
+            pushFollow(FOLLOW_ruleScheme_in_entryRuleScheme5562);
             iv_ruleScheme=ruleScheme();
 
             state._fsp--;
 
              current =iv_ruleScheme; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleScheme5500); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleScheme5572); 
 
             }
 
@@ -7677,7 +7787,7 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleScheme"
-    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2640:1: ruleScheme returns [EObject current=null] : (otherlv_0= 'scheme' ( (lv_name_1_0= RULE_ATOM ) ) otherlv_2= ':' ( (lv_kind_3_0= RULE_ATOM ) ) (otherlv_4= '{' ( ruleEOL )* ( (otherlv_6= 'debug' ( ruleEOL )+ ) | (otherlv_8= 'owner' otherlv_9= ':' ( (lv_owner_10_0= RULE_ATOM ) ) ( ruleEOL )+ ) | ( ( (lv_other_12_0= RULE_ATOM ) ) otherlv_13= ':' ( ( (lv_string_14_0= RULE_STRING ) ) | ( (lv_val_15_0= RULE_INT_LITERAL ) ) | ( (lv_literal_16_0= ruleLiteral ) ) | ( (lv_val_real_17_0= RULE_REAL_LITERAL ) ) ) ( ruleEOL )+ ) )* otherlv_19= '}' )? ( ruleEOL )* ) ;
+    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2684:1: ruleScheme returns [EObject current=null] : (otherlv_0= 'scheme' ( (lv_name_1_0= RULE_ATOM ) ) otherlv_2= ':' ( (lv_kind_3_0= RULE_ATOM ) ) (otherlv_4= '{' ( ruleEOL )* ( (otherlv_6= 'debug' (otherlv_7= ':' ( (lv_debug_8_0= ruleLiteral ) ) )? ( ruleEOL )+ ) | (otherlv_10= 'owner' otherlv_11= ':' ( (lv_owner_12_0= RULE_ATOM ) ) ( ruleEOL )+ ) | ( ( (lv_other_14_0= RULE_ATOM ) ) otherlv_15= ':' ( ( (lv_string_16_0= RULE_STRING ) ) | ( (lv_val_17_0= RULE_INT_LITERAL ) ) | ( (lv_literal_18_0= ruleLiteral ) ) | ( (lv_val_real_19_0= RULE_REAL_LITERAL ) ) ) ( ruleEOL )+ ) )* otherlv_21= '}' )? ( ruleEOL )* ) ;
     public final EObject ruleScheme() throws RecognitionException {
         EObject current = null;
 
@@ -7687,38 +7797,41 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
         Token lv_kind_3_0=null;
         Token otherlv_4=null;
         Token otherlv_6=null;
-        Token otherlv_8=null;
-        Token otherlv_9=null;
-        Token lv_owner_10_0=null;
-        Token lv_other_12_0=null;
-        Token otherlv_13=null;
-        Token lv_string_14_0=null;
-        Token lv_val_15_0=null;
-        Token lv_val_real_17_0=null;
-        Token otherlv_19=null;
-        EObject lv_literal_16_0 = null;
+        Token otherlv_7=null;
+        Token otherlv_10=null;
+        Token otherlv_11=null;
+        Token lv_owner_12_0=null;
+        Token lv_other_14_0=null;
+        Token otherlv_15=null;
+        Token lv_string_16_0=null;
+        Token lv_val_17_0=null;
+        Token lv_val_real_19_0=null;
+        Token otherlv_21=null;
+        EObject lv_debug_8_0 = null;
+
+        EObject lv_literal_18_0 = null;
 
 
          enterRule(); 
             
         try {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2643:28: ( (otherlv_0= 'scheme' ( (lv_name_1_0= RULE_ATOM ) ) otherlv_2= ':' ( (lv_kind_3_0= RULE_ATOM ) ) (otherlv_4= '{' ( ruleEOL )* ( (otherlv_6= 'debug' ( ruleEOL )+ ) | (otherlv_8= 'owner' otherlv_9= ':' ( (lv_owner_10_0= RULE_ATOM ) ) ( ruleEOL )+ ) | ( ( (lv_other_12_0= RULE_ATOM ) ) otherlv_13= ':' ( ( (lv_string_14_0= RULE_STRING ) ) | ( (lv_val_15_0= RULE_INT_LITERAL ) ) | ( (lv_literal_16_0= ruleLiteral ) ) | ( (lv_val_real_17_0= RULE_REAL_LITERAL ) ) ) ( ruleEOL )+ ) )* otherlv_19= '}' )? ( ruleEOL )* ) )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2644:1: (otherlv_0= 'scheme' ( (lv_name_1_0= RULE_ATOM ) ) otherlv_2= ':' ( (lv_kind_3_0= RULE_ATOM ) ) (otherlv_4= '{' ( ruleEOL )* ( (otherlv_6= 'debug' ( ruleEOL )+ ) | (otherlv_8= 'owner' otherlv_9= ':' ( (lv_owner_10_0= RULE_ATOM ) ) ( ruleEOL )+ ) | ( ( (lv_other_12_0= RULE_ATOM ) ) otherlv_13= ':' ( ( (lv_string_14_0= RULE_STRING ) ) | ( (lv_val_15_0= RULE_INT_LITERAL ) ) | ( (lv_literal_16_0= ruleLiteral ) ) | ( (lv_val_real_17_0= RULE_REAL_LITERAL ) ) ) ( ruleEOL )+ ) )* otherlv_19= '}' )? ( ruleEOL )* )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2687:28: ( (otherlv_0= 'scheme' ( (lv_name_1_0= RULE_ATOM ) ) otherlv_2= ':' ( (lv_kind_3_0= RULE_ATOM ) ) (otherlv_4= '{' ( ruleEOL )* ( (otherlv_6= 'debug' (otherlv_7= ':' ( (lv_debug_8_0= ruleLiteral ) ) )? ( ruleEOL )+ ) | (otherlv_10= 'owner' otherlv_11= ':' ( (lv_owner_12_0= RULE_ATOM ) ) ( ruleEOL )+ ) | ( ( (lv_other_14_0= RULE_ATOM ) ) otherlv_15= ':' ( ( (lv_string_16_0= RULE_STRING ) ) | ( (lv_val_17_0= RULE_INT_LITERAL ) ) | ( (lv_literal_18_0= ruleLiteral ) ) | ( (lv_val_real_19_0= RULE_REAL_LITERAL ) ) ) ( ruleEOL )+ ) )* otherlv_21= '}' )? ( ruleEOL )* ) )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2688:1: (otherlv_0= 'scheme' ( (lv_name_1_0= RULE_ATOM ) ) otherlv_2= ':' ( (lv_kind_3_0= RULE_ATOM ) ) (otherlv_4= '{' ( ruleEOL )* ( (otherlv_6= 'debug' (otherlv_7= ':' ( (lv_debug_8_0= ruleLiteral ) ) )? ( ruleEOL )+ ) | (otherlv_10= 'owner' otherlv_11= ':' ( (lv_owner_12_0= RULE_ATOM ) ) ( ruleEOL )+ ) | ( ( (lv_other_14_0= RULE_ATOM ) ) otherlv_15= ':' ( ( (lv_string_16_0= RULE_STRING ) ) | ( (lv_val_17_0= RULE_INT_LITERAL ) ) | ( (lv_literal_18_0= ruleLiteral ) ) | ( (lv_val_real_19_0= RULE_REAL_LITERAL ) ) ) ( ruleEOL )+ ) )* otherlv_21= '}' )? ( ruleEOL )* )
             {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2644:1: (otherlv_0= 'scheme' ( (lv_name_1_0= RULE_ATOM ) ) otherlv_2= ':' ( (lv_kind_3_0= RULE_ATOM ) ) (otherlv_4= '{' ( ruleEOL )* ( (otherlv_6= 'debug' ( ruleEOL )+ ) | (otherlv_8= 'owner' otherlv_9= ':' ( (lv_owner_10_0= RULE_ATOM ) ) ( ruleEOL )+ ) | ( ( (lv_other_12_0= RULE_ATOM ) ) otherlv_13= ':' ( ( (lv_string_14_0= RULE_STRING ) ) | ( (lv_val_15_0= RULE_INT_LITERAL ) ) | ( (lv_literal_16_0= ruleLiteral ) ) | ( (lv_val_real_17_0= RULE_REAL_LITERAL ) ) ) ( ruleEOL )+ ) )* otherlv_19= '}' )? ( ruleEOL )* )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2644:3: otherlv_0= 'scheme' ( (lv_name_1_0= RULE_ATOM ) ) otherlv_2= ':' ( (lv_kind_3_0= RULE_ATOM ) ) (otherlv_4= '{' ( ruleEOL )* ( (otherlv_6= 'debug' ( ruleEOL )+ ) | (otherlv_8= 'owner' otherlv_9= ':' ( (lv_owner_10_0= RULE_ATOM ) ) ( ruleEOL )+ ) | ( ( (lv_other_12_0= RULE_ATOM ) ) otherlv_13= ':' ( ( (lv_string_14_0= RULE_STRING ) ) | ( (lv_val_15_0= RULE_INT_LITERAL ) ) | ( (lv_literal_16_0= ruleLiteral ) ) | ( (lv_val_real_17_0= RULE_REAL_LITERAL ) ) ) ( ruleEOL )+ ) )* otherlv_19= '}' )? ( ruleEOL )*
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2688:1: (otherlv_0= 'scheme' ( (lv_name_1_0= RULE_ATOM ) ) otherlv_2= ':' ( (lv_kind_3_0= RULE_ATOM ) ) (otherlv_4= '{' ( ruleEOL )* ( (otherlv_6= 'debug' (otherlv_7= ':' ( (lv_debug_8_0= ruleLiteral ) ) )? ( ruleEOL )+ ) | (otherlv_10= 'owner' otherlv_11= ':' ( (lv_owner_12_0= RULE_ATOM ) ) ( ruleEOL )+ ) | ( ( (lv_other_14_0= RULE_ATOM ) ) otherlv_15= ':' ( ( (lv_string_16_0= RULE_STRING ) ) | ( (lv_val_17_0= RULE_INT_LITERAL ) ) | ( (lv_literal_18_0= ruleLiteral ) ) | ( (lv_val_real_19_0= RULE_REAL_LITERAL ) ) ) ( ruleEOL )+ ) )* otherlv_21= '}' )? ( ruleEOL )* )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2688:3: otherlv_0= 'scheme' ( (lv_name_1_0= RULE_ATOM ) ) otherlv_2= ':' ( (lv_kind_3_0= RULE_ATOM ) ) (otherlv_4= '{' ( ruleEOL )* ( (otherlv_6= 'debug' (otherlv_7= ':' ( (lv_debug_8_0= ruleLiteral ) ) )? ( ruleEOL )+ ) | (otherlv_10= 'owner' otherlv_11= ':' ( (lv_owner_12_0= RULE_ATOM ) ) ( ruleEOL )+ ) | ( ( (lv_other_14_0= RULE_ATOM ) ) otherlv_15= ':' ( ( (lv_string_16_0= RULE_STRING ) ) | ( (lv_val_17_0= RULE_INT_LITERAL ) ) | ( (lv_literal_18_0= ruleLiteral ) ) | ( (lv_val_real_19_0= RULE_REAL_LITERAL ) ) ) ( ruleEOL )+ ) )* otherlv_21= '}' )? ( ruleEOL )*
             {
-            otherlv_0=(Token)match(input,66,FOLLOW_66_in_ruleScheme5537); 
+            otherlv_0=(Token)match(input,66,FOLLOW_66_in_ruleScheme5609); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getSchemeAccess().getSchemeKeyword_0());
                 
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2648:1: ( (lv_name_1_0= RULE_ATOM ) )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2649:1: (lv_name_1_0= RULE_ATOM )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2692:1: ( (lv_name_1_0= RULE_ATOM ) )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2693:1: (lv_name_1_0= RULE_ATOM )
             {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2649:1: (lv_name_1_0= RULE_ATOM )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2650:3: lv_name_1_0= RULE_ATOM
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2693:1: (lv_name_1_0= RULE_ATOM )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2694:3: lv_name_1_0= RULE_ATOM
             {
-            lv_name_1_0=(Token)match(input,RULE_ATOM,FOLLOW_RULE_ATOM_in_ruleScheme5554); 
+            lv_name_1_0=(Token)match(input,RULE_ATOM,FOLLOW_RULE_ATOM_in_ruleScheme5626); 
 
             			newLeafNode(lv_name_1_0, grammarAccess.getSchemeAccess().getNameATOMTerminalRuleCall_1_0()); 
             		
@@ -7738,17 +7851,17 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_2=(Token)match(input,29,FOLLOW_29_in_ruleScheme5571); 
+            otherlv_2=(Token)match(input,29,FOLLOW_29_in_ruleScheme5643); 
 
                 	newLeafNode(otherlv_2, grammarAccess.getSchemeAccess().getColonKeyword_2());
                 
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2670:1: ( (lv_kind_3_0= RULE_ATOM ) )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2671:1: (lv_kind_3_0= RULE_ATOM )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2714:1: ( (lv_kind_3_0= RULE_ATOM ) )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2715:1: (lv_kind_3_0= RULE_ATOM )
             {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2671:1: (lv_kind_3_0= RULE_ATOM )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2672:3: lv_kind_3_0= RULE_ATOM
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2715:1: (lv_kind_3_0= RULE_ATOM )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2716:3: lv_kind_3_0= RULE_ATOM
             {
-            lv_kind_3_0=(Token)match(input,RULE_ATOM,FOLLOW_RULE_ATOM_in_ruleScheme5588); 
+            lv_kind_3_0=(Token)match(input,RULE_ATOM,FOLLOW_RULE_ATOM_in_ruleScheme5660); 
 
             			newLeafNode(lv_kind_3_0, grammarAccess.getSchemeAccess().getKindATOMTerminalRuleCall_3_0()); 
             		
@@ -7768,40 +7881,40 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2688:2: (otherlv_4= '{' ( ruleEOL )* ( (otherlv_6= 'debug' ( ruleEOL )+ ) | (otherlv_8= 'owner' otherlv_9= ':' ( (lv_owner_10_0= RULE_ATOM ) ) ( ruleEOL )+ ) | ( ( (lv_other_12_0= RULE_ATOM ) ) otherlv_13= ':' ( ( (lv_string_14_0= RULE_STRING ) ) | ( (lv_val_15_0= RULE_INT_LITERAL ) ) | ( (lv_literal_16_0= ruleLiteral ) ) | ( (lv_val_real_17_0= RULE_REAL_LITERAL ) ) ) ( ruleEOL )+ ) )* otherlv_19= '}' )?
-            int alt97=2;
-            int LA97_0 = input.LA(1);
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2732:2: (otherlv_4= '{' ( ruleEOL )* ( (otherlv_6= 'debug' (otherlv_7= ':' ( (lv_debug_8_0= ruleLiteral ) ) )? ( ruleEOL )+ ) | (otherlv_10= 'owner' otherlv_11= ':' ( (lv_owner_12_0= RULE_ATOM ) ) ( ruleEOL )+ ) | ( ( (lv_other_14_0= RULE_ATOM ) ) otherlv_15= ':' ( ( (lv_string_16_0= RULE_STRING ) ) | ( (lv_val_17_0= RULE_INT_LITERAL ) ) | ( (lv_literal_18_0= ruleLiteral ) ) | ( (lv_val_real_19_0= RULE_REAL_LITERAL ) ) ) ( ruleEOL )+ ) )* otherlv_21= '}' )?
+            int alt100=2;
+            int LA100_0 = input.LA(1);
 
-            if ( (LA97_0==24) ) {
-                alt97=1;
+            if ( (LA100_0==24) ) {
+                alt100=1;
             }
-            switch (alt97) {
+            switch (alt100) {
                 case 1 :
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2688:4: otherlv_4= '{' ( ruleEOL )* ( (otherlv_6= 'debug' ( ruleEOL )+ ) | (otherlv_8= 'owner' otherlv_9= ':' ( (lv_owner_10_0= RULE_ATOM ) ) ( ruleEOL )+ ) | ( ( (lv_other_12_0= RULE_ATOM ) ) otherlv_13= ':' ( ( (lv_string_14_0= RULE_STRING ) ) | ( (lv_val_15_0= RULE_INT_LITERAL ) ) | ( (lv_literal_16_0= ruleLiteral ) ) | ( (lv_val_real_17_0= RULE_REAL_LITERAL ) ) ) ( ruleEOL )+ ) )* otherlv_19= '}'
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2732:4: otherlv_4= '{' ( ruleEOL )* ( (otherlv_6= 'debug' (otherlv_7= ':' ( (lv_debug_8_0= ruleLiteral ) ) )? ( ruleEOL )+ ) | (otherlv_10= 'owner' otherlv_11= ':' ( (lv_owner_12_0= RULE_ATOM ) ) ( ruleEOL )+ ) | ( ( (lv_other_14_0= RULE_ATOM ) ) otherlv_15= ':' ( ( (lv_string_16_0= RULE_STRING ) ) | ( (lv_val_17_0= RULE_INT_LITERAL ) ) | ( (lv_literal_18_0= ruleLiteral ) ) | ( (lv_val_real_19_0= RULE_REAL_LITERAL ) ) ) ( ruleEOL )+ ) )* otherlv_21= '}'
                     {
-                    otherlv_4=(Token)match(input,24,FOLLOW_24_in_ruleScheme5606); 
+                    otherlv_4=(Token)match(input,24,FOLLOW_24_in_ruleScheme5678); 
 
                         	newLeafNode(otherlv_4, grammarAccess.getSchemeAccess().getLeftCurlyBracketKeyword_4_0());
                         
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2692:1: ( ruleEOL )*
-                    loop91:
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2736:1: ( ruleEOL )*
+                    loop93:
                     do {
-                        int alt91=2;
-                        int LA91_0 = input.LA(1);
+                        int alt93=2;
+                        int LA93_0 = input.LA(1);
 
-                        if ( ((LA91_0>=RULE_NEWLINE && LA91_0<=RULE_SL_COMMENT)) ) {
-                            alt91=1;
+                        if ( ((LA93_0>=RULE_NEWLINE && LA93_0<=RULE_SL_COMMENT)) ) {
+                            alt93=1;
                         }
 
 
-                        switch (alt91) {
+                        switch (alt93) {
                     	case 1 :
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2693:5: ruleEOL
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2737:5: ruleEOL
                     	    {
                     	     
                     	            newCompositeNode(grammarAccess.getSchemeAccess().getEOLParserRuleCall_4_1()); 
                     	        
-                    	    pushFollow(FOLLOW_ruleEOL_in_ruleScheme5623);
+                    	    pushFollow(FOLLOW_ruleEOL_in_ruleScheme5695);
                     	    ruleEOL();
 
                     	    state._fsp--;
@@ -7814,328 +7927,70 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop91;
+                    	    break loop93;
                         }
                     } while (true);
 
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2700:3: ( (otherlv_6= 'debug' ( ruleEOL )+ ) | (otherlv_8= 'owner' otherlv_9= ':' ( (lv_owner_10_0= RULE_ATOM ) ) ( ruleEOL )+ ) | ( ( (lv_other_12_0= RULE_ATOM ) ) otherlv_13= ':' ( ( (lv_string_14_0= RULE_STRING ) ) | ( (lv_val_15_0= RULE_INT_LITERAL ) ) | ( (lv_literal_16_0= ruleLiteral ) ) | ( (lv_val_real_17_0= RULE_REAL_LITERAL ) ) ) ( ruleEOL )+ ) )*
-                    loop96:
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2744:3: ( (otherlv_6= 'debug' (otherlv_7= ':' ( (lv_debug_8_0= ruleLiteral ) ) )? ( ruleEOL )+ ) | (otherlv_10= 'owner' otherlv_11= ':' ( (lv_owner_12_0= RULE_ATOM ) ) ( ruleEOL )+ ) | ( ( (lv_other_14_0= RULE_ATOM ) ) otherlv_15= ':' ( ( (lv_string_16_0= RULE_STRING ) ) | ( (lv_val_17_0= RULE_INT_LITERAL ) ) | ( (lv_literal_18_0= ruleLiteral ) ) | ( (lv_val_real_19_0= RULE_REAL_LITERAL ) ) ) ( ruleEOL )+ ) )*
+                    loop99:
                     do {
-                        int alt96=4;
+                        int alt99=4;
                         switch ( input.LA(1) ) {
                         case 46:
                             {
-                            alt96=1;
+                            alt99=1;
                             }
                             break;
                         case 64:
                             {
-                            alt96=2;
+                            alt99=2;
                             }
                             break;
                         case RULE_ATOM:
                             {
-                            alt96=3;
+                            alt99=3;
                             }
                             break;
 
                         }
 
-                        switch (alt96) {
+                        switch (alt99) {
                     	case 1 :
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2700:4: (otherlv_6= 'debug' ( ruleEOL )+ )
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2744:4: (otherlv_6= 'debug' (otherlv_7= ':' ( (lv_debug_8_0= ruleLiteral ) ) )? ( ruleEOL )+ )
                     	    {
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2700:4: (otherlv_6= 'debug' ( ruleEOL )+ )
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2700:6: otherlv_6= 'debug' ( ruleEOL )+
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2744:4: (otherlv_6= 'debug' (otherlv_7= ':' ( (lv_debug_8_0= ruleLiteral ) ) )? ( ruleEOL )+ )
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2744:6: otherlv_6= 'debug' (otherlv_7= ':' ( (lv_debug_8_0= ruleLiteral ) ) )? ( ruleEOL )+
                     	    {
-                    	    otherlv_6=(Token)match(input,46,FOLLOW_46_in_ruleScheme5638); 
+                    	    otherlv_6=(Token)match(input,46,FOLLOW_46_in_ruleScheme5710); 
 
                     	        	newLeafNode(otherlv_6, grammarAccess.getSchemeAccess().getDebugKeyword_4_2_0_0());
                     	        
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2704:1: ( ruleEOL )+
-                    	    int cnt92=0;
-                    	    loop92:
-                    	    do {
-                    	        int alt92=2;
-                    	        int LA92_0 = input.LA(1);
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2748:1: (otherlv_7= ':' ( (lv_debug_8_0= ruleLiteral ) ) )?
+                    	    int alt94=2;
+                    	    int LA94_0 = input.LA(1);
 
-                    	        if ( ((LA92_0>=RULE_NEWLINE && LA92_0<=RULE_SL_COMMENT)) ) {
-                    	            alt92=1;
-                    	        }
-
-
-                    	        switch (alt92) {
-                    	    	case 1 :
-                    	    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2705:5: ruleEOL
-                    	    	    {
-                    	    	     
-                    	    	            newCompositeNode(grammarAccess.getSchemeAccess().getEOLParserRuleCall_4_2_0_1()); 
-                    	    	        
-                    	    	    pushFollow(FOLLOW_ruleEOL_in_ruleScheme5655);
-                    	    	    ruleEOL();
-
-                    	    	    state._fsp--;
-
-                    	    	     
-                    	    	            afterParserOrEnumRuleCall();
-                    	    	        
-
-                    	    	    }
-                    	    	    break;
-
-                    	    	default :
-                    	    	    if ( cnt92 >= 1 ) break loop92;
-                    	                EarlyExitException eee =
-                    	                    new EarlyExitException(92, input);
-                    	                throw eee;
-                    	        }
-                    	        cnt92++;
-                    	    } while (true);
-
-
-                    	    }
-
-
-                    	    }
-                    	    break;
-                    	case 2 :
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2713:6: (otherlv_8= 'owner' otherlv_9= ':' ( (lv_owner_10_0= RULE_ATOM ) ) ( ruleEOL )+ )
-                    	    {
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2713:6: (otherlv_8= 'owner' otherlv_9= ':' ( (lv_owner_10_0= RULE_ATOM ) ) ( ruleEOL )+ )
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2713:8: otherlv_8= 'owner' otherlv_9= ':' ( (lv_owner_10_0= RULE_ATOM ) ) ( ruleEOL )+
-                    	    {
-                    	    otherlv_8=(Token)match(input,64,FOLLOW_64_in_ruleScheme5676); 
-
-                    	        	newLeafNode(otherlv_8, grammarAccess.getSchemeAccess().getOwnerKeyword_4_2_1_0());
-                    	        
-                    	    otherlv_9=(Token)match(input,29,FOLLOW_29_in_ruleScheme5688); 
-
-                    	        	newLeafNode(otherlv_9, grammarAccess.getSchemeAccess().getColonKeyword_4_2_1_1());
-                    	        
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2721:1: ( (lv_owner_10_0= RULE_ATOM ) )
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2722:1: (lv_owner_10_0= RULE_ATOM )
-                    	    {
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2722:1: (lv_owner_10_0= RULE_ATOM )
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2723:3: lv_owner_10_0= RULE_ATOM
-                    	    {
-                    	    lv_owner_10_0=(Token)match(input,RULE_ATOM,FOLLOW_RULE_ATOM_in_ruleScheme5705); 
-
-                    	    			newLeafNode(lv_owner_10_0, grammarAccess.getSchemeAccess().getOwnerATOMTerminalRuleCall_4_2_1_2_0()); 
-                    	    		
-
-                    	    	        if (current==null) {
-                    	    	            current = createModelElement(grammarAccess.getSchemeRule());
-                    	    	        }
-                    	           		addWithLastConsumed(
-                    	           			current, 
-                    	           			"owner",
-                    	            		lv_owner_10_0, 
-                    	            		"ATOM");
-                    	    	    
-
-                    	    }
-
-
-                    	    }
-
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2739:2: ( ruleEOL )+
-                    	    int cnt93=0;
-                    	    loop93:
-                    	    do {
-                    	        int alt93=2;
-                    	        int LA93_0 = input.LA(1);
-
-                    	        if ( ((LA93_0>=RULE_NEWLINE && LA93_0<=RULE_SL_COMMENT)) ) {
-                    	            alt93=1;
-                    	        }
-
-
-                    	        switch (alt93) {
-                    	    	case 1 :
-                    	    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2740:5: ruleEOL
-                    	    	    {
-                    	    	     
-                    	    	            newCompositeNode(grammarAccess.getSchemeAccess().getEOLParserRuleCall_4_2_1_3()); 
-                    	    	        
-                    	    	    pushFollow(FOLLOW_ruleEOL_in_ruleScheme5727);
-                    	    	    ruleEOL();
-
-                    	    	    state._fsp--;
-
-                    	    	     
-                    	    	            afterParserOrEnumRuleCall();
-                    	    	        
-
-                    	    	    }
-                    	    	    break;
-
-                    	    	default :
-                    	    	    if ( cnt93 >= 1 ) break loop93;
-                    	                EarlyExitException eee =
-                    	                    new EarlyExitException(93, input);
-                    	                throw eee;
-                    	        }
-                    	        cnt93++;
-                    	    } while (true);
-
-
-                    	    }
-
-
-                    	    }
-                    	    break;
-                    	case 3 :
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2748:6: ( ( (lv_other_12_0= RULE_ATOM ) ) otherlv_13= ':' ( ( (lv_string_14_0= RULE_STRING ) ) | ( (lv_val_15_0= RULE_INT_LITERAL ) ) | ( (lv_literal_16_0= ruleLiteral ) ) | ( (lv_val_real_17_0= RULE_REAL_LITERAL ) ) ) ( ruleEOL )+ )
-                    	    {
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2748:6: ( ( (lv_other_12_0= RULE_ATOM ) ) otherlv_13= ':' ( ( (lv_string_14_0= RULE_STRING ) ) | ( (lv_val_15_0= RULE_INT_LITERAL ) ) | ( (lv_literal_16_0= ruleLiteral ) ) | ( (lv_val_real_17_0= RULE_REAL_LITERAL ) ) ) ( ruleEOL )+ )
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2748:7: ( (lv_other_12_0= RULE_ATOM ) ) otherlv_13= ':' ( ( (lv_string_14_0= RULE_STRING ) ) | ( (lv_val_15_0= RULE_INT_LITERAL ) ) | ( (lv_literal_16_0= ruleLiteral ) ) | ( (lv_val_real_17_0= RULE_REAL_LITERAL ) ) ) ( ruleEOL )+
-                    	    {
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2748:7: ( (lv_other_12_0= RULE_ATOM ) )
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2749:1: (lv_other_12_0= RULE_ATOM )
-                    	    {
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2749:1: (lv_other_12_0= RULE_ATOM )
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2750:3: lv_other_12_0= RULE_ATOM
-                    	    {
-                    	    lv_other_12_0=(Token)match(input,RULE_ATOM,FOLLOW_RULE_ATOM_in_ruleScheme5753); 
-
-                    	    			newLeafNode(lv_other_12_0, grammarAccess.getSchemeAccess().getOtherATOMTerminalRuleCall_4_2_2_0_0()); 
-                    	    		
-
-                    	    	        if (current==null) {
-                    	    	            current = createModelElement(grammarAccess.getSchemeRule());
-                    	    	        }
-                    	           		addWithLastConsumed(
-                    	           			current, 
-                    	           			"other",
-                    	            		lv_other_12_0, 
-                    	            		"ATOM");
-                    	    	    
-
-                    	    }
-
-
-                    	    }
-
-                    	    otherlv_13=(Token)match(input,29,FOLLOW_29_in_ruleScheme5770); 
-
-                    	        	newLeafNode(otherlv_13, grammarAccess.getSchemeAccess().getColonKeyword_4_2_2_1());
-                    	        
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2770:1: ( ( (lv_string_14_0= RULE_STRING ) ) | ( (lv_val_15_0= RULE_INT_LITERAL ) ) | ( (lv_literal_16_0= ruleLiteral ) ) | ( (lv_val_real_17_0= RULE_REAL_LITERAL ) ) )
-                    	    int alt94=4;
-                    	    switch ( input.LA(1) ) {
-                    	    case RULE_STRING:
-                    	        {
+                    	    if ( (LA94_0==29) ) {
                     	        alt94=1;
-                    	        }
-                    	        break;
-                    	    case RULE_INT_LITERAL:
-                    	        {
-                    	        alt94=2;
-                    	        }
-                    	        break;
-                    	    case RULE_ATOM:
-                    	    case RULE_VART:
-                    	    case RULE_UNNAMEDVART:
-                    	    case 75:
-                    	    case 76:
-                    	    case 77:
-                    	    case 78:
-                    	    case 79:
-                    	        {
-                    	        alt94=3;
-                    	        }
-                    	        break;
-                    	    case RULE_REAL_LITERAL:
-                    	        {
-                    	        alt94=4;
-                    	        }
-                    	        break;
-                    	    default:
-                    	        NoViableAltException nvae =
-                    	            new NoViableAltException("", 94, 0, input);
-
-                    	        throw nvae;
                     	    }
-
                     	    switch (alt94) {
                     	        case 1 :
-                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2770:2: ( (lv_string_14_0= RULE_STRING ) )
+                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2748:3: otherlv_7= ':' ( (lv_debug_8_0= ruleLiteral ) )
                     	            {
-                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2770:2: ( (lv_string_14_0= RULE_STRING ) )
-                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2771:1: (lv_string_14_0= RULE_STRING )
+                    	            otherlv_7=(Token)match(input,29,FOLLOW_29_in_ruleScheme5723); 
+
+                    	                	newLeafNode(otherlv_7, grammarAccess.getSchemeAccess().getColonKeyword_4_2_0_1_0());
+                    	                
+                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2752:1: ( (lv_debug_8_0= ruleLiteral ) )
+                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2753:1: (lv_debug_8_0= ruleLiteral )
                     	            {
-                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2771:1: (lv_string_14_0= RULE_STRING )
-                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2772:3: lv_string_14_0= RULE_STRING
-                    	            {
-                    	            lv_string_14_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleScheme5788); 
-
-                    	            			newLeafNode(lv_string_14_0, grammarAccess.getSchemeAccess().getStringSTRINGTerminalRuleCall_4_2_2_2_0_0()); 
-                    	            		
-
-                    	            	        if (current==null) {
-                    	            	            current = createModelElement(grammarAccess.getSchemeRule());
-                    	            	        }
-                    	                   		addWithLastConsumed(
-                    	                   			current, 
-                    	                   			"string",
-                    	                    		lv_string_14_0, 
-                    	                    		"STRING");
-                    	            	    
-
-                    	            }
-
-
-                    	            }
-
-
-                    	            }
-                    	            break;
-                    	        case 2 :
-                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2789:6: ( (lv_val_15_0= RULE_INT_LITERAL ) )
-                    	            {
-                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2789:6: ( (lv_val_15_0= RULE_INT_LITERAL ) )
-                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2790:1: (lv_val_15_0= RULE_INT_LITERAL )
-                    	            {
-                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2790:1: (lv_val_15_0= RULE_INT_LITERAL )
-                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2791:3: lv_val_15_0= RULE_INT_LITERAL
-                    	            {
-                    	            lv_val_15_0=(Token)match(input,RULE_INT_LITERAL,FOLLOW_RULE_INT_LITERAL_in_ruleScheme5816); 
-
-                    	            			newLeafNode(lv_val_15_0, grammarAccess.getSchemeAccess().getValINT_LITERALTerminalRuleCall_4_2_2_2_1_0()); 
-                    	            		
-
-                    	            	        if (current==null) {
-                    	            	            current = createModelElement(grammarAccess.getSchemeRule());
-                    	            	        }
-                    	                   		addWithLastConsumed(
-                    	                   			current, 
-                    	                   			"val",
-                    	                    		lv_val_15_0, 
-                    	                    		"INT_LITERAL");
-                    	            	    
-
-                    	            }
-
-
-                    	            }
-
-
-                    	            }
-                    	            break;
-                    	        case 3 :
-                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2808:6: ( (lv_literal_16_0= ruleLiteral ) )
-                    	            {
-                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2808:6: ( (lv_literal_16_0= ruleLiteral ) )
-                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2809:1: (lv_literal_16_0= ruleLiteral )
-                    	            {
-                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2809:1: (lv_literal_16_0= ruleLiteral )
-                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2810:3: lv_literal_16_0= ruleLiteral
+                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2753:1: (lv_debug_8_0= ruleLiteral )
+                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2754:3: lv_debug_8_0= ruleLiteral
                     	            {
                     	             
-                    	            	        newCompositeNode(grammarAccess.getSchemeAccess().getLiteralLiteralParserRuleCall_4_2_2_2_2_0()); 
+                    	            	        newCompositeNode(grammarAccess.getSchemeAccess().getDebugLiteralParserRuleCall_4_2_0_1_1_0()); 
                     	            	    
-                    	            pushFollow(FOLLOW_ruleLiteral_in_ruleScheme5848);
-                    	            lv_literal_16_0=ruleLiteral();
+                    	            pushFollow(FOLLOW_ruleLiteral_in_ruleScheme5744);
+                    	            lv_debug_8_0=ruleLiteral();
 
                     	            state._fsp--;
 
@@ -8145,8 +8000,8 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
                     	            	        }
                     	                   		add(
                     	                   			current, 
-                    	                   			"literal",
-                    	                    		lv_literal_16_0, 
+                    	                   			"debug",
+                    	                    		lv_debug_8_0, 
                     	                    		"Literal");
                     	            	        afterParserOrEnumRuleCall();
                     	            	    
@@ -8159,42 +8014,10 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
                     	            }
                     	            break;
-                    	        case 4 :
-                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2827:6: ( (lv_val_real_17_0= RULE_REAL_LITERAL ) )
-                    	            {
-                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2827:6: ( (lv_val_real_17_0= RULE_REAL_LITERAL ) )
-                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2828:1: (lv_val_real_17_0= RULE_REAL_LITERAL )
-                    	            {
-                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2828:1: (lv_val_real_17_0= RULE_REAL_LITERAL )
-                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2829:3: lv_val_real_17_0= RULE_REAL_LITERAL
-                    	            {
-                    	            lv_val_real_17_0=(Token)match(input,RULE_REAL_LITERAL,FOLLOW_RULE_REAL_LITERAL_in_ruleScheme5871); 
-
-                    	            			newLeafNode(lv_val_real_17_0, grammarAccess.getSchemeAccess().getVal_realREAL_LITERALTerminalRuleCall_4_2_2_2_3_0()); 
-                    	            		
-
-                    	            	        if (current==null) {
-                    	            	            current = createModelElement(grammarAccess.getSchemeRule());
-                    	            	        }
-                    	                   		addWithLastConsumed(
-                    	                   			current, 
-                    	                   			"val_real",
-                    	                    		lv_val_real_17_0, 
-                    	                    		"REAL_LITERAL");
-                    	            	    
-
-                    	            }
-
-
-                    	            }
-
-
-                    	            }
-                    	            break;
 
                     	    }
 
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2845:3: ( ruleEOL )+
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2770:4: ( ruleEOL )+
                     	    int cnt95=0;
                     	    loop95:
                     	    do {
@@ -8208,12 +8031,12 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
                     	        switch (alt95) {
                     	    	case 1 :
-                    	    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2846:5: ruleEOL
+                    	    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2771:5: ruleEOL
                     	    	    {
                     	    	     
-                    	    	            newCompositeNode(grammarAccess.getSchemeAccess().getEOLParserRuleCall_4_2_2_3()); 
+                    	    	            newCompositeNode(grammarAccess.getSchemeAccess().getEOLParserRuleCall_4_2_0_2()); 
                     	    	        
-                    	    	    pushFollow(FOLLOW_ruleEOL_in_ruleScheme5894);
+                    	    	    pushFollow(FOLLOW_ruleEOL_in_ruleScheme5763);
                     	    	    ruleEOL();
 
                     	    	    state._fsp--;
@@ -8240,15 +8063,357 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
                     	    }
                     	    break;
+                    	case 2 :
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2779:6: (otherlv_10= 'owner' otherlv_11= ':' ( (lv_owner_12_0= RULE_ATOM ) ) ( ruleEOL )+ )
+                    	    {
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2779:6: (otherlv_10= 'owner' otherlv_11= ':' ( (lv_owner_12_0= RULE_ATOM ) ) ( ruleEOL )+ )
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2779:8: otherlv_10= 'owner' otherlv_11= ':' ( (lv_owner_12_0= RULE_ATOM ) ) ( ruleEOL )+
+                    	    {
+                    	    otherlv_10=(Token)match(input,64,FOLLOW_64_in_ruleScheme5784); 
+
+                    	        	newLeafNode(otherlv_10, grammarAccess.getSchemeAccess().getOwnerKeyword_4_2_1_0());
+                    	        
+                    	    otherlv_11=(Token)match(input,29,FOLLOW_29_in_ruleScheme5796); 
+
+                    	        	newLeafNode(otherlv_11, grammarAccess.getSchemeAccess().getColonKeyword_4_2_1_1());
+                    	        
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2787:1: ( (lv_owner_12_0= RULE_ATOM ) )
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2788:1: (lv_owner_12_0= RULE_ATOM )
+                    	    {
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2788:1: (lv_owner_12_0= RULE_ATOM )
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2789:3: lv_owner_12_0= RULE_ATOM
+                    	    {
+                    	    lv_owner_12_0=(Token)match(input,RULE_ATOM,FOLLOW_RULE_ATOM_in_ruleScheme5813); 
+
+                    	    			newLeafNode(lv_owner_12_0, grammarAccess.getSchemeAccess().getOwnerATOMTerminalRuleCall_4_2_1_2_0()); 
+                    	    		
+
+                    	    	        if (current==null) {
+                    	    	            current = createModelElement(grammarAccess.getSchemeRule());
+                    	    	        }
+                    	           		addWithLastConsumed(
+                    	           			current, 
+                    	           			"owner",
+                    	            		lv_owner_12_0, 
+                    	            		"ATOM");
+                    	    	    
+
+                    	    }
+
+
+                    	    }
+
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2805:2: ( ruleEOL )+
+                    	    int cnt96=0;
+                    	    loop96:
+                    	    do {
+                    	        int alt96=2;
+                    	        int LA96_0 = input.LA(1);
+
+                    	        if ( ((LA96_0>=RULE_NEWLINE && LA96_0<=RULE_SL_COMMENT)) ) {
+                    	            alt96=1;
+                    	        }
+
+
+                    	        switch (alt96) {
+                    	    	case 1 :
+                    	    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2806:5: ruleEOL
+                    	    	    {
+                    	    	     
+                    	    	            newCompositeNode(grammarAccess.getSchemeAccess().getEOLParserRuleCall_4_2_1_3()); 
+                    	    	        
+                    	    	    pushFollow(FOLLOW_ruleEOL_in_ruleScheme5835);
+                    	    	    ruleEOL();
+
+                    	    	    state._fsp--;
+
+                    	    	     
+                    	    	            afterParserOrEnumRuleCall();
+                    	    	        
+
+                    	    	    }
+                    	    	    break;
+
+                    	    	default :
+                    	    	    if ( cnt96 >= 1 ) break loop96;
+                    	                EarlyExitException eee =
+                    	                    new EarlyExitException(96, input);
+                    	                throw eee;
+                    	        }
+                    	        cnt96++;
+                    	    } while (true);
+
+
+                    	    }
+
+
+                    	    }
+                    	    break;
+                    	case 3 :
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2814:6: ( ( (lv_other_14_0= RULE_ATOM ) ) otherlv_15= ':' ( ( (lv_string_16_0= RULE_STRING ) ) | ( (lv_val_17_0= RULE_INT_LITERAL ) ) | ( (lv_literal_18_0= ruleLiteral ) ) | ( (lv_val_real_19_0= RULE_REAL_LITERAL ) ) ) ( ruleEOL )+ )
+                    	    {
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2814:6: ( ( (lv_other_14_0= RULE_ATOM ) ) otherlv_15= ':' ( ( (lv_string_16_0= RULE_STRING ) ) | ( (lv_val_17_0= RULE_INT_LITERAL ) ) | ( (lv_literal_18_0= ruleLiteral ) ) | ( (lv_val_real_19_0= RULE_REAL_LITERAL ) ) ) ( ruleEOL )+ )
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2814:7: ( (lv_other_14_0= RULE_ATOM ) ) otherlv_15= ':' ( ( (lv_string_16_0= RULE_STRING ) ) | ( (lv_val_17_0= RULE_INT_LITERAL ) ) | ( (lv_literal_18_0= ruleLiteral ) ) | ( (lv_val_real_19_0= RULE_REAL_LITERAL ) ) ) ( ruleEOL )+
+                    	    {
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2814:7: ( (lv_other_14_0= RULE_ATOM ) )
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2815:1: (lv_other_14_0= RULE_ATOM )
+                    	    {
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2815:1: (lv_other_14_0= RULE_ATOM )
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2816:3: lv_other_14_0= RULE_ATOM
+                    	    {
+                    	    lv_other_14_0=(Token)match(input,RULE_ATOM,FOLLOW_RULE_ATOM_in_ruleScheme5861); 
+
+                    	    			newLeafNode(lv_other_14_0, grammarAccess.getSchemeAccess().getOtherATOMTerminalRuleCall_4_2_2_0_0()); 
+                    	    		
+
+                    	    	        if (current==null) {
+                    	    	            current = createModelElement(grammarAccess.getSchemeRule());
+                    	    	        }
+                    	           		addWithLastConsumed(
+                    	           			current, 
+                    	           			"other",
+                    	            		lv_other_14_0, 
+                    	            		"ATOM");
+                    	    	    
+
+                    	    }
+
+
+                    	    }
+
+                    	    otherlv_15=(Token)match(input,29,FOLLOW_29_in_ruleScheme5878); 
+
+                    	        	newLeafNode(otherlv_15, grammarAccess.getSchemeAccess().getColonKeyword_4_2_2_1());
+                    	        
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2836:1: ( ( (lv_string_16_0= RULE_STRING ) ) | ( (lv_val_17_0= RULE_INT_LITERAL ) ) | ( (lv_literal_18_0= ruleLiteral ) ) | ( (lv_val_real_19_0= RULE_REAL_LITERAL ) ) )
+                    	    int alt97=4;
+                    	    switch ( input.LA(1) ) {
+                    	    case RULE_STRING:
+                    	        {
+                    	        alt97=1;
+                    	        }
+                    	        break;
+                    	    case RULE_INT_LITERAL:
+                    	        {
+                    	        alt97=2;
+                    	        }
+                    	        break;
+                    	    case RULE_ATOM:
+                    	    case RULE_VART:
+                    	    case RULE_UNNAMEDVART:
+                    	    case 75:
+                    	    case 76:
+                    	    case 77:
+                    	    case 78:
+                    	    case 79:
+                    	        {
+                    	        alt97=3;
+                    	        }
+                    	        break;
+                    	    case RULE_REAL_LITERAL:
+                    	        {
+                    	        alt97=4;
+                    	        }
+                    	        break;
+                    	    default:
+                    	        NoViableAltException nvae =
+                    	            new NoViableAltException("", 97, 0, input);
+
+                    	        throw nvae;
+                    	    }
+
+                    	    switch (alt97) {
+                    	        case 1 :
+                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2836:2: ( (lv_string_16_0= RULE_STRING ) )
+                    	            {
+                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2836:2: ( (lv_string_16_0= RULE_STRING ) )
+                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2837:1: (lv_string_16_0= RULE_STRING )
+                    	            {
+                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2837:1: (lv_string_16_0= RULE_STRING )
+                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2838:3: lv_string_16_0= RULE_STRING
+                    	            {
+                    	            lv_string_16_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleScheme5896); 
+
+                    	            			newLeafNode(lv_string_16_0, grammarAccess.getSchemeAccess().getStringSTRINGTerminalRuleCall_4_2_2_2_0_0()); 
+                    	            		
+
+                    	            	        if (current==null) {
+                    	            	            current = createModelElement(grammarAccess.getSchemeRule());
+                    	            	        }
+                    	                   		addWithLastConsumed(
+                    	                   			current, 
+                    	                   			"string",
+                    	                    		lv_string_16_0, 
+                    	                    		"STRING");
+                    	            	    
+
+                    	            }
+
+
+                    	            }
+
+
+                    	            }
+                    	            break;
+                    	        case 2 :
+                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2855:6: ( (lv_val_17_0= RULE_INT_LITERAL ) )
+                    	            {
+                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2855:6: ( (lv_val_17_0= RULE_INT_LITERAL ) )
+                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2856:1: (lv_val_17_0= RULE_INT_LITERAL )
+                    	            {
+                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2856:1: (lv_val_17_0= RULE_INT_LITERAL )
+                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2857:3: lv_val_17_0= RULE_INT_LITERAL
+                    	            {
+                    	            lv_val_17_0=(Token)match(input,RULE_INT_LITERAL,FOLLOW_RULE_INT_LITERAL_in_ruleScheme5924); 
+
+                    	            			newLeafNode(lv_val_17_0, grammarAccess.getSchemeAccess().getValINT_LITERALTerminalRuleCall_4_2_2_2_1_0()); 
+                    	            		
+
+                    	            	        if (current==null) {
+                    	            	            current = createModelElement(grammarAccess.getSchemeRule());
+                    	            	        }
+                    	                   		addWithLastConsumed(
+                    	                   			current, 
+                    	                   			"val",
+                    	                    		lv_val_17_0, 
+                    	                    		"INT_LITERAL");
+                    	            	    
+
+                    	            }
+
+
+                    	            }
+
+
+                    	            }
+                    	            break;
+                    	        case 3 :
+                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2874:6: ( (lv_literal_18_0= ruleLiteral ) )
+                    	            {
+                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2874:6: ( (lv_literal_18_0= ruleLiteral ) )
+                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2875:1: (lv_literal_18_0= ruleLiteral )
+                    	            {
+                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2875:1: (lv_literal_18_0= ruleLiteral )
+                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2876:3: lv_literal_18_0= ruleLiteral
+                    	            {
+                    	             
+                    	            	        newCompositeNode(grammarAccess.getSchemeAccess().getLiteralLiteralParserRuleCall_4_2_2_2_2_0()); 
+                    	            	    
+                    	            pushFollow(FOLLOW_ruleLiteral_in_ruleScheme5956);
+                    	            lv_literal_18_0=ruleLiteral();
+
+                    	            state._fsp--;
+
+
+                    	            	        if (current==null) {
+                    	            	            current = createModelElementForParent(grammarAccess.getSchemeRule());
+                    	            	        }
+                    	                   		add(
+                    	                   			current, 
+                    	                   			"literal",
+                    	                    		lv_literal_18_0, 
+                    	                    		"Literal");
+                    	            	        afterParserOrEnumRuleCall();
+                    	            	    
+
+                    	            }
+
+
+                    	            }
+
+
+                    	            }
+                    	            break;
+                    	        case 4 :
+                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2893:6: ( (lv_val_real_19_0= RULE_REAL_LITERAL ) )
+                    	            {
+                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2893:6: ( (lv_val_real_19_0= RULE_REAL_LITERAL ) )
+                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2894:1: (lv_val_real_19_0= RULE_REAL_LITERAL )
+                    	            {
+                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2894:1: (lv_val_real_19_0= RULE_REAL_LITERAL )
+                    	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2895:3: lv_val_real_19_0= RULE_REAL_LITERAL
+                    	            {
+                    	            lv_val_real_19_0=(Token)match(input,RULE_REAL_LITERAL,FOLLOW_RULE_REAL_LITERAL_in_ruleScheme5979); 
+
+                    	            			newLeafNode(lv_val_real_19_0, grammarAccess.getSchemeAccess().getVal_realREAL_LITERALTerminalRuleCall_4_2_2_2_3_0()); 
+                    	            		
+
+                    	            	        if (current==null) {
+                    	            	            current = createModelElement(grammarAccess.getSchemeRule());
+                    	            	        }
+                    	                   		addWithLastConsumed(
+                    	                   			current, 
+                    	                   			"val_real",
+                    	                    		lv_val_real_19_0, 
+                    	                    		"REAL_LITERAL");
+                    	            	    
+
+                    	            }
+
+
+                    	            }
+
+
+                    	            }
+                    	            break;
+
+                    	    }
+
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2911:3: ( ruleEOL )+
+                    	    int cnt98=0;
+                    	    loop98:
+                    	    do {
+                    	        int alt98=2;
+                    	        int LA98_0 = input.LA(1);
+
+                    	        if ( ((LA98_0>=RULE_NEWLINE && LA98_0<=RULE_SL_COMMENT)) ) {
+                    	            alt98=1;
+                    	        }
+
+
+                    	        switch (alt98) {
+                    	    	case 1 :
+                    	    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2912:5: ruleEOL
+                    	    	    {
+                    	    	     
+                    	    	            newCompositeNode(grammarAccess.getSchemeAccess().getEOLParserRuleCall_4_2_2_3()); 
+                    	    	        
+                    	    	    pushFollow(FOLLOW_ruleEOL_in_ruleScheme6002);
+                    	    	    ruleEOL();
+
+                    	    	    state._fsp--;
+
+                    	    	     
+                    	    	            afterParserOrEnumRuleCall();
+                    	    	        
+
+                    	    	    }
+                    	    	    break;
+
+                    	    	default :
+                    	    	    if ( cnt98 >= 1 ) break loop98;
+                    	                EarlyExitException eee =
+                    	                    new EarlyExitException(98, input);
+                    	                throw eee;
+                    	        }
+                    	        cnt98++;
+                    	    } while (true);
+
+
+                    	    }
+
+
+                    	    }
+                    	    break;
 
                     	default :
-                    	    break loop96;
+                    	    break loop99;
                         }
                     } while (true);
 
-                    otherlv_19=(Token)match(input,25,FOLLOW_25_in_ruleScheme5910); 
+                    otherlv_21=(Token)match(input,25,FOLLOW_25_in_ruleScheme6018); 
 
-                        	newLeafNode(otherlv_19, grammarAccess.getSchemeAccess().getRightCurlyBracketKeyword_4_3());
+                        	newLeafNode(otherlv_21, grammarAccess.getSchemeAccess().getRightCurlyBracketKeyword_4_3());
                         
 
                     }
@@ -8256,25 +8421,25 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2857:3: ( ruleEOL )*
-            loop98:
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2923:3: ( ruleEOL )*
+            loop101:
             do {
-                int alt98=2;
-                int LA98_0 = input.LA(1);
+                int alt101=2;
+                int LA101_0 = input.LA(1);
 
-                if ( ((LA98_0>=RULE_NEWLINE && LA98_0<=RULE_SL_COMMENT)) ) {
-                    alt98=1;
+                if ( ((LA101_0>=RULE_NEWLINE && LA101_0<=RULE_SL_COMMENT)) ) {
+                    alt101=1;
                 }
 
 
-                switch (alt98) {
+                switch (alt101) {
             	case 1 :
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2858:5: ruleEOL
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2924:5: ruleEOL
             	    {
             	     
             	            newCompositeNode(grammarAccess.getSchemeAccess().getEOLParserRuleCall_5()); 
             	        
-            	    pushFollow(FOLLOW_ruleEOL_in_ruleScheme5929);
+            	    pushFollow(FOLLOW_ruleEOL_in_ruleScheme6037);
             	    ruleEOL();
 
             	    state._fsp--;
@@ -8287,7 +8452,7 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    break loop98;
+            	    break loop101;
                 }
             } while (true);
 
@@ -8312,7 +8477,7 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleHost"
-    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2873:1: entryRuleHost returns [EObject current=null] : iv_ruleHost= ruleHost EOF ;
+    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2939:1: entryRuleHost returns [EObject current=null] : iv_ruleHost= ruleHost EOF ;
     public final EObject entryRuleHost() throws RecognitionException {
         EObject current = null;
 
@@ -8320,17 +8485,17 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2874:2: (iv_ruleHost= ruleHost EOF )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2875:2: iv_ruleHost= ruleHost EOF
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2940:2: (iv_ruleHost= ruleHost EOF )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2941:2: iv_ruleHost= ruleHost EOF
             {
              newCompositeNode(grammarAccess.getHostRule()); 
-            pushFollow(FOLLOW_ruleHost_in_entryRuleHost5966);
+            pushFollow(FOLLOW_ruleHost_in_entryRuleHost6074);
             iv_ruleHost=ruleHost();
 
             state._fsp--;
 
              current =iv_ruleHost; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleHost5976); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleHost6084); 
 
             }
 
@@ -8348,7 +8513,7 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleHost"
-    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2882:1: ruleHost returns [EObject current=null] : ( ( ( (lv_name_0_0= RULE_ATOM ) ) | ( (lv_string_1_0= RULE_STRING ) ) | ( (lv_ip_2_0= RULE_IP ) ) ) (otherlv_3= ':' ( (lv_val_4_0= RULE_INT_LITERAL ) ) )? ) ;
+    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2948:1: ruleHost returns [EObject current=null] : ( ( ( (lv_name_0_0= RULE_ATOM ) ) | ( (lv_string_1_0= RULE_STRING ) ) | ( (lv_ip_2_0= RULE_IP ) ) ) (otherlv_3= ':' ( (lv_val_4_0= RULE_INT_LITERAL ) ) )? ) ;
     public final EObject ruleHost() throws RecognitionException {
         EObject current = null;
 
@@ -8361,48 +8526,48 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2885:28: ( ( ( ( (lv_name_0_0= RULE_ATOM ) ) | ( (lv_string_1_0= RULE_STRING ) ) | ( (lv_ip_2_0= RULE_IP ) ) ) (otherlv_3= ':' ( (lv_val_4_0= RULE_INT_LITERAL ) ) )? ) )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2886:1: ( ( ( (lv_name_0_0= RULE_ATOM ) ) | ( (lv_string_1_0= RULE_STRING ) ) | ( (lv_ip_2_0= RULE_IP ) ) ) (otherlv_3= ':' ( (lv_val_4_0= RULE_INT_LITERAL ) ) )? )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2951:28: ( ( ( ( (lv_name_0_0= RULE_ATOM ) ) | ( (lv_string_1_0= RULE_STRING ) ) | ( (lv_ip_2_0= RULE_IP ) ) ) (otherlv_3= ':' ( (lv_val_4_0= RULE_INT_LITERAL ) ) )? ) )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2952:1: ( ( ( (lv_name_0_0= RULE_ATOM ) ) | ( (lv_string_1_0= RULE_STRING ) ) | ( (lv_ip_2_0= RULE_IP ) ) ) (otherlv_3= ':' ( (lv_val_4_0= RULE_INT_LITERAL ) ) )? )
             {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2886:1: ( ( ( (lv_name_0_0= RULE_ATOM ) ) | ( (lv_string_1_0= RULE_STRING ) ) | ( (lv_ip_2_0= RULE_IP ) ) ) (otherlv_3= ':' ( (lv_val_4_0= RULE_INT_LITERAL ) ) )? )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2886:2: ( ( (lv_name_0_0= RULE_ATOM ) ) | ( (lv_string_1_0= RULE_STRING ) ) | ( (lv_ip_2_0= RULE_IP ) ) ) (otherlv_3= ':' ( (lv_val_4_0= RULE_INT_LITERAL ) ) )?
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2952:1: ( ( ( (lv_name_0_0= RULE_ATOM ) ) | ( (lv_string_1_0= RULE_STRING ) ) | ( (lv_ip_2_0= RULE_IP ) ) ) (otherlv_3= ':' ( (lv_val_4_0= RULE_INT_LITERAL ) ) )? )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2952:2: ( ( (lv_name_0_0= RULE_ATOM ) ) | ( (lv_string_1_0= RULE_STRING ) ) | ( (lv_ip_2_0= RULE_IP ) ) ) (otherlv_3= ':' ( (lv_val_4_0= RULE_INT_LITERAL ) ) )?
             {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2886:2: ( ( (lv_name_0_0= RULE_ATOM ) ) | ( (lv_string_1_0= RULE_STRING ) ) | ( (lv_ip_2_0= RULE_IP ) ) )
-            int alt99=3;
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2952:2: ( ( (lv_name_0_0= RULE_ATOM ) ) | ( (lv_string_1_0= RULE_STRING ) ) | ( (lv_ip_2_0= RULE_IP ) ) )
+            int alt102=3;
             switch ( input.LA(1) ) {
             case RULE_ATOM:
                 {
-                alt99=1;
+                alt102=1;
                 }
                 break;
             case RULE_STRING:
                 {
-                alt99=2;
+                alt102=2;
                 }
                 break;
             case RULE_IP:
                 {
-                alt99=3;
+                alt102=3;
                 }
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("", 99, 0, input);
+                    new NoViableAltException("", 102, 0, input);
 
                 throw nvae;
             }
 
-            switch (alt99) {
+            switch (alt102) {
                 case 1 :
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2886:3: ( (lv_name_0_0= RULE_ATOM ) )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2952:3: ( (lv_name_0_0= RULE_ATOM ) )
                     {
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2886:3: ( (lv_name_0_0= RULE_ATOM ) )
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2887:1: (lv_name_0_0= RULE_ATOM )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2952:3: ( (lv_name_0_0= RULE_ATOM ) )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2953:1: (lv_name_0_0= RULE_ATOM )
                     {
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2887:1: (lv_name_0_0= RULE_ATOM )
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2888:3: lv_name_0_0= RULE_ATOM
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2953:1: (lv_name_0_0= RULE_ATOM )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2954:3: lv_name_0_0= RULE_ATOM
                     {
-                    lv_name_0_0=(Token)match(input,RULE_ATOM,FOLLOW_RULE_ATOM_in_ruleHost6019); 
+                    lv_name_0_0=(Token)match(input,RULE_ATOM,FOLLOW_RULE_ATOM_in_ruleHost6127); 
 
                     			newLeafNode(lv_name_0_0, grammarAccess.getHostAccess().getNameATOMTerminalRuleCall_0_0_0()); 
                     		
@@ -8426,15 +8591,15 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2905:6: ( (lv_string_1_0= RULE_STRING ) )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2971:6: ( (lv_string_1_0= RULE_STRING ) )
                     {
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2905:6: ( (lv_string_1_0= RULE_STRING ) )
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2906:1: (lv_string_1_0= RULE_STRING )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2971:6: ( (lv_string_1_0= RULE_STRING ) )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2972:1: (lv_string_1_0= RULE_STRING )
                     {
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2906:1: (lv_string_1_0= RULE_STRING )
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2907:3: lv_string_1_0= RULE_STRING
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2972:1: (lv_string_1_0= RULE_STRING )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2973:3: lv_string_1_0= RULE_STRING
                     {
-                    lv_string_1_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleHost6047); 
+                    lv_string_1_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleHost6155); 
 
                     			newLeafNode(lv_string_1_0, grammarAccess.getHostAccess().getStringSTRINGTerminalRuleCall_0_1_0()); 
                     		
@@ -8458,15 +8623,15 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 3 :
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2924:6: ( (lv_ip_2_0= RULE_IP ) )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2990:6: ( (lv_ip_2_0= RULE_IP ) )
                     {
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2924:6: ( (lv_ip_2_0= RULE_IP ) )
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2925:1: (lv_ip_2_0= RULE_IP )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2990:6: ( (lv_ip_2_0= RULE_IP ) )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2991:1: (lv_ip_2_0= RULE_IP )
                     {
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2925:1: (lv_ip_2_0= RULE_IP )
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2926:3: lv_ip_2_0= RULE_IP
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2991:1: (lv_ip_2_0= RULE_IP )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2992:3: lv_ip_2_0= RULE_IP
                     {
-                    lv_ip_2_0=(Token)match(input,RULE_IP,FOLLOW_RULE_IP_in_ruleHost6075); 
+                    lv_ip_2_0=(Token)match(input,RULE_IP,FOLLOW_RULE_IP_in_ruleHost6183); 
 
                     			newLeafNode(lv_ip_2_0, grammarAccess.getHostAccess().getIpIPTerminalRuleCall_0_2_0()); 
                     		
@@ -8492,28 +8657,28 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2942:3: (otherlv_3= ':' ( (lv_val_4_0= RULE_INT_LITERAL ) ) )?
-            int alt100=2;
-            int LA100_0 = input.LA(1);
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3008:3: (otherlv_3= ':' ( (lv_val_4_0= RULE_INT_LITERAL ) ) )?
+            int alt103=2;
+            int LA103_0 = input.LA(1);
 
-            if ( (LA100_0==29) ) {
-                alt100=1;
+            if ( (LA103_0==29) ) {
+                alt103=1;
             }
-            switch (alt100) {
+            switch (alt103) {
                 case 1 :
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2942:5: otherlv_3= ':' ( (lv_val_4_0= RULE_INT_LITERAL ) )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3008:5: otherlv_3= ':' ( (lv_val_4_0= RULE_INT_LITERAL ) )
                     {
-                    otherlv_3=(Token)match(input,29,FOLLOW_29_in_ruleHost6094); 
+                    otherlv_3=(Token)match(input,29,FOLLOW_29_in_ruleHost6202); 
 
                         	newLeafNode(otherlv_3, grammarAccess.getHostAccess().getColonKeyword_1_0());
                         
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2946:1: ( (lv_val_4_0= RULE_INT_LITERAL ) )
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2947:1: (lv_val_4_0= RULE_INT_LITERAL )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3012:1: ( (lv_val_4_0= RULE_INT_LITERAL ) )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3013:1: (lv_val_4_0= RULE_INT_LITERAL )
                     {
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2947:1: (lv_val_4_0= RULE_INT_LITERAL )
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2948:3: lv_val_4_0= RULE_INT_LITERAL
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3013:1: (lv_val_4_0= RULE_INT_LITERAL )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3014:3: lv_val_4_0= RULE_INT_LITERAL
                     {
-                    lv_val_4_0=(Token)match(input,RULE_INT_LITERAL,FOLLOW_RULE_INT_LITERAL_in_ruleHost6111); 
+                    lv_val_4_0=(Token)match(input,RULE_INT_LITERAL,FOLLOW_RULE_INT_LITERAL_in_ruleHost6219); 
 
                     			newLeafNode(lv_val_4_0, grammarAccess.getHostAccess().getValINT_LITERALTerminalRuleCall_1_1_0()); 
                     		
@@ -8560,7 +8725,7 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleFileName"
-    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2972:1: entryRuleFileName returns [EObject current=null] : iv_ruleFileName= ruleFileName EOF ;
+    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3038:1: entryRuleFileName returns [EObject current=null] : iv_ruleFileName= ruleFileName EOF ;
     public final EObject entryRuleFileName() throws RecognitionException {
         EObject current = null;
 
@@ -8568,17 +8733,17 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2973:2: (iv_ruleFileName= ruleFileName EOF )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2974:2: iv_ruleFileName= ruleFileName EOF
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3039:2: (iv_ruleFileName= ruleFileName EOF )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3040:2: iv_ruleFileName= ruleFileName EOF
             {
              newCompositeNode(grammarAccess.getFileNameRule()); 
-            pushFollow(FOLLOW_ruleFileName_in_entryRuleFileName6154);
+            pushFollow(FOLLOW_ruleFileName_in_entryRuleFileName6262);
             iv_ruleFileName=ruleFileName();
 
             state._fsp--;
 
              current =iv_ruleFileName; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleFileName6164); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleFileName6272); 
 
             }
 
@@ -8596,7 +8761,7 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleFileName"
-    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2981:1: ruleFileName returns [EObject current=null] : ( () ( (otherlv_1= '/' | otherlv_2= '-' | otherlv_3= '.' | otherlv_4= '..' | ( (lv_name_5_0= RULE_ATOM ) ) )+ | ( (lv_string_6_0= RULE_STRING ) ) ) ) ;
+    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3047:1: ruleFileName returns [EObject current=null] : ( () ( (otherlv_1= '/' | otherlv_2= '-' | otherlv_3= '.' | otherlv_4= '..' | ( (lv_name_5_0= RULE_ATOM ) ) )+ | ( (lv_string_6_0= RULE_STRING ) ) ) ) ;
     public final EObject ruleFileName() throws RecognitionException {
         EObject current = null;
 
@@ -8610,14 +8775,14 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2984:28: ( ( () ( (otherlv_1= '/' | otherlv_2= '-' | otherlv_3= '.' | otherlv_4= '..' | ( (lv_name_5_0= RULE_ATOM ) ) )+ | ( (lv_string_6_0= RULE_STRING ) ) ) ) )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2985:1: ( () ( (otherlv_1= '/' | otherlv_2= '-' | otherlv_3= '.' | otherlv_4= '..' | ( (lv_name_5_0= RULE_ATOM ) ) )+ | ( (lv_string_6_0= RULE_STRING ) ) ) )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3050:28: ( ( () ( (otherlv_1= '/' | otherlv_2= '-' | otherlv_3= '.' | otherlv_4= '..' | ( (lv_name_5_0= RULE_ATOM ) ) )+ | ( (lv_string_6_0= RULE_STRING ) ) ) ) )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3051:1: ( () ( (otherlv_1= '/' | otherlv_2= '-' | otherlv_3= '.' | otherlv_4= '..' | ( (lv_name_5_0= RULE_ATOM ) ) )+ | ( (lv_string_6_0= RULE_STRING ) ) ) )
             {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2985:1: ( () ( (otherlv_1= '/' | otherlv_2= '-' | otherlv_3= '.' | otherlv_4= '..' | ( (lv_name_5_0= RULE_ATOM ) ) )+ | ( (lv_string_6_0= RULE_STRING ) ) ) )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2985:2: () ( (otherlv_1= '/' | otherlv_2= '-' | otherlv_3= '.' | otherlv_4= '..' | ( (lv_name_5_0= RULE_ATOM ) ) )+ | ( (lv_string_6_0= RULE_STRING ) ) )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3051:1: ( () ( (otherlv_1= '/' | otherlv_2= '-' | otherlv_3= '.' | otherlv_4= '..' | ( (lv_name_5_0= RULE_ATOM ) ) )+ | ( (lv_string_6_0= RULE_STRING ) ) ) )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3051:2: () ( (otherlv_1= '/' | otherlv_2= '-' | otherlv_3= '.' | otherlv_4= '..' | ( (lv_name_5_0= RULE_ATOM ) ) )+ | ( (lv_string_6_0= RULE_STRING ) ) )
             {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2985:2: ()
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2986:5: 
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3051:2: ()
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3052:5: 
             {
 
                     current = forceCreateModelElement(
@@ -8627,65 +8792,65 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2991:2: ( (otherlv_1= '/' | otherlv_2= '-' | otherlv_3= '.' | otherlv_4= '..' | ( (lv_name_5_0= RULE_ATOM ) ) )+ | ( (lv_string_6_0= RULE_STRING ) ) )
-            int alt102=2;
-            int LA102_0 = input.LA(1);
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3057:2: ( (otherlv_1= '/' | otherlv_2= '-' | otherlv_3= '.' | otherlv_4= '..' | ( (lv_name_5_0= RULE_ATOM ) ) )+ | ( (lv_string_6_0= RULE_STRING ) ) )
+            int alt105=2;
+            int LA105_0 = input.LA(1);
 
-            if ( (LA102_0==RULE_ATOM||(LA102_0>=67 && LA102_0<=70)) ) {
-                alt102=1;
+            if ( (LA105_0==RULE_ATOM||(LA105_0>=67 && LA105_0<=70)) ) {
+                alt105=1;
             }
-            else if ( (LA102_0==RULE_STRING) ) {
-                alt102=2;
+            else if ( (LA105_0==RULE_STRING) ) {
+                alt105=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 102, 0, input);
+                    new NoViableAltException("", 105, 0, input);
 
                 throw nvae;
             }
-            switch (alt102) {
+            switch (alt105) {
                 case 1 :
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2991:3: (otherlv_1= '/' | otherlv_2= '-' | otherlv_3= '.' | otherlv_4= '..' | ( (lv_name_5_0= RULE_ATOM ) ) )+
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3057:3: (otherlv_1= '/' | otherlv_2= '-' | otherlv_3= '.' | otherlv_4= '..' | ( (lv_name_5_0= RULE_ATOM ) ) )+
                     {
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2991:3: (otherlv_1= '/' | otherlv_2= '-' | otherlv_3= '.' | otherlv_4= '..' | ( (lv_name_5_0= RULE_ATOM ) ) )+
-                    int cnt101=0;
-                    loop101:
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3057:3: (otherlv_1= '/' | otherlv_2= '-' | otherlv_3= '.' | otherlv_4= '..' | ( (lv_name_5_0= RULE_ATOM ) ) )+
+                    int cnt104=0;
+                    loop104:
                     do {
-                        int alt101=6;
+                        int alt104=6;
                         switch ( input.LA(1) ) {
                         case 67:
                             {
-                            alt101=1;
+                            alt104=1;
                             }
                             break;
                         case 68:
                             {
-                            alt101=2;
+                            alt104=2;
                             }
                             break;
                         case 69:
                             {
-                            alt101=3;
+                            alt104=3;
                             }
                             break;
                         case 70:
                             {
-                            alt101=4;
+                            alt104=4;
                             }
                             break;
                         case RULE_ATOM:
                             {
-                            alt101=5;
+                            alt104=5;
                             }
                             break;
 
                         }
 
-                        switch (alt101) {
+                        switch (alt104) {
                     	case 1 :
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2991:5: otherlv_1= '/'
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3057:5: otherlv_1= '/'
                     	    {
-                    	    otherlv_1=(Token)match(input,67,FOLLOW_67_in_ruleFileName6212); 
+                    	    otherlv_1=(Token)match(input,67,FOLLOW_67_in_ruleFileName6320); 
 
                     	        	newLeafNode(otherlv_1, grammarAccess.getFileNameAccess().getSolidusKeyword_1_0_0());
                     	        
@@ -8693,9 +8858,9 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:2996:7: otherlv_2= '-'
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3062:7: otherlv_2= '-'
                     	    {
-                    	    otherlv_2=(Token)match(input,68,FOLLOW_68_in_ruleFileName6230); 
+                    	    otherlv_2=(Token)match(input,68,FOLLOW_68_in_ruleFileName6338); 
 
                     	        	newLeafNode(otherlv_2, grammarAccess.getFileNameAccess().getHyphenMinusKeyword_1_0_1());
                     	        
@@ -8703,9 +8868,9 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
                     	    }
                     	    break;
                     	case 3 :
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3001:7: otherlv_3= '.'
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3067:7: otherlv_3= '.'
                     	    {
-                    	    otherlv_3=(Token)match(input,69,FOLLOW_69_in_ruleFileName6248); 
+                    	    otherlv_3=(Token)match(input,69,FOLLOW_69_in_ruleFileName6356); 
 
                     	        	newLeafNode(otherlv_3, grammarAccess.getFileNameAccess().getFullStopKeyword_1_0_2());
                     	        
@@ -8713,9 +8878,9 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
                     	    }
                     	    break;
                     	case 4 :
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3006:7: otherlv_4= '..'
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3072:7: otherlv_4= '..'
                     	    {
-                    	    otherlv_4=(Token)match(input,70,FOLLOW_70_in_ruleFileName6266); 
+                    	    otherlv_4=(Token)match(input,70,FOLLOW_70_in_ruleFileName6374); 
 
                     	        	newLeafNode(otherlv_4, grammarAccess.getFileNameAccess().getFullStopFullStopKeyword_1_0_3());
                     	        
@@ -8723,15 +8888,15 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
                     	    }
                     	    break;
                     	case 5 :
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3011:6: ( (lv_name_5_0= RULE_ATOM ) )
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3077:6: ( (lv_name_5_0= RULE_ATOM ) )
                     	    {
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3011:6: ( (lv_name_5_0= RULE_ATOM ) )
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3012:1: (lv_name_5_0= RULE_ATOM )
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3077:6: ( (lv_name_5_0= RULE_ATOM ) )
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3078:1: (lv_name_5_0= RULE_ATOM )
                     	    {
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3012:1: (lv_name_5_0= RULE_ATOM )
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3013:3: lv_name_5_0= RULE_ATOM
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3078:1: (lv_name_5_0= RULE_ATOM )
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3079:3: lv_name_5_0= RULE_ATOM
                     	    {
-                    	    lv_name_5_0=(Token)match(input,RULE_ATOM,FOLLOW_RULE_ATOM_in_ruleFileName6289); 
+                    	    lv_name_5_0=(Token)match(input,RULE_ATOM,FOLLOW_RULE_ATOM_in_ruleFileName6397); 
 
                     	    			newLeafNode(lv_name_5_0, grammarAccess.getFileNameAccess().getNameATOMTerminalRuleCall_1_0_4_0()); 
                     	    		
@@ -8756,27 +8921,27 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    if ( cnt101 >= 1 ) break loop101;
+                    	    if ( cnt104 >= 1 ) break loop104;
                                 EarlyExitException eee =
-                                    new EarlyExitException(101, input);
+                                    new EarlyExitException(104, input);
                                 throw eee;
                         }
-                        cnt101++;
+                        cnt104++;
                     } while (true);
 
 
                     }
                     break;
                 case 2 :
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3030:6: ( (lv_string_6_0= RULE_STRING ) )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3096:6: ( (lv_string_6_0= RULE_STRING ) )
                     {
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3030:6: ( (lv_string_6_0= RULE_STRING ) )
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3031:1: (lv_string_6_0= RULE_STRING )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3096:6: ( (lv_string_6_0= RULE_STRING ) )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3097:1: (lv_string_6_0= RULE_STRING )
                     {
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3031:1: (lv_string_6_0= RULE_STRING )
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3032:3: lv_string_6_0= RULE_STRING
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3097:1: (lv_string_6_0= RULE_STRING )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3098:3: lv_string_6_0= RULE_STRING
                     {
-                    lv_string_6_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleFileName6319); 
+                    lv_string_6_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleFileName6427); 
 
                     			newLeafNode(lv_string_6_0, grammarAccess.getFileNameAccess().getStringSTRINGTerminalRuleCall_1_1_0()); 
                     		
@@ -8823,7 +8988,7 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleClassDef"
-    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3056:1: entryRuleClassDef returns [EObject current=null] : iv_ruleClassDef= ruleClassDef EOF ;
+    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3122:1: entryRuleClassDef returns [EObject current=null] : iv_ruleClassDef= ruleClassDef EOF ;
     public final EObject entryRuleClassDef() throws RecognitionException {
         EObject current = null;
 
@@ -8831,17 +8996,17 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3057:2: (iv_ruleClassDef= ruleClassDef EOF )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3058:2: iv_ruleClassDef= ruleClassDef EOF
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3123:2: (iv_ruleClassDef= ruleClassDef EOF )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3124:2: iv_ruleClassDef= ruleClassDef EOF
             {
              newCompositeNode(grammarAccess.getClassDefRule()); 
-            pushFollow(FOLLOW_ruleClassDef_in_entryRuleClassDef6361);
+            pushFollow(FOLLOW_ruleClassDef_in_entryRuleClassDef6469);
             iv_ruleClassDef=ruleClassDef();
 
             state._fsp--;
 
              current =iv_ruleClassDef; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleClassDef6371); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleClassDef6479); 
 
             }
 
@@ -8859,7 +9024,7 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleClassDef"
-    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3065:1: ruleClassDef returns [EObject current=null] : ( ( (lv_infrastructure_0_0= ruleFQN ) ) (otherlv_1= '(' ( ( (lv_parameter_2_0= ruleParameter ) ) (otherlv_3= ',' ( (lv_parameter_4_0= ruleParameter ) ) )* )? otherlv_5= ')' )? ) ;
+    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3131:1: ruleClassDef returns [EObject current=null] : ( ( (lv_infrastructure_0_0= ruleFQN ) ) (otherlv_1= '(' ( ( (lv_parameter_2_0= ruleParameter ) ) (otherlv_3= ',' ( (lv_parameter_4_0= ruleParameter ) ) )* )? otherlv_5= ')' )? ) ;
     public final EObject ruleClassDef() throws RecognitionException {
         EObject current = null;
 
@@ -8876,22 +9041,22 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3068:28: ( ( ( (lv_infrastructure_0_0= ruleFQN ) ) (otherlv_1= '(' ( ( (lv_parameter_2_0= ruleParameter ) ) (otherlv_3= ',' ( (lv_parameter_4_0= ruleParameter ) ) )* )? otherlv_5= ')' )? ) )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3069:1: ( ( (lv_infrastructure_0_0= ruleFQN ) ) (otherlv_1= '(' ( ( (lv_parameter_2_0= ruleParameter ) ) (otherlv_3= ',' ( (lv_parameter_4_0= ruleParameter ) ) )* )? otherlv_5= ')' )? )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3134:28: ( ( ( (lv_infrastructure_0_0= ruleFQN ) ) (otherlv_1= '(' ( ( (lv_parameter_2_0= ruleParameter ) ) (otherlv_3= ',' ( (lv_parameter_4_0= ruleParameter ) ) )* )? otherlv_5= ')' )? ) )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3135:1: ( ( (lv_infrastructure_0_0= ruleFQN ) ) (otherlv_1= '(' ( ( (lv_parameter_2_0= ruleParameter ) ) (otherlv_3= ',' ( (lv_parameter_4_0= ruleParameter ) ) )* )? otherlv_5= ')' )? )
             {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3069:1: ( ( (lv_infrastructure_0_0= ruleFQN ) ) (otherlv_1= '(' ( ( (lv_parameter_2_0= ruleParameter ) ) (otherlv_3= ',' ( (lv_parameter_4_0= ruleParameter ) ) )* )? otherlv_5= ')' )? )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3069:2: ( (lv_infrastructure_0_0= ruleFQN ) ) (otherlv_1= '(' ( ( (lv_parameter_2_0= ruleParameter ) ) (otherlv_3= ',' ( (lv_parameter_4_0= ruleParameter ) ) )* )? otherlv_5= ')' )?
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3135:1: ( ( (lv_infrastructure_0_0= ruleFQN ) ) (otherlv_1= '(' ( ( (lv_parameter_2_0= ruleParameter ) ) (otherlv_3= ',' ( (lv_parameter_4_0= ruleParameter ) ) )* )? otherlv_5= ')' )? )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3135:2: ( (lv_infrastructure_0_0= ruleFQN ) ) (otherlv_1= '(' ( ( (lv_parameter_2_0= ruleParameter ) ) (otherlv_3= ',' ( (lv_parameter_4_0= ruleParameter ) ) )* )? otherlv_5= ')' )?
             {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3069:2: ( (lv_infrastructure_0_0= ruleFQN ) )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3070:1: (lv_infrastructure_0_0= ruleFQN )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3135:2: ( (lv_infrastructure_0_0= ruleFQN ) )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3136:1: (lv_infrastructure_0_0= ruleFQN )
             {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3070:1: (lv_infrastructure_0_0= ruleFQN )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3071:3: lv_infrastructure_0_0= ruleFQN
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3136:1: (lv_infrastructure_0_0= ruleFQN )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3137:3: lv_infrastructure_0_0= ruleFQN
             {
              
             	        newCompositeNode(grammarAccess.getClassDefAccess().getInfrastructureFQNParserRuleCall_0_0()); 
             	    
-            pushFollow(FOLLOW_ruleFQN_in_ruleClassDef6417);
+            pushFollow(FOLLOW_ruleFQN_in_ruleClassDef6525);
             lv_infrastructure_0_0=ruleFQN();
 
             state._fsp--;
@@ -8913,42 +9078,42 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3087:2: (otherlv_1= '(' ( ( (lv_parameter_2_0= ruleParameter ) ) (otherlv_3= ',' ( (lv_parameter_4_0= ruleParameter ) ) )* )? otherlv_5= ')' )?
-            int alt105=2;
-            int LA105_0 = input.LA(1);
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3153:2: (otherlv_1= '(' ( ( (lv_parameter_2_0= ruleParameter ) ) (otherlv_3= ',' ( (lv_parameter_4_0= ruleParameter ) ) )* )? otherlv_5= ')' )?
+            int alt108=2;
+            int LA108_0 = input.LA(1);
 
-            if ( (LA105_0==71) ) {
-                alt105=1;
+            if ( (LA108_0==71) ) {
+                alt108=1;
             }
-            switch (alt105) {
+            switch (alt108) {
                 case 1 :
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3087:4: otherlv_1= '(' ( ( (lv_parameter_2_0= ruleParameter ) ) (otherlv_3= ',' ( (lv_parameter_4_0= ruleParameter ) ) )* )? otherlv_5= ')'
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3153:4: otherlv_1= '(' ( ( (lv_parameter_2_0= ruleParameter ) ) (otherlv_3= ',' ( (lv_parameter_4_0= ruleParameter ) ) )* )? otherlv_5= ')'
                     {
-                    otherlv_1=(Token)match(input,71,FOLLOW_71_in_ruleClassDef6430); 
+                    otherlv_1=(Token)match(input,71,FOLLOW_71_in_ruleClassDef6538); 
 
                         	newLeafNode(otherlv_1, grammarAccess.getClassDefAccess().getLeftParenthesisKeyword_1_0());
                         
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3091:1: ( ( (lv_parameter_2_0= ruleParameter ) ) (otherlv_3= ',' ( (lv_parameter_4_0= ruleParameter ) ) )* )?
-                    int alt104=2;
-                    int LA104_0 = input.LA(1);
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3157:1: ( ( (lv_parameter_2_0= ruleParameter ) ) (otherlv_3= ',' ( (lv_parameter_4_0= ruleParameter ) ) )* )?
+                    int alt107=2;
+                    int LA107_0 = input.LA(1);
 
-                    if ( ((LA104_0>=RULE_ATOM && LA104_0<=RULE_REAL_LITERAL)||LA104_0==RULE_VART||LA104_0==73) ) {
-                        alt104=1;
+                    if ( ((LA107_0>=RULE_ATOM && LA107_0<=RULE_REAL_LITERAL)||LA107_0==RULE_VART||LA107_0==73) ) {
+                        alt107=1;
                     }
-                    switch (alt104) {
+                    switch (alt107) {
                         case 1 :
-                            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3091:2: ( (lv_parameter_2_0= ruleParameter ) ) (otherlv_3= ',' ( (lv_parameter_4_0= ruleParameter ) ) )*
+                            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3157:2: ( (lv_parameter_2_0= ruleParameter ) ) (otherlv_3= ',' ( (lv_parameter_4_0= ruleParameter ) ) )*
                             {
-                            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3091:2: ( (lv_parameter_2_0= ruleParameter ) )
-                            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3092:1: (lv_parameter_2_0= ruleParameter )
+                            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3157:2: ( (lv_parameter_2_0= ruleParameter ) )
+                            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3158:1: (lv_parameter_2_0= ruleParameter )
                             {
-                            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3092:1: (lv_parameter_2_0= ruleParameter )
-                            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3093:3: lv_parameter_2_0= ruleParameter
+                            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3158:1: (lv_parameter_2_0= ruleParameter )
+                            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3159:3: lv_parameter_2_0= ruleParameter
                             {
                              
                             	        newCompositeNode(grammarAccess.getClassDefAccess().getParameterParameterParserRuleCall_1_1_0_0()); 
                             	    
-                            pushFollow(FOLLOW_ruleParameter_in_ruleClassDef6452);
+                            pushFollow(FOLLOW_ruleParameter_in_ruleClassDef6560);
                             lv_parameter_2_0=ruleParameter();
 
                             state._fsp--;
@@ -8970,35 +9135,35 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
                             }
 
-                            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3109:2: (otherlv_3= ',' ( (lv_parameter_4_0= ruleParameter ) ) )*
-                            loop103:
+                            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3175:2: (otherlv_3= ',' ( (lv_parameter_4_0= ruleParameter ) ) )*
+                            loop106:
                             do {
-                                int alt103=2;
-                                int LA103_0 = input.LA(1);
+                                int alt106=2;
+                                int LA106_0 = input.LA(1);
 
-                                if ( (LA103_0==27) ) {
-                                    alt103=1;
+                                if ( (LA106_0==27) ) {
+                                    alt106=1;
                                 }
 
 
-                                switch (alt103) {
+                                switch (alt106) {
                             	case 1 :
-                            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3109:4: otherlv_3= ',' ( (lv_parameter_4_0= ruleParameter ) )
+                            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3175:4: otherlv_3= ',' ( (lv_parameter_4_0= ruleParameter ) )
                             	    {
-                            	    otherlv_3=(Token)match(input,27,FOLLOW_27_in_ruleClassDef6465); 
+                            	    otherlv_3=(Token)match(input,27,FOLLOW_27_in_ruleClassDef6573); 
 
                             	        	newLeafNode(otherlv_3, grammarAccess.getClassDefAccess().getCommaKeyword_1_1_1_0());
                             	        
-                            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3113:1: ( (lv_parameter_4_0= ruleParameter ) )
-                            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3114:1: (lv_parameter_4_0= ruleParameter )
+                            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3179:1: ( (lv_parameter_4_0= ruleParameter ) )
+                            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3180:1: (lv_parameter_4_0= ruleParameter )
                             	    {
-                            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3114:1: (lv_parameter_4_0= ruleParameter )
-                            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3115:3: lv_parameter_4_0= ruleParameter
+                            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3180:1: (lv_parameter_4_0= ruleParameter )
+                            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3181:3: lv_parameter_4_0= ruleParameter
                             	    {
                             	     
                             	    	        newCompositeNode(grammarAccess.getClassDefAccess().getParameterParameterParserRuleCall_1_1_1_1_0()); 
                             	    	    
-                            	    pushFollow(FOLLOW_ruleParameter_in_ruleClassDef6486);
+                            	    pushFollow(FOLLOW_ruleParameter_in_ruleClassDef6594);
                             	    lv_parameter_4_0=ruleParameter();
 
                             	    state._fsp--;
@@ -9025,7 +9190,7 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
                             	    break;
 
                             	default :
-                            	    break loop103;
+                            	    break loop106;
                                 }
                             } while (true);
 
@@ -9035,7 +9200,7 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
                     }
 
-                    otherlv_5=(Token)match(input,72,FOLLOW_72_in_ruleClassDef6502); 
+                    otherlv_5=(Token)match(input,72,FOLLOW_72_in_ruleClassDef6610); 
 
                         	newLeafNode(otherlv_5, grammarAccess.getClassDefAccess().getRightParenthesisKeyword_1_2());
                         
@@ -9066,7 +9231,7 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleParameter"
-    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3143:1: entryRuleParameter returns [EObject current=null] : iv_ruleParameter= ruleParameter EOF ;
+    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3209:1: entryRuleParameter returns [EObject current=null] : iv_ruleParameter= ruleParameter EOF ;
     public final EObject entryRuleParameter() throws RecognitionException {
         EObject current = null;
 
@@ -9074,17 +9239,17 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3144:2: (iv_ruleParameter= ruleParameter EOF )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3145:2: iv_ruleParameter= ruleParameter EOF
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3210:2: (iv_ruleParameter= ruleParameter EOF )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3211:2: iv_ruleParameter= ruleParameter EOF
             {
              newCompositeNode(grammarAccess.getParameterRule()); 
-            pushFollow(FOLLOW_ruleParameter_in_entryRuleParameter6540);
+            pushFollow(FOLLOW_ruleParameter_in_entryRuleParameter6648);
             iv_ruleParameter=ruleParameter();
 
             state._fsp--;
 
              current =iv_ruleParameter; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleParameter6550); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleParameter6658); 
 
             }
 
@@ -9102,7 +9267,7 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleParameter"
-    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3152:1: ruleParameter returns [EObject current=null] : ( ( (lv_classDef_0_0= ruleClassDef ) ) | ( (lv_val_1_0= RULE_INT_LITERAL ) ) | ( (lv_val_real_2_0= RULE_REAL_LITERAL ) ) | ( (lv_string_3_0= RULE_STRING ) ) | ( (lv_listParameters_4_0= ruleListParameters ) ) ) ;
+    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3218:1: ruleParameter returns [EObject current=null] : ( ( (lv_classDef_0_0= ruleClassDef ) ) | ( (lv_val_1_0= RULE_INT_LITERAL ) ) | ( (lv_val_real_2_0= RULE_REAL_LITERAL ) ) | ( (lv_string_3_0= RULE_STRING ) ) | ( (lv_listParameters_4_0= ruleListParameters ) ) ) ;
     public final EObject ruleParameter() throws RecognitionException {
         EObject current = null;
 
@@ -9117,59 +9282,59 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3155:28: ( ( ( (lv_classDef_0_0= ruleClassDef ) ) | ( (lv_val_1_0= RULE_INT_LITERAL ) ) | ( (lv_val_real_2_0= RULE_REAL_LITERAL ) ) | ( (lv_string_3_0= RULE_STRING ) ) | ( (lv_listParameters_4_0= ruleListParameters ) ) ) )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3156:1: ( ( (lv_classDef_0_0= ruleClassDef ) ) | ( (lv_val_1_0= RULE_INT_LITERAL ) ) | ( (lv_val_real_2_0= RULE_REAL_LITERAL ) ) | ( (lv_string_3_0= RULE_STRING ) ) | ( (lv_listParameters_4_0= ruleListParameters ) ) )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3221:28: ( ( ( (lv_classDef_0_0= ruleClassDef ) ) | ( (lv_val_1_0= RULE_INT_LITERAL ) ) | ( (lv_val_real_2_0= RULE_REAL_LITERAL ) ) | ( (lv_string_3_0= RULE_STRING ) ) | ( (lv_listParameters_4_0= ruleListParameters ) ) ) )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3222:1: ( ( (lv_classDef_0_0= ruleClassDef ) ) | ( (lv_val_1_0= RULE_INT_LITERAL ) ) | ( (lv_val_real_2_0= RULE_REAL_LITERAL ) ) | ( (lv_string_3_0= RULE_STRING ) ) | ( (lv_listParameters_4_0= ruleListParameters ) ) )
             {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3156:1: ( ( (lv_classDef_0_0= ruleClassDef ) ) | ( (lv_val_1_0= RULE_INT_LITERAL ) ) | ( (lv_val_real_2_0= RULE_REAL_LITERAL ) ) | ( (lv_string_3_0= RULE_STRING ) ) | ( (lv_listParameters_4_0= ruleListParameters ) ) )
-            int alt106=5;
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3222:1: ( ( (lv_classDef_0_0= ruleClassDef ) ) | ( (lv_val_1_0= RULE_INT_LITERAL ) ) | ( (lv_val_real_2_0= RULE_REAL_LITERAL ) ) | ( (lv_string_3_0= RULE_STRING ) ) | ( (lv_listParameters_4_0= ruleListParameters ) ) )
+            int alt109=5;
             switch ( input.LA(1) ) {
             case RULE_ATOM:
             case RULE_VART:
                 {
-                alt106=1;
+                alt109=1;
                 }
                 break;
             case RULE_INT_LITERAL:
                 {
-                alt106=2;
+                alt109=2;
                 }
                 break;
             case RULE_REAL_LITERAL:
                 {
-                alt106=3;
+                alt109=3;
                 }
                 break;
             case RULE_STRING:
                 {
-                alt106=4;
+                alt109=4;
                 }
                 break;
             case 73:
                 {
-                alt106=5;
+                alt109=5;
                 }
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("", 106, 0, input);
+                    new NoViableAltException("", 109, 0, input);
 
                 throw nvae;
             }
 
-            switch (alt106) {
+            switch (alt109) {
                 case 1 :
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3156:2: ( (lv_classDef_0_0= ruleClassDef ) )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3222:2: ( (lv_classDef_0_0= ruleClassDef ) )
                     {
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3156:2: ( (lv_classDef_0_0= ruleClassDef ) )
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3157:1: (lv_classDef_0_0= ruleClassDef )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3222:2: ( (lv_classDef_0_0= ruleClassDef ) )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3223:1: (lv_classDef_0_0= ruleClassDef )
                     {
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3157:1: (lv_classDef_0_0= ruleClassDef )
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3158:3: lv_classDef_0_0= ruleClassDef
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3223:1: (lv_classDef_0_0= ruleClassDef )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3224:3: lv_classDef_0_0= ruleClassDef
                     {
                      
                     	        newCompositeNode(grammarAccess.getParameterAccess().getClassDefClassDefParserRuleCall_0_0()); 
                     	    
-                    pushFollow(FOLLOW_ruleClassDef_in_ruleParameter6596);
+                    pushFollow(FOLLOW_ruleClassDef_in_ruleParameter6704);
                     lv_classDef_0_0=ruleClassDef();
 
                     state._fsp--;
@@ -9195,15 +9360,15 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3175:6: ( (lv_val_1_0= RULE_INT_LITERAL ) )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3241:6: ( (lv_val_1_0= RULE_INT_LITERAL ) )
                     {
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3175:6: ( (lv_val_1_0= RULE_INT_LITERAL ) )
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3176:1: (lv_val_1_0= RULE_INT_LITERAL )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3241:6: ( (lv_val_1_0= RULE_INT_LITERAL ) )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3242:1: (lv_val_1_0= RULE_INT_LITERAL )
                     {
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3176:1: (lv_val_1_0= RULE_INT_LITERAL )
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3177:3: lv_val_1_0= RULE_INT_LITERAL
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3242:1: (lv_val_1_0= RULE_INT_LITERAL )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3243:3: lv_val_1_0= RULE_INT_LITERAL
                     {
-                    lv_val_1_0=(Token)match(input,RULE_INT_LITERAL,FOLLOW_RULE_INT_LITERAL_in_ruleParameter6619); 
+                    lv_val_1_0=(Token)match(input,RULE_INT_LITERAL,FOLLOW_RULE_INT_LITERAL_in_ruleParameter6727); 
 
                     			newLeafNode(lv_val_1_0, grammarAccess.getParameterAccess().getValINT_LITERALTerminalRuleCall_1_0()); 
                     		
@@ -9227,15 +9392,15 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 3 :
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3194:6: ( (lv_val_real_2_0= RULE_REAL_LITERAL ) )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3260:6: ( (lv_val_real_2_0= RULE_REAL_LITERAL ) )
                     {
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3194:6: ( (lv_val_real_2_0= RULE_REAL_LITERAL ) )
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3195:1: (lv_val_real_2_0= RULE_REAL_LITERAL )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3260:6: ( (lv_val_real_2_0= RULE_REAL_LITERAL ) )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3261:1: (lv_val_real_2_0= RULE_REAL_LITERAL )
                     {
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3195:1: (lv_val_real_2_0= RULE_REAL_LITERAL )
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3196:3: lv_val_real_2_0= RULE_REAL_LITERAL
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3261:1: (lv_val_real_2_0= RULE_REAL_LITERAL )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3262:3: lv_val_real_2_0= RULE_REAL_LITERAL
                     {
-                    lv_val_real_2_0=(Token)match(input,RULE_REAL_LITERAL,FOLLOW_RULE_REAL_LITERAL_in_ruleParameter6647); 
+                    lv_val_real_2_0=(Token)match(input,RULE_REAL_LITERAL,FOLLOW_RULE_REAL_LITERAL_in_ruleParameter6755); 
 
                     			newLeafNode(lv_val_real_2_0, grammarAccess.getParameterAccess().getVal_realREAL_LITERALTerminalRuleCall_2_0()); 
                     		
@@ -9259,15 +9424,15 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 4 :
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3213:6: ( (lv_string_3_0= RULE_STRING ) )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3279:6: ( (lv_string_3_0= RULE_STRING ) )
                     {
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3213:6: ( (lv_string_3_0= RULE_STRING ) )
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3214:1: (lv_string_3_0= RULE_STRING )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3279:6: ( (lv_string_3_0= RULE_STRING ) )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3280:1: (lv_string_3_0= RULE_STRING )
                     {
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3214:1: (lv_string_3_0= RULE_STRING )
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3215:3: lv_string_3_0= RULE_STRING
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3280:1: (lv_string_3_0= RULE_STRING )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3281:3: lv_string_3_0= RULE_STRING
                     {
-                    lv_string_3_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleParameter6675); 
+                    lv_string_3_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleParameter6783); 
 
                     			newLeafNode(lv_string_3_0, grammarAccess.getParameterAccess().getStringSTRINGTerminalRuleCall_3_0()); 
                     		
@@ -9291,18 +9456,18 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 5 :
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3232:6: ( (lv_listParameters_4_0= ruleListParameters ) )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3298:6: ( (lv_listParameters_4_0= ruleListParameters ) )
                     {
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3232:6: ( (lv_listParameters_4_0= ruleListParameters ) )
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3233:1: (lv_listParameters_4_0= ruleListParameters )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3298:6: ( (lv_listParameters_4_0= ruleListParameters ) )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3299:1: (lv_listParameters_4_0= ruleListParameters )
                     {
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3233:1: (lv_listParameters_4_0= ruleListParameters )
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3234:3: lv_listParameters_4_0= ruleListParameters
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3299:1: (lv_listParameters_4_0= ruleListParameters )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3300:3: lv_listParameters_4_0= ruleListParameters
                     {
                      
                     	        newCompositeNode(grammarAccess.getParameterAccess().getListParametersListParametersParserRuleCall_4_0()); 
                     	    
-                    pushFollow(FOLLOW_ruleListParameters_in_ruleParameter6707);
+                    pushFollow(FOLLOW_ruleListParameters_in_ruleParameter6815);
                     lv_listParameters_4_0=ruleListParameters();
 
                     state._fsp--;
@@ -9348,7 +9513,7 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleListParameters"
-    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3258:1: entryRuleListParameters returns [EObject current=null] : iv_ruleListParameters= ruleListParameters EOF ;
+    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3324:1: entryRuleListParameters returns [EObject current=null] : iv_ruleListParameters= ruleListParameters EOF ;
     public final EObject entryRuleListParameters() throws RecognitionException {
         EObject current = null;
 
@@ -9356,17 +9521,17 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3259:2: (iv_ruleListParameters= ruleListParameters EOF )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3260:2: iv_ruleListParameters= ruleListParameters EOF
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3325:2: (iv_ruleListParameters= ruleListParameters EOF )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3326:2: iv_ruleListParameters= ruleListParameters EOF
             {
              newCompositeNode(grammarAccess.getListParametersRule()); 
-            pushFollow(FOLLOW_ruleListParameters_in_entryRuleListParameters6743);
+            pushFollow(FOLLOW_ruleListParameters_in_entryRuleListParameters6851);
             iv_ruleListParameters=ruleListParameters();
 
             state._fsp--;
 
              current =iv_ruleListParameters; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleListParameters6753); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleListParameters6861); 
 
             }
 
@@ -9384,7 +9549,7 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleListParameters"
-    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3267:1: ruleListParameters returns [EObject current=null] : (otherlv_0= '[' ( (lv_parameter_1_0= ruleParameter ) ) (otherlv_2= ',' ( (lv_parameter_3_0= ruleParameter ) ) )* otherlv_4= ']' ) ;
+    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3333:1: ruleListParameters returns [EObject current=null] : (otherlv_0= '[' ( (lv_parameter_1_0= ruleParameter ) ) (otherlv_2= ',' ( (lv_parameter_3_0= ruleParameter ) ) )* otherlv_4= ']' ) ;
     public final EObject ruleListParameters() throws RecognitionException {
         EObject current = null;
 
@@ -9399,26 +9564,26 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3270:28: ( (otherlv_0= '[' ( (lv_parameter_1_0= ruleParameter ) ) (otherlv_2= ',' ( (lv_parameter_3_0= ruleParameter ) ) )* otherlv_4= ']' ) )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3271:1: (otherlv_0= '[' ( (lv_parameter_1_0= ruleParameter ) ) (otherlv_2= ',' ( (lv_parameter_3_0= ruleParameter ) ) )* otherlv_4= ']' )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3336:28: ( (otherlv_0= '[' ( (lv_parameter_1_0= ruleParameter ) ) (otherlv_2= ',' ( (lv_parameter_3_0= ruleParameter ) ) )* otherlv_4= ']' ) )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3337:1: (otherlv_0= '[' ( (lv_parameter_1_0= ruleParameter ) ) (otherlv_2= ',' ( (lv_parameter_3_0= ruleParameter ) ) )* otherlv_4= ']' )
             {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3271:1: (otherlv_0= '[' ( (lv_parameter_1_0= ruleParameter ) ) (otherlv_2= ',' ( (lv_parameter_3_0= ruleParameter ) ) )* otherlv_4= ']' )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3271:3: otherlv_0= '[' ( (lv_parameter_1_0= ruleParameter ) ) (otherlv_2= ',' ( (lv_parameter_3_0= ruleParameter ) ) )* otherlv_4= ']'
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3337:1: (otherlv_0= '[' ( (lv_parameter_1_0= ruleParameter ) ) (otherlv_2= ',' ( (lv_parameter_3_0= ruleParameter ) ) )* otherlv_4= ']' )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3337:3: otherlv_0= '[' ( (lv_parameter_1_0= ruleParameter ) ) (otherlv_2= ',' ( (lv_parameter_3_0= ruleParameter ) ) )* otherlv_4= ']'
             {
-            otherlv_0=(Token)match(input,73,FOLLOW_73_in_ruleListParameters6790); 
+            otherlv_0=(Token)match(input,73,FOLLOW_73_in_ruleListParameters6898); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getListParametersAccess().getLeftSquareBracketKeyword_0());
                 
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3275:1: ( (lv_parameter_1_0= ruleParameter ) )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3276:1: (lv_parameter_1_0= ruleParameter )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3341:1: ( (lv_parameter_1_0= ruleParameter ) )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3342:1: (lv_parameter_1_0= ruleParameter )
             {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3276:1: (lv_parameter_1_0= ruleParameter )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3277:3: lv_parameter_1_0= ruleParameter
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3342:1: (lv_parameter_1_0= ruleParameter )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3343:3: lv_parameter_1_0= ruleParameter
             {
              
             	        newCompositeNode(grammarAccess.getListParametersAccess().getParameterParameterParserRuleCall_1_0()); 
             	    
-            pushFollow(FOLLOW_ruleParameter_in_ruleListParameters6811);
+            pushFollow(FOLLOW_ruleParameter_in_ruleListParameters6919);
             lv_parameter_1_0=ruleParameter();
 
             state._fsp--;
@@ -9440,35 +9605,35 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3293:2: (otherlv_2= ',' ( (lv_parameter_3_0= ruleParameter ) ) )*
-            loop107:
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3359:2: (otherlv_2= ',' ( (lv_parameter_3_0= ruleParameter ) ) )*
+            loop110:
             do {
-                int alt107=2;
-                int LA107_0 = input.LA(1);
+                int alt110=2;
+                int LA110_0 = input.LA(1);
 
-                if ( (LA107_0==27) ) {
-                    alt107=1;
+                if ( (LA110_0==27) ) {
+                    alt110=1;
                 }
 
 
-                switch (alt107) {
+                switch (alt110) {
             	case 1 :
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3293:4: otherlv_2= ',' ( (lv_parameter_3_0= ruleParameter ) )
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3359:4: otherlv_2= ',' ( (lv_parameter_3_0= ruleParameter ) )
             	    {
-            	    otherlv_2=(Token)match(input,27,FOLLOW_27_in_ruleListParameters6824); 
+            	    otherlv_2=(Token)match(input,27,FOLLOW_27_in_ruleListParameters6932); 
 
             	        	newLeafNode(otherlv_2, grammarAccess.getListParametersAccess().getCommaKeyword_2_0());
             	        
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3297:1: ( (lv_parameter_3_0= ruleParameter ) )
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3298:1: (lv_parameter_3_0= ruleParameter )
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3363:1: ( (lv_parameter_3_0= ruleParameter ) )
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3364:1: (lv_parameter_3_0= ruleParameter )
             	    {
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3298:1: (lv_parameter_3_0= ruleParameter )
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3299:3: lv_parameter_3_0= ruleParameter
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3364:1: (lv_parameter_3_0= ruleParameter )
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3365:3: lv_parameter_3_0= ruleParameter
             	    {
             	     
             	    	        newCompositeNode(grammarAccess.getListParametersAccess().getParameterParameterParserRuleCall_2_1_0()); 
             	    	    
-            	    pushFollow(FOLLOW_ruleParameter_in_ruleListParameters6845);
+            	    pushFollow(FOLLOW_ruleParameter_in_ruleListParameters6953);
             	    lv_parameter_3_0=ruleParameter();
 
             	    state._fsp--;
@@ -9495,11 +9660,11 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    break loop107;
+            	    break loop110;
                 }
             } while (true);
 
-            otherlv_4=(Token)match(input,74,FOLLOW_74_in_ruleListParameters6859); 
+            otherlv_4=(Token)match(input,74,FOLLOW_74_in_ruleListParameters6967); 
 
                 	newLeafNode(otherlv_4, grammarAccess.getListParametersAccess().getRightSquareBracketKeyword_3());
                 
@@ -9524,7 +9689,7 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleLiteral"
-    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3327:1: entryRuleLiteral returns [EObject current=null] : iv_ruleLiteral= ruleLiteral EOF ;
+    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3393:1: entryRuleLiteral returns [EObject current=null] : iv_ruleLiteral= ruleLiteral EOF ;
     public final EObject entryRuleLiteral() throws RecognitionException {
         EObject current = null;
 
@@ -9532,17 +9697,17 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3328:2: (iv_ruleLiteral= ruleLiteral EOF )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3329:2: iv_ruleLiteral= ruleLiteral EOF
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3394:2: (iv_ruleLiteral= ruleLiteral EOF )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3395:2: iv_ruleLiteral= ruleLiteral EOF
             {
              newCompositeNode(grammarAccess.getLiteralRule()); 
-            pushFollow(FOLLOW_ruleLiteral_in_entryRuleLiteral6895);
+            pushFollow(FOLLOW_ruleLiteral_in_entryRuleLiteral7003);
             iv_ruleLiteral=ruleLiteral();
 
             state._fsp--;
 
              current =iv_ruleLiteral; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleLiteral6905); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleLiteral7013); 
 
             }
 
@@ -9560,7 +9725,7 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleLiteral"
-    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3336:1: ruleLiteral returns [EObject current=null] : ( () ( ( (otherlv_1= '~' )? ( ( (lv_pred_2_0= rulePred ) ) | ( (lv_var_3_0= ruleVar ) ) ) ) | otherlv_4= 'true' | otherlv_5= 'false' ) ) ;
+    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3402:1: ruleLiteral returns [EObject current=null] : ( () ( ( (otherlv_1= '~' )? ( ( (lv_pred_2_0= rulePred ) ) | ( (lv_var_3_0= ruleVar ) ) ) ) | otherlv_4= 'true' | otherlv_5= 'false' ) ) ;
     public final EObject ruleLiteral() throws RecognitionException {
         EObject current = null;
 
@@ -9575,14 +9740,14 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3339:28: ( ( () ( ( (otherlv_1= '~' )? ( ( (lv_pred_2_0= rulePred ) ) | ( (lv_var_3_0= ruleVar ) ) ) ) | otherlv_4= 'true' | otherlv_5= 'false' ) ) )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3340:1: ( () ( ( (otherlv_1= '~' )? ( ( (lv_pred_2_0= rulePred ) ) | ( (lv_var_3_0= ruleVar ) ) ) ) | otherlv_4= 'true' | otherlv_5= 'false' ) )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3405:28: ( ( () ( ( (otherlv_1= '~' )? ( ( (lv_pred_2_0= rulePred ) ) | ( (lv_var_3_0= ruleVar ) ) ) ) | otherlv_4= 'true' | otherlv_5= 'false' ) ) )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3406:1: ( () ( ( (otherlv_1= '~' )? ( ( (lv_pred_2_0= rulePred ) ) | ( (lv_var_3_0= ruleVar ) ) ) ) | otherlv_4= 'true' | otherlv_5= 'false' ) )
             {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3340:1: ( () ( ( (otherlv_1= '~' )? ( ( (lv_pred_2_0= rulePred ) ) | ( (lv_var_3_0= ruleVar ) ) ) ) | otherlv_4= 'true' | otherlv_5= 'false' ) )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3340:2: () ( ( (otherlv_1= '~' )? ( ( (lv_pred_2_0= rulePred ) ) | ( (lv_var_3_0= ruleVar ) ) ) ) | otherlv_4= 'true' | otherlv_5= 'false' )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3406:1: ( () ( ( (otherlv_1= '~' )? ( ( (lv_pred_2_0= rulePred ) ) | ( (lv_var_3_0= ruleVar ) ) ) ) | otherlv_4= 'true' | otherlv_5= 'false' ) )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3406:2: () ( ( (otherlv_1= '~' )? ( ( (lv_pred_2_0= rulePred ) ) | ( (lv_var_3_0= ruleVar ) ) ) ) | otherlv_4= 'true' | otherlv_5= 'false' )
             {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3340:2: ()
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3341:5: 
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3406:2: ()
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3407:5: 
             {
 
                     current = forceCreateModelElement(
@@ -9592,8 +9757,8 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3346:2: ( ( (otherlv_1= '~' )? ( ( (lv_pred_2_0= rulePred ) ) | ( (lv_var_3_0= ruleVar ) ) ) ) | otherlv_4= 'true' | otherlv_5= 'false' )
-            int alt110=3;
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3412:2: ( ( (otherlv_1= '~' )? ( ( (lv_pred_2_0= rulePred ) ) | ( (lv_var_3_0= ruleVar ) ) ) ) | otherlv_4= 'true' | otherlv_5= 'false' )
+            int alt113=3;
             switch ( input.LA(1) ) {
             case RULE_ATOM:
             case RULE_VART:
@@ -9602,45 +9767,45 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
             case 78:
             case 79:
                 {
-                alt110=1;
+                alt113=1;
                 }
                 break;
             case 76:
                 {
-                alt110=2;
+                alt113=2;
                 }
                 break;
             case 77:
                 {
-                alt110=3;
+                alt113=3;
                 }
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("", 110, 0, input);
+                    new NoViableAltException("", 113, 0, input);
 
                 throw nvae;
             }
 
-            switch (alt110) {
+            switch (alt113) {
                 case 1 :
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3346:3: ( (otherlv_1= '~' )? ( ( (lv_pred_2_0= rulePred ) ) | ( (lv_var_3_0= ruleVar ) ) ) )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3412:3: ( (otherlv_1= '~' )? ( ( (lv_pred_2_0= rulePred ) ) | ( (lv_var_3_0= ruleVar ) ) ) )
                     {
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3346:3: ( (otherlv_1= '~' )? ( ( (lv_pred_2_0= rulePred ) ) | ( (lv_var_3_0= ruleVar ) ) ) )
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3346:4: (otherlv_1= '~' )? ( ( (lv_pred_2_0= rulePred ) ) | ( (lv_var_3_0= ruleVar ) ) )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3412:3: ( (otherlv_1= '~' )? ( ( (lv_pred_2_0= rulePred ) ) | ( (lv_var_3_0= ruleVar ) ) ) )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3412:4: (otherlv_1= '~' )? ( ( (lv_pred_2_0= rulePred ) ) | ( (lv_var_3_0= ruleVar ) ) )
                     {
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3346:4: (otherlv_1= '~' )?
-                    int alt108=2;
-                    int LA108_0 = input.LA(1);
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3412:4: (otherlv_1= '~' )?
+                    int alt111=2;
+                    int LA111_0 = input.LA(1);
 
-                    if ( (LA108_0==75) ) {
-                        alt108=1;
+                    if ( (LA111_0==75) ) {
+                        alt111=1;
                     }
-                    switch (alt108) {
+                    switch (alt111) {
                         case 1 :
-                            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3346:6: otherlv_1= '~'
+                            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3412:6: otherlv_1= '~'
                             {
-                            otherlv_1=(Token)match(input,75,FOLLOW_75_in_ruleLiteral6954); 
+                            otherlv_1=(Token)match(input,75,FOLLOW_75_in_ruleLiteral7062); 
 
                                 	newLeafNode(otherlv_1, grammarAccess.getLiteralAccess().getTildeKeyword_1_0_0());
                                 
@@ -9650,36 +9815,36 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
                     }
 
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3350:3: ( ( (lv_pred_2_0= rulePred ) ) | ( (lv_var_3_0= ruleVar ) ) )
-                    int alt109=2;
-                    int LA109_0 = input.LA(1);
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3416:3: ( ( (lv_pred_2_0= rulePred ) ) | ( (lv_var_3_0= ruleVar ) ) )
+                    int alt112=2;
+                    int LA112_0 = input.LA(1);
 
-                    if ( (LA109_0==RULE_ATOM||(LA109_0>=78 && LA109_0<=79)) ) {
-                        alt109=1;
+                    if ( (LA112_0==RULE_ATOM||(LA112_0>=78 && LA112_0<=79)) ) {
+                        alt112=1;
                     }
-                    else if ( ((LA109_0>=RULE_VART && LA109_0<=RULE_UNNAMEDVART)) ) {
-                        alt109=2;
+                    else if ( ((LA112_0>=RULE_VART && LA112_0<=RULE_UNNAMEDVART)) ) {
+                        alt112=2;
                     }
                     else {
                         NoViableAltException nvae =
-                            new NoViableAltException("", 109, 0, input);
+                            new NoViableAltException("", 112, 0, input);
 
                         throw nvae;
                     }
-                    switch (alt109) {
+                    switch (alt112) {
                         case 1 :
-                            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3350:4: ( (lv_pred_2_0= rulePred ) )
+                            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3416:4: ( (lv_pred_2_0= rulePred ) )
                             {
-                            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3350:4: ( (lv_pred_2_0= rulePred ) )
-                            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3351:1: (lv_pred_2_0= rulePred )
+                            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3416:4: ( (lv_pred_2_0= rulePred ) )
+                            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3417:1: (lv_pred_2_0= rulePred )
                             {
-                            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3351:1: (lv_pred_2_0= rulePred )
-                            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3352:3: lv_pred_2_0= rulePred
+                            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3417:1: (lv_pred_2_0= rulePred )
+                            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3418:3: lv_pred_2_0= rulePred
                             {
                              
                             	        newCompositeNode(grammarAccess.getLiteralAccess().getPredPredParserRuleCall_1_0_1_0_0()); 
                             	    
-                            pushFollow(FOLLOW_rulePred_in_ruleLiteral6978);
+                            pushFollow(FOLLOW_rulePred_in_ruleLiteral7086);
                             lv_pred_2_0=rulePred();
 
                             state._fsp--;
@@ -9705,18 +9870,18 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
                             }
                             break;
                         case 2 :
-                            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3369:6: ( (lv_var_3_0= ruleVar ) )
+                            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3435:6: ( (lv_var_3_0= ruleVar ) )
                             {
-                            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3369:6: ( (lv_var_3_0= ruleVar ) )
-                            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3370:1: (lv_var_3_0= ruleVar )
+                            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3435:6: ( (lv_var_3_0= ruleVar ) )
+                            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3436:1: (lv_var_3_0= ruleVar )
                             {
-                            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3370:1: (lv_var_3_0= ruleVar )
-                            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3371:3: lv_var_3_0= ruleVar
+                            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3436:1: (lv_var_3_0= ruleVar )
+                            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3437:3: lv_var_3_0= ruleVar
                             {
                              
                             	        newCompositeNode(grammarAccess.getLiteralAccess().getVarVarParserRuleCall_1_0_1_1_0()); 
                             	    
-                            pushFollow(FOLLOW_ruleVar_in_ruleLiteral7005);
+                            pushFollow(FOLLOW_ruleVar_in_ruleLiteral7113);
                             lv_var_3_0=ruleVar();
 
                             state._fsp--;
@@ -9751,9 +9916,9 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3388:7: otherlv_4= 'true'
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3454:7: otherlv_4= 'true'
                     {
-                    otherlv_4=(Token)match(input,76,FOLLOW_76_in_ruleLiteral7025); 
+                    otherlv_4=(Token)match(input,76,FOLLOW_76_in_ruleLiteral7133); 
 
                         	newLeafNode(otherlv_4, grammarAccess.getLiteralAccess().getTrueKeyword_1_1());
                         
@@ -9761,9 +9926,9 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 3 :
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3393:7: otherlv_5= 'false'
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3459:7: otherlv_5= 'false'
                     {
-                    otherlv_5=(Token)match(input,77,FOLLOW_77_in_ruleLiteral7043); 
+                    otherlv_5=(Token)match(input,77,FOLLOW_77_in_ruleLiteral7151); 
 
                         	newLeafNode(otherlv_5, grammarAccess.getLiteralAccess().getFalseKeyword_1_2());
                         
@@ -9794,7 +9959,7 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRulePred"
-    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3405:1: entryRulePred returns [EObject current=null] : iv_rulePred= rulePred EOF ;
+    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3471:1: entryRulePred returns [EObject current=null] : iv_rulePred= rulePred EOF ;
     public final EObject entryRulePred() throws RecognitionException {
         EObject current = null;
 
@@ -9802,17 +9967,17 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3406:2: (iv_rulePred= rulePred EOF )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3407:2: iv_rulePred= rulePred EOF
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3472:2: (iv_rulePred= rulePred EOF )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3473:2: iv_rulePred= rulePred EOF
             {
              newCompositeNode(grammarAccess.getPredRule()); 
-            pushFollow(FOLLOW_rulePred_in_entryRulePred7080);
+            pushFollow(FOLLOW_rulePred_in_entryRulePred7188);
             iv_rulePred=rulePred();
 
             state._fsp--;
 
              current =iv_rulePred; 
-            match(input,EOF,FOLLOW_EOF_in_entryRulePred7090); 
+            match(input,EOF,FOLLOW_EOF_in_entryRulePred7198); 
 
             }
 
@@ -9830,7 +9995,7 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "rulePred"
-    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3414:1: rulePred returns [EObject current=null] : ( () ( ( (lv_atom_1_0= RULE_ATOM ) ) | otherlv_2= 'begin' | otherlv_3= 'end' ) (otherlv_4= '(' ( (lv_terms_5_0= ruleTerms ) ) otherlv_6= ')' )? ( (lv_list_7_0= ruleList ) )? ) ;
+    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3480:1: rulePred returns [EObject current=null] : ( () ( ( (lv_atom_1_0= RULE_ATOM ) ) | otherlv_2= 'begin' | otherlv_3= 'end' ) (otherlv_4= '(' ( (lv_terms_5_0= ruleTerms ) ) otherlv_6= ')' )? ( (lv_list_7_0= ruleList ) )? ) ;
     public final EObject rulePred() throws RecognitionException {
         EObject current = null;
 
@@ -9847,14 +10012,14 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3417:28: ( ( () ( ( (lv_atom_1_0= RULE_ATOM ) ) | otherlv_2= 'begin' | otherlv_3= 'end' ) (otherlv_4= '(' ( (lv_terms_5_0= ruleTerms ) ) otherlv_6= ')' )? ( (lv_list_7_0= ruleList ) )? ) )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3418:1: ( () ( ( (lv_atom_1_0= RULE_ATOM ) ) | otherlv_2= 'begin' | otherlv_3= 'end' ) (otherlv_4= '(' ( (lv_terms_5_0= ruleTerms ) ) otherlv_6= ')' )? ( (lv_list_7_0= ruleList ) )? )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3483:28: ( ( () ( ( (lv_atom_1_0= RULE_ATOM ) ) | otherlv_2= 'begin' | otherlv_3= 'end' ) (otherlv_4= '(' ( (lv_terms_5_0= ruleTerms ) ) otherlv_6= ')' )? ( (lv_list_7_0= ruleList ) )? ) )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3484:1: ( () ( ( (lv_atom_1_0= RULE_ATOM ) ) | otherlv_2= 'begin' | otherlv_3= 'end' ) (otherlv_4= '(' ( (lv_terms_5_0= ruleTerms ) ) otherlv_6= ')' )? ( (lv_list_7_0= ruleList ) )? )
             {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3418:1: ( () ( ( (lv_atom_1_0= RULE_ATOM ) ) | otherlv_2= 'begin' | otherlv_3= 'end' ) (otherlv_4= '(' ( (lv_terms_5_0= ruleTerms ) ) otherlv_6= ')' )? ( (lv_list_7_0= ruleList ) )? )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3418:2: () ( ( (lv_atom_1_0= RULE_ATOM ) ) | otherlv_2= 'begin' | otherlv_3= 'end' ) (otherlv_4= '(' ( (lv_terms_5_0= ruleTerms ) ) otherlv_6= ')' )? ( (lv_list_7_0= ruleList ) )?
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3484:1: ( () ( ( (lv_atom_1_0= RULE_ATOM ) ) | otherlv_2= 'begin' | otherlv_3= 'end' ) (otherlv_4= '(' ( (lv_terms_5_0= ruleTerms ) ) otherlv_6= ')' )? ( (lv_list_7_0= ruleList ) )? )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3484:2: () ( ( (lv_atom_1_0= RULE_ATOM ) ) | otherlv_2= 'begin' | otherlv_3= 'end' ) (otherlv_4= '(' ( (lv_terms_5_0= ruleTerms ) ) otherlv_6= ')' )? ( (lv_list_7_0= ruleList ) )?
             {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3418:2: ()
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3419:5: 
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3484:2: ()
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3485:5: 
             {
 
                     current = forceCreateModelElement(
@@ -9864,42 +10029,42 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3424:2: ( ( (lv_atom_1_0= RULE_ATOM ) ) | otherlv_2= 'begin' | otherlv_3= 'end' )
-            int alt111=3;
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3490:2: ( ( (lv_atom_1_0= RULE_ATOM ) ) | otherlv_2= 'begin' | otherlv_3= 'end' )
+            int alt114=3;
             switch ( input.LA(1) ) {
             case RULE_ATOM:
                 {
-                alt111=1;
+                alt114=1;
                 }
                 break;
             case 78:
                 {
-                alt111=2;
+                alt114=2;
                 }
                 break;
             case 79:
                 {
-                alt111=3;
+                alt114=3;
                 }
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("", 111, 0, input);
+                    new NoViableAltException("", 114, 0, input);
 
                 throw nvae;
             }
 
-            switch (alt111) {
+            switch (alt114) {
                 case 1 :
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3424:3: ( (lv_atom_1_0= RULE_ATOM ) )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3490:3: ( (lv_atom_1_0= RULE_ATOM ) )
                     {
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3424:3: ( (lv_atom_1_0= RULE_ATOM ) )
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3425:1: (lv_atom_1_0= RULE_ATOM )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3490:3: ( (lv_atom_1_0= RULE_ATOM ) )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3491:1: (lv_atom_1_0= RULE_ATOM )
                     {
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3425:1: (lv_atom_1_0= RULE_ATOM )
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3426:3: lv_atom_1_0= RULE_ATOM
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3491:1: (lv_atom_1_0= RULE_ATOM )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3492:3: lv_atom_1_0= RULE_ATOM
                     {
-                    lv_atom_1_0=(Token)match(input,RULE_ATOM,FOLLOW_RULE_ATOM_in_rulePred7142); 
+                    lv_atom_1_0=(Token)match(input,RULE_ATOM,FOLLOW_RULE_ATOM_in_rulePred7250); 
 
                     			newLeafNode(lv_atom_1_0, grammarAccess.getPredAccess().getAtomATOMTerminalRuleCall_1_0_0()); 
                     		
@@ -9923,9 +10088,9 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3443:7: otherlv_2= 'begin'
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3509:7: otherlv_2= 'begin'
                     {
-                    otherlv_2=(Token)match(input,78,FOLLOW_78_in_rulePred7165); 
+                    otherlv_2=(Token)match(input,78,FOLLOW_78_in_rulePred7273); 
 
                         	newLeafNode(otherlv_2, grammarAccess.getPredAccess().getBeginKeyword_1_1());
                         
@@ -9933,9 +10098,9 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 3 :
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3448:7: otherlv_3= 'end'
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3514:7: otherlv_3= 'end'
                     {
-                    otherlv_3=(Token)match(input,79,FOLLOW_79_in_rulePred7183); 
+                    otherlv_3=(Token)match(input,79,FOLLOW_79_in_rulePred7291); 
 
                         	newLeafNode(otherlv_3, grammarAccess.getPredAccess().getEndKeyword_1_2());
                         
@@ -9945,31 +10110,31 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3452:2: (otherlv_4= '(' ( (lv_terms_5_0= ruleTerms ) ) otherlv_6= ')' )?
-            int alt112=2;
-            int LA112_0 = input.LA(1);
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3518:2: (otherlv_4= '(' ( (lv_terms_5_0= ruleTerms ) ) otherlv_6= ')' )?
+            int alt115=2;
+            int LA115_0 = input.LA(1);
 
-            if ( (LA112_0==71) ) {
-                alt112=1;
+            if ( (LA115_0==71) ) {
+                alt115=1;
             }
-            switch (alt112) {
+            switch (alt115) {
                 case 1 :
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3452:4: otherlv_4= '(' ( (lv_terms_5_0= ruleTerms ) ) otherlv_6= ')'
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3518:4: otherlv_4= '(' ( (lv_terms_5_0= ruleTerms ) ) otherlv_6= ')'
                     {
-                    otherlv_4=(Token)match(input,71,FOLLOW_71_in_rulePred7197); 
+                    otherlv_4=(Token)match(input,71,FOLLOW_71_in_rulePred7305); 
 
                         	newLeafNode(otherlv_4, grammarAccess.getPredAccess().getLeftParenthesisKeyword_2_0());
                         
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3456:1: ( (lv_terms_5_0= ruleTerms ) )
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3457:1: (lv_terms_5_0= ruleTerms )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3522:1: ( (lv_terms_5_0= ruleTerms ) )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3523:1: (lv_terms_5_0= ruleTerms )
                     {
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3457:1: (lv_terms_5_0= ruleTerms )
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3458:3: lv_terms_5_0= ruleTerms
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3523:1: (lv_terms_5_0= ruleTerms )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3524:3: lv_terms_5_0= ruleTerms
                     {
                      
                     	        newCompositeNode(grammarAccess.getPredAccess().getTermsTermsParserRuleCall_2_1_0()); 
                     	    
-                    pushFollow(FOLLOW_ruleTerms_in_rulePred7218);
+                    pushFollow(FOLLOW_ruleTerms_in_rulePred7326);
                     lv_terms_5_0=ruleTerms();
 
                     state._fsp--;
@@ -9991,7 +10156,7 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
                     }
 
-                    otherlv_6=(Token)match(input,72,FOLLOW_72_in_rulePred7230); 
+                    otherlv_6=(Token)match(input,72,FOLLOW_72_in_rulePred7338); 
 
                         	newLeafNode(otherlv_6, grammarAccess.getPredAccess().getRightParenthesisKeyword_2_2());
                         
@@ -10001,24 +10166,24 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3478:3: ( (lv_list_7_0= ruleList ) )?
-            int alt113=2;
-            int LA113_0 = input.LA(1);
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3544:3: ( (lv_list_7_0= ruleList ) )?
+            int alt116=2;
+            int LA116_0 = input.LA(1);
 
-            if ( (LA113_0==73) ) {
-                alt113=1;
+            if ( (LA116_0==73) ) {
+                alt116=1;
             }
-            switch (alt113) {
+            switch (alt116) {
                 case 1 :
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3479:1: (lv_list_7_0= ruleList )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3545:1: (lv_list_7_0= ruleList )
                     {
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3479:1: (lv_list_7_0= ruleList )
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3480:3: lv_list_7_0= ruleList
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3545:1: (lv_list_7_0= ruleList )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3546:3: lv_list_7_0= ruleList
                     {
                      
                     	        newCompositeNode(grammarAccess.getPredAccess().getListListParserRuleCall_3_0()); 
                     	    
-                    pushFollow(FOLLOW_ruleList_in_rulePred7253);
+                    pushFollow(FOLLOW_ruleList_in_rulePred7361);
                     lv_list_7_0=ruleList();
 
                     state._fsp--;
@@ -10064,7 +10229,7 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleTerms"
-    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3504:1: entryRuleTerms returns [EObject current=null] : iv_ruleTerms= ruleTerms EOF ;
+    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3570:1: entryRuleTerms returns [EObject current=null] : iv_ruleTerms= ruleTerms EOF ;
     public final EObject entryRuleTerms() throws RecognitionException {
         EObject current = null;
 
@@ -10072,17 +10237,17 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3505:2: (iv_ruleTerms= ruleTerms EOF )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3506:2: iv_ruleTerms= ruleTerms EOF
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3571:2: (iv_ruleTerms= ruleTerms EOF )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3572:2: iv_ruleTerms= ruleTerms EOF
             {
              newCompositeNode(grammarAccess.getTermsRule()); 
-            pushFollow(FOLLOW_ruleTerms_in_entryRuleTerms7290);
+            pushFollow(FOLLOW_ruleTerms_in_entryRuleTerms7398);
             iv_ruleTerms=ruleTerms();
 
             state._fsp--;
 
              current =iv_ruleTerms; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleTerms7300); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleTerms7408); 
 
             }
 
@@ -10100,7 +10265,7 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleTerms"
-    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3513:1: ruleTerms returns [EObject current=null] : ( ( (lv_term_0_0= ruleTerm ) ) (otherlv_1= ',' ( (lv_term_2_0= ruleTerm ) ) )* ) ;
+    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3579:1: ruleTerms returns [EObject current=null] : ( ( (lv_term_0_0= ruleTerm ) ) (otherlv_1= ',' ( (lv_term_2_0= ruleTerm ) ) )* ) ;
     public final EObject ruleTerms() throws RecognitionException {
         EObject current = null;
 
@@ -10113,22 +10278,22 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3516:28: ( ( ( (lv_term_0_0= ruleTerm ) ) (otherlv_1= ',' ( (lv_term_2_0= ruleTerm ) ) )* ) )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3517:1: ( ( (lv_term_0_0= ruleTerm ) ) (otherlv_1= ',' ( (lv_term_2_0= ruleTerm ) ) )* )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3582:28: ( ( ( (lv_term_0_0= ruleTerm ) ) (otherlv_1= ',' ( (lv_term_2_0= ruleTerm ) ) )* ) )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3583:1: ( ( (lv_term_0_0= ruleTerm ) ) (otherlv_1= ',' ( (lv_term_2_0= ruleTerm ) ) )* )
             {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3517:1: ( ( (lv_term_0_0= ruleTerm ) ) (otherlv_1= ',' ( (lv_term_2_0= ruleTerm ) ) )* )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3517:2: ( (lv_term_0_0= ruleTerm ) ) (otherlv_1= ',' ( (lv_term_2_0= ruleTerm ) ) )*
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3583:1: ( ( (lv_term_0_0= ruleTerm ) ) (otherlv_1= ',' ( (lv_term_2_0= ruleTerm ) ) )* )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3583:2: ( (lv_term_0_0= ruleTerm ) ) (otherlv_1= ',' ( (lv_term_2_0= ruleTerm ) ) )*
             {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3517:2: ( (lv_term_0_0= ruleTerm ) )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3518:1: (lv_term_0_0= ruleTerm )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3583:2: ( (lv_term_0_0= ruleTerm ) )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3584:1: (lv_term_0_0= ruleTerm )
             {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3518:1: (lv_term_0_0= ruleTerm )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3519:3: lv_term_0_0= ruleTerm
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3584:1: (lv_term_0_0= ruleTerm )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3585:3: lv_term_0_0= ruleTerm
             {
              
             	        newCompositeNode(grammarAccess.getTermsAccess().getTermTermParserRuleCall_0_0()); 
             	    
-            pushFollow(FOLLOW_ruleTerm_in_ruleTerms7346);
+            pushFollow(FOLLOW_ruleTerm_in_ruleTerms7454);
             lv_term_0_0=ruleTerm();
 
             state._fsp--;
@@ -10150,35 +10315,35 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3535:2: (otherlv_1= ',' ( (lv_term_2_0= ruleTerm ) ) )*
-            loop114:
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3601:2: (otherlv_1= ',' ( (lv_term_2_0= ruleTerm ) ) )*
+            loop117:
             do {
-                int alt114=2;
-                int LA114_0 = input.LA(1);
+                int alt117=2;
+                int LA117_0 = input.LA(1);
 
-                if ( (LA114_0==27) ) {
-                    alt114=1;
+                if ( (LA117_0==27) ) {
+                    alt117=1;
                 }
 
 
-                switch (alt114) {
+                switch (alt117) {
             	case 1 :
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3535:4: otherlv_1= ',' ( (lv_term_2_0= ruleTerm ) )
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3601:4: otherlv_1= ',' ( (lv_term_2_0= ruleTerm ) )
             	    {
-            	    otherlv_1=(Token)match(input,27,FOLLOW_27_in_ruleTerms7359); 
+            	    otherlv_1=(Token)match(input,27,FOLLOW_27_in_ruleTerms7467); 
 
             	        	newLeafNode(otherlv_1, grammarAccess.getTermsAccess().getCommaKeyword_1_0());
             	        
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3539:1: ( (lv_term_2_0= ruleTerm ) )
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3540:1: (lv_term_2_0= ruleTerm )
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3605:1: ( (lv_term_2_0= ruleTerm ) )
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3606:1: (lv_term_2_0= ruleTerm )
             	    {
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3540:1: (lv_term_2_0= ruleTerm )
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3541:3: lv_term_2_0= ruleTerm
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3606:1: (lv_term_2_0= ruleTerm )
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3607:3: lv_term_2_0= ruleTerm
             	    {
             	     
             	    	        newCompositeNode(grammarAccess.getTermsAccess().getTermTermParserRuleCall_1_1_0()); 
             	    	    
-            	    pushFollow(FOLLOW_ruleTerm_in_ruleTerms7380);
+            	    pushFollow(FOLLOW_ruleTerm_in_ruleTerms7488);
             	    lv_term_2_0=ruleTerm();
 
             	    state._fsp--;
@@ -10205,7 +10370,7 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    break loop114;
+            	    break loop117;
                 }
             } while (true);
 
@@ -10230,7 +10395,7 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleTerm"
-    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3565:1: entryRuleTerm returns [EObject current=null] : iv_ruleTerm= ruleTerm EOF ;
+    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3631:1: entryRuleTerm returns [EObject current=null] : iv_ruleTerm= ruleTerm EOF ;
     public final EObject entryRuleTerm() throws RecognitionException {
         EObject current = null;
 
@@ -10238,17 +10403,17 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3566:2: (iv_ruleTerm= ruleTerm EOF )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3567:2: iv_ruleTerm= ruleTerm EOF
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3632:2: (iv_ruleTerm= ruleTerm EOF )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3633:2: iv_ruleTerm= ruleTerm EOF
             {
              newCompositeNode(grammarAccess.getTermRule()); 
-            pushFollow(FOLLOW_ruleTerm_in_entryRuleTerm7418);
+            pushFollow(FOLLOW_ruleTerm_in_entryRuleTerm7526);
             iv_ruleTerm=ruleTerm();
 
             state._fsp--;
 
              current =iv_ruleTerm; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleTerm7428); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleTerm7536); 
 
             }
 
@@ -10266,7 +10431,7 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleTerm"
-    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3574:1: ruleTerm returns [EObject current=null] : ( ( (lv_list_0_0= ruleList ) ) | ( (lv_literal_1_0= ruleLiteral ) ) | ( (lv_string_2_0= RULE_STRING ) ) | ( (lv_val_3_0= RULE_INT_LITERAL ) ) | ( (lv_val_real_4_0= RULE_REAL_LITERAL ) ) ) ;
+    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3640:1: ruleTerm returns [EObject current=null] : ( ( (lv_list_0_0= ruleList ) ) | ( (lv_literal_1_0= ruleLiteral ) ) | ( (lv_string_2_0= RULE_STRING ) ) | ( (lv_val_3_0= RULE_INT_LITERAL ) ) | ( (lv_val_real_4_0= RULE_REAL_LITERAL ) ) ) ;
     public final EObject ruleTerm() throws RecognitionException {
         EObject current = null;
 
@@ -10281,15 +10446,15 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3577:28: ( ( ( (lv_list_0_0= ruleList ) ) | ( (lv_literal_1_0= ruleLiteral ) ) | ( (lv_string_2_0= RULE_STRING ) ) | ( (lv_val_3_0= RULE_INT_LITERAL ) ) | ( (lv_val_real_4_0= RULE_REAL_LITERAL ) ) ) )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3578:1: ( ( (lv_list_0_0= ruleList ) ) | ( (lv_literal_1_0= ruleLiteral ) ) | ( (lv_string_2_0= RULE_STRING ) ) | ( (lv_val_3_0= RULE_INT_LITERAL ) ) | ( (lv_val_real_4_0= RULE_REAL_LITERAL ) ) )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3643:28: ( ( ( (lv_list_0_0= ruleList ) ) | ( (lv_literal_1_0= ruleLiteral ) ) | ( (lv_string_2_0= RULE_STRING ) ) | ( (lv_val_3_0= RULE_INT_LITERAL ) ) | ( (lv_val_real_4_0= RULE_REAL_LITERAL ) ) ) )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3644:1: ( ( (lv_list_0_0= ruleList ) ) | ( (lv_literal_1_0= ruleLiteral ) ) | ( (lv_string_2_0= RULE_STRING ) ) | ( (lv_val_3_0= RULE_INT_LITERAL ) ) | ( (lv_val_real_4_0= RULE_REAL_LITERAL ) ) )
             {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3578:1: ( ( (lv_list_0_0= ruleList ) ) | ( (lv_literal_1_0= ruleLiteral ) ) | ( (lv_string_2_0= RULE_STRING ) ) | ( (lv_val_3_0= RULE_INT_LITERAL ) ) | ( (lv_val_real_4_0= RULE_REAL_LITERAL ) ) )
-            int alt115=5;
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3644:1: ( ( (lv_list_0_0= ruleList ) ) | ( (lv_literal_1_0= ruleLiteral ) ) | ( (lv_string_2_0= RULE_STRING ) ) | ( (lv_val_3_0= RULE_INT_LITERAL ) ) | ( (lv_val_real_4_0= RULE_REAL_LITERAL ) ) )
+            int alt118=5;
             switch ( input.LA(1) ) {
             case 73:
                 {
-                alt115=1;
+                alt118=1;
                 }
                 break;
             case RULE_ATOM:
@@ -10301,45 +10466,45 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
             case 78:
             case 79:
                 {
-                alt115=2;
+                alt118=2;
                 }
                 break;
             case RULE_STRING:
                 {
-                alt115=3;
+                alt118=3;
                 }
                 break;
             case RULE_INT_LITERAL:
                 {
-                alt115=4;
+                alt118=4;
                 }
                 break;
             case RULE_REAL_LITERAL:
                 {
-                alt115=5;
+                alt118=5;
                 }
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("", 115, 0, input);
+                    new NoViableAltException("", 118, 0, input);
 
                 throw nvae;
             }
 
-            switch (alt115) {
+            switch (alt118) {
                 case 1 :
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3578:2: ( (lv_list_0_0= ruleList ) )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3644:2: ( (lv_list_0_0= ruleList ) )
                     {
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3578:2: ( (lv_list_0_0= ruleList ) )
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3579:1: (lv_list_0_0= ruleList )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3644:2: ( (lv_list_0_0= ruleList ) )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3645:1: (lv_list_0_0= ruleList )
                     {
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3579:1: (lv_list_0_0= ruleList )
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3580:3: lv_list_0_0= ruleList
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3645:1: (lv_list_0_0= ruleList )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3646:3: lv_list_0_0= ruleList
                     {
                      
                     	        newCompositeNode(grammarAccess.getTermAccess().getListListParserRuleCall_0_0()); 
                     	    
-                    pushFollow(FOLLOW_ruleList_in_ruleTerm7474);
+                    pushFollow(FOLLOW_ruleList_in_ruleTerm7582);
                     lv_list_0_0=ruleList();
 
                     state._fsp--;
@@ -10365,18 +10530,18 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3597:6: ( (lv_literal_1_0= ruleLiteral ) )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3663:6: ( (lv_literal_1_0= ruleLiteral ) )
                     {
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3597:6: ( (lv_literal_1_0= ruleLiteral ) )
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3598:1: (lv_literal_1_0= ruleLiteral )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3663:6: ( (lv_literal_1_0= ruleLiteral ) )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3664:1: (lv_literal_1_0= ruleLiteral )
                     {
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3598:1: (lv_literal_1_0= ruleLiteral )
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3599:3: lv_literal_1_0= ruleLiteral
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3664:1: (lv_literal_1_0= ruleLiteral )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3665:3: lv_literal_1_0= ruleLiteral
                     {
                      
                     	        newCompositeNode(grammarAccess.getTermAccess().getLiteralLiteralParserRuleCall_1_0()); 
                     	    
-                    pushFollow(FOLLOW_ruleLiteral_in_ruleTerm7501);
+                    pushFollow(FOLLOW_ruleLiteral_in_ruleTerm7609);
                     lv_literal_1_0=ruleLiteral();
 
                     state._fsp--;
@@ -10402,15 +10567,15 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 3 :
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3616:6: ( (lv_string_2_0= RULE_STRING ) )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3682:6: ( (lv_string_2_0= RULE_STRING ) )
                     {
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3616:6: ( (lv_string_2_0= RULE_STRING ) )
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3617:1: (lv_string_2_0= RULE_STRING )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3682:6: ( (lv_string_2_0= RULE_STRING ) )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3683:1: (lv_string_2_0= RULE_STRING )
                     {
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3617:1: (lv_string_2_0= RULE_STRING )
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3618:3: lv_string_2_0= RULE_STRING
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3683:1: (lv_string_2_0= RULE_STRING )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3684:3: lv_string_2_0= RULE_STRING
                     {
-                    lv_string_2_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleTerm7524); 
+                    lv_string_2_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleTerm7632); 
 
                     			newLeafNode(lv_string_2_0, grammarAccess.getTermAccess().getStringSTRINGTerminalRuleCall_2_0()); 
                     		
@@ -10434,15 +10599,15 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 4 :
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3635:6: ( (lv_val_3_0= RULE_INT_LITERAL ) )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3701:6: ( (lv_val_3_0= RULE_INT_LITERAL ) )
                     {
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3635:6: ( (lv_val_3_0= RULE_INT_LITERAL ) )
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3636:1: (lv_val_3_0= RULE_INT_LITERAL )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3701:6: ( (lv_val_3_0= RULE_INT_LITERAL ) )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3702:1: (lv_val_3_0= RULE_INT_LITERAL )
                     {
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3636:1: (lv_val_3_0= RULE_INT_LITERAL )
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3637:3: lv_val_3_0= RULE_INT_LITERAL
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3702:1: (lv_val_3_0= RULE_INT_LITERAL )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3703:3: lv_val_3_0= RULE_INT_LITERAL
                     {
-                    lv_val_3_0=(Token)match(input,RULE_INT_LITERAL,FOLLOW_RULE_INT_LITERAL_in_ruleTerm7552); 
+                    lv_val_3_0=(Token)match(input,RULE_INT_LITERAL,FOLLOW_RULE_INT_LITERAL_in_ruleTerm7660); 
 
                     			newLeafNode(lv_val_3_0, grammarAccess.getTermAccess().getValINT_LITERALTerminalRuleCall_3_0()); 
                     		
@@ -10466,15 +10631,15 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 5 :
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3654:6: ( (lv_val_real_4_0= RULE_REAL_LITERAL ) )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3720:6: ( (lv_val_real_4_0= RULE_REAL_LITERAL ) )
                     {
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3654:6: ( (lv_val_real_4_0= RULE_REAL_LITERAL ) )
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3655:1: (lv_val_real_4_0= RULE_REAL_LITERAL )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3720:6: ( (lv_val_real_4_0= RULE_REAL_LITERAL ) )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3721:1: (lv_val_real_4_0= RULE_REAL_LITERAL )
                     {
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3655:1: (lv_val_real_4_0= RULE_REAL_LITERAL )
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3656:3: lv_val_real_4_0= RULE_REAL_LITERAL
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3721:1: (lv_val_real_4_0= RULE_REAL_LITERAL )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3722:3: lv_val_real_4_0= RULE_REAL_LITERAL
                     {
-                    lv_val_real_4_0=(Token)match(input,RULE_REAL_LITERAL,FOLLOW_RULE_REAL_LITERAL_in_ruleTerm7580); 
+                    lv_val_real_4_0=(Token)match(input,RULE_REAL_LITERAL,FOLLOW_RULE_REAL_LITERAL_in_ruleTerm7688); 
 
                     			newLeafNode(lv_val_real_4_0, grammarAccess.getTermAccess().getVal_realREAL_LITERALTerminalRuleCall_4_0()); 
                     		
@@ -10518,7 +10683,7 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleList"
-    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3680:1: entryRuleList returns [EObject current=null] : iv_ruleList= ruleList EOF ;
+    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3746:1: entryRuleList returns [EObject current=null] : iv_ruleList= ruleList EOF ;
     public final EObject entryRuleList() throws RecognitionException {
         EObject current = null;
 
@@ -10526,17 +10691,17 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3681:2: (iv_ruleList= ruleList EOF )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3682:2: iv_ruleList= ruleList EOF
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3747:2: (iv_ruleList= ruleList EOF )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3748:2: iv_ruleList= ruleList EOF
             {
              newCompositeNode(grammarAccess.getListRule()); 
-            pushFollow(FOLLOW_ruleList_in_entryRuleList7621);
+            pushFollow(FOLLOW_ruleList_in_entryRuleList7729);
             iv_ruleList=ruleList();
 
             state._fsp--;
 
              current =iv_ruleList; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleList7631); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleList7739); 
 
             }
 
@@ -10554,7 +10719,7 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleList"
-    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3689:1: ruleList returns [EObject current=null] : ( () otherlv_1= '[' ( ( (lv_term_2_0= ruleTerm ) ) (otherlv_3= ',' ( (lv_term_4_0= ruleTerm ) ) )* (otherlv_5= '|' ( ( (lv_var_6_0= RULE_VART ) ) | ( (lv_unnamedvar_7_0= RULE_UNNAMEDVART ) ) | ( (lv_list_8_0= ruleList ) ) ) )? )? otherlv_9= ']' ) ;
+    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3755:1: ruleList returns [EObject current=null] : ( () otherlv_1= '[' ( ( (lv_term_2_0= ruleTerm ) ) (otherlv_3= ',' ( (lv_term_4_0= ruleTerm ) ) )* (otherlv_5= '|' ( ( (lv_var_6_0= RULE_VART ) ) | ( (lv_unnamedvar_7_0= RULE_UNNAMEDVART ) ) | ( (lv_list_8_0= ruleList ) ) ) )? )? otherlv_9= ']' ) ;
     public final EObject ruleList() throws RecognitionException {
         EObject current = null;
 
@@ -10574,14 +10739,14 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3692:28: ( ( () otherlv_1= '[' ( ( (lv_term_2_0= ruleTerm ) ) (otherlv_3= ',' ( (lv_term_4_0= ruleTerm ) ) )* (otherlv_5= '|' ( ( (lv_var_6_0= RULE_VART ) ) | ( (lv_unnamedvar_7_0= RULE_UNNAMEDVART ) ) | ( (lv_list_8_0= ruleList ) ) ) )? )? otherlv_9= ']' ) )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3693:1: ( () otherlv_1= '[' ( ( (lv_term_2_0= ruleTerm ) ) (otherlv_3= ',' ( (lv_term_4_0= ruleTerm ) ) )* (otherlv_5= '|' ( ( (lv_var_6_0= RULE_VART ) ) | ( (lv_unnamedvar_7_0= RULE_UNNAMEDVART ) ) | ( (lv_list_8_0= ruleList ) ) ) )? )? otherlv_9= ']' )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3758:28: ( ( () otherlv_1= '[' ( ( (lv_term_2_0= ruleTerm ) ) (otherlv_3= ',' ( (lv_term_4_0= ruleTerm ) ) )* (otherlv_5= '|' ( ( (lv_var_6_0= RULE_VART ) ) | ( (lv_unnamedvar_7_0= RULE_UNNAMEDVART ) ) | ( (lv_list_8_0= ruleList ) ) ) )? )? otherlv_9= ']' ) )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3759:1: ( () otherlv_1= '[' ( ( (lv_term_2_0= ruleTerm ) ) (otherlv_3= ',' ( (lv_term_4_0= ruleTerm ) ) )* (otherlv_5= '|' ( ( (lv_var_6_0= RULE_VART ) ) | ( (lv_unnamedvar_7_0= RULE_UNNAMEDVART ) ) | ( (lv_list_8_0= ruleList ) ) ) )? )? otherlv_9= ']' )
             {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3693:1: ( () otherlv_1= '[' ( ( (lv_term_2_0= ruleTerm ) ) (otherlv_3= ',' ( (lv_term_4_0= ruleTerm ) ) )* (otherlv_5= '|' ( ( (lv_var_6_0= RULE_VART ) ) | ( (lv_unnamedvar_7_0= RULE_UNNAMEDVART ) ) | ( (lv_list_8_0= ruleList ) ) ) )? )? otherlv_9= ']' )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3693:2: () otherlv_1= '[' ( ( (lv_term_2_0= ruleTerm ) ) (otherlv_3= ',' ( (lv_term_4_0= ruleTerm ) ) )* (otherlv_5= '|' ( ( (lv_var_6_0= RULE_VART ) ) | ( (lv_unnamedvar_7_0= RULE_UNNAMEDVART ) ) | ( (lv_list_8_0= ruleList ) ) ) )? )? otherlv_9= ']'
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3759:1: ( () otherlv_1= '[' ( ( (lv_term_2_0= ruleTerm ) ) (otherlv_3= ',' ( (lv_term_4_0= ruleTerm ) ) )* (otherlv_5= '|' ( ( (lv_var_6_0= RULE_VART ) ) | ( (lv_unnamedvar_7_0= RULE_UNNAMEDVART ) ) | ( (lv_list_8_0= ruleList ) ) ) )? )? otherlv_9= ']' )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3759:2: () otherlv_1= '[' ( ( (lv_term_2_0= ruleTerm ) ) (otherlv_3= ',' ( (lv_term_4_0= ruleTerm ) ) )* (otherlv_5= '|' ( ( (lv_var_6_0= RULE_VART ) ) | ( (lv_unnamedvar_7_0= RULE_UNNAMEDVART ) ) | ( (lv_list_8_0= ruleList ) ) ) )? )? otherlv_9= ']'
             {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3693:2: ()
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3694:5: 
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3759:2: ()
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3760:5: 
             {
 
                     current = forceCreateModelElement(
@@ -10591,31 +10756,31 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_1=(Token)match(input,73,FOLLOW_73_in_ruleList7677); 
+            otherlv_1=(Token)match(input,73,FOLLOW_73_in_ruleList7785); 
 
                 	newLeafNode(otherlv_1, grammarAccess.getListAccess().getLeftSquareBracketKeyword_1());
                 
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3703:1: ( ( (lv_term_2_0= ruleTerm ) ) (otherlv_3= ',' ( (lv_term_4_0= ruleTerm ) ) )* (otherlv_5= '|' ( ( (lv_var_6_0= RULE_VART ) ) | ( (lv_unnamedvar_7_0= RULE_UNNAMEDVART ) ) | ( (lv_list_8_0= ruleList ) ) ) )? )?
-            int alt119=2;
-            int LA119_0 = input.LA(1);
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3769:1: ( ( (lv_term_2_0= ruleTerm ) ) (otherlv_3= ',' ( (lv_term_4_0= ruleTerm ) ) )* (otherlv_5= '|' ( ( (lv_var_6_0= RULE_VART ) ) | ( (lv_unnamedvar_7_0= RULE_UNNAMEDVART ) ) | ( (lv_list_8_0= ruleList ) ) ) )? )?
+            int alt122=2;
+            int LA122_0 = input.LA(1);
 
-            if ( ((LA119_0>=RULE_ATOM && LA119_0<=RULE_REAL_LITERAL)||(LA119_0>=RULE_VART && LA119_0<=RULE_UNNAMEDVART)||LA119_0==73||(LA119_0>=75 && LA119_0<=79)) ) {
-                alt119=1;
+            if ( ((LA122_0>=RULE_ATOM && LA122_0<=RULE_REAL_LITERAL)||(LA122_0>=RULE_VART && LA122_0<=RULE_UNNAMEDVART)||LA122_0==73||(LA122_0>=75 && LA122_0<=79)) ) {
+                alt122=1;
             }
-            switch (alt119) {
+            switch (alt122) {
                 case 1 :
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3703:2: ( (lv_term_2_0= ruleTerm ) ) (otherlv_3= ',' ( (lv_term_4_0= ruleTerm ) ) )* (otherlv_5= '|' ( ( (lv_var_6_0= RULE_VART ) ) | ( (lv_unnamedvar_7_0= RULE_UNNAMEDVART ) ) | ( (lv_list_8_0= ruleList ) ) ) )?
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3769:2: ( (lv_term_2_0= ruleTerm ) ) (otherlv_3= ',' ( (lv_term_4_0= ruleTerm ) ) )* (otherlv_5= '|' ( ( (lv_var_6_0= RULE_VART ) ) | ( (lv_unnamedvar_7_0= RULE_UNNAMEDVART ) ) | ( (lv_list_8_0= ruleList ) ) ) )?
                     {
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3703:2: ( (lv_term_2_0= ruleTerm ) )
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3704:1: (lv_term_2_0= ruleTerm )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3769:2: ( (lv_term_2_0= ruleTerm ) )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3770:1: (lv_term_2_0= ruleTerm )
                     {
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3704:1: (lv_term_2_0= ruleTerm )
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3705:3: lv_term_2_0= ruleTerm
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3770:1: (lv_term_2_0= ruleTerm )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3771:3: lv_term_2_0= ruleTerm
                     {
                      
                     	        newCompositeNode(grammarAccess.getListAccess().getTermTermParserRuleCall_2_0_0()); 
                     	    
-                    pushFollow(FOLLOW_ruleTerm_in_ruleList7699);
+                    pushFollow(FOLLOW_ruleTerm_in_ruleList7807);
                     lv_term_2_0=ruleTerm();
 
                     state._fsp--;
@@ -10637,35 +10802,35 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
                     }
 
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3721:2: (otherlv_3= ',' ( (lv_term_4_0= ruleTerm ) ) )*
-                    loop116:
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3787:2: (otherlv_3= ',' ( (lv_term_4_0= ruleTerm ) ) )*
+                    loop119:
                     do {
-                        int alt116=2;
-                        int LA116_0 = input.LA(1);
+                        int alt119=2;
+                        int LA119_0 = input.LA(1);
 
-                        if ( (LA116_0==27) ) {
-                            alt116=1;
+                        if ( (LA119_0==27) ) {
+                            alt119=1;
                         }
 
 
-                        switch (alt116) {
+                        switch (alt119) {
                     	case 1 :
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3721:4: otherlv_3= ',' ( (lv_term_4_0= ruleTerm ) )
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3787:4: otherlv_3= ',' ( (lv_term_4_0= ruleTerm ) )
                     	    {
-                    	    otherlv_3=(Token)match(input,27,FOLLOW_27_in_ruleList7712); 
+                    	    otherlv_3=(Token)match(input,27,FOLLOW_27_in_ruleList7820); 
 
                     	        	newLeafNode(otherlv_3, grammarAccess.getListAccess().getCommaKeyword_2_1_0());
                     	        
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3725:1: ( (lv_term_4_0= ruleTerm ) )
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3726:1: (lv_term_4_0= ruleTerm )
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3791:1: ( (lv_term_4_0= ruleTerm ) )
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3792:1: (lv_term_4_0= ruleTerm )
                     	    {
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3726:1: (lv_term_4_0= ruleTerm )
-                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3727:3: lv_term_4_0= ruleTerm
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3792:1: (lv_term_4_0= ruleTerm )
+                    	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3793:3: lv_term_4_0= ruleTerm
                     	    {
                     	     
                     	    	        newCompositeNode(grammarAccess.getListAccess().getTermTermParserRuleCall_2_1_1_0()); 
                     	    	    
-                    	    pushFollow(FOLLOW_ruleTerm_in_ruleList7733);
+                    	    pushFollow(FOLLOW_ruleTerm_in_ruleList7841);
                     	    lv_term_4_0=ruleTerm();
 
                     	    state._fsp--;
@@ -10692,61 +10857,61 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop116;
+                    	    break loop119;
                         }
                     } while (true);
 
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3743:4: (otherlv_5= '|' ( ( (lv_var_6_0= RULE_VART ) ) | ( (lv_unnamedvar_7_0= RULE_UNNAMEDVART ) ) | ( (lv_list_8_0= ruleList ) ) ) )?
-                    int alt118=2;
-                    int LA118_0 = input.LA(1);
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3809:4: (otherlv_5= '|' ( ( (lv_var_6_0= RULE_VART ) ) | ( (lv_unnamedvar_7_0= RULE_UNNAMEDVART ) ) | ( (lv_list_8_0= ruleList ) ) ) )?
+                    int alt121=2;
+                    int LA121_0 = input.LA(1);
 
-                    if ( (LA118_0==80) ) {
-                        alt118=1;
+                    if ( (LA121_0==80) ) {
+                        alt121=1;
                     }
-                    switch (alt118) {
+                    switch (alt121) {
                         case 1 :
-                            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3743:6: otherlv_5= '|' ( ( (lv_var_6_0= RULE_VART ) ) | ( (lv_unnamedvar_7_0= RULE_UNNAMEDVART ) ) | ( (lv_list_8_0= ruleList ) ) )
+                            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3809:6: otherlv_5= '|' ( ( (lv_var_6_0= RULE_VART ) ) | ( (lv_unnamedvar_7_0= RULE_UNNAMEDVART ) ) | ( (lv_list_8_0= ruleList ) ) )
                             {
-                            otherlv_5=(Token)match(input,80,FOLLOW_80_in_ruleList7748); 
+                            otherlv_5=(Token)match(input,80,FOLLOW_80_in_ruleList7856); 
 
                                 	newLeafNode(otherlv_5, grammarAccess.getListAccess().getVerticalLineKeyword_2_2_0());
                                 
-                            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3747:1: ( ( (lv_var_6_0= RULE_VART ) ) | ( (lv_unnamedvar_7_0= RULE_UNNAMEDVART ) ) | ( (lv_list_8_0= ruleList ) ) )
-                            int alt117=3;
+                            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3813:1: ( ( (lv_var_6_0= RULE_VART ) ) | ( (lv_unnamedvar_7_0= RULE_UNNAMEDVART ) ) | ( (lv_list_8_0= ruleList ) ) )
+                            int alt120=3;
                             switch ( input.LA(1) ) {
                             case RULE_VART:
                                 {
-                                alt117=1;
+                                alt120=1;
                                 }
                                 break;
                             case RULE_UNNAMEDVART:
                                 {
-                                alt117=2;
+                                alt120=2;
                                 }
                                 break;
                             case 73:
                                 {
-                                alt117=3;
+                                alt120=3;
                                 }
                                 break;
                             default:
                                 NoViableAltException nvae =
-                                    new NoViableAltException("", 117, 0, input);
+                                    new NoViableAltException("", 120, 0, input);
 
                                 throw nvae;
                             }
 
-                            switch (alt117) {
+                            switch (alt120) {
                                 case 1 :
-                                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3747:2: ( (lv_var_6_0= RULE_VART ) )
+                                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3813:2: ( (lv_var_6_0= RULE_VART ) )
                                     {
-                                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3747:2: ( (lv_var_6_0= RULE_VART ) )
-                                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3748:1: (lv_var_6_0= RULE_VART )
+                                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3813:2: ( (lv_var_6_0= RULE_VART ) )
+                                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3814:1: (lv_var_6_0= RULE_VART )
                                     {
-                                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3748:1: (lv_var_6_0= RULE_VART )
-                                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3749:3: lv_var_6_0= RULE_VART
+                                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3814:1: (lv_var_6_0= RULE_VART )
+                                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3815:3: lv_var_6_0= RULE_VART
                                     {
-                                    lv_var_6_0=(Token)match(input,RULE_VART,FOLLOW_RULE_VART_in_ruleList7766); 
+                                    lv_var_6_0=(Token)match(input,RULE_VART,FOLLOW_RULE_VART_in_ruleList7874); 
 
                                     			newLeafNode(lv_var_6_0, grammarAccess.getListAccess().getVarVARTTerminalRuleCall_2_2_1_0_0()); 
                                     		
@@ -10770,15 +10935,15 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
                                     }
                                     break;
                                 case 2 :
-                                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3766:6: ( (lv_unnamedvar_7_0= RULE_UNNAMEDVART ) )
+                                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3832:6: ( (lv_unnamedvar_7_0= RULE_UNNAMEDVART ) )
                                     {
-                                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3766:6: ( (lv_unnamedvar_7_0= RULE_UNNAMEDVART ) )
-                                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3767:1: (lv_unnamedvar_7_0= RULE_UNNAMEDVART )
+                                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3832:6: ( (lv_unnamedvar_7_0= RULE_UNNAMEDVART ) )
+                                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3833:1: (lv_unnamedvar_7_0= RULE_UNNAMEDVART )
                                     {
-                                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3767:1: (lv_unnamedvar_7_0= RULE_UNNAMEDVART )
-                                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3768:3: lv_unnamedvar_7_0= RULE_UNNAMEDVART
+                                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3833:1: (lv_unnamedvar_7_0= RULE_UNNAMEDVART )
+                                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3834:3: lv_unnamedvar_7_0= RULE_UNNAMEDVART
                                     {
-                                    lv_unnamedvar_7_0=(Token)match(input,RULE_UNNAMEDVART,FOLLOW_RULE_UNNAMEDVART_in_ruleList7794); 
+                                    lv_unnamedvar_7_0=(Token)match(input,RULE_UNNAMEDVART,FOLLOW_RULE_UNNAMEDVART_in_ruleList7902); 
 
                                     			newLeafNode(lv_unnamedvar_7_0, grammarAccess.getListAccess().getUnnamedvarUNNAMEDVARTTerminalRuleCall_2_2_1_1_0()); 
                                     		
@@ -10802,18 +10967,18 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
                                     }
                                     break;
                                 case 3 :
-                                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3785:6: ( (lv_list_8_0= ruleList ) )
+                                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3851:6: ( (lv_list_8_0= ruleList ) )
                                     {
-                                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3785:6: ( (lv_list_8_0= ruleList ) )
-                                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3786:1: (lv_list_8_0= ruleList )
+                                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3851:6: ( (lv_list_8_0= ruleList ) )
+                                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3852:1: (lv_list_8_0= ruleList )
                                     {
-                                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3786:1: (lv_list_8_0= ruleList )
-                                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3787:3: lv_list_8_0= ruleList
+                                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3852:1: (lv_list_8_0= ruleList )
+                                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3853:3: lv_list_8_0= ruleList
                                     {
                                      
                                     	        newCompositeNode(grammarAccess.getListAccess().getListListParserRuleCall_2_2_1_2_0()); 
                                     	    
-                                    pushFollow(FOLLOW_ruleList_in_ruleList7826);
+                                    pushFollow(FOLLOW_ruleList_in_ruleList7934);
                                     lv_list_8_0=ruleList();
 
                                     state._fsp--;
@@ -10853,7 +11018,7 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_9=(Token)match(input,74,FOLLOW_74_in_ruleList7843); 
+            otherlv_9=(Token)match(input,74,FOLLOW_74_in_ruleList7951); 
 
                 	newLeafNode(otherlv_9, grammarAccess.getListAccess().getRightSquareBracketKeyword_3());
                 
@@ -10878,7 +11043,7 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleVar"
-    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3815:1: entryRuleVar returns [EObject current=null] : iv_ruleVar= ruleVar EOF ;
+    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3881:1: entryRuleVar returns [EObject current=null] : iv_ruleVar= ruleVar EOF ;
     public final EObject entryRuleVar() throws RecognitionException {
         EObject current = null;
 
@@ -10886,17 +11051,17 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3816:2: (iv_ruleVar= ruleVar EOF )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3817:2: iv_ruleVar= ruleVar EOF
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3882:2: (iv_ruleVar= ruleVar EOF )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3883:2: iv_ruleVar= ruleVar EOF
             {
              newCompositeNode(grammarAccess.getVarRule()); 
-            pushFollow(FOLLOW_ruleVar_in_entryRuleVar7879);
+            pushFollow(FOLLOW_ruleVar_in_entryRuleVar7987);
             iv_ruleVar=ruleVar();
 
             state._fsp--;
 
              current =iv_ruleVar; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleVar7889); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleVar7997); 
 
             }
 
@@ -10914,7 +11079,7 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleVar"
-    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3824:1: ruleVar returns [EObject current=null] : ( ( ( (lv_var_0_0= RULE_VART ) ) | ( (lv_unnamedvar_1_0= RULE_UNNAMEDVART ) ) ) ( (lv_list_2_0= ruleList ) )? ) ;
+    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3890:1: ruleVar returns [EObject current=null] : ( ( ( (lv_var_0_0= RULE_VART ) ) | ( (lv_unnamedvar_1_0= RULE_UNNAMEDVART ) ) ) ( (lv_list_2_0= ruleList ) )? ) ;
     public final EObject ruleVar() throws RecognitionException {
         EObject current = null;
 
@@ -10926,39 +11091,39 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3827:28: ( ( ( ( (lv_var_0_0= RULE_VART ) ) | ( (lv_unnamedvar_1_0= RULE_UNNAMEDVART ) ) ) ( (lv_list_2_0= ruleList ) )? ) )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3828:1: ( ( ( (lv_var_0_0= RULE_VART ) ) | ( (lv_unnamedvar_1_0= RULE_UNNAMEDVART ) ) ) ( (lv_list_2_0= ruleList ) )? )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3893:28: ( ( ( ( (lv_var_0_0= RULE_VART ) ) | ( (lv_unnamedvar_1_0= RULE_UNNAMEDVART ) ) ) ( (lv_list_2_0= ruleList ) )? ) )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3894:1: ( ( ( (lv_var_0_0= RULE_VART ) ) | ( (lv_unnamedvar_1_0= RULE_UNNAMEDVART ) ) ) ( (lv_list_2_0= ruleList ) )? )
             {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3828:1: ( ( ( (lv_var_0_0= RULE_VART ) ) | ( (lv_unnamedvar_1_0= RULE_UNNAMEDVART ) ) ) ( (lv_list_2_0= ruleList ) )? )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3828:2: ( ( (lv_var_0_0= RULE_VART ) ) | ( (lv_unnamedvar_1_0= RULE_UNNAMEDVART ) ) ) ( (lv_list_2_0= ruleList ) )?
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3894:1: ( ( ( (lv_var_0_0= RULE_VART ) ) | ( (lv_unnamedvar_1_0= RULE_UNNAMEDVART ) ) ) ( (lv_list_2_0= ruleList ) )? )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3894:2: ( ( (lv_var_0_0= RULE_VART ) ) | ( (lv_unnamedvar_1_0= RULE_UNNAMEDVART ) ) ) ( (lv_list_2_0= ruleList ) )?
             {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3828:2: ( ( (lv_var_0_0= RULE_VART ) ) | ( (lv_unnamedvar_1_0= RULE_UNNAMEDVART ) ) )
-            int alt120=2;
-            int LA120_0 = input.LA(1);
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3894:2: ( ( (lv_var_0_0= RULE_VART ) ) | ( (lv_unnamedvar_1_0= RULE_UNNAMEDVART ) ) )
+            int alt123=2;
+            int LA123_0 = input.LA(1);
 
-            if ( (LA120_0==RULE_VART) ) {
-                alt120=1;
+            if ( (LA123_0==RULE_VART) ) {
+                alt123=1;
             }
-            else if ( (LA120_0==RULE_UNNAMEDVART) ) {
-                alt120=2;
+            else if ( (LA123_0==RULE_UNNAMEDVART) ) {
+                alt123=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 120, 0, input);
+                    new NoViableAltException("", 123, 0, input);
 
                 throw nvae;
             }
-            switch (alt120) {
+            switch (alt123) {
                 case 1 :
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3828:3: ( (lv_var_0_0= RULE_VART ) )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3894:3: ( (lv_var_0_0= RULE_VART ) )
                     {
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3828:3: ( (lv_var_0_0= RULE_VART ) )
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3829:1: (lv_var_0_0= RULE_VART )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3894:3: ( (lv_var_0_0= RULE_VART ) )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3895:1: (lv_var_0_0= RULE_VART )
                     {
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3829:1: (lv_var_0_0= RULE_VART )
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3830:3: lv_var_0_0= RULE_VART
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3895:1: (lv_var_0_0= RULE_VART )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3896:3: lv_var_0_0= RULE_VART
                     {
-                    lv_var_0_0=(Token)match(input,RULE_VART,FOLLOW_RULE_VART_in_ruleVar7932); 
+                    lv_var_0_0=(Token)match(input,RULE_VART,FOLLOW_RULE_VART_in_ruleVar8040); 
 
                     			newLeafNode(lv_var_0_0, grammarAccess.getVarAccess().getVarVARTTerminalRuleCall_0_0_0()); 
                     		
@@ -10982,15 +11147,15 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3847:6: ( (lv_unnamedvar_1_0= RULE_UNNAMEDVART ) )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3913:6: ( (lv_unnamedvar_1_0= RULE_UNNAMEDVART ) )
                     {
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3847:6: ( (lv_unnamedvar_1_0= RULE_UNNAMEDVART ) )
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3848:1: (lv_unnamedvar_1_0= RULE_UNNAMEDVART )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3913:6: ( (lv_unnamedvar_1_0= RULE_UNNAMEDVART ) )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3914:1: (lv_unnamedvar_1_0= RULE_UNNAMEDVART )
                     {
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3848:1: (lv_unnamedvar_1_0= RULE_UNNAMEDVART )
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3849:3: lv_unnamedvar_1_0= RULE_UNNAMEDVART
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3914:1: (lv_unnamedvar_1_0= RULE_UNNAMEDVART )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3915:3: lv_unnamedvar_1_0= RULE_UNNAMEDVART
                     {
-                    lv_unnamedvar_1_0=(Token)match(input,RULE_UNNAMEDVART,FOLLOW_RULE_UNNAMEDVART_in_ruleVar7960); 
+                    lv_unnamedvar_1_0=(Token)match(input,RULE_UNNAMEDVART,FOLLOW_RULE_UNNAMEDVART_in_ruleVar8068); 
 
                     			newLeafNode(lv_unnamedvar_1_0, grammarAccess.getVarAccess().getUnnamedvarUNNAMEDVARTTerminalRuleCall_0_1_0()); 
                     		
@@ -11016,24 +11181,24 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3865:3: ( (lv_list_2_0= ruleList ) )?
-            int alt121=2;
-            int LA121_0 = input.LA(1);
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3931:3: ( (lv_list_2_0= ruleList ) )?
+            int alt124=2;
+            int LA124_0 = input.LA(1);
 
-            if ( (LA121_0==73) ) {
-                alt121=1;
+            if ( (LA124_0==73) ) {
+                alt124=1;
             }
-            switch (alt121) {
+            switch (alt124) {
                 case 1 :
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3866:1: (lv_list_2_0= ruleList )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3932:1: (lv_list_2_0= ruleList )
                     {
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3866:1: (lv_list_2_0= ruleList )
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3867:3: lv_list_2_0= ruleList
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3932:1: (lv_list_2_0= ruleList )
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3933:3: lv_list_2_0= ruleList
                     {
                      
                     	        newCompositeNode(grammarAccess.getVarAccess().getListListParserRuleCall_1_0()); 
                     	    
-                    pushFollow(FOLLOW_ruleList_in_ruleVar7987);
+                    pushFollow(FOLLOW_ruleList_in_ruleVar8095);
                     lv_list_2_0=ruleList();
 
                     state._fsp--;
@@ -11079,7 +11244,7 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleEOL"
-    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3891:1: entryRuleEOL returns [String current=null] : iv_ruleEOL= ruleEOL EOF ;
+    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3957:1: entryRuleEOL returns [String current=null] : iv_ruleEOL= ruleEOL EOF ;
     public final String entryRuleEOL() throws RecognitionException {
         String current = null;
 
@@ -11087,17 +11252,17 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3892:2: (iv_ruleEOL= ruleEOL EOF )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3893:2: iv_ruleEOL= ruleEOL EOF
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3958:2: (iv_ruleEOL= ruleEOL EOF )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3959:2: iv_ruleEOL= ruleEOL EOF
             {
              newCompositeNode(grammarAccess.getEOLRule()); 
-            pushFollow(FOLLOW_ruleEOL_in_entryRuleEOL8025);
+            pushFollow(FOLLOW_ruleEOL_in_entryRuleEOL8133);
             iv_ruleEOL=ruleEOL();
 
             state._fsp--;
 
              current =iv_ruleEOL.getText(); 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleEOL8036); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleEOL8144); 
 
             }
 
@@ -11115,7 +11280,7 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleEOL"
-    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3900:1: ruleEOL returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : (this_NEWLINE_0= RULE_NEWLINE | this_SL_COMMENT_1= RULE_SL_COMMENT ) ;
+    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3966:1: ruleEOL returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : (this_NEWLINE_0= RULE_NEWLINE | this_SL_COMMENT_1= RULE_SL_COMMENT ) ;
     public final AntlrDatatypeRuleToken ruleEOL() throws RecognitionException {
         AntlrDatatypeRuleToken current = new AntlrDatatypeRuleToken();
 
@@ -11125,30 +11290,30 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3903:28: ( (this_NEWLINE_0= RULE_NEWLINE | this_SL_COMMENT_1= RULE_SL_COMMENT ) )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3904:1: (this_NEWLINE_0= RULE_NEWLINE | this_SL_COMMENT_1= RULE_SL_COMMENT )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3969:28: ( (this_NEWLINE_0= RULE_NEWLINE | this_SL_COMMENT_1= RULE_SL_COMMENT ) )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3970:1: (this_NEWLINE_0= RULE_NEWLINE | this_SL_COMMENT_1= RULE_SL_COMMENT )
             {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3904:1: (this_NEWLINE_0= RULE_NEWLINE | this_SL_COMMENT_1= RULE_SL_COMMENT )
-            int alt122=2;
-            int LA122_0 = input.LA(1);
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3970:1: (this_NEWLINE_0= RULE_NEWLINE | this_SL_COMMENT_1= RULE_SL_COMMENT )
+            int alt125=2;
+            int LA125_0 = input.LA(1);
 
-            if ( (LA122_0==RULE_NEWLINE) ) {
-                alt122=1;
+            if ( (LA125_0==RULE_NEWLINE) ) {
+                alt125=1;
             }
-            else if ( (LA122_0==RULE_SL_COMMENT) ) {
-                alt122=2;
+            else if ( (LA125_0==RULE_SL_COMMENT) ) {
+                alt125=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 122, 0, input);
+                    new NoViableAltException("", 125, 0, input);
 
                 throw nvae;
             }
-            switch (alt122) {
+            switch (alt125) {
                 case 1 :
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3904:6: this_NEWLINE_0= RULE_NEWLINE
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3970:6: this_NEWLINE_0= RULE_NEWLINE
                     {
-                    this_NEWLINE_0=(Token)match(input,RULE_NEWLINE,FOLLOW_RULE_NEWLINE_in_ruleEOL8076); 
+                    this_NEWLINE_0=(Token)match(input,RULE_NEWLINE,FOLLOW_RULE_NEWLINE_in_ruleEOL8184); 
 
                     		current.merge(this_NEWLINE_0);
                         
@@ -11159,9 +11324,9 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3912:10: this_SL_COMMENT_1= RULE_SL_COMMENT
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3978:10: this_SL_COMMENT_1= RULE_SL_COMMENT
                     {
-                    this_SL_COMMENT_1=(Token)match(input,RULE_SL_COMMENT,FOLLOW_RULE_SL_COMMENT_in_ruleEOL8102); 
+                    this_SL_COMMENT_1=(Token)match(input,RULE_SL_COMMENT,FOLLOW_RULE_SL_COMMENT_in_ruleEOL8210); 
 
                     		current.merge(this_SL_COMMENT_1);
                         
@@ -11192,7 +11357,7 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleFQN"
-    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3927:1: entryRuleFQN returns [String current=null] : iv_ruleFQN= ruleFQN EOF ;
+    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3993:1: entryRuleFQN returns [String current=null] : iv_ruleFQN= ruleFQN EOF ;
     public final String entryRuleFQN() throws RecognitionException {
         String current = null;
 
@@ -11200,17 +11365,17 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3928:2: (iv_ruleFQN= ruleFQN EOF )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3929:2: iv_ruleFQN= ruleFQN EOF
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3994:2: (iv_ruleFQN= ruleFQN EOF )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3995:2: iv_ruleFQN= ruleFQN EOF
             {
              newCompositeNode(grammarAccess.getFQNRule()); 
-            pushFollow(FOLLOW_ruleFQN_in_entryRuleFQN8148);
+            pushFollow(FOLLOW_ruleFQN_in_entryRuleFQN8256);
             iv_ruleFQN=ruleFQN();
 
             state._fsp--;
 
              current =iv_ruleFQN.getText(); 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleFQN8159); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleFQN8267); 
 
             }
 
@@ -11228,7 +11393,7 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleFQN"
-    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3936:1: ruleFQN returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : ( (this_VART_0= RULE_VART | this_ATOM_1= RULE_ATOM ) (kw= '.' (this_VART_3= RULE_VART | this_ATOM_4= RULE_ATOM ) )* ) ;
+    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4002:1: ruleFQN returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : ( (this_VART_0= RULE_VART | this_ATOM_1= RULE_ATOM ) (kw= '.' (this_VART_3= RULE_VART | this_ATOM_4= RULE_ATOM ) )* ) ;
     public final AntlrDatatypeRuleToken ruleFQN() throws RecognitionException {
         AntlrDatatypeRuleToken current = new AntlrDatatypeRuleToken();
 
@@ -11241,33 +11406,33 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3939:28: ( ( (this_VART_0= RULE_VART | this_ATOM_1= RULE_ATOM ) (kw= '.' (this_VART_3= RULE_VART | this_ATOM_4= RULE_ATOM ) )* ) )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3940:1: ( (this_VART_0= RULE_VART | this_ATOM_1= RULE_ATOM ) (kw= '.' (this_VART_3= RULE_VART | this_ATOM_4= RULE_ATOM ) )* )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4005:28: ( ( (this_VART_0= RULE_VART | this_ATOM_1= RULE_ATOM ) (kw= '.' (this_VART_3= RULE_VART | this_ATOM_4= RULE_ATOM ) )* ) )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4006:1: ( (this_VART_0= RULE_VART | this_ATOM_1= RULE_ATOM ) (kw= '.' (this_VART_3= RULE_VART | this_ATOM_4= RULE_ATOM ) )* )
             {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3940:1: ( (this_VART_0= RULE_VART | this_ATOM_1= RULE_ATOM ) (kw= '.' (this_VART_3= RULE_VART | this_ATOM_4= RULE_ATOM ) )* )
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3940:2: (this_VART_0= RULE_VART | this_ATOM_1= RULE_ATOM ) (kw= '.' (this_VART_3= RULE_VART | this_ATOM_4= RULE_ATOM ) )*
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4006:1: ( (this_VART_0= RULE_VART | this_ATOM_1= RULE_ATOM ) (kw= '.' (this_VART_3= RULE_VART | this_ATOM_4= RULE_ATOM ) )* )
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4006:2: (this_VART_0= RULE_VART | this_ATOM_1= RULE_ATOM ) (kw= '.' (this_VART_3= RULE_VART | this_ATOM_4= RULE_ATOM ) )*
             {
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3940:2: (this_VART_0= RULE_VART | this_ATOM_1= RULE_ATOM )
-            int alt123=2;
-            int LA123_0 = input.LA(1);
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4006:2: (this_VART_0= RULE_VART | this_ATOM_1= RULE_ATOM )
+            int alt126=2;
+            int LA126_0 = input.LA(1);
 
-            if ( (LA123_0==RULE_VART) ) {
-                alt123=1;
+            if ( (LA126_0==RULE_VART) ) {
+                alt126=1;
             }
-            else if ( (LA123_0==RULE_ATOM) ) {
-                alt123=2;
+            else if ( (LA126_0==RULE_ATOM) ) {
+                alt126=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 123, 0, input);
+                    new NoViableAltException("", 126, 0, input);
 
                 throw nvae;
             }
-            switch (alt123) {
+            switch (alt126) {
                 case 1 :
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3940:7: this_VART_0= RULE_VART
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4006:7: this_VART_0= RULE_VART
                     {
-                    this_VART_0=(Token)match(input,RULE_VART,FOLLOW_RULE_VART_in_ruleFQN8200); 
+                    this_VART_0=(Token)match(input,RULE_VART,FOLLOW_RULE_VART_in_ruleFQN8308); 
 
                     		current.merge(this_VART_0);
                         
@@ -11278,9 +11443,9 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3948:10: this_ATOM_1= RULE_ATOM
+                    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4014:10: this_ATOM_1= RULE_ATOM
                     {
-                    this_ATOM_1=(Token)match(input,RULE_ATOM,FOLLOW_RULE_ATOM_in_ruleFQN8226); 
+                    this_ATOM_1=(Token)match(input,RULE_ATOM,FOLLOW_RULE_ATOM_in_ruleFQN8334); 
 
                     		current.merge(this_ATOM_1);
                         
@@ -11293,47 +11458,47 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3955:2: (kw= '.' (this_VART_3= RULE_VART | this_ATOM_4= RULE_ATOM ) )*
-            loop125:
+            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4021:2: (kw= '.' (this_VART_3= RULE_VART | this_ATOM_4= RULE_ATOM ) )*
+            loop128:
             do {
-                int alt125=2;
-                int LA125_0 = input.LA(1);
+                int alt128=2;
+                int LA128_0 = input.LA(1);
 
-                if ( (LA125_0==69) ) {
-                    alt125=1;
+                if ( (LA128_0==69) ) {
+                    alt128=1;
                 }
 
 
-                switch (alt125) {
+                switch (alt128) {
             	case 1 :
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3956:2: kw= '.' (this_VART_3= RULE_VART | this_ATOM_4= RULE_ATOM )
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4022:2: kw= '.' (this_VART_3= RULE_VART | this_ATOM_4= RULE_ATOM )
             	    {
-            	    kw=(Token)match(input,69,FOLLOW_69_in_ruleFQN8246); 
+            	    kw=(Token)match(input,69,FOLLOW_69_in_ruleFQN8354); 
 
             	            current.merge(kw);
             	            newLeafNode(kw, grammarAccess.getFQNAccess().getFullStopKeyword_1_0()); 
             	        
-            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3961:1: (this_VART_3= RULE_VART | this_ATOM_4= RULE_ATOM )
-            	    int alt124=2;
-            	    int LA124_0 = input.LA(1);
+            	    // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4027:1: (this_VART_3= RULE_VART | this_ATOM_4= RULE_ATOM )
+            	    int alt127=2;
+            	    int LA127_0 = input.LA(1);
 
-            	    if ( (LA124_0==RULE_VART) ) {
-            	        alt124=1;
+            	    if ( (LA127_0==RULE_VART) ) {
+            	        alt127=1;
             	    }
-            	    else if ( (LA124_0==RULE_ATOM) ) {
-            	        alt124=2;
+            	    else if ( (LA127_0==RULE_ATOM) ) {
+            	        alt127=2;
             	    }
             	    else {
             	        NoViableAltException nvae =
-            	            new NoViableAltException("", 124, 0, input);
+            	            new NoViableAltException("", 127, 0, input);
 
             	        throw nvae;
             	    }
-            	    switch (alt124) {
+            	    switch (alt127) {
             	        case 1 :
-            	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3961:6: this_VART_3= RULE_VART
+            	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4027:6: this_VART_3= RULE_VART
             	            {
-            	            this_VART_3=(Token)match(input,RULE_VART,FOLLOW_RULE_VART_in_ruleFQN8262); 
+            	            this_VART_3=(Token)match(input,RULE_VART,FOLLOW_RULE_VART_in_ruleFQN8370); 
 
             	            		current.merge(this_VART_3);
             	                
@@ -11344,9 +11509,9 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
             	            }
             	            break;
             	        case 2 :
-            	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:3969:10: this_ATOM_4= RULE_ATOM
+            	            // ../jacamoide.xtext.jcm/src-gen/jacamoide/xtext/jcm/parser/antlr/internal/InternalJcm.g:4035:10: this_ATOM_4= RULE_ATOM
             	            {
-            	            this_ATOM_4=(Token)match(input,RULE_ATOM,FOLLOW_RULE_ATOM_in_ruleFQN8288); 
+            	            this_ATOM_4=(Token)match(input,RULE_ATOM,FOLLOW_RULE_ATOM_in_ruleFQN8396); 
 
             	            		current.merge(this_ATOM_4);
             	                
@@ -11364,7 +11529,7 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    break loop125;
+            	    break loop128;
                 }
             } while (true);
 
@@ -11558,216 +11723,222 @@ public class InternalJcmParser extends AbstractInternalAntlrParser {
     public static final BitSet FOLLOW_58_in_ruleWorkspace3345 = new BitSet(new long[]{0x0000000008801800L});
     public static final BitSet FOLLOW_ruleEOL_in_ruleWorkspace3363 = new BitSet(new long[]{0x0E0040010A801810L});
     public static final BitSet FOLLOW_27_in_ruleWorkspace3380 = new BitSet(new long[]{0x0E0040010A801810L});
-    public static final BitSet FOLLOW_46_in_ruleWorkspace3404 = new BitSet(new long[]{0x0000000000801800L});
-    public static final BitSet FOLLOW_ruleEOL_in_ruleWorkspace3421 = new BitSet(new long[]{0x0A00400102801800L});
-    public static final BitSet FOLLOW_ruleONode_in_ruleWorkspace3450 = new BitSet(new long[]{0x0A00400102000000L});
-    public static final BitSet FOLLOW_25_in_ruleWorkspace3464 = new BitSet(new long[]{0x0000000000801802L});
-    public static final BitSet FOLLOW_ruleEOL_in_ruleWorkspace3481 = new BitSet(new long[]{0x0000000000801802L});
-    public static final BitSet FOLLOW_ruleArtifact_in_entryRuleArtifact3518 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleArtifact3528 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_59_in_ruleArtifact3565 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ATOM_in_ruleArtifact3582 = new BitSet(new long[]{0x0000000020000000L});
-    public static final BitSet FOLLOW_29_in_ruleArtifact3599 = new BitSet(new long[]{0x0000000000000210L});
-    public static final BitSet FOLLOW_ruleClassDef_in_ruleArtifact3620 = new BitSet(new long[]{0x0000000001801802L});
-    public static final BitSet FOLLOW_24_in_ruleArtifact3633 = new BitSet(new long[]{0x1000000002801800L});
-    public static final BitSet FOLLOW_ruleEOL_in_ruleArtifact3650 = new BitSet(new long[]{0x1000000002801800L});
-    public static final BitSet FOLLOW_60_in_ruleArtifact3664 = new BitSet(new long[]{0x0000000020000000L});
-    public static final BitSet FOLLOW_29_in_ruleArtifact3676 = new BitSet(new long[]{0x0400000002000010L});
-    public static final BitSet FOLLOW_RULE_ATOM_in_ruleArtifact3695 = new BitSet(new long[]{0x0000000008801800L});
-    public static final BitSet FOLLOW_58_in_ruleArtifact3718 = new BitSet(new long[]{0x0000000008801800L});
-    public static final BitSet FOLLOW_ruleEOL_in_ruleArtifact3736 = new BitSet(new long[]{0x040000000A801810L});
-    public static final BitSet FOLLOW_27_in_ruleArtifact3753 = new BitSet(new long[]{0x040000000A801810L});
-    public static final BitSet FOLLOW_25_in_ruleArtifact3771 = new BitSet(new long[]{0x0000000000801802L});
-    public static final BitSet FOLLOW_ruleEOL_in_ruleArtifact3790 = new BitSet(new long[]{0x0000000000801802L});
-    public static final BitSet FOLLOW_ruleOrganisation_in_entryRuleOrganisation3827 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleOrganisation3837 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_61_in_ruleOrganisation3874 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ATOM_in_ruleOrganisation3891 = new BitSet(new long[]{0x0000000021000000L});
-    public static final BitSet FOLLOW_ruleOFileName_in_ruleOrganisation3917 = new BitSet(new long[]{0x0000000001000000L});
-    public static final BitSet FOLLOW_24_in_ruleOrganisation3930 = new BitSet(new long[]{0x4A00400102801810L,0x0000000000000004L});
-    public static final BitSet FOLLOW_ruleEOL_in_ruleOrganisation3947 = new BitSet(new long[]{0x4A00400102801810L,0x0000000000000004L});
-    public static final BitSet FOLLOW_ruleGroup_in_ruleOrganisation3970 = new BitSet(new long[]{0x4A00400102000010L,0x0000000000000004L});
-    public static final BitSet FOLLOW_ruleScheme_in_ruleOrganisation3997 = new BitSet(new long[]{0x4A00400102000010L,0x0000000000000004L});
-    public static final BitSet FOLLOW_ruleOAgents_in_ruleOrganisation4024 = new BitSet(new long[]{0x4A00400102000010L,0x0000000000000004L});
-    public static final BitSet FOLLOW_ruleONode_in_ruleOrganisation4051 = new BitSet(new long[]{0x4A00400102000010L,0x0000000000000004L});
-    public static final BitSet FOLLOW_ruleOOthers_in_ruleOrganisation4078 = new BitSet(new long[]{0x4A00400102000010L,0x0000000000000004L});
-    public static final BitSet FOLLOW_25_in_ruleOrganisation4092 = new BitSet(new long[]{0x0000000000801802L});
-    public static final BitSet FOLLOW_ruleEOL_in_ruleOrganisation4109 = new BitSet(new long[]{0x0000000000801802L});
-    public static final BitSet FOLLOW_ruleOFileName_in_entryRuleOFileName4146 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleOFileName4156 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_29_in_ruleOFileName4193 = new BitSet(new long[]{0x0000000000000050L,0x0000000000000078L});
-    public static final BitSet FOLLOW_ruleFileName_in_ruleOFileName4214 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleONode_in_entryRuleONode4250 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleONode4260 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_32_in_ruleONode4297 = new BitSet(new long[]{0x0000000020000000L});
-    public static final BitSet FOLLOW_29_in_ruleONode4309 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ATOM_in_ruleONode4326 = new BitSet(new long[]{0x0000000000801800L});
-    public static final BitSet FOLLOW_ruleEOL_in_ruleONode4348 = new BitSet(new long[]{0x0000000000801802L});
-    public static final BitSet FOLLOW_ruleOAgents_in_entryRuleOAgents4385 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleOAgents4395 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_57_in_ruleOAgents4441 = new BitSet(new long[]{0x0000000020000000L});
-    public static final BitSet FOLLOW_29_in_ruleOAgents4453 = new BitSet(new long[]{0x0400000000000012L});
-    public static final BitSet FOLLOW_RULE_ATOM_in_ruleOAgents4472 = new BitSet(new long[]{0x0000000008801800L});
-    public static final BitSet FOLLOW_58_in_ruleOAgents4495 = new BitSet(new long[]{0x0000000008801800L});
-    public static final BitSet FOLLOW_ruleEOL_in_ruleOAgents4513 = new BitSet(new long[]{0x0400000008801812L});
-    public static final BitSet FOLLOW_27_in_ruleOAgents4530 = new BitSet(new long[]{0x0400000008801812L});
-    public static final BitSet FOLLOW_ruleOOthers_in_entryRuleOOthers4570 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleOOthers4580 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ATOM_in_ruleOOthers4622 = new BitSet(new long[]{0x0000000020000000L});
-    public static final BitSet FOLLOW_29_in_ruleOOthers4639 = new BitSet(new long[]{0x00000000000006F0L,0x000000000000F800L});
-    public static final BitSet FOLLOW_RULE_STRING_in_ruleOOthers4657 = new BitSet(new long[]{0x0000000000801800L});
-    public static final BitSet FOLLOW_RULE_INT_LITERAL_in_ruleOOthers4685 = new BitSet(new long[]{0x0000000000801800L});
-    public static final BitSet FOLLOW_ruleLiteral_in_ruleOOthers4717 = new BitSet(new long[]{0x0000000000801800L});
-    public static final BitSet FOLLOW_RULE_REAL_LITERAL_in_ruleOOthers4740 = new BitSet(new long[]{0x0000000000801800L});
-    public static final BitSet FOLLOW_ruleEOL_in_ruleOOthers4763 = new BitSet(new long[]{0x0000000000801802L});
-    public static final BitSet FOLLOW_ruleGroup_in_entryRuleGroup4800 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleGroup4810 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_62_in_ruleGroup4847 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ATOM_in_ruleGroup4864 = new BitSet(new long[]{0x0000000020000000L});
-    public static final BitSet FOLLOW_29_in_ruleGroup4881 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ATOM_in_ruleGroup4898 = new BitSet(new long[]{0x0000000001801802L});
-    public static final BitSet FOLLOW_24_in_ruleGroup4916 = new BitSet(new long[]{0xC000400002801810L,0x0000000000000003L});
-    public static final BitSet FOLLOW_ruleEOL_in_ruleGroup4933 = new BitSet(new long[]{0xC000400002801810L,0x0000000000000003L});
-    public static final BitSet FOLLOW_ruleGroup_in_ruleGroup4956 = new BitSet(new long[]{0xC000400002000010L,0x0000000000000003L});
-    public static final BitSet FOLLOW_63_in_ruleGroup4975 = new BitSet(new long[]{0x0000000020000000L});
-    public static final BitSet FOLLOW_29_in_ruleGroup4987 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ATOM_in_ruleGroup5004 = new BitSet(new long[]{0x0000000000801800L});
-    public static final BitSet FOLLOW_ruleEOL_in_ruleGroup5026 = new BitSet(new long[]{0xC000400002801810L,0x0000000000000003L});
-    public static final BitSet FOLLOW_64_in_ruleGroup5047 = new BitSet(new long[]{0x0000000020000000L});
-    public static final BitSet FOLLOW_29_in_ruleGroup5059 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ATOM_in_ruleGroup5076 = new BitSet(new long[]{0x0000000000801800L});
-    public static final BitSet FOLLOW_ruleEOL_in_ruleGroup5098 = new BitSet(new long[]{0xC000400002801810L,0x0000000000000003L});
-    public static final BitSet FOLLOW_46_in_ruleGroup5119 = new BitSet(new long[]{0x0000000000801800L});
-    public static final BitSet FOLLOW_ruleEOL_in_ruleGroup5136 = new BitSet(new long[]{0xC000400002801810L,0x0000000000000003L});
-    public static final BitSet FOLLOW_RULE_ATOM_in_ruleGroup5162 = new BitSet(new long[]{0x0000000020000000L});
-    public static final BitSet FOLLOW_29_in_ruleGroup5179 = new BitSet(new long[]{0x00000000000006F0L,0x000000000000F800L});
-    public static final BitSet FOLLOW_RULE_STRING_in_ruleGroup5197 = new BitSet(new long[]{0x0000000000801800L});
-    public static final BitSet FOLLOW_RULE_INT_LITERAL_in_ruleGroup5225 = new BitSet(new long[]{0x0000000000801800L});
-    public static final BitSet FOLLOW_ruleLiteral_in_ruleGroup5257 = new BitSet(new long[]{0x0000000000801800L});
-    public static final BitSet FOLLOW_RULE_REAL_LITERAL_in_ruleGroup5280 = new BitSet(new long[]{0x0000000000801800L});
-    public static final BitSet FOLLOW_ruleEOL_in_ruleGroup5303 = new BitSet(new long[]{0xC000400002801810L,0x0000000000000003L});
-    public static final BitSet FOLLOW_65_in_ruleGroup5324 = new BitSet(new long[]{0x0000000020000000L});
-    public static final BitSet FOLLOW_29_in_ruleGroup5336 = new BitSet(new long[]{0xC000400002000010L,0x0000000000000003L});
-    public static final BitSet FOLLOW_RULE_ATOM_in_ruleGroup5354 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ATOM_in_ruleGroup5376 = new BitSet(new long[]{0x0000000008801800L});
-    public static final BitSet FOLLOW_ruleEOL_in_ruleGroup5398 = new BitSet(new long[]{0xC00040000A801810L,0x0000000000000003L});
-    public static final BitSet FOLLOW_27_in_ruleGroup5415 = new BitSet(new long[]{0xC00040000A801810L,0x0000000000000003L});
-    public static final BitSet FOLLOW_25_in_ruleGroup5434 = new BitSet(new long[]{0x0000000000801802L});
-    public static final BitSet FOLLOW_ruleEOL_in_ruleGroup5453 = new BitSet(new long[]{0x0000000000801802L});
-    public static final BitSet FOLLOW_ruleScheme_in_entryRuleScheme5490 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleScheme5500 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_66_in_ruleScheme5537 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ATOM_in_ruleScheme5554 = new BitSet(new long[]{0x0000000020000000L});
-    public static final BitSet FOLLOW_29_in_ruleScheme5571 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ATOM_in_ruleScheme5588 = new BitSet(new long[]{0x0000000001801802L});
-    public static final BitSet FOLLOW_24_in_ruleScheme5606 = new BitSet(new long[]{0x0000400002801810L,0x0000000000000001L});
-    public static final BitSet FOLLOW_ruleEOL_in_ruleScheme5623 = new BitSet(new long[]{0x0000400002801810L,0x0000000000000001L});
-    public static final BitSet FOLLOW_46_in_ruleScheme5638 = new BitSet(new long[]{0x0000000000801800L});
-    public static final BitSet FOLLOW_ruleEOL_in_ruleScheme5655 = new BitSet(new long[]{0x0000400002801810L,0x0000000000000001L});
-    public static final BitSet FOLLOW_64_in_ruleScheme5676 = new BitSet(new long[]{0x0000000020000000L});
-    public static final BitSet FOLLOW_29_in_ruleScheme5688 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ATOM_in_ruleScheme5705 = new BitSet(new long[]{0x0000000000801800L});
-    public static final BitSet FOLLOW_ruleEOL_in_ruleScheme5727 = new BitSet(new long[]{0x0000400002801810L,0x0000000000000001L});
-    public static final BitSet FOLLOW_RULE_ATOM_in_ruleScheme5753 = new BitSet(new long[]{0x0000000020000000L});
-    public static final BitSet FOLLOW_29_in_ruleScheme5770 = new BitSet(new long[]{0x00000000000006F0L,0x000000000000F800L});
-    public static final BitSet FOLLOW_RULE_STRING_in_ruleScheme5788 = new BitSet(new long[]{0x0000000000801800L});
-    public static final BitSet FOLLOW_RULE_INT_LITERAL_in_ruleScheme5816 = new BitSet(new long[]{0x0000000000801800L});
-    public static final BitSet FOLLOW_ruleLiteral_in_ruleScheme5848 = new BitSet(new long[]{0x0000000000801800L});
-    public static final BitSet FOLLOW_RULE_REAL_LITERAL_in_ruleScheme5871 = new BitSet(new long[]{0x0000000000801800L});
-    public static final BitSet FOLLOW_ruleEOL_in_ruleScheme5894 = new BitSet(new long[]{0x0000400002801810L,0x0000000000000001L});
-    public static final BitSet FOLLOW_25_in_ruleScheme5910 = new BitSet(new long[]{0x0000000000801802L});
-    public static final BitSet FOLLOW_ruleEOL_in_ruleScheme5929 = new BitSet(new long[]{0x0000000000801802L});
-    public static final BitSet FOLLOW_ruleHost_in_entryRuleHost5966 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleHost5976 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ATOM_in_ruleHost6019 = new BitSet(new long[]{0x0000000020000002L});
-    public static final BitSet FOLLOW_RULE_STRING_in_ruleHost6047 = new BitSet(new long[]{0x0000000020000002L});
-    public static final BitSet FOLLOW_RULE_IP_in_ruleHost6075 = new BitSet(new long[]{0x0000000020000002L});
-    public static final BitSet FOLLOW_29_in_ruleHost6094 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_RULE_INT_LITERAL_in_ruleHost6111 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleFileName_in_entryRuleFileName6154 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleFileName6164 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_67_in_ruleFileName6212 = new BitSet(new long[]{0x0000000000000012L,0x0000000000000078L});
-    public static final BitSet FOLLOW_68_in_ruleFileName6230 = new BitSet(new long[]{0x0000000000000012L,0x0000000000000078L});
-    public static final BitSet FOLLOW_69_in_ruleFileName6248 = new BitSet(new long[]{0x0000000000000012L,0x0000000000000078L});
-    public static final BitSet FOLLOW_70_in_ruleFileName6266 = new BitSet(new long[]{0x0000000000000012L,0x0000000000000078L});
-    public static final BitSet FOLLOW_RULE_ATOM_in_ruleFileName6289 = new BitSet(new long[]{0x0000000000000012L,0x0000000000000078L});
-    public static final BitSet FOLLOW_RULE_STRING_in_ruleFileName6319 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleClassDef_in_entryRuleClassDef6361 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleClassDef6371 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleFQN_in_ruleClassDef6417 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000080L});
-    public static final BitSet FOLLOW_71_in_ruleClassDef6430 = new BitSet(new long[]{0x00000000000002F0L,0x0000000000000300L});
-    public static final BitSet FOLLOW_ruleParameter_in_ruleClassDef6452 = new BitSet(new long[]{0x0000000008000000L,0x0000000000000100L});
-    public static final BitSet FOLLOW_27_in_ruleClassDef6465 = new BitSet(new long[]{0x00000000000002F0L,0x0000000000000200L});
-    public static final BitSet FOLLOW_ruleParameter_in_ruleClassDef6486 = new BitSet(new long[]{0x0000000008000000L,0x0000000000000100L});
-    public static final BitSet FOLLOW_72_in_ruleClassDef6502 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleParameter_in_entryRuleParameter6540 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleParameter6550 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleClassDef_in_ruleParameter6596 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_INT_LITERAL_in_ruleParameter6619 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_REAL_LITERAL_in_ruleParameter6647 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_STRING_in_ruleParameter6675 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleListParameters_in_ruleParameter6707 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleListParameters_in_entryRuleListParameters6743 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleListParameters6753 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_73_in_ruleListParameters6790 = new BitSet(new long[]{0x00000000000002F0L,0x0000000000000200L});
-    public static final BitSet FOLLOW_ruleParameter_in_ruleListParameters6811 = new BitSet(new long[]{0x0000000008000000L,0x0000000000000400L});
-    public static final BitSet FOLLOW_27_in_ruleListParameters6824 = new BitSet(new long[]{0x00000000000002F0L,0x0000000000000200L});
-    public static final BitSet FOLLOW_ruleParameter_in_ruleListParameters6845 = new BitSet(new long[]{0x0000000008000000L,0x0000000000000400L});
-    public static final BitSet FOLLOW_74_in_ruleListParameters6859 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleLiteral_in_entryRuleLiteral6895 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleLiteral6905 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_75_in_ruleLiteral6954 = new BitSet(new long[]{0x0000000000000610L,0x000000000000C800L});
-    public static final BitSet FOLLOW_rulePred_in_ruleLiteral6978 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleVar_in_ruleLiteral7005 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_76_in_ruleLiteral7025 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_77_in_ruleLiteral7043 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rulePred_in_entryRulePred7080 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRulePred7090 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ATOM_in_rulePred7142 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000280L});
-    public static final BitSet FOLLOW_78_in_rulePred7165 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000280L});
-    public static final BitSet FOLLOW_79_in_rulePred7183 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000280L});
-    public static final BitSet FOLLOW_71_in_rulePred7197 = new BitSet(new long[]{0x00000000000006F0L,0x000000000000FA00L});
-    public static final BitSet FOLLOW_ruleTerms_in_rulePred7218 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000100L});
-    public static final BitSet FOLLOW_72_in_rulePred7230 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000200L});
-    public static final BitSet FOLLOW_ruleList_in_rulePred7253 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleTerms_in_entryRuleTerms7290 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleTerms7300 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleTerm_in_ruleTerms7346 = new BitSet(new long[]{0x0000000008000002L});
-    public static final BitSet FOLLOW_27_in_ruleTerms7359 = new BitSet(new long[]{0x00000000000006F0L,0x000000000000FA00L});
-    public static final BitSet FOLLOW_ruleTerm_in_ruleTerms7380 = new BitSet(new long[]{0x0000000008000002L});
-    public static final BitSet FOLLOW_ruleTerm_in_entryRuleTerm7418 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleTerm7428 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleList_in_ruleTerm7474 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleLiteral_in_ruleTerm7501 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_STRING_in_ruleTerm7524 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_INT_LITERAL_in_ruleTerm7552 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_REAL_LITERAL_in_ruleTerm7580 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleList_in_entryRuleList7621 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleList7631 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_73_in_ruleList7677 = new BitSet(new long[]{0x00000000000006F0L,0x000000000000FE00L});
-    public static final BitSet FOLLOW_ruleTerm_in_ruleList7699 = new BitSet(new long[]{0x0000000008000000L,0x0000000000010400L});
-    public static final BitSet FOLLOW_27_in_ruleList7712 = new BitSet(new long[]{0x00000000000006F0L,0x000000000000FA00L});
-    public static final BitSet FOLLOW_ruleTerm_in_ruleList7733 = new BitSet(new long[]{0x0000000008000000L,0x0000000000010400L});
-    public static final BitSet FOLLOW_80_in_ruleList7748 = new BitSet(new long[]{0x0000000000000600L,0x0000000000000200L});
-    public static final BitSet FOLLOW_RULE_VART_in_ruleList7766 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000400L});
-    public static final BitSet FOLLOW_RULE_UNNAMEDVART_in_ruleList7794 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000400L});
-    public static final BitSet FOLLOW_ruleList_in_ruleList7826 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000400L});
-    public static final BitSet FOLLOW_74_in_ruleList7843 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleVar_in_entryRuleVar7879 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleVar7889 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_VART_in_ruleVar7932 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000200L});
-    public static final BitSet FOLLOW_RULE_UNNAMEDVART_in_ruleVar7960 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000200L});
-    public static final BitSet FOLLOW_ruleList_in_ruleVar7987 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleEOL_in_entryRuleEOL8025 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleEOL8036 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_NEWLINE_in_ruleEOL8076 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_SL_COMMENT_in_ruleEOL8102 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleFQN_in_entryRuleFQN8148 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleFQN8159 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_VART_in_ruleFQN8200 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000020L});
-    public static final BitSet FOLLOW_RULE_ATOM_in_ruleFQN8226 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000020L});
-    public static final BitSet FOLLOW_69_in_ruleFQN8246 = new BitSet(new long[]{0x0000000000000210L});
-    public static final BitSet FOLLOW_RULE_VART_in_ruleFQN8262 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000020L});
-    public static final BitSet FOLLOW_RULE_ATOM_in_ruleFQN8288 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000020L});
+    public static final BitSet FOLLOW_46_in_ruleWorkspace3404 = new BitSet(new long[]{0x0000000020801800L});
+    public static final BitSet FOLLOW_29_in_ruleWorkspace3417 = new BitSet(new long[]{0x0000000000000610L,0x000000000000F800L});
+    public static final BitSet FOLLOW_ruleLiteral_in_ruleWorkspace3438 = new BitSet(new long[]{0x0000000000801800L});
+    public static final BitSet FOLLOW_ruleEOL_in_ruleWorkspace3457 = new BitSet(new long[]{0x0A00400102801800L});
+    public static final BitSet FOLLOW_ruleONode_in_ruleWorkspace3486 = new BitSet(new long[]{0x0A00400102000000L});
+    public static final BitSet FOLLOW_25_in_ruleWorkspace3500 = new BitSet(new long[]{0x0000000000801802L});
+    public static final BitSet FOLLOW_ruleEOL_in_ruleWorkspace3517 = new BitSet(new long[]{0x0000000000801802L});
+    public static final BitSet FOLLOW_ruleArtifact_in_entryRuleArtifact3554 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleArtifact3564 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_59_in_ruleArtifact3601 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ATOM_in_ruleArtifact3618 = new BitSet(new long[]{0x0000000020000000L});
+    public static final BitSet FOLLOW_29_in_ruleArtifact3635 = new BitSet(new long[]{0x0000000000000210L});
+    public static final BitSet FOLLOW_ruleClassDef_in_ruleArtifact3656 = new BitSet(new long[]{0x0000000001801802L});
+    public static final BitSet FOLLOW_24_in_ruleArtifact3669 = new BitSet(new long[]{0x1000000002801800L});
+    public static final BitSet FOLLOW_ruleEOL_in_ruleArtifact3686 = new BitSet(new long[]{0x1000000002801800L});
+    public static final BitSet FOLLOW_60_in_ruleArtifact3700 = new BitSet(new long[]{0x0000000020000000L});
+    public static final BitSet FOLLOW_29_in_ruleArtifact3712 = new BitSet(new long[]{0x0400000002000010L});
+    public static final BitSet FOLLOW_RULE_ATOM_in_ruleArtifact3731 = new BitSet(new long[]{0x0000000008801800L});
+    public static final BitSet FOLLOW_58_in_ruleArtifact3754 = new BitSet(new long[]{0x0000000008801800L});
+    public static final BitSet FOLLOW_ruleEOL_in_ruleArtifact3772 = new BitSet(new long[]{0x040000000A801810L});
+    public static final BitSet FOLLOW_27_in_ruleArtifact3789 = new BitSet(new long[]{0x040000000A801810L});
+    public static final BitSet FOLLOW_25_in_ruleArtifact3807 = new BitSet(new long[]{0x0000000000801802L});
+    public static final BitSet FOLLOW_ruleEOL_in_ruleArtifact3826 = new BitSet(new long[]{0x0000000000801802L});
+    public static final BitSet FOLLOW_ruleOrganisation_in_entryRuleOrganisation3863 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleOrganisation3873 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_61_in_ruleOrganisation3910 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ATOM_in_ruleOrganisation3927 = new BitSet(new long[]{0x0000000021000000L});
+    public static final BitSet FOLLOW_ruleOFileName_in_ruleOrganisation3953 = new BitSet(new long[]{0x0000000001000000L});
+    public static final BitSet FOLLOW_24_in_ruleOrganisation3966 = new BitSet(new long[]{0x4A00400102801810L,0x0000000000000004L});
+    public static final BitSet FOLLOW_ruleEOL_in_ruleOrganisation3983 = new BitSet(new long[]{0x4A00400102801810L,0x0000000000000004L});
+    public static final BitSet FOLLOW_ruleGroup_in_ruleOrganisation4006 = new BitSet(new long[]{0x4A00400102000010L,0x0000000000000004L});
+    public static final BitSet FOLLOW_ruleScheme_in_ruleOrganisation4033 = new BitSet(new long[]{0x4A00400102000010L,0x0000000000000004L});
+    public static final BitSet FOLLOW_ruleOAgents_in_ruleOrganisation4060 = new BitSet(new long[]{0x4A00400102000010L,0x0000000000000004L});
+    public static final BitSet FOLLOW_ruleONode_in_ruleOrganisation4087 = new BitSet(new long[]{0x4A00400102000010L,0x0000000000000004L});
+    public static final BitSet FOLLOW_ruleOOthers_in_ruleOrganisation4114 = new BitSet(new long[]{0x4A00400102000010L,0x0000000000000004L});
+    public static final BitSet FOLLOW_25_in_ruleOrganisation4128 = new BitSet(new long[]{0x0000000000801802L});
+    public static final BitSet FOLLOW_ruleEOL_in_ruleOrganisation4145 = new BitSet(new long[]{0x0000000000801802L});
+    public static final BitSet FOLLOW_ruleOFileName_in_entryRuleOFileName4182 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleOFileName4192 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_29_in_ruleOFileName4229 = new BitSet(new long[]{0x0000000000000050L,0x0000000000000078L});
+    public static final BitSet FOLLOW_ruleFileName_in_ruleOFileName4250 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleONode_in_entryRuleONode4286 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleONode4296 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_32_in_ruleONode4333 = new BitSet(new long[]{0x0000000020000000L});
+    public static final BitSet FOLLOW_29_in_ruleONode4345 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ATOM_in_ruleONode4362 = new BitSet(new long[]{0x0000000000801800L});
+    public static final BitSet FOLLOW_ruleEOL_in_ruleONode4384 = new BitSet(new long[]{0x0000000000801802L});
+    public static final BitSet FOLLOW_ruleOAgents_in_entryRuleOAgents4421 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleOAgents4431 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_57_in_ruleOAgents4477 = new BitSet(new long[]{0x0000000020000000L});
+    public static final BitSet FOLLOW_29_in_ruleOAgents4489 = new BitSet(new long[]{0x0400000000000012L});
+    public static final BitSet FOLLOW_RULE_ATOM_in_ruleOAgents4508 = new BitSet(new long[]{0x0000000008801800L});
+    public static final BitSet FOLLOW_58_in_ruleOAgents4531 = new BitSet(new long[]{0x0000000008801800L});
+    public static final BitSet FOLLOW_ruleEOL_in_ruleOAgents4549 = new BitSet(new long[]{0x0400000008801812L});
+    public static final BitSet FOLLOW_27_in_ruleOAgents4566 = new BitSet(new long[]{0x0400000008801812L});
+    public static final BitSet FOLLOW_ruleOOthers_in_entryRuleOOthers4606 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleOOthers4616 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ATOM_in_ruleOOthers4658 = new BitSet(new long[]{0x0000000020000000L});
+    public static final BitSet FOLLOW_29_in_ruleOOthers4675 = new BitSet(new long[]{0x00000000000006F0L,0x000000000000F800L});
+    public static final BitSet FOLLOW_RULE_STRING_in_ruleOOthers4693 = new BitSet(new long[]{0x0000000000801800L});
+    public static final BitSet FOLLOW_RULE_INT_LITERAL_in_ruleOOthers4721 = new BitSet(new long[]{0x0000000000801800L});
+    public static final BitSet FOLLOW_ruleLiteral_in_ruleOOthers4753 = new BitSet(new long[]{0x0000000000801800L});
+    public static final BitSet FOLLOW_RULE_REAL_LITERAL_in_ruleOOthers4776 = new BitSet(new long[]{0x0000000000801800L});
+    public static final BitSet FOLLOW_ruleEOL_in_ruleOOthers4799 = new BitSet(new long[]{0x0000000000801802L});
+    public static final BitSet FOLLOW_ruleGroup_in_entryRuleGroup4836 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleGroup4846 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_62_in_ruleGroup4883 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ATOM_in_ruleGroup4900 = new BitSet(new long[]{0x0000000020000000L});
+    public static final BitSet FOLLOW_29_in_ruleGroup4917 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ATOM_in_ruleGroup4934 = new BitSet(new long[]{0x0000000001801802L});
+    public static final BitSet FOLLOW_24_in_ruleGroup4952 = new BitSet(new long[]{0xC000400002801810L,0x0000000000000003L});
+    public static final BitSet FOLLOW_ruleEOL_in_ruleGroup4969 = new BitSet(new long[]{0xC000400002801810L,0x0000000000000003L});
+    public static final BitSet FOLLOW_ruleGroup_in_ruleGroup4992 = new BitSet(new long[]{0xC000400002000010L,0x0000000000000003L});
+    public static final BitSet FOLLOW_63_in_ruleGroup5011 = new BitSet(new long[]{0x0000000020000000L});
+    public static final BitSet FOLLOW_29_in_ruleGroup5023 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ATOM_in_ruleGroup5040 = new BitSet(new long[]{0x0000000000801800L});
+    public static final BitSet FOLLOW_ruleEOL_in_ruleGroup5062 = new BitSet(new long[]{0xC000400002801810L,0x0000000000000003L});
+    public static final BitSet FOLLOW_64_in_ruleGroup5083 = new BitSet(new long[]{0x0000000020000000L});
+    public static final BitSet FOLLOW_29_in_ruleGroup5095 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ATOM_in_ruleGroup5112 = new BitSet(new long[]{0x0000000000801800L});
+    public static final BitSet FOLLOW_ruleEOL_in_ruleGroup5134 = new BitSet(new long[]{0xC000400002801810L,0x0000000000000003L});
+    public static final BitSet FOLLOW_46_in_ruleGroup5155 = new BitSet(new long[]{0x0000000020801800L});
+    public static final BitSet FOLLOW_29_in_ruleGroup5168 = new BitSet(new long[]{0x0000000000000610L,0x000000000000F800L});
+    public static final BitSet FOLLOW_ruleLiteral_in_ruleGroup5189 = new BitSet(new long[]{0x0000000000801800L});
+    public static final BitSet FOLLOW_ruleEOL_in_ruleGroup5208 = new BitSet(new long[]{0xC000400002801810L,0x0000000000000003L});
+    public static final BitSet FOLLOW_RULE_ATOM_in_ruleGroup5234 = new BitSet(new long[]{0x0000000020000000L});
+    public static final BitSet FOLLOW_29_in_ruleGroup5251 = new BitSet(new long[]{0x00000000000006F0L,0x000000000000F800L});
+    public static final BitSet FOLLOW_RULE_STRING_in_ruleGroup5269 = new BitSet(new long[]{0x0000000000801800L});
+    public static final BitSet FOLLOW_RULE_INT_LITERAL_in_ruleGroup5297 = new BitSet(new long[]{0x0000000000801800L});
+    public static final BitSet FOLLOW_ruleLiteral_in_ruleGroup5329 = new BitSet(new long[]{0x0000000000801800L});
+    public static final BitSet FOLLOW_RULE_REAL_LITERAL_in_ruleGroup5352 = new BitSet(new long[]{0x0000000000801800L});
+    public static final BitSet FOLLOW_ruleEOL_in_ruleGroup5375 = new BitSet(new long[]{0xC000400002801810L,0x0000000000000003L});
+    public static final BitSet FOLLOW_65_in_ruleGroup5396 = new BitSet(new long[]{0x0000000020000000L});
+    public static final BitSet FOLLOW_29_in_ruleGroup5408 = new BitSet(new long[]{0xC000400002000010L,0x0000000000000003L});
+    public static final BitSet FOLLOW_RULE_ATOM_in_ruleGroup5426 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ATOM_in_ruleGroup5448 = new BitSet(new long[]{0x0000000008801800L});
+    public static final BitSet FOLLOW_ruleEOL_in_ruleGroup5470 = new BitSet(new long[]{0xC00040000A801810L,0x0000000000000003L});
+    public static final BitSet FOLLOW_27_in_ruleGroup5487 = new BitSet(new long[]{0xC00040000A801810L,0x0000000000000003L});
+    public static final BitSet FOLLOW_25_in_ruleGroup5506 = new BitSet(new long[]{0x0000000000801802L});
+    public static final BitSet FOLLOW_ruleEOL_in_ruleGroup5525 = new BitSet(new long[]{0x0000000000801802L});
+    public static final BitSet FOLLOW_ruleScheme_in_entryRuleScheme5562 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleScheme5572 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_66_in_ruleScheme5609 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ATOM_in_ruleScheme5626 = new BitSet(new long[]{0x0000000020000000L});
+    public static final BitSet FOLLOW_29_in_ruleScheme5643 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ATOM_in_ruleScheme5660 = new BitSet(new long[]{0x0000000001801802L});
+    public static final BitSet FOLLOW_24_in_ruleScheme5678 = new BitSet(new long[]{0x0000400002801810L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ruleEOL_in_ruleScheme5695 = new BitSet(new long[]{0x0000400002801810L,0x0000000000000001L});
+    public static final BitSet FOLLOW_46_in_ruleScheme5710 = new BitSet(new long[]{0x0000000020801800L});
+    public static final BitSet FOLLOW_29_in_ruleScheme5723 = new BitSet(new long[]{0x0000000000000610L,0x000000000000F800L});
+    public static final BitSet FOLLOW_ruleLiteral_in_ruleScheme5744 = new BitSet(new long[]{0x0000000000801800L});
+    public static final BitSet FOLLOW_ruleEOL_in_ruleScheme5763 = new BitSet(new long[]{0x0000400002801810L,0x0000000000000001L});
+    public static final BitSet FOLLOW_64_in_ruleScheme5784 = new BitSet(new long[]{0x0000000020000000L});
+    public static final BitSet FOLLOW_29_in_ruleScheme5796 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ATOM_in_ruleScheme5813 = new BitSet(new long[]{0x0000000000801800L});
+    public static final BitSet FOLLOW_ruleEOL_in_ruleScheme5835 = new BitSet(new long[]{0x0000400002801810L,0x0000000000000001L});
+    public static final BitSet FOLLOW_RULE_ATOM_in_ruleScheme5861 = new BitSet(new long[]{0x0000000020000000L});
+    public static final BitSet FOLLOW_29_in_ruleScheme5878 = new BitSet(new long[]{0x00000000000006F0L,0x000000000000F800L});
+    public static final BitSet FOLLOW_RULE_STRING_in_ruleScheme5896 = new BitSet(new long[]{0x0000000000801800L});
+    public static final BitSet FOLLOW_RULE_INT_LITERAL_in_ruleScheme5924 = new BitSet(new long[]{0x0000000000801800L});
+    public static final BitSet FOLLOW_ruleLiteral_in_ruleScheme5956 = new BitSet(new long[]{0x0000000000801800L});
+    public static final BitSet FOLLOW_RULE_REAL_LITERAL_in_ruleScheme5979 = new BitSet(new long[]{0x0000000000801800L});
+    public static final BitSet FOLLOW_ruleEOL_in_ruleScheme6002 = new BitSet(new long[]{0x0000400002801810L,0x0000000000000001L});
+    public static final BitSet FOLLOW_25_in_ruleScheme6018 = new BitSet(new long[]{0x0000000000801802L});
+    public static final BitSet FOLLOW_ruleEOL_in_ruleScheme6037 = new BitSet(new long[]{0x0000000000801802L});
+    public static final BitSet FOLLOW_ruleHost_in_entryRuleHost6074 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleHost6084 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ATOM_in_ruleHost6127 = new BitSet(new long[]{0x0000000020000002L});
+    public static final BitSet FOLLOW_RULE_STRING_in_ruleHost6155 = new BitSet(new long[]{0x0000000020000002L});
+    public static final BitSet FOLLOW_RULE_IP_in_ruleHost6183 = new BitSet(new long[]{0x0000000020000002L});
+    public static final BitSet FOLLOW_29_in_ruleHost6202 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_RULE_INT_LITERAL_in_ruleHost6219 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleFileName_in_entryRuleFileName6262 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleFileName6272 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_67_in_ruleFileName6320 = new BitSet(new long[]{0x0000000000000012L,0x0000000000000078L});
+    public static final BitSet FOLLOW_68_in_ruleFileName6338 = new BitSet(new long[]{0x0000000000000012L,0x0000000000000078L});
+    public static final BitSet FOLLOW_69_in_ruleFileName6356 = new BitSet(new long[]{0x0000000000000012L,0x0000000000000078L});
+    public static final BitSet FOLLOW_70_in_ruleFileName6374 = new BitSet(new long[]{0x0000000000000012L,0x0000000000000078L});
+    public static final BitSet FOLLOW_RULE_ATOM_in_ruleFileName6397 = new BitSet(new long[]{0x0000000000000012L,0x0000000000000078L});
+    public static final BitSet FOLLOW_RULE_STRING_in_ruleFileName6427 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleClassDef_in_entryRuleClassDef6469 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleClassDef6479 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleFQN_in_ruleClassDef6525 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000080L});
+    public static final BitSet FOLLOW_71_in_ruleClassDef6538 = new BitSet(new long[]{0x00000000000002F0L,0x0000000000000300L});
+    public static final BitSet FOLLOW_ruleParameter_in_ruleClassDef6560 = new BitSet(new long[]{0x0000000008000000L,0x0000000000000100L});
+    public static final BitSet FOLLOW_27_in_ruleClassDef6573 = new BitSet(new long[]{0x00000000000002F0L,0x0000000000000200L});
+    public static final BitSet FOLLOW_ruleParameter_in_ruleClassDef6594 = new BitSet(new long[]{0x0000000008000000L,0x0000000000000100L});
+    public static final BitSet FOLLOW_72_in_ruleClassDef6610 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleParameter_in_entryRuleParameter6648 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleParameter6658 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleClassDef_in_ruleParameter6704 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_INT_LITERAL_in_ruleParameter6727 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_REAL_LITERAL_in_ruleParameter6755 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_STRING_in_ruleParameter6783 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleListParameters_in_ruleParameter6815 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleListParameters_in_entryRuleListParameters6851 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleListParameters6861 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_73_in_ruleListParameters6898 = new BitSet(new long[]{0x00000000000002F0L,0x0000000000000200L});
+    public static final BitSet FOLLOW_ruleParameter_in_ruleListParameters6919 = new BitSet(new long[]{0x0000000008000000L,0x0000000000000400L});
+    public static final BitSet FOLLOW_27_in_ruleListParameters6932 = new BitSet(new long[]{0x00000000000002F0L,0x0000000000000200L});
+    public static final BitSet FOLLOW_ruleParameter_in_ruleListParameters6953 = new BitSet(new long[]{0x0000000008000000L,0x0000000000000400L});
+    public static final BitSet FOLLOW_74_in_ruleListParameters6967 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleLiteral_in_entryRuleLiteral7003 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleLiteral7013 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_75_in_ruleLiteral7062 = new BitSet(new long[]{0x0000000000000610L,0x000000000000C800L});
+    public static final BitSet FOLLOW_rulePred_in_ruleLiteral7086 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleVar_in_ruleLiteral7113 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_76_in_ruleLiteral7133 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_77_in_ruleLiteral7151 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rulePred_in_entryRulePred7188 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRulePred7198 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ATOM_in_rulePred7250 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000280L});
+    public static final BitSet FOLLOW_78_in_rulePred7273 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000280L});
+    public static final BitSet FOLLOW_79_in_rulePred7291 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000280L});
+    public static final BitSet FOLLOW_71_in_rulePred7305 = new BitSet(new long[]{0x00000000000006F0L,0x000000000000FA00L});
+    public static final BitSet FOLLOW_ruleTerms_in_rulePred7326 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000100L});
+    public static final BitSet FOLLOW_72_in_rulePred7338 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000200L});
+    public static final BitSet FOLLOW_ruleList_in_rulePred7361 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleTerms_in_entryRuleTerms7398 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleTerms7408 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleTerm_in_ruleTerms7454 = new BitSet(new long[]{0x0000000008000002L});
+    public static final BitSet FOLLOW_27_in_ruleTerms7467 = new BitSet(new long[]{0x00000000000006F0L,0x000000000000FA00L});
+    public static final BitSet FOLLOW_ruleTerm_in_ruleTerms7488 = new BitSet(new long[]{0x0000000008000002L});
+    public static final BitSet FOLLOW_ruleTerm_in_entryRuleTerm7526 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleTerm7536 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleList_in_ruleTerm7582 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleLiteral_in_ruleTerm7609 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_STRING_in_ruleTerm7632 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_INT_LITERAL_in_ruleTerm7660 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_REAL_LITERAL_in_ruleTerm7688 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleList_in_entryRuleList7729 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleList7739 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_73_in_ruleList7785 = new BitSet(new long[]{0x00000000000006F0L,0x000000000000FE00L});
+    public static final BitSet FOLLOW_ruleTerm_in_ruleList7807 = new BitSet(new long[]{0x0000000008000000L,0x0000000000010400L});
+    public static final BitSet FOLLOW_27_in_ruleList7820 = new BitSet(new long[]{0x00000000000006F0L,0x000000000000FA00L});
+    public static final BitSet FOLLOW_ruleTerm_in_ruleList7841 = new BitSet(new long[]{0x0000000008000000L,0x0000000000010400L});
+    public static final BitSet FOLLOW_80_in_ruleList7856 = new BitSet(new long[]{0x0000000000000600L,0x0000000000000200L});
+    public static final BitSet FOLLOW_RULE_VART_in_ruleList7874 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000400L});
+    public static final BitSet FOLLOW_RULE_UNNAMEDVART_in_ruleList7902 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000400L});
+    public static final BitSet FOLLOW_ruleList_in_ruleList7934 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000400L});
+    public static final BitSet FOLLOW_74_in_ruleList7951 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleVar_in_entryRuleVar7987 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleVar7997 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_VART_in_ruleVar8040 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000200L});
+    public static final BitSet FOLLOW_RULE_UNNAMEDVART_in_ruleVar8068 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000200L});
+    public static final BitSet FOLLOW_ruleList_in_ruleVar8095 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleEOL_in_entryRuleEOL8133 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleEOL8144 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_NEWLINE_in_ruleEOL8184 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_SL_COMMENT_in_ruleEOL8210 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleFQN_in_entryRuleFQN8256 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleFQN8267 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_VART_in_ruleFQN8308 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000020L});
+    public static final BitSet FOLLOW_RULE_ATOM_in_ruleFQN8334 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000020L});
+    public static final BitSet FOLLOW_69_in_ruleFQN8354 = new BitSet(new long[]{0x0000000000000210L});
+    public static final BitSet FOLLOW_RULE_VART_in_ruleFQN8370 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000020L});
+    public static final BitSet FOLLOW_RULE_ATOM_in_ruleFQN8396 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000020L});
 
 }

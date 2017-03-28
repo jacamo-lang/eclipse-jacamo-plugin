@@ -65,6 +65,7 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//Workspace/name"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Jcm.ecore#//Workspace/artifact"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//Workspace/agent"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Jcm.ecore#//Workspace/debug"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Jcm.ecore#//Workspace/node"/>
     </genClasses>
     <genClasses ecoreClass="Jcm.ecore#//Artifact">
@@ -103,6 +104,7 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Jcm.ecore#//Group/group"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//Group/responsibleFor"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//Group/owner"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Jcm.ecore#//Group/debug"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//Group/other"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//Group/string"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//Group/val"/>
@@ -114,6 +116,7 @@
     <genClasses ecoreClass="Jcm.ecore#//Scheme">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//Scheme/name"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//Scheme/kind"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Jcm.ecore#//Scheme/debug"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//Scheme/owner"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//Scheme/other"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Jcm.ecore#//Scheme/string"/>

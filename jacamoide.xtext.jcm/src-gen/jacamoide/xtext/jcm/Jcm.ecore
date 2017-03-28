@@ -97,6 +97,8 @@
         eType="#//Artifact" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="agent" unique="false" upperBound="-1"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="debug" upperBound="-1"
+        eType="#//Literal" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="node" upperBound="-1" eType="#//ONode"
         containment="true"/>
   </eClassifiers>
@@ -153,6 +155,8 @@
         upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="owner" unique="false" upperBound="-1"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="debug" upperBound="-1"
+        eType="#//Literal" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="other" unique="false" upperBound="-1"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="string" unique="false"
@@ -171,6 +175,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="Scheme">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="kind" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="debug" upperBound="-1"
+        eType="#//Literal" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="owner" unique="false" upperBound="-1"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="other" unique="false" upperBound="-1"

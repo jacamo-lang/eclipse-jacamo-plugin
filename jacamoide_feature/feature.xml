@@ -2,7 +2,7 @@
 <feature
       id="jacamoide_feature"
       label="Jacamoide_feature"
-      version="1.0.22.qualifier">
+      version="1.0.24.qualifier">
 
    <description url="http://jacamo.sf.net">
       JaCaMo is a framework for Multi-Agent Programming that combines three separate technologies (Jason, CArtAgO, and Moise), each of them being well-known on its own and developed for a number of years so they are fairly robust and fully-fledged.

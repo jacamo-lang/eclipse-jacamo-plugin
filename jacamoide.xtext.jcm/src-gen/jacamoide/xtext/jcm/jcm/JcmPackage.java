@@ -587,13 +587,22 @@ public interface JcmPackage extends EPackage
   int WORKSPACE__AGENT = 2;
 
   /**
+   * The feature id for the '<em><b>Debug</b></em>' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int WORKSPACE__DEBUG = 3;
+
+  /**
    * The feature id for the '<em><b>Node</b></em>' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int WORKSPACE__NODE = 3;
+  int WORKSPACE__NODE = 4;
 
   /**
    * The number of structural features of the '<em>Workspace</em>' class.
@@ -602,7 +611,7 @@ public interface JcmPackage extends EPackage
    * @generated
    * @ordered
    */
-  int WORKSPACE_FEATURE_COUNT = 4;
+  int WORKSPACE_FEATURE_COUNT = 5;
 
   /**
    * The meta object id for the '{@link jacamoide.xtext.jcm.jcm.impl.ArtifactImpl <em>Artifact</em>}' class.
@@ -936,13 +945,22 @@ public interface JcmPackage extends EPackage
   int GROUP__OWNER = 4;
 
   /**
+   * The feature id for the '<em><b>Debug</b></em>' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int GROUP__DEBUG = 5;
+
+  /**
    * The feature id for the '<em><b>Other</b></em>' attribute list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int GROUP__OTHER = 5;
+  int GROUP__OTHER = 6;
 
   /**
    * The feature id for the '<em><b>String</b></em>' attribute list.
@@ -951,7 +969,7 @@ public interface JcmPackage extends EPackage
    * @generated
    * @ordered
    */
-  int GROUP__STRING = 6;
+  int GROUP__STRING = 7;
 
   /**
    * The feature id for the '<em><b>Val</b></em>' attribute list.
@@ -960,7 +978,7 @@ public interface JcmPackage extends EPackage
    * @generated
    * @ordered
    */
-  int GROUP__VAL = 7;
+  int GROUP__VAL = 8;
 
   /**
    * The feature id for the '<em><b>Literal</b></em>' containment reference list.
@@ -969,7 +987,7 @@ public interface JcmPackage extends EPackage
    * @generated
    * @ordered
    */
-  int GROUP__LITERAL = 8;
+  int GROUP__LITERAL = 9;
 
   /**
    * The feature id for the '<em><b>Val real</b></em>' attribute list.
@@ -978,7 +996,7 @@ public interface JcmPackage extends EPackage
    * @generated
    * @ordered
    */
-  int GROUP__VAL_REAL = 9;
+  int GROUP__VAL_REAL = 10;
 
   /**
    * The feature id for the '<em><b>Agent</b></em>' attribute list.
@@ -987,7 +1005,7 @@ public interface JcmPackage extends EPackage
    * @generated
    * @ordered
    */
-  int GROUP__AGENT = 10;
+  int GROUP__AGENT = 11;
 
   /**
    * The feature id for the '<em><b>Role</b></em>' attribute list.
@@ -996,7 +1014,7 @@ public interface JcmPackage extends EPackage
    * @generated
    * @ordered
    */
-  int GROUP__ROLE = 11;
+  int GROUP__ROLE = 12;
 
   /**
    * The number of structural features of the '<em>Group</em>' class.
@@ -1005,7 +1023,7 @@ public interface JcmPackage extends EPackage
    * @generated
    * @ordered
    */
-  int GROUP_FEATURE_COUNT = 12;
+  int GROUP_FEATURE_COUNT = 13;
 
   /**
    * The meta object id for the '{@link jacamoide.xtext.jcm.jcm.impl.SchemeImpl <em>Scheme</em>}' class.
@@ -1036,13 +1054,22 @@ public interface JcmPackage extends EPackage
   int SCHEME__KIND = 1;
 
   /**
+   * The feature id for the '<em><b>Debug</b></em>' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SCHEME__DEBUG = 2;
+
+  /**
    * The feature id for the '<em><b>Owner</b></em>' attribute list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int SCHEME__OWNER = 2;
+  int SCHEME__OWNER = 3;
 
   /**
    * The feature id for the '<em><b>Other</b></em>' attribute list.
@@ -1051,7 +1078,7 @@ public interface JcmPackage extends EPackage
    * @generated
    * @ordered
    */
-  int SCHEME__OTHER = 3;
+  int SCHEME__OTHER = 4;
 
   /**
    * The feature id for the '<em><b>String</b></em>' attribute list.
@@ -1060,7 +1087,7 @@ public interface JcmPackage extends EPackage
    * @generated
    * @ordered
    */
-  int SCHEME__STRING = 4;
+  int SCHEME__STRING = 5;
 
   /**
    * The feature id for the '<em><b>Val</b></em>' attribute list.
@@ -1069,7 +1096,7 @@ public interface JcmPackage extends EPackage
    * @generated
    * @ordered
    */
-  int SCHEME__VAL = 5;
+  int SCHEME__VAL = 6;
 
   /**
    * The feature id for the '<em><b>Literal</b></em>' containment reference list.
@@ -1078,7 +1105,7 @@ public interface JcmPackage extends EPackage
    * @generated
    * @ordered
    */
-  int SCHEME__LITERAL = 6;
+  int SCHEME__LITERAL = 7;
 
   /**
    * The feature id for the '<em><b>Val real</b></em>' attribute list.
@@ -1087,7 +1114,7 @@ public interface JcmPackage extends EPackage
    * @generated
    * @ordered
    */
-  int SCHEME__VAL_REAL = 7;
+  int SCHEME__VAL_REAL = 8;
 
   /**
    * The number of structural features of the '<em>Scheme</em>' class.
@@ -1096,7 +1123,7 @@ public interface JcmPackage extends EPackage
    * @generated
    * @ordered
    */
-  int SCHEME_FEATURE_COUNT = 8;
+  int SCHEME_FEATURE_COUNT = 9;
 
   /**
    * The meta object id for the '{@link jacamoide.xtext.jcm.jcm.impl.HostImpl <em>Host</em>}' class.
@@ -2150,6 +2177,17 @@ public interface JcmPackage extends EPackage
   EAttribute getWorkspace_Agent();
 
   /**
+   * Returns the meta object for the containment reference list '{@link jacamoide.xtext.jcm.jcm.Workspace#getDebug <em>Debug</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the containment reference list '<em>Debug</em>'.
+   * @see jacamoide.xtext.jcm.jcm.Workspace#getDebug()
+   * @see #getWorkspace()
+   * @generated
+   */
+  EReference getWorkspace_Debug();
+
+  /**
    * Returns the meta object for the containment reference list '{@link jacamoide.xtext.jcm.jcm.Workspace#getNode <em>Node</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -2484,6 +2522,17 @@ public interface JcmPackage extends EPackage
   EAttribute getGroup_Owner();
 
   /**
+   * Returns the meta object for the containment reference list '{@link jacamoide.xtext.jcm.jcm.Group#getDebug <em>Debug</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the containment reference list '<em>Debug</em>'.
+   * @see jacamoide.xtext.jcm.jcm.Group#getDebug()
+   * @see #getGroup()
+   * @generated
+   */
+  EReference getGroup_Debug();
+
+  /**
    * Returns the meta object for the attribute list '{@link jacamoide.xtext.jcm.jcm.Group#getOther <em>Other</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -2591,6 +2640,17 @@ public interface JcmPackage extends EPackage
    * @generated
    */
   EAttribute getScheme_Kind();
+
+  /**
+   * Returns the meta object for the containment reference list '{@link jacamoide.xtext.jcm.jcm.Scheme#getDebug <em>Debug</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the containment reference list '<em>Debug</em>'.
+   * @see jacamoide.xtext.jcm.jcm.Scheme#getDebug()
+   * @see #getScheme()
+   * @generated
+   */
+  EReference getScheme_Debug();
 
   /**
    * Returns the meta object for the attribute list '{@link jacamoide.xtext.jcm.jcm.Scheme#getOwner <em>Owner</em>}'.
@@ -3568,6 +3628,14 @@ public interface JcmPackage extends EPackage
     EAttribute WORKSPACE__AGENT = eINSTANCE.getWorkspace_Agent();
 
     /**
+     * The meta object literal for the '<em><b>Debug</b></em>' containment reference list feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference WORKSPACE__DEBUG = eINSTANCE.getWorkspace_Debug();
+
+    /**
      * The meta object literal for the '<em><b>Node</b></em>' containment reference list feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -3830,6 +3898,14 @@ public interface JcmPackage extends EPackage
     EAttribute GROUP__OWNER = eINSTANCE.getGroup_Owner();
 
     /**
+     * The meta object literal for the '<em><b>Debug</b></em>' containment reference list feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference GROUP__DEBUG = eINSTANCE.getGroup_Debug();
+
+    /**
      * The meta object literal for the '<em><b>Other</b></em>' attribute list feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -3910,6 +3986,14 @@ public interface JcmPackage extends EPackage
      * @generated
      */
     EAttribute SCHEME__KIND = eINSTANCE.getScheme_Kind();
+
+    /**
+     * The meta object literal for the '<em><b>Debug</b></em>' containment reference list feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference SCHEME__DEBUG = eINSTANCE.getScheme_Debug();
 
     /**
      * The meta object literal for the '<em><b>Owner</b></em>' attribute list feature.
