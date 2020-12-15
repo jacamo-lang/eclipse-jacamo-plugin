@@ -1,0 +1,29 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: jacamoide.xtext.jcm
+Bundle-ManifestVersion: 2
+Bundle-Name: jacamoide.xtext.jcm
+Bundle-Vendor: JaCaMo team
+Bundle-Version: 2.0.1
+Bundle-SymbolicName: jacamoide.xtext.jcm; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.eclipse.xtext,
+ org.eclipse.xtext.xbase,
+ org.eclipse.equinox.common;bundle-version="3.5.0",
+ org.eclipse.emf.ecore,
+ org.eclipse.xtext.xbase.lib;bundle-version="2.14.0",
+ org.eclipse.xtext.util,
+ org.eclipse.emf.common,
+ org.antlr.runtime;bundle-version="[3.2.0,3.2.1)"
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Export-Package: jacamoide.xtext.jcm.parser.antlr.internal,
+ jacamoide.xtext.jcm.validation,
+ jacamoide.xtext.jcm.jcm.util,
+ jacamoide.xtext.jcm.services,
+ jacamoide.xtext.jcm.scoping,
+ jacamoide.xtext.jcm.jcm,
+ jacamoide.xtext.jcm.serializer,
+ jacamoide.xtext.jcm.generator,
+ jacamoide.xtext.jcm.jcm.impl,
+ jacamoide.xtext.jcm.parser.antlr,
+ jacamoide.xtext.jcm
+Import-Package: org.apache.log4j
