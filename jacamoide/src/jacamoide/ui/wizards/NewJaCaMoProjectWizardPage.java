@@ -63,22 +63,26 @@ public class NewJaCaMoProjectWizardPage extends WizardPage implements Listener {
 		//Project infrastructure
 		projectAgentLabel = new Label(composite, SWT.NONE);
 		projectAgentLabel.setText("Agent:");
+		projectAgentLabel.setVisible(false);
 		
 		projectAgentCombo = new Combo(composite, SWT.BORDER | SWT.SINGLE | SWT.READ_ONLY);
 		projectAgentCombo.add("Centralised");
 		projectAgentCombo.add("Distributed");
 		projectAgentCombo.setText("Centralised");
 		projectAgentCombo.addListener(SWT.Modify, this);
+		projectAgentCombo.setVisible(false);
 		
 		//Project environment
 		projectEnvironmentLabel = new Label(composite, SWT.NONE);
 		projectEnvironmentLabel.setText("Environment");
+		projectEnvironmentLabel.setVisible(false);
 		
 		projectEnvironmentCombo = new Combo(composite, SWT.BORDER | SWT.SINGLE | SWT.READ_ONLY);
 		projectEnvironmentCombo.add("Centralised");
 		projectEnvironmentCombo.add("Distributed");
 		projectEnvironmentCombo.setText("Centralised");
 		projectEnvironmentCombo.addListener(SWT.Modify, this);
+		projectEnvironmentCombo.setVisible(false);
 		
 		setControl(composite);
 	}

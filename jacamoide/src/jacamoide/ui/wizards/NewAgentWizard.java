@@ -162,12 +162,16 @@ public class NewAgentWizard extends Wizard implements INewWizard {
 		} catch (CoreException e) {
 			e.printStackTrace();
 		}
+		
+		System.out.println("MAIN " + mainFile);
         
 		if (mainFile != null) {
 	        try {
 				String sourceMainFile = Utils.loadFile(mainFile.getLocation().toString());
 				
 				String agent = "agent " + generateAgente();
+				
+				System.out.println("Aqui 1");
 				
 				int idStartIndex = 0;
 				int idxStartReplace = 0;
@@ -198,9 +202,12 @@ public class NewAgentWizard extends Wizard implements INewWizard {
 					sourceMainFile = sourceMainFile.substring(0, idxStartReplace+1) + "\n\t" + agent + sourceMainFile.substring(idxStartReplace+1, sourceMainFile.length());
 				}
 				
-				Utils.saveFile(mainFile.getLocation().toString(), sourceMainFile, false);
-		        Utils.selectAndReveal(getShell(), mainFile);
+				System.out.println("Aqui 2");
 				
+				Utils.saveFile(mainFile.getLocation().toString(), sourceMainFile, false);
+				System.out.println("Aqui 3");
+		        Utils.selectAndReveal(getShell(), mainFile);
+		        System.out.println("Aqui 4");
 			} catch (Exception e) {
 				e.printStackTrace();
 			}

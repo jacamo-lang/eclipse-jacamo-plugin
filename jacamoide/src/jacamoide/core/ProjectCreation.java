@@ -72,7 +72,7 @@ public class ProjectCreation {
      * Creates the .classpath file for JaCaMo Project.
      */
     public void createClassPathFile(String projectRootDir, String projectName, boolean cartagoEnvironment, String infrastructure) {
-        String classPathContent = PluginTemplates.getProjectClasspathContents(projectName, cartagoEnvironment, infrastructure);
+        String classPathContent = PluginTemplates.getProjectClasspathContents2(projectName, cartagoEnvironment, infrastructure);
         
         try {
             FileWriter fw = new FileWriter(new File(projectRootDir + File.separator + ".classpath"));

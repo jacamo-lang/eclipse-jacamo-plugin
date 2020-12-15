@@ -2,6 +2,7 @@ package jacamoide.ui.wizards;
 
 import jacamoide.core.PluginConstants;
 import jacamoide.core.ProjectCreation;
+import jacamoide.core.ProjectCreationNew;
 import jacamoide.core.Utils;
 import jacamoide.ui.ErrorDialog;
 
@@ -24,14 +25,14 @@ import org.eclipse.ui.wizards.newresource.BasicNewProjectResourceWizard;
 public class NewJaCaMoProjectWizard extends BasicNewProjectResourceWizard implements INewWizard, IExecutableExtension {
 	private NewJaCaMoProjectWizardPage page;
 	//private ISelection selection;
-	private ProjectCreation projectCreation;
+	private ProjectCreationNew projectCreation;
 	private IConfigurationElement config;
 	
 	public NewJaCaMoProjectWizard() {
 		super();
 		setNeedsProgressMonitor(true);
 		setWindowTitle("New JaCaMo Project");
-		projectCreation = new ProjectCreation(getShell());
+		projectCreation = new ProjectCreationNew(getShell());
 	}
 	
 	public void addPages() {
@@ -86,32 +87,35 @@ public class NewJaCaMoProjectWizard extends BasicNewProjectResourceWizard implem
 			newProject.create(monitor);
 			String projectRootDir = newProject.getLocation().toString();
 			
+            // create .classpath file
+            projectCreation.createClassPathFile(projectRootDir, projectName, environment.equals("CArtAgO"), infrastructure);
+			
+			// Create JaCaMo project
+			projectCreation.createProject(projectRootDir, projectName, infrastructure, environment);
+			
 			// create the project directories for sources.
-			projectCreation.createProjectDirs(projectRootDir);
+			//projectCreation.createProjectDirs(projectRootDir);
 			
 			projectCreation.importJaCaMoLibraries(monitor);
 			
 			// create the settings directory and core/ui prefs.
 			projectCreation.createSettingsDir(projectRootDir);
 			
-            // create .classpath file
-            projectCreation.createClassPathFile(projectRootDir, projectName, environment.equals("CArtAgO"), infrastructure);
+			//projectCreation.createSampleAgentFile(projectRootDir, projectName);
+			//projectCreation.createLoggingFile(projectRootDir, projectName);
 			
-			projectCreation.createSampleAgentFile(projectRootDir, projectName);
-			//projectCreation.createIncCartagoFile(projectRootDir, projectName);
-			//projectCreation.createIncMoiseFile(projectRootDir, projectName);
-			projectCreation.createLoggingFile(projectRootDir, projectName);
-			
-            projectCreation.createJaCaMoFile(projectRootDir, projectName, infrastructure, environment);
+            //projectCreation.createJaCaMoFile(projectRootDir, projectName, infrastructure, environment);
             
             // open project and refesh local.
 			newProject.open(monitor);
-			
+
 			// configure the .project file.
 			projectCreation.configureProjectEnvironment(monitor);
-			
+
 			// refresh the project after all these changes.
 			newProject.getWorkspace().getRoot().refreshLocal(IWorkspaceRoot.DEPTH_INFINITE, monitor);
+			
+			
 			IResource jacamoFile = newProject.findMember(projectName+"."+PluginConstants.MASJACAMO_EXT);
 			Utils.selectAndReveal(getShell(), jacamoFile);
 			//Utils.openResource(getShell(), (IFile)jasonFile);
@@ -119,6 +123,7 @@ public class NewJaCaMoProjectWizard extends BasicNewProjectResourceWizard implem
 			
 			//Create user library for JaCaMo
 			Utils.createUserLibrary();
+
 		} catch (Exception e) {
 			e.printStackTrace();
 			ErrorDialog.open(e);
